@@ -108,7 +108,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "b7623a05ceed43782ef6d079209728df6559afd3510fe6dbf5946a129f0b4226"
+   "sha256": "8ca8f0e444a161caf6c5ac7dfc19f78592b7b698571e2523087a13acf60d4460"
   },
   {
    "path": "docs/2026-07-28/develop/build-client.md",
@@ -120,7 +120,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "d3dc26d37e2b36afe162bf855a4c305dc3c26ecb9e84561c460954627261ae5e"
+   "sha256": "bc9385531f62850ef5b1720cff375d766f84876e303cb660ff55292feccb6ef4"
   },
   {
    "path": "docs/2026-07-28/develop/clients/client-best-practices.md",
@@ -1200,7 +1200,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "38c3e9439bc84ba609732aae58aa5a3da0aae3e9805ce04269d2aaeca86155a1"
+   "sha256": "d3e2a12c9be03453e4203de1e2c9b9369e3793a34f63f495760d3fcb2c10c8ee"
   },
   {
    "path": "docs/draft/develop/build-client.md",
@@ -1212,7 +1212,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "80b7632b40bdac4d771092a11622e97caeac0e2a7aa9db9a7b5b242d30b09d6f"
+   "sha256": "8619bfa1b0bb6d7a19c68fb7b2c8b6e32e5a0006314d14cd23df21bd84164f26"
   },
   {
    "path": "docs/draft/develop/clients/client-best-practices.md",
@@ -1776,7 +1776,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "9ce5f303af42dd168b117c0faef2b7b832c69dc309780ac59a288543e6e19ceb"
+   "sha256": "93ed885a50d38ccf5a3b84fa420798dfa26ada245581aa19f9b242330c59d86e"
   },
   {
    "path": "specification/2025-11-25/index.md",
@@ -2760,7 +2760,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "9fe308265476745673781c221837c990164fdb101da54fd6887763d48d02a00e"
+   "sha256": "7c9b06aeb4d89173d6dc4c8d1af72f3e28b1cc447070c61bf7fffedd26418688"
   },
   {
    "path": "specification/draft/deprecated.md",
@@ -3108,7 +3108,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "16a4b03dd8c2a7f4c58937a9797a8e143422052acb494697b5353a275629e1a8"
+   "sha256": "9312ef4ea1e19bbd2683569fa332e3218b40e45179bc586db4c3bc9026c4cb4b"
   },
   {
    "path": "extensions/overview.md",
@@ -3984,7 +3984,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "0dff2ae5c24166cadb217754d89b1485ea6ac9071436075f212b9228a7d0f705"
+   "sha256": "16a8fadc4b4e4a0f349a7b4d8fb69e1c08b535dd878d5c0c55d7ad2866231f69"
   },
   {
    "path": "community/governance.md",
