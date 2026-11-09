@@ -1,0 +1,48 @@
+---
+title: Delete Invite
+url: https://platform.claude.com/docs/en/api/cli/beta/organization/invites/delete
+---
+
+# Delete Invite
+
+`$ ant beta:organization:invites delete`
+
+**DELETE** `/v1/organizations/invites/{invite_id}`
+
+Delete a pending invite.
+
+## Parameters
+
+- `--invite-id: string` (path parameter)
+
+  ID of the Invite.
+
+## Returns
+
+- `BetaOrganizationInviteDeleteResponse: object`
+
+  - `type: "invite_deleted"`
+
+    Deleted object type.
+
+    For Invites, this is always `"invite_deleted"`.
+
+  - `id: string`
+
+    ID of the Invite.
+
+## Example
+
+```bash
+ant beta:organization:invites delete \
+  --invite-id invite_id
+```
+
+### Response (200)
+
+```json
+{
+  "id": "invite_015gWxCN9Hfg2QhZwTK7Mdeu",
+  "type": "invite_deleted"
+}
+```

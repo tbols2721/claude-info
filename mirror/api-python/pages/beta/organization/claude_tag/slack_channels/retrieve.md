@@ -1,0 +1,387 @@
+---
+title: Get Slack Channel
+url: https://platform.claude.com/docs/en/api/python/beta/organization/claude_tag/slack_channels/retrieve
+---
+
+# Get Slack Channel
+
+`beta.organization.claude_tag.slack_channels.retrieve(id, **kwargs) -> BetaClaudeTagSlackChannel`
+
+**GET** `/v1/organizations/claude_tag/slack_channels/{id}`
+
+Get one Slack channel and its settings. By default `settings` holds what the channel itself stores: a setting that is null there is not set on the channel and is inherited. With `include_inherited=true`, `settings` holds what applies in the channel once the settings levels above it are taken into account, and the request fails with 503 rather than resolve against a settings level that could not be read. Either way `sources` names the settings level each value comes from, so a caller tells the channel's own value from an inherited one by its source, not by whether it is null.
+
+## Parameters
+
+- `id: str` (path parameter)
+
+  The channel's identifier, starting with `slch_`.
+
+- `include_inherited: Optional[bool]` (query parameter)
+
+  When `true`, `settings` holds what applies in the channel once the settings levels above it are taken into account, and every member of `sources` names the level a value comes from. When `false` or left out, `settings` holds what the channel itself stores.
+
+- `betas: Optional[List[AnthropicBetaParam]]` (header parameter)
+
+  This endpoint is in beta: requests must send `experimental-claude-tag-2026-10-21` in this header.
+
+  - `str`
+
+  - `"message-batches-2024-09-24"`
+
+  - `"prompt-caching-2024-07-31"`
+
+  - `"computer-use-2024-10-22"`
+
+  - `"computer-use-2025-01-24"`
+
+  - `"pdfs-2024-09-25"`
+
+  - `"token-counting-2024-11-01"`
+
+  - `"token-efficient-tools-2025-02-19"`
+
+  - `"output-128k-2025-02-19"`
+
+  - `"files-api-2025-04-14"`
+
+  - `"mcp-client-2025-04-04"`
+
+  - `"mcp-client-2025-11-20"`
+
+  - `"dev-full-thinking-2025-05-14"`
+
+  - `"interleaved-thinking-2025-05-14"`
+
+  - `"code-execution-2025-05-22"`
+
+  - `"extended-cache-ttl-2025-04-11"`
+
+  - `"context-1m-2025-08-07"`
+
+  - `"context-management-2025-06-27"`
+
+  - `"model-context-window-exceeded-2025-08-26"`
+
+  - `"skills-2025-10-02"`
+
+  - `"fast-mode-2026-02-01"`
+
+  - `"output-300k-2026-03-24"`
+
+  - `"user-profiles-2026-03-24"`
+
+  - `"user-profiles-2026-08-18"`
+
+  - `"user-profiles-2026-09-04"`
+
+  - `"advisor-tool-2026-03-01"`
+
+  - `"managed-agents-2026-04-01"`
+
+  - `"cache-diagnosis-2026-04-07"`
+
+  - `"dreaming-2026-04-21"`
+
+  - `"thinking-token-count-2026-05-13"`
+
+  - `"server-side-fallback-2026-06-01"`
+
+  - `"server-side-fallback-2026-07-01"`
+
+  - `"fallback-credit-2026-06-01"`
+
+  - `"fallback-credit-2026-07-01"`
+
+  - `"agent-memory-2026-07-22"`
+
+  - `"mid-conversation-tool-changes-2026-07-01"`
+
+  - `"compact-2026-01-12"`
+
+  - `"computer-use-2025-11-24"`
+
+  - `"mcp-tunnels-2026-06-22"`
+
+  - `"structured-outputs-2025-11-13"`
+
+  - `"task-budgets-2026-03-13"`
+
+  - `"thinking-display-updates-2026-08-18"`
+
+  - `"ce-user-management-2026-07-13"`
+
+  - `"mid-conversation-output-config-2026-07-01"`
+
+  - `"thinking-binding-controls-2026-08-01"`
+
+  - `"mid-conversation-system-clear-at-2026-08-21"`
+
+  - `"compact-2026-09-04"`
+
+  - `"inline-tools-2026-09-15"`
+
+  - `"mcp-client-2026-09-15"`
+
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
+
+  - `"telemetry-destinations-2026-08-11"`
+
+  - `"webhooks-2026-10-07"`
+
+  - `"message-threads-2026-08-12"`
+
+  - `"analytics-usage-cost-2026-08-24"`
+
+  - `"experimental-claude-tag-2026-10-21"`
+
+## Returns
+
+- `class BetaClaudeTagSlackChannel`
+
+  A Slack channel set up for Claude Tag, with the settings it stores or, with `include_inherited`, the settings that apply in it.
+
+  - `type: Literal["slack_channel"]`
+
+  - `id: str`
+
+    The channel's identifier. Starts with `slch_`. It does not change for as long as the channel is set up, with one exception: a channel that is not configured can get a new one. A channel that is removed and set up again also has a new one. The old one keeps returning 404; look the channel up by its Slack identifiers for the new one.
+
+  - `created_at: datetime`
+
+    Time the channel was set up, by whichever route. It does not change for as long as `id` does not.
+
+    format: date-time
+
+  - `settings: BetaClaudeTagSettings`
+
+    What the channel itself stores or, with `include_inherited`, what applies in it. `sources` says which.
+
+    - `enabled: Optional[bool]`
+
+      Whether Claude is on. The nearest settings level that sets it decides.
+
+    - `environment_id: Optional[str]`
+
+      The environment Claude's sessions run in, starting with `env_`, or the identifier of a self-hosted runner pool, starting with `ccpool_`. The nearest settings level that sets it decides.
+
+    - `guest_policy: Optional[BetaClaudeTagGuestPolicy]`
+
+      What Claude does in a channel while a Slack guest is in it. The nearest settings level that sets it decides.
+
+      - `class BetaClaudeTagGuestPolicyAllow`
+
+        Claude answers in the channel.
+
+        - `type: Literal["allow"]`
+
+      - `class BetaClaudeTagGuestPolicyRestrict`
+
+        Claude does not answer in the channel.
+
+        - `type: Literal["restrict"]`
+
+      - `class BetaClaudeTagGuestPolicyChannelOnly`
+
+        Claude answers with only the Bundles attached to the channel itself.
+
+        - `type: Literal["channel_only"]`
+
+    - `instructions: Optional[str]`
+
+      Instructions for Claude. Instructions add up: the text of every settings level that sets it is joined, broadest first.
+
+    - `model: Optional[str]`
+
+      The model Claude uses: a model identifier or the name of a model line. The nearest settings level that sets it decides. When none does, Claude uses the product's default model.
+
+  - `slack: BetaClaudeTagSlackChannelIdentifiers`
+
+    Slack's own identifiers for the channel.
+
+    - `channel_id: str`
+
+      Slack's identifier for the channel, starting with `C` or `G`, such as `C0456EFGH`.
+
+      minLength: 2, maxLength: 32
+
+    - `workspace_id: str`
+
+      Slack's identifier for the workspace the channel is in, starting with `T`, such as `T0123ABCD`.
+
+      minLength: 2, maxLength: 32
+
+  - `sources: BetaClaudeTagSettingSources`
+
+    For each setting, the settings level its value in `settings` comes from.
+
+    - `enabled: Optional[BetaClaudeTagSettingSource]`
+
+      The settings level `enabled` comes from.
+
+      - `class BetaClaudeTagSlackChannelSettingSource`
+
+        The value comes from the addressed Slack channel itself.
+
+        - `type: Literal["slack_channel"]`
+
+        - `slack_channel_id: str`
+
+          The channel's identifier, starting with `slch_`.
+
+      - `class BetaClaudeTagSlackWorkspaceSettingSource`
+
+        The value comes from a Slack workspace of the organization.
+
+        - `type: Literal["slack_workspace"]`
+
+        - `slack_workspace_id: str`
+
+          The workspace's identifier, starting with `slws_`.
+
+      - `class BetaClaudeTagSlackParentChannelSettingSource`
+
+        The value comes from the channel that a code channel was started from. A parent channel contributes `instructions` and `environment_id` only.
+
+        - `type: Literal["slack_parent_channel"]`
+
+        - `slack_channel_id: str`
+
+          The parent channel's identifier, starting with `slch_`.
+
+      - `class BetaClaudeTagSlackDefaultSettingSource`
+
+        The value comes from the organization's Slack defaults, which have no identifier.
+
+        - `type: Literal["slack_default"]`
+
+      - `class BetaClaudeTagDefaultSettingSource`
+
+        No settings level sets a value, and the built-in default applies.
+
+        - `type: Literal["default"]`
+
+      - `class BetaClaudeTagSlackGridChannelSettingSource`
+
+        The value comes from the addressed channel as it is set up under another workspace of its Enterprise Grid: a channel shared across the Grid keeps one Slack channel identifier in every workspace that sees it.
+
+        - `type: Literal["slack_grid_channel"]`
+
+        - `slack: BetaClaudeTagSlackChannelIdentifiers`
+
+          Slack's own identifiers for the channel under that other workspace.
+
+    - `environment_id: Optional[BetaClaudeTagSettingSource]`
+
+      The settings level `environment_id` comes from.
+
+    - `guest_policy: Optional[BetaClaudeTagSettingSource]`
+
+      The settings level `guest_policy` comes from.
+
+    - `instructions: List[BetaClaudeTagSettingSource]`
+
+      Every settings level that contributes text to `instructions`, broadest first, in the order their text is joined. Empty when none does.
+
+      - `class BetaClaudeTagSlackChannelSettingSource`
+
+        The value comes from the addressed Slack channel itself.
+
+      - `class BetaClaudeTagSlackWorkspaceSettingSource`
+
+        The value comes from a Slack workspace of the organization.
+
+      - `class BetaClaudeTagSlackParentChannelSettingSource`
+
+        The value comes from the channel that a code channel was started from. A parent channel contributes `instructions` and `environment_id` only.
+
+      - `class BetaClaudeTagSlackDefaultSettingSource`
+
+        The value comes from the organization's Slack defaults, which have no identifier.
+
+      - `class BetaClaudeTagDefaultSettingSource`
+
+        No settings level sets a value, and the built-in default applies.
+
+      - `class BetaClaudeTagSlackGridChannelSettingSource`
+
+        The value comes from the addressed channel as it is set up under another workspace of its Enterprise Grid: a channel shared across the Grid keeps one Slack channel identifier in every workspace that sees it.
+
+    - `model: Optional[BetaClaudeTagSettingSource]`
+
+      The settings level `model` comes from.
+
+  - `updated_at: datetime`
+
+    Time Claude Tag's record of the channel last changed. It moves on every change to a setting, and can also move when something no response holds changes, so a later value says to read the channel again, not that a setting changed. Attaching or detaching a Bundle does not by itself move it.
+
+    format: date-time
+
+## Example
+
+```python
+import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    api_key=os.environ.get(
+        "ANTHROPIC_API_KEY"
+    ),  # This is the default and can be omitted
+)
+beta_claude_tag_slack_channel = (
+    client.beta.organization.claude_tag.slack_channels.retrieve(
+        id="slch_01SvpyRQK3nN6eH9uhRA7n1q",
+    )
+)
+print(beta_claude_tag_slack_channel.id)
+```
+
+### Response (200)
+
+```json
+{
+  "id": "id",
+  "created_at": "2019-12-27T18:11:19.117Z",
+  "settings": {
+    "enabled": true,
+    "environment_id": "environment_id",
+    "guest_policy": {
+      "type": "allow"
+    },
+    "instructions": "instructions",
+    "model": "model"
+  },
+  "slack": {
+    "channel_id": "xx",
+    "workspace_id": "xx"
+  },
+  "sources": {
+    "enabled": {
+      "slack_channel_id": "slack_channel_id",
+      "type": "slack_channel"
+    },
+    "environment_id": {
+      "slack_channel_id": "slack_channel_id",
+      "type": "slack_channel"
+    },
+    "guest_policy": {
+      "slack_channel_id": "slack_channel_id",
+      "type": "slack_channel"
+    },
+    "instructions": [
+      {
+        "slack_channel_id": "slack_channel_id",
+        "type": "slack_channel"
+      }
+    ],
+    "model": {
+      "slack_channel_id": "slack_channel_id",
+      "type": "slack_channel"
+    }
+  },
+  "type": "slack_channel",
+  "updated_at": "2019-12-27T18:11:19.117Z"
+}
+```

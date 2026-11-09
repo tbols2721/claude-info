@@ -1,0 +1,38 @@
+---
+title: Download File
+url: https://platform.claude.com/docs/en/api/files/download
+---
+
+# Download File
+
+**GET** `/v1/files/{file_id}/content`
+
+Download File
+
+## Path parameters
+
+- `file_id: string`
+
+  ID of the File.
+
+## Headers
+
+- `"anthropic-version": optional string`
+
+  The version of the Claude API you want to use.
+
+  Read more about versioning and our version history [here](https://platform.claude.com/docs/en/api/versioning?sdk_languages=http).
+
+- `"anthropic-workspace-id": optional string`
+
+  Optional header to select the Workspace for this request. The value is a Workspace ID (for example, `wrkspc_011CZkZaBF1tNoB5wlCeusgy`).
+
+  Only needed for credentials that can act on more than one Workspace. A credential that belongs to a specific Workspace may omit it; if sent, it must match that Workspace.
+
+## Example
+
+```bash
+curl https://api.anthropic.com/v1/files/$FILE_ID/content \
+    -H 'anthropic-version: 2026-10-21' \
+    -H "Authorization: Bearer $ANTHROPIC_API_KEY"
+```

@@ -1,0 +1,68 @@
+---
+title: Validate External Key
+url: https://platform.claude.com/docs/en/api/organization/external_keys/validate
+---
+
+# Validate External Key
+
+**POST** `/v1/organizations/external_keys/{external_key_id}/validate`
+
+Validate an external key config against the customer's KMS.
+
+Anthropic performs an encrypt/decrypt roundtrip against the configured
+KMS key and waits up to 30 seconds for the result. The response status is
+`success` if the roundtrip succeeded, or `failure` with an error
+message if it failed or timed out.
+
+## Path parameters
+
+- `external_key_id: string`
+
+  ID of the External Key.
+
+  maxLength: 2048
+
+## Headers
+
+- `"anthropic-version": optional string`
+
+  The version of the Claude API you want to use.
+
+  Read more about versioning and our version history [here](https://platform.claude.com/docs/en/api/versioning?sdk_languages=http).
+
+## Returns
+
+- `type: "external_key_validation"`
+
+  default: external_key_validation
+
+- `error: string or null`
+
+  Error message when status is `failure`. Null otherwise.
+
+- `status: "failure" or "success"`
+
+  `success` — encrypt/decrypt roundtrip succeeded. `failure` — the roundtrip failed or timed out; see `error`.
+
+  - `"failure"`
+
+  - `"success"`
+
+## Example
+
+```bash
+curl https://api.anthropic.com/v1/organizations/external_keys/$EXTERNAL_KEY_ID/validate \
+    -X POST \
+    -H 'anthropic-version: 2026-10-21' \
+    -H "Authorization: Bearer $ANTHROPIC_API_KEY"
+```
+
+### Response (200)
+
+```json
+{
+  "error": "error",
+  "status": "failure",
+  "type": "external_key_validation"
+}
+```

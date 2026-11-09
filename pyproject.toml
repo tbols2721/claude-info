@@ -1,0 +1,20 @@
+[project]
+name = "claude-info"
+version = "0.1.0"
+description = "Build searchable GNU Info manuals from Claude, MCP, and Agent Skills documentation"
+license = "MIT"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+claude-info = "claude_info:main"
+
+[build-system]
+requires = ["uv_build>=0.10.11,<0.11.0"]
+build-backend = "uv_build"
+
+[dependency-groups]
+dev = [
+    "pytest>=9.1.1",
+]

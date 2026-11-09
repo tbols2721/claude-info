@@ -1,0 +1,114 @@
+{
+ "source": "agent-skills",
+ "base": "https://agentskills.io/",
+ "pages": [
+  {
+   "path": "home.md",
+   "url": "https://agentskills.io/home.md",
+   "title": "Agent Skills Overview",
+   "description": "A standardized way to give AI agents new capabilities and expertise.",
+   "nav": [],
+   "order": 0,
+   "in_index": true,
+   "in_sitemap": true,
+   "linked": false,
+   "sha256": "ab8dc11a4e321ab7760c0d557b4245111b7eb4a8e8a39939f6ed58a1c3ad0956"
+  },
+  {
+   "path": "specification.md",
+   "url": "https://agentskills.io/specification.md",
+   "title": "Specification",
+   "description": "The complete format specification for Agent Skills.",
+   "nav": [],
+   "order": 1,
+   "in_index": true,
+   "in_sitemap": true,
+   "linked": false,
+   "sha256": "bf4137a702014f82a022de532e597c5f92ea86fb53fe29ea27bee3bbc1d19738"
+  },
+  {
+   "path": "clients.md",
+   "url": "https://agentskills.io/clients.md",
+   "title": "Client Showcase",
+   "description": "Agent products that support the Agent Skills format.",
+   "nav": [],
+   "order": 2,
+   "in_index": true,
+   "in_sitemap": true,
+   "linked": false,
+   "sha256": "6dabf4e3f4b39b29c6df9dcc6cff893a59a5cce3740a3a905df2a8b19e183e32"
+  },
+  {
+   "path": "skill-creation/quickstart.md",
+   "url": "https://agentskills.io/skill-creation/quickstart.md",
+   "title": "Quickstart",
+   "description": "Create your first Agent Skill and see it work in VS Code.",
+   "nav": [],
+   "order": 3,
+   "in_index": true,
+   "in_sitemap": true,
+   "linked": false,
+   "sha256": "7c480b447edac58fd8ff8f250c471dfc7d4621155b91fabed46379075c32bffb"
+  },
+  {
+   "path": "skill-creation/best-practices.md",
+   "url": "https://agentskills.io/skill-creation/best-practices.md",
+   "title": "Best practices for skill creators",
+   "description": "How to write skills that are well-scoped and calibrated to the task.",
+   "nav": [],
+   "order": 4,
+   "in_index": true,
+   "in_sitemap": true,
+   "linked": false,
+   "sha256": "ab9f3b6091a0f24816b52cd7b90a3fdf53e621f47dba13b36694be272b87fb41"
+  },
+  {
+   "path": "skill-creation/optimizing-descriptions.md",
+   "url": "https://agentskills.io/skill-creation/optimizing-descriptions.md",
+   "title": "Optimizing skill descriptions",
+   "description": "How to improve your skill's description so it triggers reliably on relevant prompts.",
+   "nav": [],
+   "order": 5,
+   "in_index": true,
+   "in_sitemap": true,
+   "linked": false,
+   "sha256": "7cc54fbb6abbcf08c33e7b320fd01a1fb9696426270da3b588a398d243bfd837"
+  },
+  {
+   "path": "skill-creation/evaluating-skills.md",
+   "url": "https://agentskills.io/skill-creation/evaluating-skills.md",
+   "title": "Evaluating skill output quality",
+   "description": "How to test whether your skill produces good outputs using eval-driven iteration.",
+   "nav": [],
+   "order": 6,
+   "in_index": true,
+   "in_sitemap": true,
+   "linked": false,
+   "sha256": "a799805f3a285390c1b6e906b691f56684fa1031b499d177f664f464d99fb684"
+  },
+  {
+   "path": "skill-creation/using-scripts.md",
+   "url": "https://agentskills.io/skill-creation/using-scripts.md",
+   "title": "Using scripts in skills",
+   "description": "How to run commands and bundle executable scripts in your skills.",
+   "nav": [],
+   "order": 7,
+   "in_index": true,
+   "in_sitemap": true,
+   "linked": false,
+   "sha256": "c8a0792d224d8bdc98741cf741c2cd9e0cd36457cb3930df791f18e81fca31d0"
+  },
+  {
+   "path": "client-implementation/adding-skills-support.md",
+   "url": "https://agentskills.io/client-implementation/adding-skills-support.md",
+   "title": "How to add skills support to your agent",
+   "description": "A guide for adding Agent Skills support to an AI agent or development tool.",
+   "nav": [],
+   "order": 8,
+   "in_index": true,
+   "in_sitemap": true,
+   "linked": false,
+   "sha256": "07511caadbe1bad84d81477d0efce87bc2c7eaff562179522c083910586dfb06"
+  }
+ ]
+}

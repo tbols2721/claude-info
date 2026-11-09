@@ -1,0 +1,11 @@
+# Installed by `claude-info timer install`.
+[Unit]
+Description=Daily update of the Claude documentation Info manuals
+
+[Timer]
+OnCalendar=daily
+RandomizedDelaySec=1h
+Persistent=true
+
+[Install]
+WantedBy=timers.target

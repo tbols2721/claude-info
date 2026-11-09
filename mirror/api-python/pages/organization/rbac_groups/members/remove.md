@@ -1,0 +1,70 @@
+---
+title: Remove RBAC Group Member
+url: https://platform.claude.com/docs/en/api/python/organization/rbac_groups/members/remove
+---
+
+# Remove RBAC Group Member
+
+`organization.rbac_groups.members.remove(user_id, **kwargs) -> DeletedRBACGroupMember`
+
+**DELETE** `/v1/organizations/rbac_groups/{rbac_group_id}/members/{user_id}`
+
+Remove a User from an RBAC Group. Membership of groups provisioned by an identity provider (source type `"scim"`) cannot be modified via the API while an organization in the tenant uses SCIM provisioning.
+
+The RBAC Groups API is available to Claude Enterprise organizations only.
+
+## Parameters
+
+- `rbac_group_id: str` (path parameter)
+
+  ID of the RBAC Group.
+
+- `user_id: str` (path parameter)
+
+  ID of the User.
+
+## Returns
+
+- `class DeletedRBACGroupMember`
+
+  - `type: Literal["rbac_group_member_deleted"]`
+
+    Deleted object type. For RBAC Group Members, this is always `"rbac_group_member_deleted"`.
+
+    default: rbac_group_member_deleted
+
+  - `rbac_group_id: str`
+
+    ID of the RBAC Group.
+
+  - `user_id: str`
+
+    ID of the User.
+
+## Example
+
+```python
+import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    api_key=os.environ.get(
+        "ANTHROPIC_API_KEY"
+    ),  # This is the default and can be omitted
+)
+deleted_rbac_group_member = client.organization.rbac_groups.members.remove(
+    user_id="user_id",
+    rbac_group_id="rbac_group_id",
+)
+print(deleted_rbac_group_member.rbac_group_id)
+```
+
+### Response (200)
+
+```json
+{
+  "rbac_group_id": "rbac_group_012rppKaSVsmTo6NqRDXQXNF",
+  "type": "rbac_group_member_deleted",
+  "user_id": "user_01WxYzAbCdEfGhJkMnPqRsTu"
+}
+```

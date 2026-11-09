@@ -1,0 +1,403 @@
+---
+title: Get Plugin
+url: https://platform.claude.com/docs/en/api/python/beta/organization/plugins/retrieve
+---
+
+# Get Plugin
+
+`beta.organization.plugins.retrieve(plugin_id, **kwargs) -> BetaPlugin`
+
+**GET** `/v1/organizations/plugins/{plugin_id}`
+
+Retrieve a Plugin by ID.
+
+**Accepted credentials:** an Admin API key with the `read:plugins` or `read:org_audit` scope, or a Compliance Access Key with the `read:compliance_org_data` scope.
+
+Every request must include the beta header `anthropic-beta: ce-plugins-2026-09-01`. A request without it returns `404`, exactly as if the endpoint did not exist. The Plugins API is in beta and is available to Claude Enterprise organizations only. It is not available to Claude Platform (Claude Console) organizations, or to organizations with HIPAA readiness enabled.
+
+## Parameters
+
+- `plugin_id: str` (path parameter)
+
+  ID of the Plugin (prefixed `plugin_`).
+
+- `organization_id: Optional[str]` (query parameter)
+
+  For a `read:org_audit` or `read:compliance_org_data` key created for all of a parent organization's linked organizations: a child organization of that parent to read instead of the organization the key was created in, given as the organization's UUID or its `org_`-prefixed ID. A value that is neither returns a 400; an organization that is not a child of the key's parent, or where the Plugins API is not available, returns a 404. Any other key may pass only its own organization's ID here; another organization returns a 404.
+
+- `betas: Optional[List[AnthropicBetaParam]]` (header parameter)
+
+  This endpoint is in beta: requests must send `ce-plugins-2026-09-01` in this header.
+
+  - `str`
+
+  - `"message-batches-2024-09-24"`
+
+  - `"prompt-caching-2024-07-31"`
+
+  - `"computer-use-2024-10-22"`
+
+  - `"computer-use-2025-01-24"`
+
+  - `"pdfs-2024-09-25"`
+
+  - `"token-counting-2024-11-01"`
+
+  - `"token-efficient-tools-2025-02-19"`
+
+  - `"output-128k-2025-02-19"`
+
+  - `"files-api-2025-04-14"`
+
+  - `"mcp-client-2025-04-04"`
+
+  - `"mcp-client-2025-11-20"`
+
+  - `"dev-full-thinking-2025-05-14"`
+
+  - `"interleaved-thinking-2025-05-14"`
+
+  - `"code-execution-2025-05-22"`
+
+  - `"extended-cache-ttl-2025-04-11"`
+
+  - `"context-1m-2025-08-07"`
+
+  - `"context-management-2025-06-27"`
+
+  - `"model-context-window-exceeded-2025-08-26"`
+
+  - `"skills-2025-10-02"`
+
+  - `"fast-mode-2026-02-01"`
+
+  - `"output-300k-2026-03-24"`
+
+  - `"user-profiles-2026-03-24"`
+
+  - `"user-profiles-2026-08-18"`
+
+  - `"user-profiles-2026-09-04"`
+
+  - `"advisor-tool-2026-03-01"`
+
+  - `"managed-agents-2026-04-01"`
+
+  - `"cache-diagnosis-2026-04-07"`
+
+  - `"dreaming-2026-04-21"`
+
+  - `"thinking-token-count-2026-05-13"`
+
+  - `"server-side-fallback-2026-06-01"`
+
+  - `"server-side-fallback-2026-07-01"`
+
+  - `"fallback-credit-2026-06-01"`
+
+  - `"fallback-credit-2026-07-01"`
+
+  - `"agent-memory-2026-07-22"`
+
+  - `"mid-conversation-tool-changes-2026-07-01"`
+
+  - `"compact-2026-01-12"`
+
+  - `"computer-use-2025-11-24"`
+
+  - `"mcp-tunnels-2026-06-22"`
+
+  - `"structured-outputs-2025-11-13"`
+
+  - `"task-budgets-2026-03-13"`
+
+  - `"thinking-display-updates-2026-08-18"`
+
+  - `"ce-user-management-2026-07-13"`
+
+  - `"mid-conversation-output-config-2026-07-01"`
+
+  - `"thinking-binding-controls-2026-08-01"`
+
+  - `"mid-conversation-system-clear-at-2026-08-21"`
+
+  - `"compact-2026-09-04"`
+
+  - `"inline-tools-2026-09-15"`
+
+  - `"mcp-client-2026-09-15"`
+
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
+
+  - `"telemetry-destinations-2026-08-11"`
+
+  - `"webhooks-2026-10-07"`
+
+  - `"message-threads-2026-08-12"`
+
+  - `"analytics-usage-cost-2026-08-24"`
+
+  - `"experimental-claude-tag-2026-10-21"`
+
+## Returns
+
+- `class BetaPlugin`
+
+  - `type: Literal["plugin"]`
+
+    Always `plugin`.
+
+    default: plugin
+
+  - `id: str`
+
+    The Plugin's ID.
+
+  - `components: Optional[List[BetaPluginComponent]]`
+
+    What the served version contains; null when not enumerated.
+
+    - `type: Literal["agent", "cli", "command", 3 more]`
+
+      The kind of component.
+
+      - `"agent"`
+
+      - `"cli"`
+
+      - `"command"`
+
+      - `"hook"`
+
+      - `"mcp_server"`
+
+      - `"skill"`
+
+    - `description: Optional[str]`
+
+      What the component declares about itself; always null for MCP servers, hooks, and CLIs.
+
+    - `name: str`
+
+      The component's name: a skill's, command's or agent's name, an MCP server's key in the manifest, the event a hook runs on, or a CLI's executable.
+
+  - `content_scan: Optional[BetaPluginContentScan]`
+
+    The served version's content scan; null when it has not been scanned.
+
+    - `assessment: Optional[Literal["fail", "pass", "unknown", "warn"]]`
+
+      The scan's verdict; set only when `status` is `completed`. A `warn` can mean a `fail` that was allowed in claude.ai.
+
+      - `"fail"`
+
+      - `"pass"`
+
+      - `"unknown"`
+
+      - `"warn"`
+
+    - `reason: Optional[str]`
+
+      The primary mechanism behind a `warn` or `fail`, such as `credential-exposure` or `guardrail-tampering`; a mechanism this API does not yet name reads as `other`. Null on a `pass`, whenever `assessment` is null, and when no mechanism is reported for the verdict.
+
+    - `status: Literal["completed", "errored", "processing"]`
+
+      `processing` while a scan runs, `completed` when it ran to completion, `errored` when it could not run. Once a scan of the version has completed, `content_scan` describes the newest completed scan, even while a later scan runs. While the scan outcome cannot be read, `status` is `errored` instead.
+
+      - `"completed"`
+
+      - `"errored"`
+
+      - `"processing"`
+
+  - `created_at: datetime`
+
+    RFC 3339.
+
+    format: date-time
+
+  - `created_by: Optional[CreatedBy]`
+
+    Who created the Plugin; null when no creator is recorded.
+
+    - `class BetaPluginUserActor`
+
+      - `type: Literal["user_actor"]`
+
+        A member of the organization.
+
+        default: user_actor
+
+      - `email_address: Optional[str]`
+
+        The member's email address; may be null, for example when they are no longer a member of the organization.
+
+      - `user_id: str`
+
+        The member's User ID.
+
+    - `class BetaPluginAPIActor`
+
+      - `type: Literal["api_actor"]`
+
+        An Admin API key, in the same form the Compliance API activity feed uses for it.
+
+        default: api_actor
+
+      - `api_key_id: str`
+
+        The key's ID.
+
+  - `description: Optional[str]`
+
+    The served version's description.
+
+  - `display_name: Optional[str]`
+
+    The served version's display name.
+
+  - `latest_version_id: str`
+
+    The newest version.
+
+  - `manifest_version: Optional[str]`
+
+    The served version's manifest `version`, normalized for display, or `null` (the Plugin Version's `manifest_version` says how and when).
+
+  - `marketplace_id: str`
+
+    The ID of the plugin marketplace the Plugin lives in.
+
+  - `name: str`
+
+    Lowercase identifier, unique within its plugin marketplace. Fixed for an organization-owned Plugin's lifetime; a member-owned Plugin's changes when its owner renames it in claude.ai, while its `id` stays the same.
+
+  - `organization_installation_preference: Optional[Literal["auto_install", "available", "not_available", "required"]]`
+
+    Organization-owned Plugin: the organization-wide installation setting every member gets unless an RBAC Group they belong to holds its own — the Plugin's own setting, or its plugin marketplace's default. Null for a member-owned Plugin, which has shares instead. One of `required`, `auto_install`, `available`, `not_available`; a value this API does not yet name is returned as stored.
+
+    - `"auto_install"`
+
+    - `"available"`
+
+    - `"not_available"`
+
+    - `"required"`
+
+  - `organization_installation_preference_inherited: Optional[bool]`
+
+    Organization-owned Plugin: true while it has no organization-wide setting of its own and `organization_installation_preference` is its plugin marketplace's default. Null for a member-owned Plugin.
+
+  - `owner: Owner`
+
+    Who owns the Plugin: the organization, or the member whose personal plugin marketplace it lives in.
+
+    - `class BetaPluginOwnerOrganization`
+
+      - `type: Literal["organization"]`
+
+        The Plugin lives in a plugin marketplace the organization owns.
+
+        default: organization
+
+    - `class BetaPluginOwnerUser`
+
+      - `type: Literal["user"]`
+
+        The Plugin lives in one member's personal plugin marketplace.
+
+        default: user
+
+      - `user_id: str`
+
+        The member's User ID.
+
+  - `reach: Optional[Literal["contained", "privileged", "remote"]]`
+
+    How far the served version reaches, or `null` if it is not classified.
+
+    `remote` means it declares an MCP server or a CLI. `privileged` means it declares no MCP server or CLI, but declares a hook, monitor, language server, or settings, or has a skill, command, or other Markdown file whose frontmatter pre-approves tools (`allowed-tools` with any value other than an empty one or one that names only `AskUserQuestion`, `TodoWrite`, and `ToolSearch`). Otherwise it is `contained`.
+
+    If the frontmatter of a skill, command, or other Markdown file that could change the value could not be read, or was past a size limit, the version is `null` or `privileged` (or `remote`, if it declares an MCP server or a CLI), not `contained`. The value is normally worked out when a version is stored, under the rules of that time, so an older version can be `null`, or `contained` where the same files stored today would be `privileged` or `null`.
+
+    - `"contained"`
+
+    - `"privileged"`
+
+    - `"remote"`
+
+  - `served_version_id: str`
+
+    The version claude.ai serves to members.
+
+  - `served_version_pinned: bool`
+
+    True once the served version has been pinned, through Update Plugin or in claude.ai. While false, a new version normally becomes the served version when it is stored. While the newest version is not the served version, as when a version saved in claude.ai is waiting for its content scan, `served_version_id` differs from `latest_version_id`.
+
+  - `updated_at: datetime`
+
+    RFC 3339. Moves on a served-version change (including pinning an unpinned Plugin to the version it already serves) and, normally, on a new version. A version saved in claude.ai that waits for its content scan moves it when it becomes the served version, and not necessarily when it is stored. A change to the Plugin's installation settings or shares does not move it.
+
+    format: date-time
+
+## Example
+
+```python
+import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    api_key=os.environ.get(
+        "ANTHROPIC_API_KEY"
+    ),  # This is the default and can be omitted
+)
+beta_plugin = client.beta.organization.plugins.retrieve(
+    plugin_id="plugin_id",
+)
+print(beta_plugin.id)
+```
+
+### Response (200)
+
+```json
+{
+  "id": "plugin_01JyHfbRkZvD1gW7oTqXc3Ne",
+  "components": [
+    {
+      "description": "description",
+      "name": "review-pr",
+      "type": "skill"
+    }
+  ],
+  "content_scan": {
+    "assessment": "warn",
+    "reason": "credential-exposure",
+    "status": "completed"
+  },
+  "created_at": "2026-03-14T09:26:53.589793Z",
+  "created_by": {
+    "email_address": "user@example.com",
+    "type": "user_actor",
+    "user_id": "user_01WxYzAbCdEfGhJkMnPqRsTu"
+  },
+  "description": "Reviews pull requests against your team's conventions.",
+  "display_name": "Code Review Helper",
+  "latest_version_id": "pluginver_01KaZmQpRsTuVwXyZ2b4c6d8",
+  "manifest_version": "1.2.0",
+  "marketplace_id": "marketplace_01HxQ3v9KpZ2mTn8RwLc4Ys7",
+  "name": "code-review-helper",
+  "organization_installation_preference": "available",
+  "organization_installation_preference_inherited": true,
+  "owner": {
+    "type": "organization"
+  },
+  "reach": "contained",
+  "served_version_id": "pluginver_01K9wPcHd4Rm2Tx8Vq6Ln3Sb",
+  "served_version_pinned": true,
+  "type": "plugin",
+  "updated_at": "2026-03-14T09:26:53.589793Z"
+}
+```

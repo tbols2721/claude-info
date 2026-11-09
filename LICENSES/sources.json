@@ -1,0 +1,14 @@
+[
+  {
+    "file": "MCP-upstream.txt",
+    "source_url": "https://raw.githubusercontent.com/modelcontextprotocol/modelcontextprotocol/main/LICENSE",
+    "sha256": "0382b0057770ca05e9c350a50aa3b1c1fea84da0bc81d723bf00b9aa841be58a",
+    "retrieved_on": "2026-11-09"
+  },
+  {
+    "file": "Agent-Skills-upstream.txt",
+    "source_url": "https://raw.githubusercontent.com/agentskills/agentskills/main/LICENSE",
+    "sha256": "993da3f8d330d69108e521636555f7783ef81d46b904394c59ec5ff651331fe5",
+    "retrieved_on": "2026-11-09"
+  }
+]

@@ -1,0 +1,3 @@
+# Preserve whitespace in upstream documentation snapshots.
+mirror/** -whitespace
+LICENSES/** -whitespace

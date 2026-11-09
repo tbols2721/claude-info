@@ -1,0 +1,108 @@
+# Documentation sources mirrored by claude-info.
+#
+# Every page is discovered from two places: the site's llms.txt index (which
+# also supplies the navigation tree) and its sitemap.xml. The union of both is
+# fetched, so a page missing from one list is still picked up from the other.
+#
+#   base           URL prefix of the pages; mirror paths are relative to it
+#   index_start    only read index links after this heading (skips other languages)
+#   exclude        page path prefixes that belong to another source
+#   derive_from    no index/sitemap: take the page list from another source's
+#                  pages under derive_prefix, then crawl links for the rest
+#   index_drop     index headings that are wrappers, not navigation levels
+#   manuals        how the pages are split into Info manuals; the first manual
+#                  whose prefixes match a page's path wins, "" matches everything
+
+[[source]]
+id = "claude-code"
+name = "Claude Code"
+index = "https://code.claude.com/docs/llms.txt"
+sitemap = "https://code.claude.com/docs/sitemap.xml"
+base = "https://code.claude.com/docs/en/"
+
+  [[source.manual]]
+  name = "claude-code"
+  title = "Claude Code"
+  description = "Anthropic's agentic coding tool."
+  prefixes = [""]
+
+[[source]]
+id = "platform"
+name = "Claude Developer Platform"
+index = "https://platform.claude.com/llms.txt"
+sitemap = "https://platform.claude.com/sitemap.xml"
+base = "https://platform.claude.com/docs/en/"
+index_start = "## English"
+index_drop = ["English"]
+# SDK editions of the API reference are mirrored as their own sources below.
+exclude = ["api/cli/", "api/python/", "api/typescript/", "api/go/", "api/java/",
+           "api/ruby/", "api/csharp/", "api/php/", "api/http/"]
+
+  [[source.manual]]
+  name = "claude-api"
+  title = "Claude API Reference"
+  description = "Claude API endpoint and SDK reference."
+  prefixes = ["api/"]
+
+  [[source.manual]]
+  name = "claude-platform"
+  title = "Claude Developer Platform"
+  description = "Claude API guides, models, tools, and agents."
+  prefixes = [""]
+
+# The API reference in SDK editions. No index or sitemap lists these pages, so
+# they are derived from the HTTP reference (platform's api/ pages) and then
+# crawled for edition-only pages. Other editions: typescript, go, java, ruby,
+# csharp, php; add a source like these to mirror one.
+
+[[source]]
+id = "api-python"
+name = "Claude API Reference, Python SDK edition"
+base = "https://platform.claude.com/docs/en/api/python/"
+derive_from = "platform"
+derive_prefix = "api/"
+
+  [[source.manual]]
+  name = "claude-api-python"
+  title = "Claude API Reference (Python SDK)"
+  description = "Claude API reference with Python SDK signatures."
+  prefixes = [""]
+
+[[source]]
+id = "api-cli"
+name = "Claude API Reference, ant CLI edition"
+base = "https://platform.claude.com/docs/en/api/cli/"
+derive_from = "platform"
+derive_prefix = "api/"
+
+  [[source.manual]]
+  name = "claude-api-cli"
+  title = "Claude API Reference (ant CLI)"
+  description = "Claude API reference as ant command-line calls."
+  prefixes = [""]
+
+[[source]]
+id = "mcp"
+name = "Model Context Protocol"
+index = "https://modelcontextprotocol.io/llms.txt"
+sitemap = "https://modelcontextprotocol.io/sitemap.xml"
+base = "https://modelcontextprotocol.io/"
+
+  [[source.manual]]
+  name = "mcp"
+  title = "Model Context Protocol"
+  description = "MCP documentation and specification."
+  prefixes = [""]
+
+[[source]]
+id = "agent-skills"
+name = "Agent Skills"
+index = "https://agentskills.io/llms.txt"
+sitemap = "https://agentskills.io/sitemap.xml"
+base = "https://agentskills.io/"
+
+  [[source.manual]]
+  name = "agent-skills"
+  title = "Agent Skills"
+  description = "The Agent Skills open standard."
+  prefixes = [""]

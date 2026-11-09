@@ -1,0 +1,3019 @@
+---
+title: Count tokens in a Message
+url: https://platform.claude.com/docs/en/api/python/messages/count_tokens
+---
+
+# Count tokens in a Message
+
+`messages.count_tokens(**kwargs) -> MessageTokensCount`
+
+**POST** `/v1/messages/count_tokens`
+
+Count the number of tokens in a Message.
+
+The Token Count API can be used to count the number of tokens in a Message, including tools, images, and documents, without creating it.
+
+Learn more about token counting in our [user guide](https://platform.claude.com/docs/en/build-with-claude/token-counting?sdk_languages=python)
+
+## Parameters
+
+- `messages: Iterable[MessageParam]`
+
+  Input messages.
+
+  Our models are trained to operate on alternating `user` and `assistant` conversational turns. When creating a new `Message`, you specify the prior conversational turns with the `messages` parameter, and the model then generates the next `Message` in the conversation. Consecutive `user` or `assistant` turns in your request will be combined into a single turn.
+
+  Each input message must be an object with a `role` and `content`. You can specify a single `user`-role message, or you can include multiple `user` and `assistant` messages.
+
+  If the final message uses the `assistant` role, the response content will continue immediately from the content in that message. This can be used to constrain part of the model's response. This is called prefill. On models that don't support prefill, creating a message that ends with a partial `assistant` response returns a 400 error. See [Prefill not supported](https://platform.claude.com/docs/en/api/errors?sdk_languages=python#prefill-not-supported).
+
+  Example with a single `user` message:
+
+  ```json
+  [{"role": "user", "content": "Hello, Claude"}]
+  ```
+
+  Example with multiple conversational turns:
+
+  ```json
+  [
+    {"role": "user", "content": "Hello there."},
+    {"role": "assistant", "content": "Hi, I'm Claude. How can I help you?"},
+    {"role": "user", "content": "Can you explain LLMs in plain English?"},
+  ]
+  ```
+
+  Example with a partially-filled response from Claude, for models that support prefill:
+
+  ```json
+  [
+    {"role": "user", "content": "What's the Greek name for Sun? (A) Sol (B) Helios (C) Sun"},
+    {"role": "assistant", "content": "The best answer is ("},
+  ]
+  ```
+
+  Each input message `content` may be either a single `string` or an array of content blocks, where each block has a specific `type`. Using a `string` for `content` is shorthand for an array of one content block of type `"text"`. The following input messages are equivalent:
+
+  ```json
+  {"role": "user", "content": "Hello, Claude"}
+  ```
+
+  ```json
+  {"role": "user", "content": [{"type": "text", "text": "Hello, Claude"}]}
+  ```
+
+  See [input examples](https://platform.claude.com/docs/en/build-with-claude/working-with-messages?sdk_languages=python).
+
+  Note that if you want to include a [system prompt](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices?sdk_languages=python#give-claude-a-role), you can use the top-level `system` parameter.
+
+  There is a limit of 100,000 messages in a single request.
+
+  - `class UserMessageParam`
+
+    - `content: MessageContentParam`
+
+      - `str`
+
+      - `Iterable[Union[TextBlockParam, ImageBlockParam, DocumentBlockParam, 14 more]]`
+
+        - `class TextBlockParam`
+
+          - `type: Literal["text"]`
+
+          - `text: str`
+
+            minLength: 1
+
+          - `cache_control: Optional[CacheControlEphemeralParam]`
+
+            Create a cache control breakpoint at this content block.
+
+            - `type: Literal["ephemeral"]`
+
+            - `ttl: Optional[Literal["5m", "1h"]]`
+
+              The time-to-live for the cache control breakpoint.
+
+              This may be one the following values:
+
+              - `5m`: 5 minutes
+              - `1h`: 1 hour
+
+              Defaults to `5m`. See [prompt caching pricing](https://platform.claude.com/docs/en/build-with-claude/prompt-caching?sdk_languages=python) for details.
+
+              - `"5m"`
+
+              - `"1h"`
+
+          - `citations: Optional[Iterable[TextCitationParam]]`
+
+            - `class CitationCharLocationParam`
+
+              - `type: Literal["char_location"]`
+
+              - `cited_text: str`
+
+              - `document_index: int`
+
+                minimum: 0
+
+              - `document_title: Optional[str]`
+
+                minLength: 1, maxLength: 500
+
+              - `end_char_index: int`
+
+              - `start_char_index: int`
+
+                minimum: 0
+
+            - `class CitationPageLocationParam`
+
+              - `type: Literal["page_location"]`
+
+              - `cited_text: str`
+
+              - `document_index: int`
+
+                minimum: 0
+
+              - `document_title: Optional[str]`
+
+                minLength: 1, maxLength: 500
+
+              - `end_page_number: int`
+
+              - `start_page_number: int`
+
+                minimum: 1
+
+            - `class CitationContentBlockLocationParam`
+
+              - `type: Literal["content_block_location"]`
+
+              - `cited_text: str`
+
+                The full text of the cited block range, concatenated.
+
+                Always equals the contents of `content[start_block_index:end_block_index]` joined together. The text block is the minimal citable unit; this field is never a substring of a single block. Not counted toward output tokens, and not counted toward input tokens when sent back in subsequent turns.
+
+              - `document_index: int`
+
+                minimum: 0
+
+              - `document_title: Optional[str]`
+
+                minLength: 1, maxLength: 500
+
+              - `end_block_index: int`
+
+                Exclusive 0-based end index of the cited block range in the source's `content` array.
+
+                Always greater than `start_block_index`; a single-block citation has `end_block_index = start_block_index + 1`.
+
+              - `start_block_index: int`
+
+                0-based index of the first cited block in the source's `content` array.
+
+                minimum: 0
+
+            - `class CitationWebSearchResultLocationParam`
+
+              - `type: Literal["web_search_result_location"]`
+
+              - `cited_text: str`
+
+              - `encrypted_index: str`
+
+              - `title: Optional[str]`
+
+                minLength: 1, maxLength: 512
+
+              - `url: str`
+
+                minLength: 1
+
+            - `class CitationSearchResultLocationParam`
+
+              - `type: Literal["search_result_location"]`
+
+              - `cited_text: str`
+
+                The full text of the cited block range, concatenated.
+
+                Always equals the contents of `content[start_block_index:end_block_index]` joined together. The text block is the minimal citable unit; this field is never a substring of a single block. Not counted toward output tokens, and not counted toward input tokens when sent back in subsequent turns.
+
+              - `end_block_index: int`
+
+                Exclusive 0-based end index of the cited block range in the source's `content` array.
+
+                Always greater than `start_block_index`; a single-block citation has `end_block_index = start_block_index + 1`.
+
+              - `search_result_index: int`
+
+                0-based index of the cited search result among all `search_result` content blocks in the request, in the order they appear across messages and tool results.
+
+                Counted separately from `document_index`; server-side web search results are not included in this count.
+
+                minimum: 0
+
+              - `source: str`
+
+              - `start_block_index: int`
+
+                0-based index of the first cited block in the source's `content` array.
+
+                minimum: 0
+
+              - `title: Optional[str]`
+
+        - `class ImageBlockParam`
+
+          - `type: Literal["image"]`
+
+          - `source: Source`
+
+            - `class Base64ImageSourceParam`
+
+              - `type: Literal["base64"]`
+
+              - `data: Union[str, Base64FileInput]`
+
+                format: byte
+
+              - `media_type: Literal["image/jpeg", "image/png", "image/gif", "image/webp"]`
+
+                - `"image/jpeg"`
+
+                - `"image/png"`
+
+                - `"image/gif"`
+
+                - `"image/webp"`
+
+            - `class URLImageSourceParam`
+
+              - `type: Literal["url"]`
+
+              - `url: str`
+
+            - `class FileImageSourceParam`
+
+              - `type: Literal["file"]`
+
+              - `file_id: str`
+
+          - `cache_control: Optional[CacheControlEphemeralParam]`
+
+            Create a cache control breakpoint at this content block.
+
+          - `transformations: Optional[ImageTransformationsParam]`
+
+            Configures the transformations the server applies to this image before the model observes it. Each key names a condition the server transforms images for; its value selects the transformation applied. Omitted keys keep their default behavior, and an empty object is equivalent to omitting the field.
+
+            - `oversized_image: Optional[Literal["downsize", "error"]]`
+
+              What the server does when this image exceeds the model's maximum image size. `"downsize"` (the default) scales the image down to fit, which changes the dimensions the model observes without telling you. `"error"` instead rejects the request with a 400 error naming the image's dimensions and the largest dimensions that fit, so you can scale the image deliberately — your image is never silently scaled down.
+
+              - `"downsize"`
+
+              - `"error"`
+
+        - `class DocumentBlockParam`
+
+          - `type: Literal["document"]`
+
+          - `source: Source`
+
+            - `class Base64PDFSource`
+
+              - `type: Literal["base64"]`
+
+              - `data: str`
+
+                format: byte
+
+              - `media_type: Literal["application/pdf"]`
+
+            - `class PlainTextSource`
+
+              - `type: Literal["text"]`
+
+              - `data: str`
+
+              - `media_type: Literal["text/plain"]`
+
+            - `class ContentBlockSourceParam`
+
+              - `type: Literal["content"]`
+
+              - `content: Union[str, Iterable[ContentBlockSourceContentParam]]`
+
+                - `str`
+
+                - `Iterable[ContentBlockSourceContentParam]`
+
+                  - `class TextBlockParam`
+
+                  - `class ImageBlockParam`
+
+            - `class URLPDFSourceParam`
+
+              - `type: Literal["url"]`
+
+              - `url: str`
+
+            - `class FileDocumentSourceParam`
+
+              - `type: Literal["file"]`
+
+              - `file_id: str`
+
+          - `cache_control: Optional[CacheControlEphemeralParam]`
+
+            Create a cache control breakpoint at this content block.
+
+          - `citations: Optional[CitationsConfigParam]`
+
+            - `enabled: Optional[bool]`
+
+          - `context: Optional[str]`
+
+            minLength: 1
+
+          - `title: Optional[str]`
+
+            minLength: 1, maxLength: 500
+
+        - `class SearchResultBlockParam`
+
+          - `type: Literal["search_result"]`
+
+          - `content: Iterable[TextBlockParam]`
+
+            - `type: Literal["text"]`
+
+            - `text: str`
+
+              minLength: 1
+
+            - `cache_control: Optional[CacheControlEphemeralParam]`
+
+              Create a cache control breakpoint at this content block.
+
+            - `citations: Optional[Iterable[TextCitationParam]]`
+
+          - `source: str`
+
+          - `title: str`
+
+          - `cache_control: Optional[CacheControlEphemeralParam]`
+
+            Create a cache control breakpoint at this content block.
+
+          - `citations: Optional[CitationsConfigParam]`
+
+        - `class ThinkingBlockParam`
+
+          - `type: Literal["thinking"]`
+
+          - `signature: str`
+
+            The `signature` value of this thinking block, exactly as returned by the API in a previous response. Used to verify that the block was generated by Claude.
+
+            Thinking blocks must be passed back unmodified and in their original order; a modified block results in a 400 `invalid_request_error`.
+
+          - `thinking: str`
+
+            The `thinking` text of this block as returned by the API.
+
+        - `class RedactedThinkingBlockParam`
+
+          - `type: Literal["redacted_thinking"]`
+
+          - `data: str`
+
+            The `data` value of this redacted thinking block, exactly as returned by the API in a previous response. Opaque and encrypted; pass it back unchanged.
+
+        - `class ToolUseBlockParam`
+
+          - `type: Literal["tool_use"]`
+
+          - `id: str`
+
+            pattern: ^[a-zA-Z0-9_-]+$
+
+          - `input: Dict[str, object]`
+
+          - `name: str`
+
+            minLength: 1, maxLength: 200
+
+          - `cache_control: Optional[CacheControlEphemeralParam]`
+
+            Create a cache control breakpoint at this content block.
+
+          - `caller: Optional[Caller]`
+
+            - `class DirectCaller`
+
+              Tool invocation directly from the model.
+
+              - `type: Literal["direct"]`
+
+            - `class ServerToolCaller`
+
+              Tool invocation generated by a server-side tool.
+
+              - `type: Literal["code_execution_20250825"]`
+
+              - `tool_id: str`
+
+                pattern: ^srvtoolu_[a-zA-Z0-9_]+$
+
+            - `class ServerToolCaller20260120`
+
+              - `type: Literal["code_execution_20260120"]`
+
+              - `tool_id: str`
+
+                pattern: ^srvtoolu_[a-zA-Z0-9_]+$
+
+          - `toolset_name: Optional[str]`
+
+            For a toolset member tool_use, the toolset family this member belongs to.
+
+            minLength: 1, maxLength: 64, pattern: ^[a-zA-Z0-9_-]+$
+
+        - `class ToolResultBlockParam`
+
+          - `type: Literal["tool_result"]`
+
+          - `tool_use_id: str`
+
+            pattern: ^[a-zA-Z0-9_-]+$
+
+          - `cache_control: Optional[CacheControlEphemeralParam]`
+
+            Create a cache control breakpoint at this content block.
+
+          - `content: Optional[Union[str, Iterable[Content]]]`
+
+            - `str`
+
+            - `Iterable[Content]`
+
+              - `class TextBlockParam`
+
+              - `class ImageBlockParam`
+
+              - `class SearchResultBlockParam`
+
+              - `class DocumentBlockParam`
+
+              - `class ToolReferenceBlockParam`
+
+                Tool reference block that can be included in tool_result content.
+
+                - `type: Literal["tool_reference"]`
+
+                - `tool_name: str`
+
+                  minLength: 1, maxLength: 256, pattern: ^[a-zA-Z0-9_-]{1,256}$
+
+                - `cache_control: Optional[CacheControlEphemeralParam]`
+
+                  Create a cache control breakpoint at this content block.
+
+              - `class BrowserStateBlockParam`
+
+                The caller's browser state after a browser toolset member call —
+                the full inventory of open tabs, which tab is active, and any side
+                effects (tabs opened, download state changes) the call produced.
+
+                At most one per `tool_result`, only on a non-error result answering a
+                browser toolset member `tool_use`. The server renders the
+                model-visible text from it; the model never sees the raw fields.
+
+                - `type: Literal["browser_state"]`
+
+                - `tabs: Iterable[BrowserStateTabEntryParam]`
+
+                  All tabs open in the browser after this call — the full inventory, not a delta. May be empty. Whenever non-empty, exactly one entry carries `active: true`.
+
+                  maxItems: 100
+
+                  - `tab_id: str`
+
+                    The caller-assigned identifier for this tab, unique within the inventory.
+
+                    minLength: 1, maxLength: 4096, pattern: ^[^\x00-\x1f\x7f-\x9f\u2028\u2029]*$
+
+                  - `title: str`
+
+                    The title of the page the tab is showing. May be empty.
+
+                    maxLength: 4096, pattern: ^[^\x00-\x1f\x7f-\x9f\u2028\u2029]*$
+
+                  - `url: str`
+
+                    The URL of the page the tab is showing. May be empty.
+
+                    maxLength: 4096, pattern: ^[^\x00-\x1f\x7f-\x9f\u2028\u2029]*$
+
+                  - `active: Optional[bool]`
+
+                    Whether this tab is the active tab after this call. Whenever `tabs` is non-empty, exactly one entry is marked `active: true`.
+
+                - `cache_control: Optional[CacheControlEphemeralParam]`
+
+                  Create a cache control breakpoint at this content block.
+
+                - `state_changes: Optional[Iterable[BrowserStateChangeParam]]`
+
+                  Tabs opened and download state changes during this call. "Nothing to report" is expressed by omitting the field, never by an empty list.
+
+                  minItems: 1, maxItems: 200
+
+                  - `class BrowserStateChangeTabOpenedParam`
+
+                    A tab this call's execution opened that remains open at its end —
+                    the creation delta of the `tabs` inventory, not an event log.
+
+                    Carries only the `tab_id`; the tab's `title` and `url` live on its
+                    `tabs` entry, which must include the same `tab_id`. A tab opened
+                    during a failed call gets no deferred `tab_opened`; it simply appears
+                    in the next result's `tabs` inventory.
+
+                    - `type: Literal["tab_opened"]`
+
+                    - `tab_id: str`
+
+                      The `tab_id` of the opened tab, present in `tabs`.
+
+                      minLength: 1, maxLength: 4096, pattern: ^[^\x00-\x1f\x7f-\x9f\u2028\u2029]*$
+
+                  - `class BrowserStateChangeDownloadStartedParam`
+
+                    A file download that started during this call.
+
+                    - `type: Literal["download_started"]`
+
+                    - `download_id: str`
+
+                      The caller-assigned identifier for this download, stable across the state changes reporting it.
+
+                      minLength: 1, maxLength: 4096, pattern: ^[^\x00-\x1f\x7f-\x9f\u2028\u2029]*$
+
+                    - `url: str`
+
+                      The final post-redirect URL the download was served from.
+
+                      maxLength: 4096, pattern: ^[^\x00-\x1f\x7f-\x9f\u2028\u2029]*$
+
+                  - `class BrowserStateChangeDownloadCompletedParam`
+
+                    A file download that finished during this call, reported with the
+                    same `download_id` as its `download_started` — or without a prior
+                    `download_started`, when the download finished during the call that
+                    started it (at most one state change per `download_id` per result).
+
+                    - `type: Literal["download_completed"]`
+
+                    - `download_id: str`
+
+                      The caller-assigned identifier for this download, stable across the state changes reporting it.
+
+                      minLength: 1, maxLength: 4096, pattern: ^[^\x00-\x1f\x7f-\x9f\u2028\u2029]*$
+
+                    - `url: str`
+
+                      The final post-redirect URL the download was served from.
+
+                      maxLength: 4096, pattern: ^[^\x00-\x1f\x7f-\x9f\u2028\u2029]*$
+
+                    - `path: Optional[str]`
+
+                      Where the executor saved the file, on the executor's filesystem. Only included when another tool in the same environment can read the file at that path.
+
+                      maxLength: 4096, pattern: ^[^\x00-\x1f\x7f-\x9f\u2028\u2029]*$
+
+                    - `size_bytes: Optional[int]`
+
+                      The completed download's size.
+
+                      minimum: 0
+
+                  - `class BrowserStateChangeDownloadFailedParam`
+
+                    A file download that failed — or was cancelled — during this call.
+
+                    - `type: Literal["download_failed"]`
+
+                    - `download_id: str`
+
+                      The caller-assigned identifier for this download, stable across the state changes reporting it.
+
+                      minLength: 1, maxLength: 4096, pattern: ^[^\x00-\x1f\x7f-\x9f\u2028\u2029]*$
+
+                    - `url: str`
+
+                      The final post-redirect URL the download was served from.
+
+                      maxLength: 4096, pattern: ^[^\x00-\x1f\x7f-\x9f\u2028\u2029]*$
+
+                    - `error: Optional[str]`
+
+                      The failure or cancellation detail, when known.
+
+                      maxLength: 4096, pattern: ^[^\x00-\x1f\x7f-\x9f\u2028\u2029]*$
+
+          - `is_error: Optional[bool]`
+
+          - `toolset_name: Optional[str]`
+
+            For a toolset member tool_result, the toolset family of the paired tool_use.
+
+            minLength: 1, maxLength: 64, pattern: ^[a-zA-Z0-9_-]+$
+
+        - `class ServerToolUseBlockParam`
+
+          - `type: Literal["server_tool_use"]`
+
+          - `id: str`
+
+            pattern: ^srvtoolu_[a-zA-Z0-9_]+$
+
+          - `input: Dict[str, object]`
+
+          - `name: Literal["web_search", "web_fetch", "code_execution", 4 more]`
+
+            - `"web_search"`
+
+            - `"web_fetch"`
+
+            - `"code_execution"`
+
+            - `"bash_code_execution"`
+
+            - `"text_editor_code_execution"`
+
+            - `"tool_search_tool_regex"`
+
+            - `"tool_search_tool_bm25"`
+
+          - `cache_control: Optional[CacheControlEphemeralParam]`
+
+            Create a cache control breakpoint at this content block.
+
+          - `caller: Optional[Caller]`
+
+            - `class DirectCaller`
+
+              Tool invocation directly from the model.
+
+            - `class ServerToolCaller`
+
+              Tool invocation generated by a server-side tool.
+
+            - `class ServerToolCaller20260120`
+
+        - `class WebSearchToolResultBlockParam`
+
+          - `type: Literal["web_search_tool_result"]`
+
+          - `content: WebSearchToolResultBlockParamContentParam`
+
+            - `Iterable[WebSearchResultBlockParam]`
+
+              - `type: Literal["web_search_result"]`
+
+              - `encrypted_content: str`
+
+              - `title: str`
+
+              - `url: str`
+
+              - `page_age: Optional[str]`
+
+            - `class WebSearchToolRequestErrorParam`
+
+              - `type: Literal["web_search_tool_result_error"]`
+
+              - `error_code: WebSearchToolResultErrorCode`
+
+                - `"invalid_tool_input"`
+
+                - `"unavailable"`
+
+                - `"max_uses_exceeded"`
+
+                - `"too_many_requests"`
+
+                - `"query_too_long"`
+
+                - `"request_too_large"`
+
+          - `tool_use_id: str`
+
+            pattern: ^srvtoolu_[a-zA-Z0-9_]+$
+
+          - `cache_control: Optional[CacheControlEphemeralParam]`
+
+            Create a cache control breakpoint at this content block.
+
+          - `caller: Optional[Caller]`
+
+            - `class DirectCaller`
+
+              Tool invocation directly from the model.
+
+            - `class ServerToolCaller`
+
+              Tool invocation generated by a server-side tool.
+
+            - `class ServerToolCaller20260120`
+
+        - `class WebFetchToolResultBlockParam`
+
+          - `type: Literal["web_fetch_tool_result"]`
+
+          - `content: Content`
+
+            - `class WebFetchToolResultErrorBlockParam`
+
+              - `type: Literal["web_fetch_tool_result_error"]`
+
+              - `error_code: WebFetchToolResultErrorCode`
+
+                - `"invalid_tool_input"`
+
+                - `"url_too_long"`
+
+                - `"url_not_allowed"`
+
+                - `"url_not_in_prior_context"`
+
+                - `"url_not_accessible"`
+
+                - `"unsupported_content_type"`
+
+                - `"too_many_requests"`
+
+                - `"max_uses_exceeded"`
+
+                - `"unavailable"`
+
+                - `"content_too_large"`
+
+            - `class WebFetchBlockParam`
+
+              - `type: Literal["web_fetch_result"]`
+
+              - `content: DocumentBlockParam`
+
+              - `url: str`
+
+                Fetched content URL
+
+              - `retrieved_at: Optional[str]`
+
+                ISO 8601 timestamp when the content was retrieved
+
+          - `tool_use_id: str`
+
+            pattern: ^srvtoolu_[a-zA-Z0-9_]+$
+
+          - `cache_control: Optional[CacheControlEphemeralParam]`
+
+            Create a cache control breakpoint at this content block.
+
+          - `caller: Optional[Caller]`
+
+            - `class DirectCaller`
+
+              Tool invocation directly from the model.
+
+            - `class ServerToolCaller`
+
+              Tool invocation generated by a server-side tool.
+
+            - `class ServerToolCaller20260120`
+
+        - `class CodeExecutionToolResultBlockParam`
+
+          - `type: Literal["code_execution_tool_result"]`
+
+          - `content: CodeExecutionToolResultBlockParamContentParam`
+
+            - `class CodeExecutionToolResultErrorParam`
+
+              - `type: Literal["code_execution_tool_result_error"]`
+
+              - `error_code: CodeExecutionToolResultErrorCode`
+
+                - `"invalid_tool_input"`
+
+                - `"unavailable"`
+
+                - `"too_many_requests"`
+
+                - `"execution_time_exceeded"`
+
+            - `class CodeExecutionResultBlockParam`
+
+              - `type: Literal["code_execution_result"]`
+
+              - `content: Iterable[CodeExecutionOutputBlockParam]`
+
+                - `type: Literal["code_execution_output"]`
+
+                - `file_id: str`
+
+              - `return_code: int`
+
+              - `stderr: str`
+
+              - `stdout: str`
+
+            - `class EncryptedCodeExecutionResultBlockParam`
+
+              The output and exit code of Python code that Claude ran with the code execution tool, with standard output in encrypted form, sent back in a later request.
+
+              - `type: Literal["encrypted_code_execution_result"]`
+
+              - `content: Iterable[CodeExecutionOutputBlockParam]`
+
+                - `type: Literal["code_execution_output"]`
+
+                - `file_id: str`
+
+              - `encrypted_stdout: str`
+
+              - `return_code: int`
+
+              - `stderr: str`
+
+          - `tool_use_id: str`
+
+            pattern: ^srvtoolu_[a-zA-Z0-9_]+$
+
+          - `cache_control: Optional[CacheControlEphemeralParam]`
+
+            Create a cache control breakpoint at this content block.
+
+        - `class BashCodeExecutionToolResultBlockParam`
+
+          - `type: Literal["bash_code_execution_tool_result"]`
+
+          - `content: Content`
+
+            - `class BashCodeExecutionToolResultErrorParam`
+
+              - `type: Literal["bash_code_execution_tool_result_error"]`
+
+              - `error_code: BashCodeExecutionToolResultErrorCode`
+
+                - `"invalid_tool_input"`
+
+                - `"unavailable"`
+
+                - `"too_many_requests"`
+
+                - `"execution_time_exceeded"`
+
+                - `"output_file_too_large"`
+
+            - `class BashCodeExecutionResultBlockParam`
+
+              - `type: Literal["bash_code_execution_result"]`
+
+              - `content: Iterable[BashCodeExecutionOutputBlockParam]`
+
+                - `type: Literal["bash_code_execution_output"]`
+
+                - `file_id: str`
+
+              - `return_code: int`
+
+              - `stderr: str`
+
+              - `stdout: str`
+
+          - `tool_use_id: str`
+
+            pattern: ^srvtoolu_[a-zA-Z0-9_]+$
+
+          - `cache_control: Optional[CacheControlEphemeralParam]`
+
+            Create a cache control breakpoint at this content block.
+
+        - `class TextEditorCodeExecutionToolResultBlockParam`
+
+          - `type: Literal["text_editor_code_execution_tool_result"]`
+
+          - `content: Content`
+
+            - `class TextEditorCodeExecutionToolResultErrorParam`
+
+              - `type: Literal["text_editor_code_execution_tool_result_error"]`
+
+              - `error_code: TextEditorCodeExecutionToolResultErrorCode`
+
+                - `"invalid_tool_input"`
+
+                - `"unavailable"`
+
+                - `"too_many_requests"`
+
+                - `"execution_time_exceeded"`
+
+                - `"file_not_found"`
+
+              - `error_message: Optional[str]`
+
+            - `class TextEditorCodeExecutionViewResultBlockParam`
+
+              - `type: Literal["text_editor_code_execution_view_result"]`
+
+              - `content: str`
+
+              - `file_type: Literal["text", "image", "pdf"]`
+
+                - `"text"`
+
+                - `"image"`
+
+                - `"pdf"`
+
+              - `num_lines: Optional[int]`
+
+              - `start_line: Optional[int]`
+
+              - `total_lines: Optional[int]`
+
+            - `class TextEditorCodeExecutionCreateResultBlockParam`
+
+              - `type: Literal["text_editor_code_execution_create_result"]`
+
+              - `is_file_update: bool`
+
+            - `class TextEditorCodeExecutionStrReplaceResultBlockParam`
+
+              - `type: Literal["text_editor_code_execution_str_replace_result"]`
+
+              - `lines: Optional[Sequence[str]]`
+
+              - `new_lines: Optional[int]`
+
+              - `new_start: Optional[int]`
+
+              - `old_lines: Optional[int]`
+
+              - `old_start: Optional[int]`
+
+          - `tool_use_id: str`
+
+            pattern: ^srvtoolu_[a-zA-Z0-9_]+$
+
+          - `cache_control: Optional[CacheControlEphemeralParam]`
+
+            Create a cache control breakpoint at this content block.
+
+        - `class ToolSearchToolResultBlockParam`
+
+          - `type: Literal["tool_search_tool_result"]`
+
+          - `content: Content`
+
+            - `class ToolSearchToolResultErrorParam`
+
+              - `type: Literal["tool_search_tool_result_error"]`
+
+              - `error_code: ToolSearchToolResultErrorCode`
+
+                - `"invalid_tool_input"`
+
+                - `"unavailable"`
+
+                - `"too_many_requests"`
+
+                - `"execution_time_exceeded"`
+
+              - `error_message: Optional[str]`
+
+            - `class ToolSearchToolSearchResultBlockParam`
+
+              - `type: Literal["tool_search_tool_search_result"]`
+
+              - `tool_references: Iterable[ToolReferenceBlockParam]`
+
+                - `type: Literal["tool_reference"]`
+
+                - `tool_name: str`
+
+                  minLength: 1, maxLength: 256, pattern: ^[a-zA-Z0-9_-]{1,256}$
+
+                - `cache_control: Optional[CacheControlEphemeralParam]`
+
+                  Create a cache control breakpoint at this content block.
+
+          - `tool_use_id: str`
+
+            pattern: ^srvtoolu_[a-zA-Z0-9_]+$
+
+          - `cache_control: Optional[CacheControlEphemeralParam]`
+
+            Create a cache control breakpoint at this content block.
+
+        - `class ContainerUploadBlockParam`
+
+          A content block that represents a file to be uploaded to the container
+          Files uploaded via this block will be available in the container's input directory.
+
+          - `type: Literal["container_upload"]`
+
+          - `file_id: str`
+
+          - `cache_control: Optional[CacheControlEphemeralParam]`
+
+            Create a cache control breakpoint at this content block.
+
+    - `role: Literal["user"]`
+
+  - `class AssistantMessageParam`
+
+    - `content: MessageContentParam`
+
+    - `role: Literal["assistant"]`
+
+  - `class SystemMessageParam`
+
+    - `content: Union[str, Iterable[TextBlockParam]]`
+
+      - `str`
+
+      - `Iterable[TextBlockParam]`
+
+        - `type: Literal["text"]`
+
+        - `text: str`
+
+          minLength: 1
+
+        - `cache_control: Optional[CacheControlEphemeralParam]`
+
+          Create a cache control breakpoint at this content block.
+
+        - `citations: Optional[Iterable[TextCitationParam]]`
+
+    - `role: Literal["system"]`
+
+- `model: ModelParam`
+
+  The model that will complete your prompt.
+
+  See [models](https://docs.anthropic.com/en/docs/models-overview) for additional details and options.
+
+  - `"claude-haiku-5-5"`
+
+    Fastest model for high-volume, real-time tasks
+
+  - `"claude-sonnet-5-5"`
+
+    Efficient model for coding and agents
+
+  - `"claude-fable-5-1"`
+
+    Frontier intelligence for ambitious tasks across coding, scientific discovery, and enterprise workflows
+
+  - `"claude-opus-5-5"`
+
+    Powerful intelligence for coding, knowledge work, and long-running agents
+
+  - `"claude-mythos-5-1"`
+
+    Our most capable model for cybersecurity and biology research, available through trusted access programs
+
+  - `"claude-sonnet-5"`
+
+    Efficient model for coding and agents
+
+  - `"claude-fable-5"`
+
+    Next generation of intelligence for the hardest knowledge work and coding problems
+
+  - `"claude-mythos-5"`
+
+    Most capable model for cybersecurity and biology research
+
+  - `"claude-opus-5"`
+
+    Powerful intelligence for long-running agents and coding
+
+  - `"claude-opus-4-8"`
+
+    Powerful intelligence for long-running agents and coding
+
+  - `"claude-opus-4-7"`
+
+    Powerful intelligence for long-running agents and coding
+
+  - `"claude-opus-4-6"`
+
+    Powerful intelligence for long-running agents and coding
+
+  - `"claude-sonnet-4-6"`
+
+    Best combination of speed and intelligence
+
+  - `"claude-haiku-4-5"`
+
+  - `"claude-haiku-4-5-20251001"`
+
+  - `"claude-opus-4-5"`
+
+    Powerful intelligence for long-running agents and coding
+
+  - `"claude-opus-4-5-20251101"`
+
+    Powerful intelligence for long-running agents and coding
+
+  - `"claude-mythos-preview"`
+
+    **Deprecated**: Will reach end-of-life on June 30, 2026. Please migrate to claude-mythos-5. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.
+
+    New class of intelligence, strongest in coding and cybersecurity
+
+  - `"claude-sonnet-4-5"`
+
+    **Deprecated**: Will reach end-of-life on November 30, 2026. Please migrate to claude-sonnet-5-5. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.
+
+    High-performance model for agents and coding
+
+  - `"claude-sonnet-4-5-20250929"`
+
+    **Deprecated**: Will reach end-of-life on November 30, 2026. Please migrate to claude-sonnet-5-5. Visit https://docs.anthropic.com/en/docs/resources/model-deprecations for more information.
+
+    High-performance model for agents and coding
+
+  - `str`
+
+- `cache_control: Optional[CacheControlEphemeralParam]`
+
+  Top-level cache control automatically applies a cache_control marker to the last cacheable block in the request.
+
+- `output_config: Optional[OutputConfigParam]`
+
+  Configuration options for the model's output, such as the output format.
+
+  - `effort: Optional[Literal["low", "medium", "high", 2 more]]`
+
+    How much effort the model should put into its response. Higher effort levels may result in more thorough analysis but take longer.
+
+    Valid values are `low`, `medium`, `high`, `xhigh`, or `max`.
+
+    - `"low"`
+
+    - `"medium"`
+
+    - `"high"`
+
+    - `"xhigh"`
+
+    - `"max"`
+
+  - `format: Optional[JSONOutputFormatParam]`
+
+    A schema to specify Claude's output format in responses. See [structured outputs](https://platform.claude.com/docs/en/build-with-claude/structured-outputs?sdk_languages=python)
+
+    - `type: Literal["json_schema"]`
+
+    - `schema: Dict[str, object]`
+
+      The JSON schema of the format
+
+- `speed: Optional[Literal["standard", "fast"]]`
+
+  The inference speed mode for this request. `"fast"` enables high output-tokens-per-second inference.
+
+  Some models require the `fast-mode-2026-02-01` beta header for any `speed` value. See [fast mode](https://platform.claude.com/docs/en/build-with-claude/fast-mode?sdk_languages=python) for which models.
+
+  - `"standard"`
+
+  - `"fast"`
+
+- `system: Optional[Union[str, Iterable[TextBlockParam]]]`
+
+  System prompt.
+
+  A system prompt is a way of providing context and instructions to Claude, such as specifying a particular goal or role. See our [guide to system prompts](https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices?sdk_languages=python#give-claude-a-role).
+
+  - `str`
+
+  - `Iterable[TextBlockParam]`
+
+    - `type: Literal["text"]`
+
+    - `text: str`
+
+      minLength: 1
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `citations: Optional[Iterable[TextCitationParam]]`
+
+- `thinking: Optional[ThinkingConfigParam]`
+
+  Configuration for Claude's thinking.
+
+  With `{"type": "adaptive"}`, Claude decides when and how much to think. With `{"type": "enabled"}` (manual extended thinking), you set a `budget_tokens` of at least 1,024. Thinking tokens count toward your `max_tokens` limit.
+
+  Which `type` values are accepted, and what happens when you omit `thinking`, depend on the model. See [thinking](https://platform.claude.com/docs/en/build-with-claude/thinking?sdk_languages=python#configuring-thinking) for each model's behavior.
+
+  - `class ThinkingConfigEnabledParam`
+
+    - `type: Literal["enabled"]`
+
+    - `budget_tokens: int`
+
+      Determines how many tokens Claude can use for its internal reasoning process. Larger budgets can enable more thorough analysis for complex problems, improving response quality.
+
+      Must be ≥1024 and less than `max_tokens`.
+
+      See [extended thinking](https://platform.claude.com/docs/en/build-with-claude/extended-thinking?sdk_languages=python) for details.
+
+      minimum: 1024
+
+    - `display: Optional[Literal["summarized", "omitted"]]`
+
+      Controls how thinking content appears in the response. When set to `summarized`, thinking is returned normally. When set to `omitted`, thinking content is redacted but a signature is returned for multi-turn continuity. The default depends on the model; see [Controlling thinking display](https://platform.claude.com/docs/en/build-with-claude/thinking?sdk_languages=python#controlling-thinking-display).
+
+      - `"summarized"`
+
+      - `"omitted"`
+
+  - `class ThinkingConfigDisabledParam`
+
+    - `type: Literal["disabled"]`
+
+  - `class ThinkingConfigBetweenToolsParam`
+
+    - `type: Literal["between_tools"]`
+
+  - `class ThinkingConfigAdaptiveParam`
+
+    - `type: Literal["adaptive"]`
+
+    - `display: Optional[Literal["summarized", "omitted"]]`
+
+      Controls how thinking content appears in the response. When set to `summarized`, thinking is returned normally. When set to `omitted`, thinking content is redacted but a signature is returned for multi-turn continuity. The default depends on the model; see [Controlling thinking display](https://platform.claude.com/docs/en/build-with-claude/thinking?sdk_languages=python#controlling-thinking-display).
+
+      - `"summarized"`
+
+      - `"omitted"`
+
+- `tool_choice: Optional[ToolChoiceParam]`
+
+  How the model should use the provided tools. The model can use a specific tool, any available tool, decide by itself, or not use tools at all.
+
+  - `class ToolChoiceAutoParam`
+
+    The model will automatically decide whether to use tools.
+
+    - `type: Literal["auto"]`
+
+    - `disable_parallel_tool_use: Optional[bool]`
+
+      Whether to disable parallel tool use.
+
+      Defaults to `false`. If set to `true`, the model will output at most one tool use.
+
+  - `class ToolChoiceAnyParam`
+
+    The model will use any available tools.
+
+    - `type: Literal["any"]`
+
+    - `disable_parallel_tool_use: Optional[bool]`
+
+      Whether to disable parallel tool use.
+
+      Defaults to `false`. If set to `true`, the model will output exactly one tool use.
+
+  - `class ToolChoiceToolParam`
+
+    The model will use the specified tool with `tool_choice.name`.
+
+    - `type: Literal["tool"]`
+
+    - `name: str`
+
+      The name of the tool to use.
+
+    - `disable_parallel_tool_use: Optional[bool]`
+
+      Whether to disable parallel tool use.
+
+      Defaults to `false`. If set to `true`, the model will output exactly one tool use.
+
+  - `class ToolChoiceNoneParam`
+
+    The model will not be allowed to use tools.
+
+    - `type: Literal["none"]`
+
+- `tools: Optional[Iterable[MessageCountTokensToolParam]]`
+
+  Definitions of tools that the model may use.
+
+  If you include `tools` in your API request, the model may return `tool_use` content blocks that represent the model's use of those tools. You can then run those tools using the tool input generated by the model and then optionally return results back to the model using `tool_result` content blocks.
+
+  There are two types of tools: **client tools** and **server tools**. The behavior described below applies to client tools. For [server tools](https://platform.claude.com/docs/en/agents-and-tools/tool-use/server-tools?sdk_languages=python), see their individual documentation as each has its own behavior (e.g., the [web search tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/web-search-tool?sdk_languages=python)).
+
+  Each tool definition includes:
+
+  * `name`: Name of the tool.
+  * `description`: Optional, but strongly-recommended description of the tool.
+  * `input_schema`: [JSON schema](https://json-schema.org/draft/2020-12) for the tool `input` shape that the model will produce in `tool_use` output content blocks.
+
+  For example, if you defined `tools` as:
+
+  ```json
+  [
+    {
+      "name": "get_stock_price",
+      "description": "Get the current stock price for a given ticker symbol.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "ticker": {
+            "type": "string",
+            "description": "The stock ticker symbol, e.g. AAPL for Apple Inc."
+          }
+        },
+        "required": ["ticker"]
+      }
+    }
+  ]
+  ```
+
+  And then asked the model "What's the S&P 500 at today?", the model might produce `tool_use` content blocks in the response like this:
+
+  ```json
+  [
+    {
+      "type": "tool_use",
+      "id": "toolu_01D7FLrfh4GYq7yT1ULFeyMV",
+      "name": "get_stock_price",
+      "input": { "ticker": "^GSPC" }
+    }
+  ]
+  ```
+
+  You might then run your `get_stock_price` tool with `{"ticker": "^GSPC"}` as an input, and return the following back to the model in a subsequent `user` message:
+
+  ```json
+  [
+    {
+      "type": "tool_result",
+      "tool_use_id": "toolu_01D7FLrfh4GYq7yT1ULFeyMV",
+      "content": "259.75 USD"
+    }
+  ]
+  ```
+
+  Tools can be used for workflows that include running client-side tools and functions, or more generally whenever you want the model to produce a particular JSON structure of output.
+
+  See our [guide](https://platform.claude.com/docs/en/agents-and-tools/tool-use/overview?sdk_languages=python) for more details.
+
+  - `class ToolParam`
+
+    - `type: Optional[Literal["custom"]]`
+
+    - `input_schema: InputSchema`
+
+      [JSON schema](https://json-schema.org/draft/2020-12) for this tool's input.
+
+      This defines the shape of the `input` that your tool accepts and that the model will produce.
+
+      - `type: Literal["object"]`
+
+      - `properties: Optional[Dict[str, object]]`
+
+      - `required: Optional[Sequence[str]]`
+
+    - `name: str`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+      minLength: 1, maxLength: 128, pattern: ^[a-zA-Z0-9_-]{1,128}$
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `description: Optional[str]`
+
+      Description of what this tool does.
+
+      Tool descriptions should be as detailed as possible. The more information that the model has about what the tool is and how to use it, the better it will perform. You can use natural language descriptions to reinforce important aspects of the tool input JSON schema.
+
+    - `eager_input_streaming: Optional[bool]`
+
+      Enable eager input streaming for this tool. When true, tool input parameters will be streamed incrementally as they are generated, and types will be inferred on-the-fly rather than buffering the full JSON output. When false, streaming is disabled for this tool even if the fine-grained-tool-streaming beta is active. When null (default), uses the default behavior based on beta headers.
+
+    - `input_examples: Optional[Iterable[Dict[str, object]]]`
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+  - `class ToolBash20250124Param`
+
+    - `type: Literal["bash_20250124"]`
+
+    - `name: Literal["bash"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `input_examples: Optional[Iterable[Dict[str, object]]]`
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+  - `class CodeExecutionTool20250522Param`
+
+    - `type: Literal["code_execution_20250522"]`
+
+    - `name: Literal["code_execution"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+  - `class CodeExecutionTool20250825Param`
+
+    - `type: Literal["code_execution_20250825"]`
+
+    - `name: Literal["code_execution"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+  - `class CodeExecutionTool20260120Param`
+
+    A `tools` entry for the code execution tool, version `code_execution_20260120`. It adds REPL state persistence to version `code_execution_20250825`.
+
+    REPL state persistence applies with programmatic tool calling. With it, the Python interpreter state, such as variable bindings, persists across requests that reuse the container.
+
+    See the [code execution tool guide](https://platform.claude.com/docs/en/agents-and-tools/tool-use/code-execution-tool?sdk_languages=python#tool-versions) to learn what each tool version adds.
+
+    - `type: Literal["code_execution_20260120"]`
+
+    - `name: Literal["code_execution"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+  - `class CodeExecutionTool20260521Param`
+
+    Code execution tool with REPL state persistence.
+
+    - `type: Literal["code_execution_20260521"]`
+
+    - `name: Literal["code_execution"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+  - `class BrowserToolset20260801Param`
+
+    The browser toolset: a single `tools[]` entry (carrying no
+    `name`) that declares the browser tool family. The model is served
+    the family's tool with any members disabled via `configs` removed
+    from its schema.
+
+    - `type: Literal["browser_toolset_20260801"]`
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `configs: Optional[BrowserToolsetConfigsParam]`
+
+      Sparse per-member overrides, keyed by member name. Absent, null, and {} are equivalent; a member's defaults apply wherever its key is absent.
+
+      - `type: Optional[BrowserTypeConfigParam]`
+
+        `type`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `close_tab: Optional[BrowserCloseTabConfigParam]`
+
+        `close_tab`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `double_click: Optional[BrowserDoubleClickConfigParam]`
+
+        `double_click`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `file_upload: Optional[BrowserFileUploadConfigParam]`
+
+        `file_upload`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `find: Optional[BrowserFindConfigParam]`
+
+        `find`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `form_input: Optional[BrowserFormInputConfigParam]`
+
+        `form_input`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `get_page_text: Optional[BrowserGetPageTextConfigParam]`
+
+        `get_page_text`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `hold_key: Optional[BrowserHoldKeyConfigParam]`
+
+        `hold_key`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `hover: Optional[BrowserHoverConfigParam]`
+
+        `hover`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `javascript_exec: Optional[BrowserJavascriptExecConfigParam]`
+
+        `javascript_exec`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `key: Optional[BrowserKeyConfigParam]`
+
+        `key`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `left_click: Optional[BrowserLeftClickConfigParam]`
+
+        `left_click`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `left_click_drag: Optional[BrowserLeftClickDragConfigParam]`
+
+        `left_click_drag`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `left_mouse_down: Optional[BrowserLeftMouseDownConfigParam]`
+
+        `left_mouse_down`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `left_mouse_up: Optional[BrowserLeftMouseUpConfigParam]`
+
+        `left_mouse_up`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `list_tabs: Optional[BrowserListTabsConfigParam]`
+
+        `list_tabs`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `middle_click: Optional[BrowserMiddleClickConfigParam]`
+
+        `middle_click`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `mouse_move: Optional[BrowserMouseMoveConfigParam]`
+
+        `mouse_move`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `navigate: Optional[BrowserNavigateConfigParam]`
+
+        `navigate`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `new_tab: Optional[BrowserNewTabConfigParam]`
+
+        `new_tab`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `read_console: Optional[BrowserReadConsoleConfigParam]`
+
+        `read_console`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `read_network: Optional[BrowserReadNetworkConfigParam]`
+
+        `read_network`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `read_page: Optional[BrowserReadPageConfigParam]`
+
+        `read_page`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `right_click: Optional[BrowserRightClickConfigParam]`
+
+        `right_click`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `screenshot: Optional[BrowserScreenshotConfigParam]`
+
+        `screenshot`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `scroll: Optional[BrowserScrollConfigParam]`
+
+        `scroll`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `scroll_to: Optional[BrowserScrollToConfigParam]`
+
+        `scroll_to`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `switch_tab: Optional[BrowserSwitchTabConfigParam]`
+
+        `switch_tab`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `triple_click: Optional[BrowserTripleClickConfigParam]`
+
+        `triple_click`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `wait: Optional[BrowserWaitConfigParam]`
+
+        `wait`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `zoom: Optional[BrowserZoomConfigParam]`
+
+        `zoom`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+  - `class MemoryTool20250818Param`
+
+    - `type: Literal["memory_20250818"]`
+
+    - `name: Literal["memory"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `input_examples: Optional[Iterable[Dict[str, object]]]`
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+  - `class ComputerToolset20260801Param`
+
+    The computer toolset: a single `tools[]` entry (carrying no
+    `name`) that declares the computer tool family. The model is
+    served the family's tool with any members disabled via `configs`
+    removed from its schema. Every member is enabled by default, zoom
+    included. The single-tool options `display_number` and
+    `enable_zoom` are not fields of a toolset entry — it carries only
+    `type`, `configs`, and `cache_control`; zoom is controlled
+    via `configs.zoom.enabled`.
+
+    - `type: Literal["computer_toolset_20260801"]`
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `configs: Optional[ComputerToolsetConfigsParam]`
+
+      Sparse per-member overrides, keyed by member name. Absent, null, and {} are equivalent; a member's defaults apply wherever its key is absent.
+
+      - `type: Optional[ComputerTypeConfigParam]`
+
+        `type`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `cursor_position: Optional[ComputerCursorPositionConfigParam]`
+
+        `cursor_position`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `double_click: Optional[ComputerDoubleClickConfigParam]`
+
+        `double_click`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `hold_key: Optional[ComputerHoldKeyConfigParam]`
+
+        `hold_key`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `key: Optional[ComputerKeyConfigParam]`
+
+        `key`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `left_click: Optional[ComputerLeftClickConfigParam]`
+
+        `left_click`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `left_click_drag: Optional[ComputerLeftClickDragConfigParam]`
+
+        `left_click_drag`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `left_mouse_down: Optional[ComputerLeftMouseDownConfigParam]`
+
+        `left_mouse_down`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `left_mouse_up: Optional[ComputerLeftMouseUpConfigParam]`
+
+        `left_mouse_up`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `middle_click: Optional[ComputerMiddleClickConfigParam]`
+
+        `middle_click`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `mouse_move: Optional[ComputerMouseMoveConfigParam]`
+
+        `mouse_move`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `right_click: Optional[ComputerRightClickConfigParam]`
+
+        `right_click`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `screenshot: Optional[ComputerScreenshotConfigParam]`
+
+        `screenshot`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `scroll: Optional[ComputerScrollConfigParam]`
+
+        `scroll`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `triple_click: Optional[ComputerTripleClickConfigParam]`
+
+        `triple_click`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `wait: Optional[ComputerWaitConfigParam]`
+
+        `wait`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+      - `zoom: Optional[ComputerZoomConfigParam]`
+
+        `zoom`'s config overrides.
+
+        - `defer_loading: Optional[bool]`
+
+          Defer loading for this member. Must resolve to the same value on every enabled member of the toolset.
+
+        - `enabled: Optional[bool]`
+
+          Whether this member is offered to the model. Default is per member, per the toolset's documentation. A member whose enabled resolves false is withheld from the served schema.
+
+  - `class ToolTextEditor20250124Param`
+
+    - `type: Literal["text_editor_20250124"]`
+
+    - `name: Literal["str_replace_editor"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `input_examples: Optional[Iterable[Dict[str, object]]]`
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+  - `class ToolTextEditor20250429Param`
+
+    - `type: Literal["text_editor_20250429"]`
+
+    - `name: Literal["str_replace_based_edit_tool"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `input_examples: Optional[Iterable[Dict[str, object]]]`
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+  - `class ToolTextEditor20250728Param`
+
+    - `type: Literal["text_editor_20250728"]`
+
+    - `name: Literal["str_replace_based_edit_tool"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `input_examples: Optional[Iterable[Dict[str, object]]]`
+
+    - `max_characters: Optional[int]`
+
+      Maximum number of characters to display when viewing a file. If not specified, defaults to displaying the full file.
+
+      minimum: 1
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+  - `class WebSearchTool20250305Param`
+
+    - `type: Literal["web_search_20250305"]`
+
+    - `name: Literal["web_search"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `allowed_domains: Optional[Sequence[str]]`
+
+      If provided, only these domains will be included in results. Cannot be used alongside `blocked_domains`.
+
+    - `blocked_domains: Optional[Sequence[str]]`
+
+      If provided, these domains will never appear in results. Cannot be used alongside `allowed_domains`.
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `max_uses: Optional[int]`
+
+      Maximum number of times the tool can be used in the API request.
+
+      minimum: 1
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+    - `user_location: Optional[UserLocationParam]`
+
+      Parameters for the user's location. Used to provide more relevant search results.
+
+      - `type: Literal["approximate"]`
+
+      - `city: Optional[str]`
+
+        The city of the user.
+
+        minLength: 1, maxLength: 255
+
+      - `country: Optional[str]`
+
+        The two letter [ISO country code](https://en.wikipedia.org/wiki/ISO_3166-1_alpha-2) of the user.
+
+        minLength: 2, maxLength: 2
+
+      - `region: Optional[str]`
+
+        The region of the user.
+
+        minLength: 1, maxLength: 255
+
+      - `timezone: Optional[str]`
+
+        The [IANA timezone](https://nodatime.org/TimeZones) of the user.
+
+        minLength: 1, maxLength: 255
+
+  - `class WebFetchTool20250910Param`
+
+    - `type: Literal["web_fetch_20250910"]`
+
+    - `name: Literal["web_fetch"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `allowed_domains: Optional[Sequence[str]]`
+
+      List of domains to allow fetching from
+
+    - `blocked_domains: Optional[Sequence[str]]`
+
+      List of domains to block fetching from
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `citations: Optional[CitationsConfigParam]`
+
+      Citations configuration for fetched documents. Citations are disabled by default.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `max_content_tokens: Optional[int]`
+
+      Maximum number of tokens used by including web page text content in the context. The limit is approximate and does not apply to binary content such as PDFs.
+
+      minimum: 1
+
+    - `max_uses: Optional[int]`
+
+      Maximum number of times the tool can be used in the API request.
+
+      minimum: 1
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+    - `url_sources: Optional[WebFetchURLSourcesParam]`
+
+      Which sources contribute to the set of URLs the tool may fetch. Omitted means every source.
+
+      - `client_tool_results: Optional[ClientToolResults]`
+
+        Which client tools' results contribute fetchable URLs: "all", "none", or an only or except list of client tool names from tools[].
+
+        - `class WebFetchURLSourceAllParam`
+
+          The `url_sources` variant under which a source contributes in
+          full: every result of the tool filter's source, or all user input.
+
+          - `type: Literal["all"]`
+
+        - `class WebFetchURLSourceNoneParam`
+
+          The `url_sources` variant under which a source contributes nothing:
+          no result of the tool filter's source, or no user input.
+
+          - `type: Literal["none"]`
+
+        - `class WebFetchURLSourceOnlyParam`
+
+          The tool filter variant under which only the named tools' results
+          contribute.
+
+          - `type: Literal["only"]`
+
+          - `tools: Iterable[WebFetchURLSourceToolReferenceParam]`
+
+            - `type: Literal["tool_reference"]`
+
+            - `name: str`
+
+        - `class WebFetchURLSourceExceptParam`
+
+          The tool filter variant under which every result but the named
+          tools' contributes.
+
+          - `type: Literal["except"]`
+
+          - `tools: Iterable[WebFetchURLSourceToolReferenceParam]`
+
+            - `type: Literal["tool_reference"]`
+
+            - `name: str`
+
+      - `server_tool_results: Optional[ServerToolResults]`
+
+        Which server tools' results contribute fetchable URLs: "all", "none", or an only or except list of server tool names from tools[]; only web_search and web_fetch results ever contribute.
+
+        - `class WebFetchURLSourceAllParam`
+
+          The `url_sources` variant under which a source contributes in
+          full: every result of the tool filter's source, or all user input.
+
+        - `class WebFetchURLSourceNoneParam`
+
+          The `url_sources` variant under which a source contributes nothing:
+          no result of the tool filter's source, or no user input.
+
+        - `class WebFetchURLSourceOnlyParam`
+
+          The tool filter variant under which only the named tools' results
+          contribute.
+
+        - `class WebFetchURLSourceExceptParam`
+
+          The tool filter variant under which every result but the named
+          tools' contributes.
+
+      - `user_input: Optional[UserInput]`
+
+        Whether URLs in user messages are fetchable: "all" or "none".
+
+        - `class WebFetchURLSourceAllParam`
+
+          The `url_sources` variant under which a source contributes in
+          full: every result of the tool filter's source, or all user input.
+
+        - `class WebFetchURLSourceNoneParam`
+
+          The `url_sources` variant under which a source contributes nothing:
+          no result of the tool filter's source, or no user input.
+
+  - `class WebSearchTool20260209Param`
+
+    - `type: Literal["web_search_20260209"]`
+
+    - `name: Literal["web_search"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `allowed_domains: Optional[Sequence[str]]`
+
+      If provided, only these domains will be included in results. Cannot be used alongside `blocked_domains`.
+
+    - `blocked_domains: Optional[Sequence[str]]`
+
+      If provided, these domains will never appear in results. Cannot be used alongside `allowed_domains`.
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `max_uses: Optional[int]`
+
+      Maximum number of times the tool can be used in the API request.
+
+      minimum: 1
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+    - `user_location: Optional[UserLocationParam]`
+
+      Parameters for the user's location. Used to provide more relevant search results.
+
+  - `class WebFetchTool20260209Param`
+
+    - `type: Literal["web_fetch_20260209"]`
+
+    - `name: Literal["web_fetch"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `allowed_domains: Optional[Sequence[str]]`
+
+      List of domains to allow fetching from
+
+    - `blocked_domains: Optional[Sequence[str]]`
+
+      List of domains to block fetching from
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `citations: Optional[CitationsConfigParam]`
+
+      Citations configuration for fetched documents. Citations are disabled by default.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `max_content_tokens: Optional[int]`
+
+      Maximum number of tokens used by including web page text content in the context. The limit is approximate and does not apply to binary content such as PDFs.
+
+      minimum: 1
+
+    - `max_uses: Optional[int]`
+
+      Maximum number of times the tool can be used in the API request.
+
+      minimum: 1
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+    - `url_sources: Optional[WebFetchURLSourcesParam]`
+
+      Which sources contribute to the set of URLs the tool may fetch. Omitted means every source.
+
+  - `class WebFetchTool20260309Param`
+
+    Web fetch tool with use_cache parameter for bypassing cached content.
+
+    - `type: Literal["web_fetch_20260309"]`
+
+    - `name: Literal["web_fetch"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `allowed_domains: Optional[Sequence[str]]`
+
+      List of domains to allow fetching from
+
+    - `blocked_domains: Optional[Sequence[str]]`
+
+      List of domains to block fetching from
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `citations: Optional[CitationsConfigParam]`
+
+      Citations configuration for fetched documents. Citations are disabled by default.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `max_content_tokens: Optional[int]`
+
+      Maximum number of tokens used by including web page text content in the context. The limit is approximate and does not apply to binary content such as PDFs.
+
+      minimum: 1
+
+    - `max_uses: Optional[int]`
+
+      Maximum number of times the tool can be used in the API request.
+
+      minimum: 1
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+    - `url_sources: Optional[WebFetchURLSourcesParam]`
+
+      Which sources contribute to the set of URLs the tool may fetch. Omitted means every source.
+
+    - `use_cache: Optional[bool]`
+
+      Whether to use cached content. Set to false to bypass the cache and fetch fresh content. Only set to false when the user explicitly requests fresh content or when fetching rapidly-changing sources.
+
+  - `class WebSearchTool20260318Param`
+
+    - `type: Literal["web_search_20260318"]`
+
+    - `name: Literal["web_search"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `allowed_domains: Optional[Sequence[str]]`
+
+      If provided, only these domains will be included in results. Cannot be used alongside `blocked_domains`.
+
+    - `blocked_domains: Optional[Sequence[str]]`
+
+      If provided, these domains will never appear in results. Cannot be used alongside `allowed_domains`.
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `max_uses: Optional[int]`
+
+      Maximum number of times the tool can be used in the API request.
+
+      minimum: 1
+
+    - `response_inclusion: Optional[Literal["full", "excluded"]]`
+
+      How this tool's result blocks appear in the API response when the result was consumed by a completed code_execution call in the same turn. 'full' returns the complete content (default). 'excluded' drops the nested server_tool_use and result block pair entirely. Results from direct calls, or from code_execution calls that paused before completing, are always returned in full so they can be sent back on the next turn.
+
+      - `"full"`
+
+      - `"excluded"`
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+    - `user_location: Optional[UserLocationParam]`
+
+      Parameters for the user's location. Used to provide more relevant search results.
+
+  - `class WebFetchTool20260318Param`
+
+    - `type: Literal["web_fetch_20260318"]`
+
+    - `name: Literal["web_fetch"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `allowed_domains: Optional[Sequence[str]]`
+
+      List of domains to allow fetching from
+
+    - `blocked_domains: Optional[Sequence[str]]`
+
+      List of domains to block fetching from
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `citations: Optional[CitationsConfigParam]`
+
+      Citations configuration for fetched documents. Citations are disabled by default.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `max_content_tokens: Optional[int]`
+
+      Maximum number of tokens used by including web page text content in the context. The limit is approximate and does not apply to binary content such as PDFs.
+
+      minimum: 1
+
+    - `max_uses: Optional[int]`
+
+      Maximum number of times the tool can be used in the API request.
+
+      minimum: 1
+
+    - `response_inclusion: Optional[Literal["full", "excluded"]]`
+
+      How this tool's result blocks appear in the API response when the result was consumed by a completed code_execution call in the same turn. 'full' returns the complete content (default). 'excluded' drops the nested server_tool_use and result block pair entirely. Results from direct calls, or from code_execution calls that paused before completing, are always returned in full so they can be sent back on the next turn.
+
+      - `"full"`
+
+      - `"excluded"`
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+    - `url_sources: Optional[WebFetchURLSourcesParam]`
+
+      Which sources contribute to the set of URLs the tool may fetch. Omitted means every source.
+
+    - `use_cache: Optional[bool]`
+
+      Whether to use cached content. Set to false to bypass the cache and fetch fresh content. Only set to false when the user explicitly requests fresh content or when fetching rapidly-changing sources.
+
+  - `class ToolSearchToolBm25_20251119Param`
+
+    - `type: Literal["tool_search_tool_bm25_20251119", "tool_search_tool_bm25"]`
+
+      - `"tool_search_tool_bm25_20251119"`
+
+      - `"tool_search_tool_bm25"`
+
+    - `name: Literal["tool_search_tool_bm25"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+  - `class ToolSearchToolRegex20251119Param`
+
+    - `type: Literal["tool_search_tool_regex_20251119", "tool_search_tool_regex"]`
+
+      - `"tool_search_tool_regex_20251119"`
+
+      - `"tool_search_tool_regex"`
+
+    - `name: Literal["tool_search_tool_regex"]`
+
+      Name of the tool.
+
+      This is how the tool will be called by the model and in `tool_use` blocks.
+
+    - `allowed_callers: Optional[List[Literal["direct", "code_execution_20250825", "code_execution_20260120", "code_execution_20260521"]]]`
+
+      - `"direct"`
+
+      - `"code_execution_20250825"`
+
+      - `"code_execution_20260120"`
+
+      - `"code_execution_20260521"`
+
+    - `cache_control: Optional[CacheControlEphemeralParam]`
+
+      Create a cache control breakpoint at this content block.
+
+    - `defer_loading: Optional[bool]`
+
+      If true, tool will not be included in initial system prompt. Only loaded when returned via tool_reference from tool search.
+
+    - `strict: Optional[bool]`
+
+      When true, guarantees schema validation on tool names and inputs
+
+- `user_profile_id: Optional[str]` (header parameter)
+
+  The user profile ID to attribute this request to. Use when acting on behalf of a party other than your organization.
+
+- `workspace_id: Optional[str]` (header parameter)
+
+  Optional header to select the Workspace for this request. The value is a Workspace ID (for example, `wrkspc_011CZkZaBF1tNoB5wlCeusgy`).
+
+  Only needed for credentials that can act on more than one Workspace. A credential that belongs to a specific Workspace may omit it; if sent, it must match that Workspace.
+
+## Returns
+
+- `class MessageTokensCount`
+
+  - `input_tokens: int`
+
+    The total number of tokens across the provided list of messages, system prompt, and tools.
+
+## Example
+
+```python
+import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    api_key=os.environ.get(
+        "ANTHROPIC_API_KEY"
+    ),  # This is the default and can be omitted
+)
+message_tokens_count = client.messages.count_tokens(
+    messages=[
+        {
+            "content": "Hello, world",
+            "role": "user",
+        }
+    ],
+    model="claude-opus-5-5",
+)
+print(message_tokens_count.input_tokens)
+```
+
+### Response (200)
+
+```json
+{
+  "input_tokens": 2095
+}
+```

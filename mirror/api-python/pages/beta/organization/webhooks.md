@@ -1,0 +1,1483 @@
+---
+title: Webhooks
+url: https://platform.claude.com/docs/en/api/python/beta/organization/webhooks
+---
+
+# Webhooks
+
+## Create Organization Webhook Endpoint
+
+`beta.organization.webhooks.create(**kwargs) -> BetaNewOrganizationWebhookEndpoint`
+
+**POST** `/v1/organizations/webhooks`
+
+Create an organization webhook endpoint.
+
+An organization webhook endpoint belongs to the organization rather than to one of its workspaces. An organization can have at most 32 organization
+webhook endpoints, enabled or disabled.
+
+The response includes the endpoint's signing secret. No read returns it, so store
+it when you receive it.
+
+Every request must include the beta header `anthropic-beta: webhooks-2026-10-07`. A request without it returns `404`, exactly as if this API did not exist. Anthropic turns organization webhook endpoints on for each organization; until yours is on, requests also return `404`. Organization webhook endpoints are in beta and are not available to organizations with HIPAA readiness enabled.
+
+### Parameters
+
+- `enabled_events: List[Literal["user_profile.enforcement_action_opened", "user_profile.enforcement_action_resolved"]]`
+
+  The event types to deliver to the endpoint. Must list at least one.
+
+  - `"user_profile.enforcement_action_opened"`
+
+  - `"user_profile.enforcement_action_resolved"`
+
+- `url: str`
+
+  The HTTPS URL that deliveries are sent to.
+
+  minLength: 1
+
+- `description: Optional[str]`
+
+  Notes about the endpoint.
+
+- `name: Optional[str]`
+
+  A short label for the endpoint.
+
+- `betas: Optional[List[AnthropicBetaParam]]` (header parameter)
+
+  This endpoint is in beta: requests must send `webhooks-2026-10-07` in this header.
+
+  - `str`
+
+  - `"message-batches-2024-09-24"`
+
+  - `"prompt-caching-2024-07-31"`
+
+  - `"computer-use-2024-10-22"`
+
+  - `"computer-use-2025-01-24"`
+
+  - `"pdfs-2024-09-25"`
+
+  - `"token-counting-2024-11-01"`
+
+  - `"token-efficient-tools-2025-02-19"`
+
+  - `"output-128k-2025-02-19"`
+
+  - `"files-api-2025-04-14"`
+
+  - `"mcp-client-2025-04-04"`
+
+  - `"mcp-client-2025-11-20"`
+
+  - `"dev-full-thinking-2025-05-14"`
+
+  - `"interleaved-thinking-2025-05-14"`
+
+  - `"code-execution-2025-05-22"`
+
+  - `"extended-cache-ttl-2025-04-11"`
+
+  - `"context-1m-2025-08-07"`
+
+  - `"context-management-2025-06-27"`
+
+  - `"model-context-window-exceeded-2025-08-26"`
+
+  - `"skills-2025-10-02"`
+
+  - `"fast-mode-2026-02-01"`
+
+  - `"output-300k-2026-03-24"`
+
+  - `"user-profiles-2026-03-24"`
+
+  - `"user-profiles-2026-08-18"`
+
+  - `"user-profiles-2026-09-04"`
+
+  - `"advisor-tool-2026-03-01"`
+
+  - `"managed-agents-2026-04-01"`
+
+  - `"cache-diagnosis-2026-04-07"`
+
+  - `"dreaming-2026-04-21"`
+
+  - `"thinking-token-count-2026-05-13"`
+
+  - `"server-side-fallback-2026-06-01"`
+
+  - `"server-side-fallback-2026-07-01"`
+
+  - `"fallback-credit-2026-06-01"`
+
+  - `"fallback-credit-2026-07-01"`
+
+  - `"agent-memory-2026-07-22"`
+
+  - `"mid-conversation-tool-changes-2026-07-01"`
+
+  - `"compact-2026-01-12"`
+
+  - `"computer-use-2025-11-24"`
+
+  - `"mcp-tunnels-2026-06-22"`
+
+  - `"structured-outputs-2025-11-13"`
+
+  - `"task-budgets-2026-03-13"`
+
+  - `"thinking-display-updates-2026-08-18"`
+
+  - `"ce-user-management-2026-07-13"`
+
+  - `"mid-conversation-output-config-2026-07-01"`
+
+  - `"thinking-binding-controls-2026-08-01"`
+
+  - `"mid-conversation-system-clear-at-2026-08-21"`
+
+  - `"compact-2026-09-04"`
+
+  - `"inline-tools-2026-09-15"`
+
+  - `"mcp-client-2026-09-15"`
+
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
+
+  - `"telemetry-destinations-2026-08-11"`
+
+  - `"webhooks-2026-10-07"`
+
+  - `"message-threads-2026-08-12"`
+
+  - `"analytics-usage-cost-2026-08-24"`
+
+  - `"experimental-claude-tag-2026-10-21"`
+
+### Returns
+
+- `class BetaNewOrganizationWebhookEndpoint`
+
+  A new organization webhook endpoint, with its signing secret.
+
+  - `id: str`
+
+    ID of the webhook endpoint.
+
+  - `created_at: datetime`
+
+    When the endpoint was created, in RFC 3339 format.
+
+    format: date-time
+
+  - `description: str`
+
+    Notes about the endpoint. An empty string when none were given.
+
+  - `disabled_reason: str`
+
+    Why Anthropic disabled the endpoint automatically. An empty string when the endpoint is enabled, or when you disabled it.
+
+  - `enabled_events: List[Literal["user_profile.enforcement_action_opened", "user_profile.enforcement_action_resolved"]]`
+
+    The event types delivered to the endpoint.
+
+    - `"user_profile.enforcement_action_opened"`
+
+    - `"user_profile.enforcement_action_resolved"`
+
+  - `name: str`
+
+    A short label for the endpoint. An empty string when none was given.
+
+  - `signing_secret: str`
+
+    The secret Anthropic signs deliveries to the endpoint with (prefix `whsec_`). No other response returns it, so store it now. To replace it, regenerate the signing secret.
+
+  - `state: BetaOrganizationWebhookEndpointState`
+
+    Whether deliveries are sent to the endpoint.
+
+    - `"disabled"`
+
+    - `"enabled"`
+
+  - `updated_at: datetime`
+
+    When the endpoint was last changed, in RFC 3339 format.
+
+    format: date-time
+
+  - `url: str`
+
+    The HTTPS URL that deliveries are sent to.
+
+### Example
+
+```python
+import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    api_key=os.environ.get(
+        "ANTHROPIC_API_KEY"
+    ),  # This is the default and can be omitted
+)
+beta_new_organization_webhook_endpoint = client.beta.organization.webhooks.create(
+    enabled_events=["user_profile.enforcement_action_opened"],
+    url="x",
+)
+print(beta_new_organization_webhook_endpoint.id)
+```
+
+#### Response (200)
+
+```json
+{
+  "id": "id",
+  "created_at": "2019-12-27T18:11:19.117Z",
+  "description": "description",
+  "disabled_reason": "disabled_reason",
+  "enabled_events": [
+    "user_profile.enforcement_action_opened"
+  ],
+  "name": "name",
+  "signing_secret": "signing_secret",
+  "state": "disabled",
+  "updated_at": "2019-12-27T18:11:19.117Z",
+  "url": "url"
+}
+```
+
+## List Organization Webhook Endpoints
+
+`beta.organization.webhooks.list(**kwargs) -> SyncPage[BetaOrganizationWebhookEndpoint]`
+
+**GET** `/v1/organizations/webhooks`
+
+List the organization's webhook endpoints.
+
+An organization webhook endpoint belongs to the organization rather than to one of its workspaces. The list does not include webhook endpoints that
+belong to a workspace.
+
+Every request must include the beta header `anthropic-beta: webhooks-2026-10-07`. A request without it returns `404`, exactly as if this API did not exist. Anthropic turns organization webhook endpoints on for each organization; until yours is on, requests also return `404`. Organization webhook endpoints are in beta and are not available to organizations with HIPAA readiness enabled.
+
+### Parameters
+
+- `after_id: Optional[str]` (query parameter)
+
+  ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately after this object.
+
+- `before_id: Optional[str]` (query parameter)
+
+  ID of a webhook endpoint to use as a cursor. Returns the first `limit` endpoints that come before it in list order, not the `limit` endpoints just before it.
+
+- `limit: Optional[int]` (query parameter)
+
+  Number of items to return per page, up to `100`. The default, `0`, means `20`.
+
+  default: 0, minimum: 0, maximum: 100
+
+- `order: Optional[Literal["asc", "desc"]]` (query parameter)
+
+  Sort order by `created_at`. Defaults to `desc`, newest first.
+
+  - `"asc"`
+
+  - `"desc"`
+
+- `betas: Optional[List[AnthropicBetaParam]]` (header parameter)
+
+  This endpoint is in beta: requests must send `webhooks-2026-10-07` in this header.
+
+  - `str`
+
+  - `"message-batches-2024-09-24"`
+
+  - `"prompt-caching-2024-07-31"`
+
+  - `"computer-use-2024-10-22"`
+
+  - `"computer-use-2025-01-24"`
+
+  - `"pdfs-2024-09-25"`
+
+  - `"token-counting-2024-11-01"`
+
+  - `"token-efficient-tools-2025-02-19"`
+
+  - `"output-128k-2025-02-19"`
+
+  - `"files-api-2025-04-14"`
+
+  - `"mcp-client-2025-04-04"`
+
+  - `"mcp-client-2025-11-20"`
+
+  - `"dev-full-thinking-2025-05-14"`
+
+  - `"interleaved-thinking-2025-05-14"`
+
+  - `"code-execution-2025-05-22"`
+
+  - `"extended-cache-ttl-2025-04-11"`
+
+  - `"context-1m-2025-08-07"`
+
+  - `"context-management-2025-06-27"`
+
+  - `"model-context-window-exceeded-2025-08-26"`
+
+  - `"skills-2025-10-02"`
+
+  - `"fast-mode-2026-02-01"`
+
+  - `"output-300k-2026-03-24"`
+
+  - `"user-profiles-2026-03-24"`
+
+  - `"user-profiles-2026-08-18"`
+
+  - `"user-profiles-2026-09-04"`
+
+  - `"advisor-tool-2026-03-01"`
+
+  - `"managed-agents-2026-04-01"`
+
+  - `"cache-diagnosis-2026-04-07"`
+
+  - `"dreaming-2026-04-21"`
+
+  - `"thinking-token-count-2026-05-13"`
+
+  - `"server-side-fallback-2026-06-01"`
+
+  - `"server-side-fallback-2026-07-01"`
+
+  - `"fallback-credit-2026-06-01"`
+
+  - `"fallback-credit-2026-07-01"`
+
+  - `"agent-memory-2026-07-22"`
+
+  - `"mid-conversation-tool-changes-2026-07-01"`
+
+  - `"compact-2026-01-12"`
+
+  - `"computer-use-2025-11-24"`
+
+  - `"mcp-tunnels-2026-06-22"`
+
+  - `"structured-outputs-2025-11-13"`
+
+  - `"task-budgets-2026-03-13"`
+
+  - `"thinking-display-updates-2026-08-18"`
+
+  - `"ce-user-management-2026-07-13"`
+
+  - `"mid-conversation-output-config-2026-07-01"`
+
+  - `"thinking-binding-controls-2026-08-01"`
+
+  - `"mid-conversation-system-clear-at-2026-08-21"`
+
+  - `"compact-2026-09-04"`
+
+  - `"inline-tools-2026-09-15"`
+
+  - `"mcp-client-2026-09-15"`
+
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
+
+  - `"telemetry-destinations-2026-08-11"`
+
+  - `"webhooks-2026-10-07"`
+
+  - `"message-threads-2026-08-12"`
+
+  - `"analytics-usage-cost-2026-08-24"`
+
+  - `"experimental-claude-tag-2026-10-21"`
+
+### Returns
+
+- `class BetaOrganizationWebhookEndpoint`
+
+  A webhook endpoint that belongs to the organization rather than to one of
+  its workspaces.
+
+  - `id: str`
+
+    ID of the webhook endpoint.
+
+  - `created_at: datetime`
+
+    When the endpoint was created, in RFC 3339 format.
+
+    format: date-time
+
+  - `description: str`
+
+    Notes about the endpoint. An empty string when none were given.
+
+  - `disabled_reason: str`
+
+    Why Anthropic disabled the endpoint automatically. An empty string when the endpoint is enabled, or when you disabled it.
+
+  - `enabled_events: List[Literal["user_profile.enforcement_action_opened", "user_profile.enforcement_action_resolved"]]`
+
+    The event types delivered to the endpoint.
+
+    - `"user_profile.enforcement_action_opened"`
+
+    - `"user_profile.enforcement_action_resolved"`
+
+  - `name: str`
+
+    A short label for the endpoint. An empty string when none was given.
+
+  - `state: BetaOrganizationWebhookEndpointState`
+
+    Whether deliveries are sent to the endpoint.
+
+    - `"disabled"`
+
+    - `"enabled"`
+
+  - `updated_at: datetime`
+
+    When the endpoint was last changed, in RFC 3339 format.
+
+    format: date-time
+
+  - `url: str`
+
+    The HTTPS URL that deliveries are sent to.
+
+### Example
+
+```python
+import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    api_key=os.environ.get(
+        "ANTHROPIC_API_KEY"
+    ),  # This is the default and can be omitted
+)
+page = client.beta.organization.webhooks.list()
+page = page.data[0]
+print(page.id)
+```
+
+#### Response (200)
+
+```json
+{
+  "data": [
+    {
+      "id": "id",
+      "created_at": "2019-12-27T18:11:19.117Z",
+      "description": "description",
+      "disabled_reason": "disabled_reason",
+      "enabled_events": [
+        "user_profile.enforcement_action_opened"
+      ],
+      "name": "name",
+      "state": "disabled",
+      "updated_at": "2019-12-27T18:11:19.117Z",
+      "url": "url"
+    }
+  ],
+  "has_more": true,
+  "first_id": "first_id",
+  "last_id": "last_id"
+}
+```
+
+## Get Organization Webhook Endpoint
+
+`beta.organization.webhooks.retrieve(webhook_endpoint_id, **kwargs) -> BetaOrganizationWebhookEndpoint`
+
+**GET** `/v1/organizations/webhooks/{webhook_endpoint_id}`
+
+Retrieve an organization webhook endpoint by ID.
+
+Every request must include the beta header `anthropic-beta: webhooks-2026-10-07`. A request without it returns `404`, exactly as if this API did not exist. Anthropic turns organization webhook endpoints on for each organization; until yours is on, requests also return `404`. Organization webhook endpoints are in beta and are not available to organizations with HIPAA readiness enabled.
+
+### Parameters
+
+- `webhook_endpoint_id: str` (path parameter)
+
+  ID of the webhook endpoint.
+
+  maxLength: 2048
+
+- `betas: Optional[List[AnthropicBetaParam]]` (header parameter)
+
+  This endpoint is in beta: requests must send `webhooks-2026-10-07` in this header.
+
+  - `str`
+
+  - `"message-batches-2024-09-24"`
+
+  - `"prompt-caching-2024-07-31"`
+
+  - `"computer-use-2024-10-22"`
+
+  - `"computer-use-2025-01-24"`
+
+  - `"pdfs-2024-09-25"`
+
+  - `"token-counting-2024-11-01"`
+
+  - `"token-efficient-tools-2025-02-19"`
+
+  - `"output-128k-2025-02-19"`
+
+  - `"files-api-2025-04-14"`
+
+  - `"mcp-client-2025-04-04"`
+
+  - `"mcp-client-2025-11-20"`
+
+  - `"dev-full-thinking-2025-05-14"`
+
+  - `"interleaved-thinking-2025-05-14"`
+
+  - `"code-execution-2025-05-22"`
+
+  - `"extended-cache-ttl-2025-04-11"`
+
+  - `"context-1m-2025-08-07"`
+
+  - `"context-management-2025-06-27"`
+
+  - `"model-context-window-exceeded-2025-08-26"`
+
+  - `"skills-2025-10-02"`
+
+  - `"fast-mode-2026-02-01"`
+
+  - `"output-300k-2026-03-24"`
+
+  - `"user-profiles-2026-03-24"`
+
+  - `"user-profiles-2026-08-18"`
+
+  - `"user-profiles-2026-09-04"`
+
+  - `"advisor-tool-2026-03-01"`
+
+  - `"managed-agents-2026-04-01"`
+
+  - `"cache-diagnosis-2026-04-07"`
+
+  - `"dreaming-2026-04-21"`
+
+  - `"thinking-token-count-2026-05-13"`
+
+  - `"server-side-fallback-2026-06-01"`
+
+  - `"server-side-fallback-2026-07-01"`
+
+  - `"fallback-credit-2026-06-01"`
+
+  - `"fallback-credit-2026-07-01"`
+
+  - `"agent-memory-2026-07-22"`
+
+  - `"mid-conversation-tool-changes-2026-07-01"`
+
+  - `"compact-2026-01-12"`
+
+  - `"computer-use-2025-11-24"`
+
+  - `"mcp-tunnels-2026-06-22"`
+
+  - `"structured-outputs-2025-11-13"`
+
+  - `"task-budgets-2026-03-13"`
+
+  - `"thinking-display-updates-2026-08-18"`
+
+  - `"ce-user-management-2026-07-13"`
+
+  - `"mid-conversation-output-config-2026-07-01"`
+
+  - `"thinking-binding-controls-2026-08-01"`
+
+  - `"mid-conversation-system-clear-at-2026-08-21"`
+
+  - `"compact-2026-09-04"`
+
+  - `"inline-tools-2026-09-15"`
+
+  - `"mcp-client-2026-09-15"`
+
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
+
+  - `"telemetry-destinations-2026-08-11"`
+
+  - `"webhooks-2026-10-07"`
+
+  - `"message-threads-2026-08-12"`
+
+  - `"analytics-usage-cost-2026-08-24"`
+
+  - `"experimental-claude-tag-2026-10-21"`
+
+### Returns
+
+- `class BetaOrganizationWebhookEndpoint`
+
+  A webhook endpoint that belongs to the organization rather than to one of
+  its workspaces.
+
+  - `id: str`
+
+    ID of the webhook endpoint.
+
+  - `created_at: datetime`
+
+    When the endpoint was created, in RFC 3339 format.
+
+    format: date-time
+
+  - `description: str`
+
+    Notes about the endpoint. An empty string when none were given.
+
+  - `disabled_reason: str`
+
+    Why Anthropic disabled the endpoint automatically. An empty string when the endpoint is enabled, or when you disabled it.
+
+  - `enabled_events: List[Literal["user_profile.enforcement_action_opened", "user_profile.enforcement_action_resolved"]]`
+
+    The event types delivered to the endpoint.
+
+    - `"user_profile.enforcement_action_opened"`
+
+    - `"user_profile.enforcement_action_resolved"`
+
+  - `name: str`
+
+    A short label for the endpoint. An empty string when none was given.
+
+  - `state: BetaOrganizationWebhookEndpointState`
+
+    Whether deliveries are sent to the endpoint.
+
+    - `"disabled"`
+
+    - `"enabled"`
+
+  - `updated_at: datetime`
+
+    When the endpoint was last changed, in RFC 3339 format.
+
+    format: date-time
+
+  - `url: str`
+
+    The HTTPS URL that deliveries are sent to.
+
+### Example
+
+```python
+import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    api_key=os.environ.get(
+        "ANTHROPIC_API_KEY"
+    ),  # This is the default and can be omitted
+)
+beta_organization_webhook_endpoint = client.beta.organization.webhooks.retrieve(
+    webhook_endpoint_id="webhook_endpoint_id",
+)
+print(beta_organization_webhook_endpoint.id)
+```
+
+#### Response (200)
+
+```json
+{
+  "id": "id",
+  "created_at": "2019-12-27T18:11:19.117Z",
+  "description": "description",
+  "disabled_reason": "disabled_reason",
+  "enabled_events": [
+    "user_profile.enforcement_action_opened"
+  ],
+  "name": "name",
+  "state": "disabled",
+  "updated_at": "2019-12-27T18:11:19.117Z",
+  "url": "url"
+}
+```
+
+## Update Organization Webhook Endpoint
+
+`beta.organization.webhooks.update(webhook_endpoint_id, **kwargs) -> BetaOrganizationWebhookEndpoint`
+
+**POST** `/v1/organizations/webhooks/{webhook_endpoint_id}`
+
+Update an organization webhook endpoint. Only the fields you send are changed.
+
+Every request must include the beta header `anthropic-beta: webhooks-2026-10-07`. A request without it returns `404`, exactly as if this API did not exist. Anthropic turns organization webhook endpoints on for each organization; until yours is on, requests also return `404`. Organization webhook endpoints are in beta and are not available to organizations with HIPAA readiness enabled.
+
+### Parameters
+
+- `webhook_endpoint_id: str` (path parameter)
+
+  ID of the webhook endpoint.
+
+  maxLength: 2048
+
+- `description: Optional[str]`
+
+  Notes about the endpoint.
+
+- `enabled_events: Optional[List[Literal["user_profile.enforcement_action_opened", "user_profile.enforcement_action_resolved"]]]`
+
+  The event types to deliver to the endpoint. Replaces the whole set; an empty list leaves it unchanged.
+
+  - `"user_profile.enforcement_action_opened"`
+
+  - `"user_profile.enforcement_action_resolved"`
+
+- `name: Optional[str]`
+
+  A short label for the endpoint.
+
+- `state: Optional[Literal["disabled", "enabled"]]`
+
+  `disabled` stops deliveries. `enabled` resumes them and clears `disabled_reason`. Events that happen while the endpoint is disabled are never delivered.
+
+  - `"disabled"`
+
+  - `"enabled"`
+
+- `url: Optional[str]`
+
+  The HTTPS URL that deliveries are sent to.
+
+  minLength: 1
+
+- `betas: Optional[List[AnthropicBetaParam]]` (header parameter)
+
+  This endpoint is in beta: requests must send `webhooks-2026-10-07` in this header.
+
+  - `str`
+
+  - `"message-batches-2024-09-24"`
+
+  - `"prompt-caching-2024-07-31"`
+
+  - `"computer-use-2024-10-22"`
+
+  - `"computer-use-2025-01-24"`
+
+  - `"pdfs-2024-09-25"`
+
+  - `"token-counting-2024-11-01"`
+
+  - `"token-efficient-tools-2025-02-19"`
+
+  - `"output-128k-2025-02-19"`
+
+  - `"files-api-2025-04-14"`
+
+  - `"mcp-client-2025-04-04"`
+
+  - `"mcp-client-2025-11-20"`
+
+  - `"dev-full-thinking-2025-05-14"`
+
+  - `"interleaved-thinking-2025-05-14"`
+
+  - `"code-execution-2025-05-22"`
+
+  - `"extended-cache-ttl-2025-04-11"`
+
+  - `"context-1m-2025-08-07"`
+
+  - `"context-management-2025-06-27"`
+
+  - `"model-context-window-exceeded-2025-08-26"`
+
+  - `"skills-2025-10-02"`
+
+  - `"fast-mode-2026-02-01"`
+
+  - `"output-300k-2026-03-24"`
+
+  - `"user-profiles-2026-03-24"`
+
+  - `"user-profiles-2026-08-18"`
+
+  - `"user-profiles-2026-09-04"`
+
+  - `"advisor-tool-2026-03-01"`
+
+  - `"managed-agents-2026-04-01"`
+
+  - `"cache-diagnosis-2026-04-07"`
+
+  - `"dreaming-2026-04-21"`
+
+  - `"thinking-token-count-2026-05-13"`
+
+  - `"server-side-fallback-2026-06-01"`
+
+  - `"server-side-fallback-2026-07-01"`
+
+  - `"fallback-credit-2026-06-01"`
+
+  - `"fallback-credit-2026-07-01"`
+
+  - `"agent-memory-2026-07-22"`
+
+  - `"mid-conversation-tool-changes-2026-07-01"`
+
+  - `"compact-2026-01-12"`
+
+  - `"computer-use-2025-11-24"`
+
+  - `"mcp-tunnels-2026-06-22"`
+
+  - `"structured-outputs-2025-11-13"`
+
+  - `"task-budgets-2026-03-13"`
+
+  - `"thinking-display-updates-2026-08-18"`
+
+  - `"ce-user-management-2026-07-13"`
+
+  - `"mid-conversation-output-config-2026-07-01"`
+
+  - `"thinking-binding-controls-2026-08-01"`
+
+  - `"mid-conversation-system-clear-at-2026-08-21"`
+
+  - `"compact-2026-09-04"`
+
+  - `"inline-tools-2026-09-15"`
+
+  - `"mcp-client-2026-09-15"`
+
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
+
+  - `"telemetry-destinations-2026-08-11"`
+
+  - `"webhooks-2026-10-07"`
+
+  - `"message-threads-2026-08-12"`
+
+  - `"analytics-usage-cost-2026-08-24"`
+
+  - `"experimental-claude-tag-2026-10-21"`
+
+### Returns
+
+- `class BetaOrganizationWebhookEndpoint`
+
+  A webhook endpoint that belongs to the organization rather than to one of
+  its workspaces.
+
+  - `id: str`
+
+    ID of the webhook endpoint.
+
+  - `created_at: datetime`
+
+    When the endpoint was created, in RFC 3339 format.
+
+    format: date-time
+
+  - `description: str`
+
+    Notes about the endpoint. An empty string when none were given.
+
+  - `disabled_reason: str`
+
+    Why Anthropic disabled the endpoint automatically. An empty string when the endpoint is enabled, or when you disabled it.
+
+  - `enabled_events: List[Literal["user_profile.enforcement_action_opened", "user_profile.enforcement_action_resolved"]]`
+
+    The event types delivered to the endpoint.
+
+    - `"user_profile.enforcement_action_opened"`
+
+    - `"user_profile.enforcement_action_resolved"`
+
+  - `name: str`
+
+    A short label for the endpoint. An empty string when none was given.
+
+  - `state: BetaOrganizationWebhookEndpointState`
+
+    Whether deliveries are sent to the endpoint.
+
+    - `"disabled"`
+
+    - `"enabled"`
+
+  - `updated_at: datetime`
+
+    When the endpoint was last changed, in RFC 3339 format.
+
+    format: date-time
+
+  - `url: str`
+
+    The HTTPS URL that deliveries are sent to.
+
+### Example
+
+```python
+import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    api_key=os.environ.get(
+        "ANTHROPIC_API_KEY"
+    ),  # This is the default and can be omitted
+)
+beta_organization_webhook_endpoint = client.beta.organization.webhooks.update(
+    webhook_endpoint_id="webhook_endpoint_id",
+)
+print(beta_organization_webhook_endpoint.id)
+```
+
+#### Response (200)
+
+```json
+{
+  "id": "id",
+  "created_at": "2019-12-27T18:11:19.117Z",
+  "description": "description",
+  "disabled_reason": "disabled_reason",
+  "enabled_events": [
+    "user_profile.enforcement_action_opened"
+  ],
+  "name": "name",
+  "state": "disabled",
+  "updated_at": "2019-12-27T18:11:19.117Z",
+  "url": "url"
+}
+```
+
+## Delete Organization Webhook Endpoint
+
+`beta.organization.webhooks.delete(webhook_endpoint_id, **kwargs) -> BetaDeletedOrganizationWebhookEndpoint`
+
+**DELETE** `/v1/organizations/webhooks/{webhook_endpoint_id}`
+
+Delete an organization webhook endpoint.
+
+Every request must include the beta header `anthropic-beta: webhooks-2026-10-07`. A request without it returns `404`, exactly as if this API did not exist. Anthropic turns organization webhook endpoints on for each organization; until yours is on, requests also return `404`. Organization webhook endpoints are in beta and are not available to organizations with HIPAA readiness enabled.
+
+### Parameters
+
+- `webhook_endpoint_id: str` (path parameter)
+
+  ID of the webhook endpoint.
+
+  maxLength: 2048
+
+- `betas: Optional[List[AnthropicBetaParam]]` (header parameter)
+
+  This endpoint is in beta: requests must send `webhooks-2026-10-07` in this header.
+
+  - `str`
+
+  - `"message-batches-2024-09-24"`
+
+  - `"prompt-caching-2024-07-31"`
+
+  - `"computer-use-2024-10-22"`
+
+  - `"computer-use-2025-01-24"`
+
+  - `"pdfs-2024-09-25"`
+
+  - `"token-counting-2024-11-01"`
+
+  - `"token-efficient-tools-2025-02-19"`
+
+  - `"output-128k-2025-02-19"`
+
+  - `"files-api-2025-04-14"`
+
+  - `"mcp-client-2025-04-04"`
+
+  - `"mcp-client-2025-11-20"`
+
+  - `"dev-full-thinking-2025-05-14"`
+
+  - `"interleaved-thinking-2025-05-14"`
+
+  - `"code-execution-2025-05-22"`
+
+  - `"extended-cache-ttl-2025-04-11"`
+
+  - `"context-1m-2025-08-07"`
+
+  - `"context-management-2025-06-27"`
+
+  - `"model-context-window-exceeded-2025-08-26"`
+
+  - `"skills-2025-10-02"`
+
+  - `"fast-mode-2026-02-01"`
+
+  - `"output-300k-2026-03-24"`
+
+  - `"user-profiles-2026-03-24"`
+
+  - `"user-profiles-2026-08-18"`
+
+  - `"user-profiles-2026-09-04"`
+
+  - `"advisor-tool-2026-03-01"`
+
+  - `"managed-agents-2026-04-01"`
+
+  - `"cache-diagnosis-2026-04-07"`
+
+  - `"dreaming-2026-04-21"`
+
+  - `"thinking-token-count-2026-05-13"`
+
+  - `"server-side-fallback-2026-06-01"`
+
+  - `"server-side-fallback-2026-07-01"`
+
+  - `"fallback-credit-2026-06-01"`
+
+  - `"fallback-credit-2026-07-01"`
+
+  - `"agent-memory-2026-07-22"`
+
+  - `"mid-conversation-tool-changes-2026-07-01"`
+
+  - `"compact-2026-01-12"`
+
+  - `"computer-use-2025-11-24"`
+
+  - `"mcp-tunnels-2026-06-22"`
+
+  - `"structured-outputs-2025-11-13"`
+
+  - `"task-budgets-2026-03-13"`
+
+  - `"thinking-display-updates-2026-08-18"`
+
+  - `"ce-user-management-2026-07-13"`
+
+  - `"mid-conversation-output-config-2026-07-01"`
+
+  - `"thinking-binding-controls-2026-08-01"`
+
+  - `"mid-conversation-system-clear-at-2026-08-21"`
+
+  - `"compact-2026-09-04"`
+
+  - `"inline-tools-2026-09-15"`
+
+  - `"mcp-client-2026-09-15"`
+
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
+
+  - `"telemetry-destinations-2026-08-11"`
+
+  - `"webhooks-2026-10-07"`
+
+  - `"message-threads-2026-08-12"`
+
+  - `"analytics-usage-cost-2026-08-24"`
+
+  - `"experimental-claude-tag-2026-10-21"`
+
+### Returns
+
+- `class BetaDeletedOrganizationWebhookEndpoint`
+
+  A deleted organization webhook endpoint.
+
+  - `type: Literal["webhook_endpoint_deleted"]`
+
+    Always `webhook_endpoint_deleted`.
+
+    default: webhook_endpoint_deleted
+
+  - `id: str`
+
+    ID of the deleted webhook endpoint.
+
+### Example
+
+```python
+import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    api_key=os.environ.get(
+        "ANTHROPIC_API_KEY"
+    ),  # This is the default and can be omitted
+)
+beta_deleted_organization_webhook_endpoint = client.beta.organization.webhooks.delete(
+    webhook_endpoint_id="webhook_endpoint_id",
+)
+print(beta_deleted_organization_webhook_endpoint.id)
+```
+
+#### Response (200)
+
+```json
+{
+  "id": "id",
+  "type": "webhook_endpoint_deleted"
+}
+```
+
+## Regenerate Organization Webhook Endpoint Signing Secret
+
+`beta.organization.webhooks.regenerate_signing_secret(webhook_endpoint_id, **kwargs) -> BetaOrganizationWebhookEndpointSigningSecret`
+
+**POST** `/v1/organizations/webhooks/{webhook_endpoint_id}/regenerate_signing_secret`
+
+Replace an organization webhook endpoint's signing secret. The old secret stops
+working immediately. The new secret is returned only in this response.
+
+Every request must include the beta header `anthropic-beta: webhooks-2026-10-07`. A request without it returns `404`, exactly as if this API did not exist. Anthropic turns organization webhook endpoints on for each organization; until yours is on, requests also return `404`. Organization webhook endpoints are in beta and are not available to organizations with HIPAA readiness enabled.
+
+### Parameters
+
+- `webhook_endpoint_id: str` (path parameter)
+
+  ID of the webhook endpoint.
+
+  maxLength: 2048
+
+- `betas: Optional[List[AnthropicBetaParam]]` (header parameter)
+
+  This endpoint is in beta: requests must send `webhooks-2026-10-07` in this header.
+
+  - `str`
+
+  - `"message-batches-2024-09-24"`
+
+  - `"prompt-caching-2024-07-31"`
+
+  - `"computer-use-2024-10-22"`
+
+  - `"computer-use-2025-01-24"`
+
+  - `"pdfs-2024-09-25"`
+
+  - `"token-counting-2024-11-01"`
+
+  - `"token-efficient-tools-2025-02-19"`
+
+  - `"output-128k-2025-02-19"`
+
+  - `"files-api-2025-04-14"`
+
+  - `"mcp-client-2025-04-04"`
+
+  - `"mcp-client-2025-11-20"`
+
+  - `"dev-full-thinking-2025-05-14"`
+
+  - `"interleaved-thinking-2025-05-14"`
+
+  - `"code-execution-2025-05-22"`
+
+  - `"extended-cache-ttl-2025-04-11"`
+
+  - `"context-1m-2025-08-07"`
+
+  - `"context-management-2025-06-27"`
+
+  - `"model-context-window-exceeded-2025-08-26"`
+
+  - `"skills-2025-10-02"`
+
+  - `"fast-mode-2026-02-01"`
+
+  - `"output-300k-2026-03-24"`
+
+  - `"user-profiles-2026-03-24"`
+
+  - `"user-profiles-2026-08-18"`
+
+  - `"user-profiles-2026-09-04"`
+
+  - `"advisor-tool-2026-03-01"`
+
+  - `"managed-agents-2026-04-01"`
+
+  - `"cache-diagnosis-2026-04-07"`
+
+  - `"dreaming-2026-04-21"`
+
+  - `"thinking-token-count-2026-05-13"`
+
+  - `"server-side-fallback-2026-06-01"`
+
+  - `"server-side-fallback-2026-07-01"`
+
+  - `"fallback-credit-2026-06-01"`
+
+  - `"fallback-credit-2026-07-01"`
+
+  - `"agent-memory-2026-07-22"`
+
+  - `"mid-conversation-tool-changes-2026-07-01"`
+
+  - `"compact-2026-01-12"`
+
+  - `"computer-use-2025-11-24"`
+
+  - `"mcp-tunnels-2026-06-22"`
+
+  - `"structured-outputs-2025-11-13"`
+
+  - `"task-budgets-2026-03-13"`
+
+  - `"thinking-display-updates-2026-08-18"`
+
+  - `"ce-user-management-2026-07-13"`
+
+  - `"mid-conversation-output-config-2026-07-01"`
+
+  - `"thinking-binding-controls-2026-08-01"`
+
+  - `"mid-conversation-system-clear-at-2026-08-21"`
+
+  - `"compact-2026-09-04"`
+
+  - `"inline-tools-2026-09-15"`
+
+  - `"mcp-client-2026-09-15"`
+
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
+
+  - `"telemetry-destinations-2026-08-11"`
+
+  - `"webhooks-2026-10-07"`
+
+  - `"message-threads-2026-08-12"`
+
+  - `"analytics-usage-cost-2026-08-24"`
+
+  - `"experimental-claude-tag-2026-10-21"`
+
+### Returns
+
+- `class BetaOrganizationWebhookEndpointSigningSecret`
+
+  An organization webhook endpoint's new signing secret.
+
+  - `signing_secret: str`
+
+    The new signing secret. Deliveries are signed with it from now on, and no other response returns it.
+
+### Example
+
+```python
+import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    api_key=os.environ.get(
+        "ANTHROPIC_API_KEY"
+    ),  # This is the default and can be omitted
+)
+beta_organization_webhook_endpoint_signing_secret = (
+    client.beta.organization.webhooks.regenerate_signing_secret(
+        webhook_endpoint_id="webhook_endpoint_id",
+    )
+)
+print(beta_organization_webhook_endpoint_signing_secret.signing_secret)
+```
+
+#### Response (200)
+
+```json
+{
+  "signing_secret": "signing_secret"
+}
+```
+
+## Domain types
+
+### Beta Deleted Organization Webhook Endpoint
+
+- `class BetaDeletedOrganizationWebhookEndpoint`
+
+  A deleted organization webhook endpoint.
+
+  - `type: Literal["webhook_endpoint_deleted"]`
+
+    Always `webhook_endpoint_deleted`.
+
+    default: webhook_endpoint_deleted
+
+  - `id: str`
+
+    ID of the deleted webhook endpoint.
+
+### Beta New Organization Webhook Endpoint
+
+- `class BetaNewOrganizationWebhookEndpoint`
+
+  A new organization webhook endpoint, with its signing secret.
+
+  - `id: str`
+
+    ID of the webhook endpoint.
+
+  - `created_at: datetime`
+
+    When the endpoint was created, in RFC 3339 format.
+
+    format: date-time
+
+  - `description: str`
+
+    Notes about the endpoint. An empty string when none were given.
+
+  - `disabled_reason: str`
+
+    Why Anthropic disabled the endpoint automatically. An empty string when the endpoint is enabled, or when you disabled it.
+
+  - `enabled_events: List[Literal["user_profile.enforcement_action_opened", "user_profile.enforcement_action_resolved"]]`
+
+    The event types delivered to the endpoint.
+
+    - `"user_profile.enforcement_action_opened"`
+
+    - `"user_profile.enforcement_action_resolved"`
+
+  - `name: str`
+
+    A short label for the endpoint. An empty string when none was given.
+
+  - `signing_secret: str`
+
+    The secret Anthropic signs deliveries to the endpoint with (prefix `whsec_`). No other response returns it, so store it now. To replace it, regenerate the signing secret.
+
+  - `state: BetaOrganizationWebhookEndpointState`
+
+    Whether deliveries are sent to the endpoint.
+
+    - `"disabled"`
+
+    - `"enabled"`
+
+  - `updated_at: datetime`
+
+    When the endpoint was last changed, in RFC 3339 format.
+
+    format: date-time
+
+  - `url: str`
+
+    The HTTPS URL that deliveries are sent to.
+
+### Beta Organization Webhook Endpoint
+
+- `class BetaOrganizationWebhookEndpoint`
+
+  A webhook endpoint that belongs to the organization rather than to one of
+  its workspaces.
+
+  - `id: str`
+
+    ID of the webhook endpoint.
+
+  - `created_at: datetime`
+
+    When the endpoint was created, in RFC 3339 format.
+
+    format: date-time
+
+  - `description: str`
+
+    Notes about the endpoint. An empty string when none were given.
+
+  - `disabled_reason: str`
+
+    Why Anthropic disabled the endpoint automatically. An empty string when the endpoint is enabled, or when you disabled it.
+
+  - `enabled_events: List[Literal["user_profile.enforcement_action_opened", "user_profile.enforcement_action_resolved"]]`
+
+    The event types delivered to the endpoint.
+
+    - `"user_profile.enforcement_action_opened"`
+
+    - `"user_profile.enforcement_action_resolved"`
+
+  - `name: str`
+
+    A short label for the endpoint. An empty string when none was given.
+
+  - `state: BetaOrganizationWebhookEndpointState`
+
+    Whether deliveries are sent to the endpoint.
+
+    - `"disabled"`
+
+    - `"enabled"`
+
+  - `updated_at: datetime`
+
+    When the endpoint was last changed, in RFC 3339 format.
+
+    format: date-time
+
+  - `url: str`
+
+    The HTTPS URL that deliveries are sent to.
+
+### Beta Organization Webhook Endpoint Signing Secret
+
+- `class BetaOrganizationWebhookEndpointSigningSecret`
+
+  An organization webhook endpoint's new signing secret.
+
+  - `signing_secret: str`
+
+    The new signing secret. Deliveries are signed with it from now on, and no other response returns it.
+
+### Beta Organization Webhook Endpoint State
+
+- `type BetaOrganizationWebhookEndpointState = Literal["disabled", "enabled"]`
+
+  Whether deliveries are sent to an organization webhook endpoint.
+
+  - `"disabled"`
+
+  - `"enabled"`

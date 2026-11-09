@@ -1,0 +1,212 @@
+---
+title: Add Federation Rule Workspace
+url: https://platform.claude.com/docs/en/api/python/beta/organization/federation/rules/workspaces/add
+---
+
+# Add Federation Rule Workspace
+
+`beta.organization.federation.rules.workspaces.add(federation_rule_id, **kwargs) -> BetaFederationRuleWorkspace`
+
+**POST** `/v1/organizations/federation_rules/{federation_rule_id}/workspaces`
+
+**Requires an OAuth access token with the `org:admin` scope**, from `ant auth login --scope org:admin` or a workload identity federation rule; Admin API keys are not accepted. See [Manage WIF with the Admin API](https://platform.claude.com/docs/en/manage-claude/wif-admin-api?sdk_languages=python).
+
+Enable a federation rule for a workspace.
+
+Idempotent; re-enabling returns the existing enablement. The rule and
+workspace must both belong to your organization. Membership of the
+rule's target service account in this workspace is not checked at
+enablement: token exchange into this workspace is rejected unless the
+target is a member (it is implicitly a member of the default workspace).
+Archived rules are rejected with 400. OAuth callers may only manage rules
+whose `oauth_scope` is `workspace:developer` or `workspace:inference`;
+other scopes require a Console session.
+
+## Parameters
+
+- `federation_rule_id: str` (path parameter)
+
+  ID of the federation rule.
+
+- `workspace_id: str`
+
+  Tagged ID of the workspace to enable this rule for.
+
+- `betas: Optional[List[AnthropicBetaParam]]` (header parameter)
+
+  Optional header to specify the beta version(s) you want to use.
+
+  - `str`
+
+  - `"message-batches-2024-09-24"`
+
+  - `"prompt-caching-2024-07-31"`
+
+  - `"computer-use-2024-10-22"`
+
+  - `"computer-use-2025-01-24"`
+
+  - `"pdfs-2024-09-25"`
+
+  - `"token-counting-2024-11-01"`
+
+  - `"token-efficient-tools-2025-02-19"`
+
+  - `"output-128k-2025-02-19"`
+
+  - `"files-api-2025-04-14"`
+
+  - `"mcp-client-2025-04-04"`
+
+  - `"mcp-client-2025-11-20"`
+
+  - `"dev-full-thinking-2025-05-14"`
+
+  - `"interleaved-thinking-2025-05-14"`
+
+  - `"code-execution-2025-05-22"`
+
+  - `"extended-cache-ttl-2025-04-11"`
+
+  - `"context-1m-2025-08-07"`
+
+  - `"context-management-2025-06-27"`
+
+  - `"model-context-window-exceeded-2025-08-26"`
+
+  - `"skills-2025-10-02"`
+
+  - `"fast-mode-2026-02-01"`
+
+  - `"output-300k-2026-03-24"`
+
+  - `"user-profiles-2026-03-24"`
+
+  - `"user-profiles-2026-08-18"`
+
+  - `"user-profiles-2026-09-04"`
+
+  - `"advisor-tool-2026-03-01"`
+
+  - `"managed-agents-2026-04-01"`
+
+  - `"cache-diagnosis-2026-04-07"`
+
+  - `"dreaming-2026-04-21"`
+
+  - `"thinking-token-count-2026-05-13"`
+
+  - `"server-side-fallback-2026-06-01"`
+
+  - `"server-side-fallback-2026-07-01"`
+
+  - `"fallback-credit-2026-06-01"`
+
+  - `"fallback-credit-2026-07-01"`
+
+  - `"agent-memory-2026-07-22"`
+
+  - `"mid-conversation-tool-changes-2026-07-01"`
+
+  - `"compact-2026-01-12"`
+
+  - `"computer-use-2025-11-24"`
+
+  - `"mcp-tunnels-2026-06-22"`
+
+  - `"structured-outputs-2025-11-13"`
+
+  - `"task-budgets-2026-03-13"`
+
+  - `"thinking-display-updates-2026-08-18"`
+
+  - `"ce-user-management-2026-07-13"`
+
+  - `"mid-conversation-output-config-2026-07-01"`
+
+  - `"thinking-binding-controls-2026-08-01"`
+
+  - `"mid-conversation-system-clear-at-2026-08-21"`
+
+  - `"compact-2026-09-04"`
+
+  - `"inline-tools-2026-09-15"`
+
+  - `"mcp-client-2026-09-15"`
+
+  - `"ce-plugins-2026-09-01"`
+
+  - `"spend-limit-reads-2026-09-26"`
+
+  - `"telemetry-destinations-2026-08-11"`
+
+  - `"webhooks-2026-10-07"`
+
+  - `"message-threads-2026-08-12"`
+
+  - `"analytics-usage-cost-2026-08-24"`
+
+  - `"experimental-claude-tag-2026-10-21"`
+
+## Returns
+
+- `class BetaFederationRuleWorkspace`
+
+  - `type: Literal["federation_rule_workspace"]`
+
+    default: federation_rule_workspace
+
+  - `created_at: datetime`
+
+    When this workspace was enabled for the rule.
+
+    format: date-time
+
+  - `created_by_actor_id: Optional[str]`
+
+    Tagged ID (`user_...` or `svac_...`) of the actor that enabled this workspace for the rule, if known.
+
+  - `federation_rule_id: str`
+
+    Tagged ID of the federation rule.
+
+  - `workspace_id: str`
+
+    Tagged ID of the workspace this rule is enabled for.
+
+  - `workspace_name: Optional[str]`
+
+    Workspace display name. Populated when listing; null in the enable response.
+
+## Example
+
+```python
+import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    api_key=os.environ.get(
+        "ANTHROPIC_API_KEY"
+    ),  # This is the default and can be omitted
+)
+beta_federation_rule_workspace = (
+    client.beta.organization.federation.rules.workspaces.add(
+        federation_rule_id="federation_rule_id",
+        workspace_id="workspace_id",
+    )
+)
+print(beta_federation_rule_workspace.created_by_actor_id)
+```
+
+### Response (200)
+
+```json
+{
+  "created_at": "2024-10-30T23:58:27.427722Z",
+  "created_by_actor_id": "created_by_actor_id",
+  "federation_rule_id": "federation_rule_id",
+  "type": "federation_rule_workspace",
+  "workspace_id": "workspace_id",
+  "workspace_name": "workspace_name"
+}
+```

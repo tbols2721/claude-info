@@ -1,0 +1,16 @@
+# Installed by `claude-info timer install`; @ROOT@ and @UV@ are filled in then.
+[Unit]
+Description=Update the Claude, Anthropic, MCP and Agent Skills Info manuals
+Documentation=file://@ROOT@/README.md
+
+[Service]
+Type=oneshot
+WorkingDirectory=@ROOT@
+Environment=CLAUDE_INFO_PUSH=0
+# network-online.target means nothing to the user manager, so wait for DNS
+# here (up to 5 minutes) instead of failing a run right after boot or resume.
+ExecStartPre=/bin/sh -c 'for i in $$(seq 60); do getent hosts code.claude.com >/dev/null && exit 0; sleep 5; done; exit 1'
+ExecStart=@UV@ run --project @ROOT@ --quiet claude-info update
+TimeoutStartSec=1h
+Nice=10
+IOSchedulingClass=idle

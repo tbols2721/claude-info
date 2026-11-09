@@ -1,0 +1,465 @@
+---
+title: Members
+url: https://platform.claude.com/docs/en/api/python/beta/organization/workspaces/members
+---
+
+# Members
+
+## List Workspace Members
+
+`beta.organization.workspaces.members.list(workspace_id, **kwargs) -> SyncPage[BetaWorkspaceMember]`
+
+**GET** `/v1/organizations/workspaces/{workspace_id}/members`
+
+List Workspace Members
+
+### Parameters
+
+- `workspace_id: str` (path parameter)
+
+  ID of the Workspace.
+
+- `after_id: Optional[str]` (query parameter)
+
+  ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately after this object.
+
+- `before_id: Optional[str]` (query parameter)
+
+  ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately before this object.
+
+- `limit: Optional[int]` (query parameter)
+
+  Number of items to return per page.
+
+  Defaults to `20`. Ranges from `1` to `1000`.
+
+  default: 20, minimum: 1, maximum: 1000
+
+### Returns
+
+- `class BetaWorkspaceMember`
+
+  - `type: Literal["workspace_member"]`
+
+    Object type.
+
+    For Workspace Members, this is always `"workspace_member"`.
+
+    default: workspace_member
+
+  - `user_id: str`
+
+    ID of the User.
+
+  - `workspace_id: str`
+
+    ID of the Workspace.
+
+  - `workspace_role: BetaWorkspaceRole`
+
+    Role of the Workspace Member.
+
+    - `"workspace_admin"`
+
+    - `"workspace_billing"`
+
+    - `"workspace_developer"`
+
+    - `"workspace_restricted_developer"`
+
+    - `"workspace_user"`
+
+### Example
+
+```python
+import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    api_key=os.environ.get(
+        "ANTHROPIC_API_KEY"
+    ),  # This is the default and can be omitted
+)
+page = client.beta.organization.workspaces.members.list(
+    workspace_id="workspace_id",
+)
+page = page.data[0]
+print(page.user_id)
+```
+
+#### Response (200)
+
+```json
+{
+  "data": [
+    {
+      "type": "workspace_member",
+      "user_id": "user_01WxYzAbCdEfGhJkMnPqRsTu",
+      "workspace_id": "wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ",
+      "workspace_role": "workspace_admin"
+    }
+  ],
+  "first_id": "first_id",
+  "has_more": true,
+  "last_id": "last_id"
+}
+```
+
+## Create Workspace Member
+
+`beta.organization.workspaces.members.add(workspace_id, **kwargs) -> BetaWorkspaceMember`
+
+**POST** `/v1/organizations/workspaces/{workspace_id}/members`
+
+Create Workspace Member
+
+### Parameters
+
+- `workspace_id: str` (path parameter)
+
+  ID of the Workspace.
+
+- `user_id: str`
+
+  ID of the User.
+
+- `workspace_role: BetaNoBillingWorkspaceRole`
+
+  Role of the new Workspace Member. Cannot be `workspace_billing`.
+
+  - `"workspace_admin"`
+
+  - `"workspace_developer"`
+
+  - `"workspace_restricted_developer"`
+
+  - `"workspace_user"`
+
+### Returns
+
+- `class BetaWorkspaceMember`
+
+  - `type: Literal["workspace_member"]`
+
+    Object type.
+
+    For Workspace Members, this is always `"workspace_member"`.
+
+    default: workspace_member
+
+  - `user_id: str`
+
+    ID of the User.
+
+  - `workspace_id: str`
+
+    ID of the Workspace.
+
+  - `workspace_role: BetaWorkspaceRole`
+
+    Role of the Workspace Member.
+
+    - `"workspace_admin"`
+
+    - `"workspace_billing"`
+
+    - `"workspace_developer"`
+
+    - `"workspace_restricted_developer"`
+
+    - `"workspace_user"`
+
+### Example
+
+```python
+import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    api_key=os.environ.get(
+        "ANTHROPIC_API_KEY"
+    ),  # This is the default and can be omitted
+)
+beta_workspace_member = client.beta.organization.workspaces.members.add(
+    workspace_id="workspace_id",
+    user_id="user_01WxYzAbCdEfGhJkMnPqRsTu",
+    workspace_role="workspace_admin",
+)
+print(beta_workspace_member.user_id)
+```
+
+#### Response (200)
+
+```json
+{
+  "type": "workspace_member",
+  "user_id": "user_01WxYzAbCdEfGhJkMnPqRsTu",
+  "workspace_id": "wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ",
+  "workspace_role": "workspace_admin"
+}
+```
+
+## Get Workspace Member
+
+`beta.organization.workspaces.members.retrieve(user_id, **kwargs) -> BetaWorkspaceMember`
+
+**GET** `/v1/organizations/workspaces/{workspace_id}/members/{user_id}`
+
+Get Workspace Member
+
+### Parameters
+
+- `workspace_id: str` (path parameter)
+
+  ID of the Workspace.
+
+- `user_id: str` (path parameter)
+
+  ID of the User.
+
+### Returns
+
+- `class BetaWorkspaceMember`
+
+  - `type: Literal["workspace_member"]`
+
+    Object type.
+
+    For Workspace Members, this is always `"workspace_member"`.
+
+    default: workspace_member
+
+  - `user_id: str`
+
+    ID of the User.
+
+  - `workspace_id: str`
+
+    ID of the Workspace.
+
+  - `workspace_role: BetaWorkspaceRole`
+
+    Role of the Workspace Member.
+
+    - `"workspace_admin"`
+
+    - `"workspace_billing"`
+
+    - `"workspace_developer"`
+
+    - `"workspace_restricted_developer"`
+
+    - `"workspace_user"`
+
+### Example
+
+```python
+import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    api_key=os.environ.get(
+        "ANTHROPIC_API_KEY"
+    ),  # This is the default and can be omitted
+)
+beta_workspace_member = client.beta.organization.workspaces.members.retrieve(
+    user_id="user_id",
+    workspace_id="workspace_id",
+)
+print(beta_workspace_member.user_id)
+```
+
+#### Response (200)
+
+```json
+{
+  "type": "workspace_member",
+  "user_id": "user_01WxYzAbCdEfGhJkMnPqRsTu",
+  "workspace_id": "wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ",
+  "workspace_role": "workspace_admin"
+}
+```
+
+## Update Workspace Member
+
+`beta.organization.workspaces.members.update(user_id, **kwargs) -> BetaWorkspaceMember`
+
+**POST** `/v1/organizations/workspaces/{workspace_id}/members/{user_id}`
+
+Update Workspace Member
+
+### Parameters
+
+- `workspace_id: str` (path parameter)
+
+  ID of the Workspace.
+
+- `user_id: str` (path parameter)
+
+  ID of the User.
+
+- `workspace_role: BetaWorkspaceRole`
+
+  New workspace role for the User.
+
+  - `"workspace_admin"`
+
+  - `"workspace_billing"`
+
+  - `"workspace_developer"`
+
+  - `"workspace_restricted_developer"`
+
+  - `"workspace_user"`
+
+### Returns
+
+- `class BetaWorkspaceMember`
+
+  - `type: Literal["workspace_member"]`
+
+    Object type.
+
+    For Workspace Members, this is always `"workspace_member"`.
+
+    default: workspace_member
+
+  - `user_id: str`
+
+    ID of the User.
+
+  - `workspace_id: str`
+
+    ID of the Workspace.
+
+  - `workspace_role: BetaWorkspaceRole`
+
+    Role of the Workspace Member.
+
+    - `"workspace_admin"`
+
+    - `"workspace_billing"`
+
+    - `"workspace_developer"`
+
+    - `"workspace_restricted_developer"`
+
+    - `"workspace_user"`
+
+### Example
+
+```python
+import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    api_key=os.environ.get(
+        "ANTHROPIC_API_KEY"
+    ),  # This is the default and can be omitted
+)
+beta_workspace_member = client.beta.organization.workspaces.members.update(
+    user_id="user_id",
+    workspace_id="workspace_id",
+    workspace_role="workspace_admin",
+)
+print(beta_workspace_member.user_id)
+```
+
+#### Response (200)
+
+```json
+{
+  "type": "workspace_member",
+  "user_id": "user_01WxYzAbCdEfGhJkMnPqRsTu",
+  "workspace_id": "wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ",
+  "workspace_role": "workspace_admin"
+}
+```
+
+## Delete Workspace Member
+
+`beta.organization.workspaces.members.remove(user_id, **kwargs) -> MemberRemoveResponse`
+
+**DELETE** `/v1/organizations/workspaces/{workspace_id}/members/{user_id}`
+
+Delete Workspace Member
+
+### Parameters
+
+- `workspace_id: str` (path parameter)
+
+  ID of the Workspace.
+
+- `user_id: str` (path parameter)
+
+  ID of the User.
+
+### Returns
+
+- `class MemberRemoveResponse`
+
+  - `type: Literal["workspace_member_deleted"]`
+
+    Deleted object type.
+
+    For Workspace Members, this is always `"workspace_member_deleted"`.
+
+    default: workspace_member_deleted
+
+  - `user_id: str`
+
+    ID of the User.
+
+  - `workspace_id: str`
+
+    ID of the Workspace.
+
+### Example
+
+```python
+import os
+from anthropic import Anthropic
+
+client = Anthropic(
+    api_key=os.environ.get(
+        "ANTHROPIC_API_KEY"
+    ),  # This is the default and can be omitted
+)
+member = client.beta.organization.workspaces.members.remove(
+    user_id="user_id",
+    workspace_id="workspace_id",
+)
+print(member.user_id)
+```
+
+#### Response (200)
+
+```json
+{
+  "type": "workspace_member_deleted",
+  "user_id": "user_01WxYzAbCdEfGhJkMnPqRsTu",
+  "workspace_id": "wrkspc_01JwQvzr7rXLA5AGx3HKfFUJ"
+}
+```
+
+## Domain types
+
+### Member Remove Response
+
+- `class MemberRemoveResponse`
+
+  - `type: Literal["workspace_member_deleted"]`
+
+    Deleted object type.
+
+    For Workspace Members, this is always `"workspace_member_deleted"`.
+
+    default: workspace_member_deleted
+
+  - `user_id: str`
+
+    ID of the User.
+
+  - `workspace_id: str`
+
+    ID of the Workspace.

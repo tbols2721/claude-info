@@ -1,0 +1,96 @@
+---
+title: Get File Metadata
+url: https://platform.claude.com/docs/en/api/cli/files/retrieve_metadata
+---
+
+# Get File Metadata
+
+`$ ant files retrieve-metadata`
+
+**GET** `/v1/files/{file_id}`
+
+Get File Metadata
+
+## Parameters
+
+- `--file-id: string` (path parameter)
+
+  ID of the File.
+
+- `--workspace-id: optional string` (header parameter)
+
+  Optional header to select the Workspace for this request. The value is a Workspace ID (for example, `wrkspc_011CZkZaBF1tNoB5wlCeusgy`).
+
+  Only needed for credentials that can act on more than one Workspace. A credential that belongs to a specific Workspace may omit it; if sent, it must match that Workspace.
+
+## Returns
+
+- `file_metadata: object`
+
+  - `type: "file"`
+
+    Object type.
+
+    For files, this is always `"file"`.
+
+  - `id: string`
+
+    Unique object identifier.
+
+    The format and length of IDs may change over time.
+
+  - `created_at: string`
+
+    RFC 3339 datetime string representing when the file was created.
+
+    format: date-time
+
+  - `filename: string`
+
+    Original filename of the uploaded file.
+
+    minLength: 1, maxLength: 500
+
+  - `mime_type: string`
+
+    MIME type of the file.
+
+    minLength: 1, maxLength: 255
+
+  - `size_bytes: number`
+
+    Size of the file in bytes.
+
+    minimum: 0
+
+  - `downloadable: optional boolean`
+
+    Whether the file can be downloaded.
+
+  - `expires_at: optional string`
+
+    RFC 3339 datetime string representing when the file will expire and become unavailable for download. Null if the file does not expire. For files uploaded with `expires_in_seconds`, this is the upload time plus that value.
+
+    format: date-time
+
+## Example
+
+```bash
+ant files retrieve-metadata \
+  --file-id file_id
+```
+
+### Response (200)
+
+```json
+{
+  "id": "file_011CNha8iCJcU1wXNR6q4V8w",
+  "created_at": "2025-04-15T18:37:24.100435Z",
+  "filename": "document.pdf",
+  "mime_type": "application/pdf",
+  "size_bytes": 102400,
+  "type": "file",
+  "downloadable": false,
+  "expires_at": "2025-05-15T18:37:24.100435Z"
+}
+```

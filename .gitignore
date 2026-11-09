@@ -1,0 +1,17 @@
+.state/
+build/
+.venv/
+__pycache__/
+*.pyc
+.tmp-*
+
+# Private diagnostics and credentials
+*.log
+.env
+.env.*
+*.pem
+*.key
+*.bundle
+*.pcap
+*.pcapng
+local/
