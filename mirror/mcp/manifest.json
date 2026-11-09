@@ -1248,7 +1248,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "a1b0e12eaa377bc50b66afbeea91629b962481522aad0f2a0548bb2eda180143"
+   "sha256": "29facc3f866e554fae867f6a987060ab32b931779731cf9b9466f5f56d152043"
   },
   {
    "path": "docs/draft/tutorials/security/security_best_practices.md",
@@ -1260,7 +1260,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "021db7650cc0f47f2c16808680c9f8eeeccb55af485bf72c5550ed2f62c7c4d9"
+   "sha256": "e7e31910818447cc142dd282281e1dfd9e8df6d520601455e5a261705dae1d46"
   },
   {
    "path": "docs/draft/tutorials/security/local-server-security.md",
@@ -2760,7 +2760,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "7c9b06aeb4d89173d6dc4c8d1af72f3e28b1cc447070c61bf7fffedd26418688"
+   "sha256": "2f7862b059fa043536a7b15717d76f8a368d86f6ab762b1dedfa2f86c0b55d90"
   },
   {
    "path": "specification/draft/deprecated.md",
@@ -2916,7 +2916,7 @@
    "in_index": true,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7de8c56e5b44cc34659e0d8c1a9bf0ca915d8dbaa649af1d47e0260132ff08f5"
+   "sha256": "05e7fc4eb56d3157bb89c5cb614de1c71f0c886586a28d62c4e67abb6d5d0e16"
   },
   {
    "path": "specification/draft/basic/authorization/authorization-server-discovery.md",
@@ -2940,7 +2940,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "4bb40584e9666c794abe0412d79aa65f153db62374ab4527de9d99d9af6eab75"
+   "sha256": "dddf5d997c93ad2c70bf14c219dec0fa25e01cc6187012c25fc585b047c71fe8"
   },
   {
    "path": "specification/draft/basic/authorization/security-considerations.md",
@@ -2952,7 +2952,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "9b6e8a5eb56ec847d974bd920f917fe9e0a81468bd4c435ce9400f30ab85b515"
+   "sha256": "7c597ba6fa309036b17024c0c15c73dbcdb0f61ec8d33427f34b282bc6e47736"
   },
   {
    "path": "specification/draft/client/roots.md",
@@ -4700,7 +4700,7 @@
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "7de8c56e5b44cc34659e0d8c1a9bf0ca915d8dbaa649af1d47e0260132ff08f5"
+   "sha256": "05e7fc4eb56d3157bb89c5cb614de1c71f0c886586a28d62c4e67abb6d5d0e16"
   },
   {
    "path": "specification/draft/basic/patterns.md",
