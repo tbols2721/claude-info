@@ -364,6 +364,14 @@ ant organization:users remove \
 
 ## Domain types
 
+### Cannot Remove Last Member Error Details
+
+- `cannot_remove_last_member_error_details: object`
+
+  The user is the organization's only member. Add another member before removing this one.
+
+  - `error_code: "cannot_remove_last_member"`
+
 ### Organization User
 
 - `organization_user: object`

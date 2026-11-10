@@ -183,6 +183,8 @@ Anthropic account team.
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -749,6 +751,8 @@ come in a fixed order that is not creation order.
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -1188,6 +1192,14 @@ print(page.id)
   - `workspace_id: str`
 
     Tagged ID of the workspace the spend limit applies to.
+
+### Beta Spend Limits Admin API Writes Not Enabled Error Details
+
+- `class BetaSpendLimitsAdminAPIWritesNotEnabledErrorDetails`
+
+  The organization cannot retrieve, set or delete spend limits with an Admin API credential.
+
+  - `error_code: Literal["spend_limits_admin_api_writes_not_enabled"]`
 
 ### Beta Spend Summary
 

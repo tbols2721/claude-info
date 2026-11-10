@@ -521,6 +521,14 @@ ant skills delete \
 
     format: date-time
 
+### Skill Read Blocked Undecryptable Error Details
+
+- `skill_read_blocked_undecryptable_error_details: object`
+
+  A custom skill the request names is stored under an encryption key state the workspace cannot currently decrypt.
+
+  - `error_code: "skill_read_blocked_undecryptable"`
+
 ### Skill Source
 
 - `skill_source: object`

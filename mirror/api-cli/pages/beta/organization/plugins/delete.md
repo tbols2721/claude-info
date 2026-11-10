@@ -11,7 +11,9 @@ url: https://platform.claude.com/docs/en/api/cli/beta/organization/plugins/delet
 
 Permanently delete a Plugin and every version it holds, exactly as when an
 administrator deletes it in claude.ai. The Plugin may belong to the organization or
-to a member, including a member who has since left the organization.
+to a member, including a member who has since left the organization. Do not delete a
+Plugin only because your pipeline did not create it: a member or an administrator
+might have added it in claude.ai.
 
 An organization-owned Plugin's installation settings go with it; a member-owned
 Plugin's shares are withdrawn and its owner no longer has it.
@@ -139,6 +141,8 @@ Every request must include the beta header `anthropic-beta: ce-plugins-2026-09-0
   - `"telemetry-destinations-2026-08-11"`
 
   - `"webhooks-2026-10-07"`
+
+  - `"admin-user-sign-out-2026-10-08"`
 
   - `"message-threads-2026-08-12"`
 

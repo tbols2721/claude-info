@@ -771,3 +771,19 @@ print(api_key.id)
   - `workspace_id: str`
 
     ID of the Workspace the API key belongs to, including when it is the organization's default Workspace.
+
+### Org API Key Limit Exceeded Error Details
+
+- `class OrgAPIKeyLimitExceededErrorDetails`
+
+  The organization has reached its limit of active API keys.
+
+  - `error_code: Literal["org_api_key_limit_exceeded"]`
+
+### Workspace API Key Limit Exceeded Error Details
+
+- `class WorkspaceAPIKeyLimitExceededErrorDetails`
+
+  The workspace has reached its limit of active API keys.
+
+  - `error_code: Literal["workspace_api_key_limit_exceeded"]`

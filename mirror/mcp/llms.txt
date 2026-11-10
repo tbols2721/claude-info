@@ -330,19 +330,15 @@
 - [SEP-2663: Tasks Extension](https://modelcontextprotocol.io/seps/2663-tasks-extension.md): Tasks Extension
 - [SEP-3392: Extension Lifecycle](https://modelcontextprotocol.io/seps/3392-extension-lifecycle.md): Extension Lifecycle
 - [SEP-3398: Release Cycle Updates](https://modelcontextprotocol.io/seps/3398-release-cycle-updates.md): Release Cycle Updates
-- [Contributing to MCP](https://modelcontextprotocol.io/community/contributing.md): How to contribute to the Model Context Protocol project
-- [Contributor Communication](https://modelcontextprotocol.io/community/communication.md): Communication strategy and framework for the Model Context Protocol community
-- [Working and Interest Groups](https://modelcontextprotocol.io/community/working-interest-groups.md): Governance rules for the two forms of collaborative groups within the Model Context Protocol community — Working Groups and Interest Groups.
-- [Group Charter Template](https://modelcontextprotocol.io/community/charter-template.md): Template for MCP Working Group and Interest Group charters.
-- [Roadmap](https://modelcontextprotocol.io/development/roadmap.md): The Model Context Protocol roadmap, covering the priority areas Core Maintainers and Working Groups are driving for the next specification release and how they shape SEP review.
+- [Contributing to MCP](https://modelcontextprotocol.io/community/contributing.md): How to contribute to the Model Context Protocol specification, docs and SDKs.
+- [SEP Guidelines](https://modelcontextprotocol.io/community/sep-guidelines.md): When a Specification Enhancement Proposal is required and the procedure a proposal follows from pull request to Final.
 - [Design Principles](https://modelcontextprotocol.io/community/design-principles.md): The core design principles that guide the development of the Model Context Protocol.
-- [SEP Guidelines](https://modelcontextprotocol.io/community/sep-guidelines.md): Specification Enhancement Proposal (SEP) guidelines for proposing changes to the Model Context Protocol
+- [Roadmap](https://modelcontextprotocol.io/development/roadmap.md): The Model Context Protocol roadmap, covering the priority areas Core Maintainers and Working Groups are driving for the next specification release and how they shape SEP review.
 - [Governance and Stewardship](https://modelcontextprotocol.io/community/governance.md): Learn about the Model Context Protocol's governance structure and how to participate in the community
-- [Contributor Ladder](https://modelcontextprotocol.io/community/contributor-ladder.md): Roles, responsibilities, and advancement criteria for MCP contributors, from first contribution to Core Maintainer
-- [Feature Lifecycle and Deprecation Policy](https://modelcontextprotocol.io/community/feature-lifecycle.md): How individual MCP specification features move through Active, Deprecated, and Removed states, and the timeline implementers can plan against.
-- [SDK Tiering System](https://modelcontextprotocol.io/community/sdk-tiers.md): Feature completeness, protocol support, and maintenance commitment levels for Model Context Protocol SDKs
-- [Security Policy](https://modelcontextprotocol.io/community/security.md): How to report security vulnerabilities in the Model Context Protocol specification and SDKs, what is in and out of scope, and how SDK maintainers coordinate disclosure.
-- [Antitrust Policy](https://modelcontextprotocol.io/community/antitrust.md): MCP Project Antitrust Policy for participants and contributors
+- [Contributor Ladder](https://modelcontextprotocol.io/community/contributor-ladder.md): The contributor roles in the MCP project, what each requires and grants, and how people move between them.
+- [Working Groups and Interest Groups](https://modelcontextprotocol.io/community/working-interest-groups.md): The MCP project's working groups and interest groups, how to join or start one, and the operating rules every group follows.
+- [Group Charter Template](https://modelcontextprotocol.io/community/charter-template.md): The charter template for MCP working groups and interest groups, and how to submit a charter.
+- [MCP Apps Working Group Charter](https://modelcontextprotocol.io/community/working-groups/apps.md): Charter for the MCP Apps Working Group.
 - [File Uploads Charter](https://modelcontextprotocol.io/community/working-groups/file-uploads.md): Charter for the MCP File Uploads Working Group.
 - [Filesystems Charter](https://modelcontextprotocol.io/community/working-groups/filesystems.md): Charter for the MCP Filesystems Working Group.
 - [Governance Working Group Charter](https://modelcontextprotocol.io/community/working-groups/governance.md): Charter for the MCP Governance Working Group.
@@ -364,3 +360,8 @@
 - [Scientific Computing Charter](https://modelcontextprotocol.io/community/interest-groups/scientific-computing.md): Charter for the MCP Scientific Computing Interest Group.
 - [Security Charter](https://modelcontextprotocol.io/community/interest-groups/security.md): Charter for the MCP Security Interest Group.
 - [Tool Annotations Charter](https://modelcontextprotocol.io/community/interest-groups/tool-annotations.md): Charter for the MCP Tool Annotations Interest Group.
+- [Project Policies](https://modelcontextprotocol.io/community/policies.md): The standing policies that apply to everyone who takes part in the MCP project, and where each one is defined.
+- [Communication](https://modelcontextprotocol.io/community/communication.md): The MCP project's communication channels, when a channel may be private, and where decisions are recorded.
+- [Feature Lifecycle and Deprecation](https://modelcontextprotocol.io/community/feature-lifecycle.md): How individual MCP specification features move through Active, Deprecated, and Removed states, and the timeline implementers can plan against.
+- [SDK Tiers](https://modelcontextprotocol.io/community/sdk-tiers.md): What each SDK tier requires, how conformance is measured, how an SDK moves between tiers, and the issue labels SDK repositories must use.
+- [Antitrust Policy](https://modelcontextprotocol.io/community/antitrust.md): MCP Project Antitrust Policy for participants and contributors

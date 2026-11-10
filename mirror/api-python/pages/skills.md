@@ -563,6 +563,14 @@ print(deleted_skill.id)
 
     format: date-time
 
+### Skill Read Blocked Undecryptable Error Details
+
+- `class SkillReadBlockedUndecryptableErrorDetails`
+
+  A custom skill the request names is stored under an encryption key state the workspace cannot currently decrypt.
+
+  - `error_code: Literal["skill_read_blocked_undecryptable"]`
+
 ### Skill Source
 
 - `class SkillSource`

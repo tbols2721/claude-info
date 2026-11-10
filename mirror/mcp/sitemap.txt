@@ -14,9 +14,10 @@ https://modelcontextprotocol.io/community/interest-groups/financial-services
 https://modelcontextprotocol.io/community/interest-groups/scientific-computing
 https://modelcontextprotocol.io/community/interest-groups/security
 https://modelcontextprotocol.io/community/interest-groups/tool-annotations
+https://modelcontextprotocol.io/community/policies
 https://modelcontextprotocol.io/community/sdk-tiers
-https://modelcontextprotocol.io/community/security
 https://modelcontextprotocol.io/community/sep-guidelines
+https://modelcontextprotocol.io/community/working-groups/apps
 https://modelcontextprotocol.io/community/working-groups/file-uploads
 https://modelcontextprotocol.io/community/working-groups/filesystems
 https://modelcontextprotocol.io/community/working-groups/governance

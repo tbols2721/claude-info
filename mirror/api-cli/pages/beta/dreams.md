@@ -227,6 +227,8 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -247,7 +249,7 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   By default the dream writes its result to a new memory store and doesn't change the input memory store. With `output_behavior` set to `update_existing`, it writes its result into the input memory store instead.
 
-  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to generally-available endpoints.
+  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to stable endpoints.
 
   See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams?sdk_languages=cli#how-it-works) for what a dream reads and produces.
 
@@ -697,6 +699,8 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -1116,6 +1120,8 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -1136,7 +1142,7 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   By default the dream writes its result to a new memory store and doesn't change the input memory store. With `output_behavior` set to `update_existing`, it writes its result into the input memory store instead.
 
-  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to generally-available endpoints.
+  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to stable endpoints.
 
   See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams?sdk_languages=cli#how-it-works) for what a dream reads and produces.
 
@@ -1527,6 +1533,8 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -1547,7 +1555,7 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   By default the dream writes its result to a new memory store and doesn't change the input memory store. With `output_behavior` set to `update_existing`, it writes its result into the input memory store instead.
 
-  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to generally-available endpoints.
+  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to stable endpoints.
 
   See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams?sdk_languages=cli#how-it-works) for what a dream reads and produces.
 
@@ -1938,6 +1946,8 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -1958,7 +1968,7 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   By default the dream writes its result to a new memory store and doesn't change the input memory store. With `output_behavior` set to `update_existing`, it writes its result into the input memory store instead.
 
-  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to generally-available endpoints.
+  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to stable endpoints.
 
   See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams?sdk_languages=cli#how-it-works) for what a dream reads and produces.
 
@@ -2233,7 +2243,7 @@ ant beta:dreams archive \
 
   By default the dream writes its result to a new memory store and doesn't change the input memory store. With `output_behavior` set to `update_existing`, it writes its result into the input memory store instead.
 
-  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to generally-available endpoints.
+  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to stable endpoints.
 
   See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams?sdk_languages=cli#how-it-works) for what a dream reads and produces.
 
@@ -2685,55 +2695,91 @@ ant beta:dreams archive \
 
     - `type: "invalid_request_error"`
 
+      The broad category of the error.
+
     - `message: string`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
   - `beta_authentication_error: object`
 
     - `type: "authentication_error"`
 
+      The broad category of the error.
+
     - `message: string`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
   - `beta_billing_error: object`
 
     - `type: "billing_error"`
 
+      The broad category of the error.
+
     - `message: string`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
   - `beta_permission_error: object`
 
     - `type: "permission_error"`
 
+      The broad category of the error.
+
     - `message: string`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
   - `beta_not_found_error: object`
 
     - `type: "not_found_error"`
 
+      The broad category of the error.
+
     - `message: string`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
   - `beta_rate_limit_error: object`
 
     - `type: "rate_limit_error"`
 
+      The broad category of the error.
+
     - `message: string`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
   - `beta_gateway_timeout_error: object`
 
     - `type: "timeout_error"`
 
+      The broad category of the error.
+
     - `message: string`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
   - `beta_api_error: object`
 
     - `type: "api_error"`
 
+      The broad category of the error.
+
     - `message: string`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
   - `beta_overloaded_error: object`
 
     - `type: "overloaded_error"`
 
+      The broad category of the error.
+
     - `message: string`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
   - `beta_target_store_held_error: object`
 
@@ -2744,8 +2790,6 @@ ant beta:dreams archive \
     - `type: "conflict_error"`
 
     - `message: optional string`
-
-      A human-readable explanation of why the memory store can't be used yet, with the ID of the dream that is using it when the server can identify it.
 
 ### Beta Output Behavior
 
@@ -2812,5 +2856,3 @@ ant beta:dreams archive \
   - `type: "conflict_error"`
 
   - `message: optional string`
-
-    A human-readable explanation of why the memory store can't be used yet, with the ID of the dream that is using it when the server can identify it.

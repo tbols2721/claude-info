@@ -23,6 +23,10 @@ List Workspaces
 
   ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately before this object.
 
+- `ids: Optional[Sequence[str]]` (query parameter)
+
+  Only the Workspaces with these IDs, at most 100. `include_archived` and `include_default` still apply, and IDs of Workspaces the caller can't list are left out.
+
 - `include_archived: Optional[bool]` (query parameter)
 
   Whether to include Workspaces that have been archived in the response
@@ -372,6 +376,8 @@ Create Workspace
   - `"telemetry-destinations-2026-08-11"`
 
   - `"webhooks-2026-10-07"`
+
+  - `"admin-user-sign-out-2026-10-08"`
 
   - `"message-threads-2026-08-12"`
 
@@ -2378,6 +2384,8 @@ omitted from the results.
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -2609,6 +2617,8 @@ accounts cannot be added and are rejected.
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -2823,6 +2833,8 @@ account returns 404.
   - `"telemetry-destinations-2026-08-11"`
 
   - `"webhooks-2026-10-07"`
+
+  - `"admin-user-sign-out-2026-10-08"`
 
   - `"message-threads-2026-08-12"`
 
@@ -3050,6 +3062,8 @@ rejected.
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -3263,6 +3277,8 @@ membership. Archived workspaces return 400.
   - `"telemetry-destinations-2026-08-11"`
 
   - `"webhooks-2026-10-07"`
+
+  - `"admin-user-sign-out-2026-10-08"`
 
   - `"message-threads-2026-08-12"`
 

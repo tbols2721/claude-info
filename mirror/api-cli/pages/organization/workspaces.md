@@ -23,6 +23,10 @@ List Workspaces
 
   ID of the object to use as a cursor for pagination. When provided, returns the page of results immediately before this object.
 
+- `--id: optional array of string` (query parameter)
+
+  Only the Workspaces with these IDs, at most 100. `include_archived` and `include_default` still apply, and IDs of Workspaces the caller can't list are left out.
+
 - `--include-archived: optional boolean` (query parameter)
 
   Whether to include Workspaces that have been archived in the response
@@ -967,6 +971,14 @@ ant organization:workspaces archive \
 
     - `"us"`
 
+### Key Profile Mismatch Error Details
+
+- `key_profile_mismatch_error_details: object`
+
+  The External Key is bound to a user profile, and the Workspace does not have that user profile. A Workspace can use only a key bound to its own user profile or a key that isn't bound to one.
+
+  - `error_code: "key_profile_mismatch"`
+
 ### No Billing Workspace Role
 
 - `no_billing_workspace_role: "workspace_admin" or "workspace_developer" or "workspace_restricted_developer" or "workspace_user"`
@@ -1108,6 +1120,32 @@ ant organization:workspaces archive \
     - `"workspace_restricted_developer"`
 
     - `"workspace_user"`
+
+### Workspace Member Limit Exceeded Error Details
+
+- `workspace_member_limit_exceeded_error_details: object`
+
+  The workspace has reached the member limit that Anthropic set for it.
+
+  - `error_code: "workspace_member_limit_exceeded"`
+
+### Workspace Policy Field
+
+- `workspace_policy_field: "external_key_id"`
+
+  - `"external_key_id"`
+
+### Workspace Policy Violation Error Details
+
+- `workspace_policy_violation_error_details: object`
+
+  The request breaks the organization's Workspace Policy. The message says which rule it broke; an organization admin can see and change the policy in the Console.
+
+  - `error_code: "workspace_policy_violation"`
+
+  - `field: "external_key_id"`
+
+    The request field the broken rule applies to.
 
 ### Workspace Role
 

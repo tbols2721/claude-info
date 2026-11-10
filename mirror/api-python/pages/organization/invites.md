@@ -505,6 +505,38 @@ print(invite.id)
 
 ## Domain types
 
+### Already Member Error Details
+
+- `class AlreadyMemberErrorDetails`
+
+  The email address already belongs to a user in the organization. The message names the user.
+
+  - `error_code: Literal["already_member"]`
+
+### Cannot Invite Emails With Unverified Domains Error Details
+
+- `class CannotInviteEmailsWithUnverifiedDomainsErrorDetails`
+
+  The email address's domain is not one of the verified domains of the organization's parent organization.
+
+  - `error_code: Literal["cannot_invite_emails_with_unverified_domains"]`
+
+### Email Domain Not Allowed Error Details
+
+- `class EmailDomainNotAllowedErrorDetails`
+
+  The organization restricts invites to an allowed list of email domains, and the list is empty or does not include the email address's domain.
+
+  - `error_code: Literal["email_domain_not_allowed"]`
+
+### Invite Already Exists Error Details
+
+- `class InviteAlreadyExistsErrorDetails`
+
+  A pending invite already exists for the email address. The message names the invite.
+
+  - `error_code: Literal["invite_already_exists"]`
+
 ### Organization Invite
 
 - `class OrganizationInvite`

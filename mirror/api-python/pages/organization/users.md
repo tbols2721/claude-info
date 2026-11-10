@@ -398,6 +398,14 @@ print(user.id)
 
 ## Domain types
 
+### Cannot Remove Last Member Error Details
+
+- `class CannotRemoveLastMemberErrorDetails`
+
+  The user is the organization's only member. Add another member before removing this one.
+
+  - `error_code: Literal["cannot_remove_last_member"]`
+
 ### Organization User
 
 - `class OrganizationUser`

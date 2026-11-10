@@ -14,7 +14,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "55ff2b5ea2014487014809241730c0d1047ac10e0e0e7eadaed5976080333480"
+   "sha256": "1606872a42762333eb71c36f9ee2927c1f48a3edfe9a71037dba5b61af415842"
   },
   {
    "path": "user_profiles/action_urls.md",
@@ -42,7 +42,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "bede752f93540078ba87dca460c9b51f09e794e6e4e66509b158d40c44d4c371"
+   "sha256": "010fe8405583c73f3b05ed3d6a35fea77c87c25f963535253390a10f43239dae"
   },
   {
    "path": "compliance/activities.md",
@@ -56,7 +56,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "eb24a5b43c78fd4997b0718d7d1d3da0015740a065a87ff38eb89b5021431e9c"
+   "sha256": "89608061fac6670b726a21357594f642bfec993ac0454467b922a1d9fd246ba5"
   },
   {
    "path": "beta/organization/telemetry_destinations/workspaces/add.md",
@@ -70,7 +70,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "908c2056cab83fcc09525e1ff8a45df8e3fb6be29a41d61a3df330ddf07515dc"
+   "sha256": "5c84b293e2b706a957115c1ce0ce05b9bc16e2675aae777948ee691148b48d21"
   },
   {
    "path": "organization/federation/rules/workspaces/add.md",
@@ -98,7 +98,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "b7a785a650c63cacc62f866761bf169e38a1167255cbddeaa33136562a1360bd"
+   "sha256": "80112d9c3d16c9d823b003541c9aa59362f98f63b415993193b7f955b3ce5b24"
   },
   {
    "path": "organization/rbac_groups/members/add.md",
@@ -140,7 +140,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "3775f4d03609d827ec3f21d41387aa8ce073230679fdccf67de283a95bff4e74"
+   "sha256": "7a9664020df4be7d69615e34d5e4a28b163d5771db4e109b5754af99d7294e36"
   },
   {
    "path": "organization/service_accounts/workspaces/add.md",
@@ -168,7 +168,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "643064b3558f553a0e475d0d1d5d9f01cd92461d3c083824b6a6a13e525c11bf"
+   "sha256": "2fd63dac109725a1253c5489e8d6a7dc51c15598816451e41cc49549598873f5"
   },
   {
    "path": "beta/agents.md",
@@ -182,7 +182,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "9e998003978e581b6768261fe81ad303608a99c039ff82f4f7af5187fd42759c"
+   "sha256": "747eef10f2278d3628808dd07f9049f5deb6cd3100306ad87445a7112bcfb7d4"
   },
   {
    "path": "organization/analytics.md",
@@ -210,7 +210,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "2cfd2eb3319335ff0ff58aec70a3016e4d9cb61a8fda47f2f4eb2ba69ec77f71"
+   "sha256": "4ffe6193d9762693ceb6c57b3ec532d6910f401afd3f13e589cdf7b8856df20d"
   },
   {
    "path": "organization/api_keys.md",
@@ -224,7 +224,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7be538992b00cdf315dc9f6a1039a9a41040d5211b6991b45fe2dc55fe6db67f"
+   "sha256": "9612ae8e04c2a0042db52aa9fdac3e69c7db044ab2850dda83819dbd418fccb1"
   },
   {
    "path": "beta/organization/api_keys.md",
@@ -294,7 +294,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7f9fb636e909f4cb8fd1986c2e9dbf1a72ffd8ae69e8f3a540f736c952371879"
+   "sha256": "a1db40a1b995d9ff30354a9b2614a7092835b52c43b8e07e5f3aa357cee7674b"
   },
   {
    "path": "beta/organization/analytics/apps.md",
@@ -322,7 +322,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7fa1c6527fac03c397e211f16508725777da9608b9ba14e7d9c083bacfa5bbd8"
+   "sha256": "df5de5e8db12eec8a8cfaf5fc664ae43548ea9eb4227fcf0538e6d7fd4aa40f1"
   },
   {
    "path": "beta/dreams/archive.md",
@@ -336,7 +336,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7fe8adbd6afed941fc198436a7e80cc5b4d154608f3f875f5a9d647775024066"
+   "sha256": "049665c6c254b9b095ef782ce27eb62fce3d80ff1110ade3f9343f5299546a01"
   },
   {
    "path": "beta/memory_stores/archive.md",
@@ -350,7 +350,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ca41a8af7af5ba6e283b2c510b6526cdd24334123cd6fccebe69518e98e138ff"
+   "sha256": "f09ea56f558bcaff44e8810618ab1fa0b4a88cb077ff34407cea05ee4512b35f"
   },
   {
    "path": "beta/vaults/archive.md",
@@ -364,7 +364,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "3d8d06558318e0f757c19175b680b454681f14cccd9003c38a61301eba2c781b"
+   "sha256": "14a66739dc81514daee8976effb78f0db1668bb06770620dd1c226762c59ee12"
   },
   {
    "path": "beta/agents/archive.md",
@@ -378,7 +378,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "de8f140bcd9cbb2c144026df8e4ec9fd8acedc4365c35d4b3bc8b0db7199f95d"
+   "sha256": "d2debe2c80f04e2aaf9ab0674163089e76add0b4d74bc93ca3d6262b8fa320c0"
   },
   {
    "path": "beta/deployments/archive.md",
@@ -392,7 +392,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d3120033b394a423db38ae37d3b0b690026a0c6345b62b4ba3fb89e684a2f429"
+   "sha256": "e75ca49e4ac749eb544d9b61096b9c08c5615ffac37de28b3656a7d606765e94"
   },
   {
    "path": "beta/environments/archive.md",
@@ -406,7 +406,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "351b39f4ed926c45b8d1279a94b6a326af2bae575c40ffdf6e23b5c25e2a8cb7"
+   "sha256": "4c019977b8eddac7f9cb9d28d82c50969f3cbdeaa89a3fab13ee967089cca135"
   },
   {
    "path": "organization/federation/issuers/archive.md",
@@ -434,7 +434,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "295ad1d9be001278d96e83220978ea9d62acb443add145aafbbb51ffb5213efa"
+   "sha256": "e1689305302df2ca14f7595918b4495c4525fb07264dc05a6cce8d8ea28b9c00"
   },
   {
    "path": "organization/federation/rules/archive.md",
@@ -462,7 +462,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d64c5549f81ddbcb8c12142180e88b3e2d584596d527cf75aeb9cd5cd175ac86"
+   "sha256": "07fb79e1f1f08681e8301eb434b951f211820eb804667dd268ee96f65e23ba4c"
   },
   {
    "path": "organization/service_accounts/archive.md",
@@ -490,7 +490,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f54f0ad8d2ee67a051509991fd1064e8f31cde37d8f3ae16c2868a5ca2e15ef7"
+   "sha256": "80e0d2e31425a3030a11872fca828fd46eadf72b85abcade2f734652fcf35ca6"
   },
   {
    "path": "beta/sessions/archive.md",
@@ -504,7 +504,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "4e9ebfd6e2ec19df7cf910e0599315015ea8a36d3dc6e2d6504f3ab3f44497eb"
+   "sha256": "5fe18a382106e5d777bc7b9f8d97cee6446c72f93a0b12ac57035b85f02d8449"
   },
   {
    "path": "beta/sessions/threads/archive.md",
@@ -518,7 +518,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "36e057f78223e4c3cb968d1673bf0ab53910c1613c7c4c1200e902b3212ac3f9"
+   "sha256": "36528011585ebd3cdd996602407fd43ad272794ab1c4c915995094eba162aa02"
   },
   {
    "path": "beta/tunnels/archive.md",
@@ -532,7 +532,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "47bd022cb88f0840b815c803e1fbe8a86f14038667e603e9536018b7de8a3bdb"
+   "sha256": "8e63d838c22ba0887e25ce501a88947bf0f7aac7e65e49bf91206d1a2ac3499c"
   },
   {
    "path": "beta/organization/mcp_tunnels/archive.md",
@@ -546,7 +546,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "e8b82baf71f8ca7b5b1268f58942fa2de765fa929fd3f7bad5c830ab7f1044b2"
+   "sha256": "fca589cf6e1199aff890518a09d4e9381bcdc70181233687e55c269bee1a1507"
   },
   {
    "path": "beta/tunnels/certificates/archive.md",
@@ -560,7 +560,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "bdb4af4ab184ebc13650f846ce64471138ec6eddf231adf8be9769d8d70e71a2"
+   "sha256": "9194d5b2339dfcc1171a04e25ce081d57570506362381f68585a8e8684a59713"
   },
   {
    "path": "beta/organization/mcp_tunnels/tunnel_certificates/archive.md",
@@ -574,7 +574,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "04b4886cc96ea8aef3a76ca6b8e4ccb66348d740aee35d1134e5ffaf5f02fddf"
+   "sha256": "0fb380b30d720e24c547a660c915a6983373726a7c304d0942746821bc011851"
   },
   {
    "path": "organization/workspaces/archive.md",
@@ -644,7 +644,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "09c7f67301485355c27ec385a28e9f976a0fb210dbee4a079cbb5fa9577ca888"
+   "sha256": "02c485cce78ccbba3eaa470d86f39fdd9aae0d01112695025dc81640abe5ba29"
   },
   {
    "path": "beta/organization/analytics/artifacts.md",
@@ -672,7 +672,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "231dd6ac2fb0bb66f647d0a8f9c6ae83a314737ba08964c39a902b7cb8b76993"
+   "sha256": "b98160c89dccc93d6f7ceb752d23bed01d68cfbac130c250028f0da22fe4aa3a"
   },
   {
    "path": "compliance/apps/projects/attachments.md",
@@ -700,7 +700,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "44dc1df676535d6742c61c48f5cdb1923dbba74169bd1e96d77afea107b776e0"
+   "sha256": "b5903bde12c964f5dca0f0d72263d3d9fb7d59a816fc519b6e15ebdd18b6a0e0"
   },
   {
    "path": "beta/messages/batches.md",
@@ -714,7 +714,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "b8545e0e91ecfb14f31197b178cebb9d5401ed396c01e4f81450d16a73ebc036"
+   "sha256": "3df8bf0c4cb38051475b7eb36864a7b6ab30c3ea7fc6e1cbf5f442d204e7480c"
   },
   {
    "path": "beta.md",
@@ -728,7 +728,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "efea4d732ea5d955bef45ce629b233baa1d988494dcf2fcb1172ebf1deab62b7"
+   "sha256": "34da50d7e8d25aeb9263bbc208e28a7f5afac2b9f5dfb848bfa955417312583e"
   },
   {
    "path": "beta/organization/claude_tag/bundles.md",
@@ -742,7 +742,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "fb45cbc87237c313ef9ab0b56d12a67408254c2d197d69230ed54efb3e431f79"
+   "sha256": "e3cacd5b2fd649a6b04e33a7cc3bdc3b676f8dfce077b7f3b5449e5f832e9ecc"
   },
   {
    "path": "beta/dreams/cancel.md",
@@ -756,7 +756,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "09900341d2cea6d42e192a95e6acef370c0f6dc97955727a3341cc6eab108160"
+   "sha256": "8db3cb46973335102cf6a2e699f65871d576c12088acbbbca1e04d175eaced25"
   },
   {
    "path": "messages/batches/cancel.md",
@@ -784,7 +784,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "da548d32e52eef1adb58fc41f7946b0d6afb8fe90593b37c30379f2108a658be"
+   "sha256": "7f989a50d5e59e28eba639f9fde64c05db537958d0781d71ba1e1691cc495ec8"
   },
   {
    "path": "beta/tunnels/certificates.md",
@@ -798,7 +798,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "0e84da6cf682d5a8c522367dffc7c1c602e9a67bc2ae093c59dda6e2910b3211"
+   "sha256": "4b269297835c4647ea6430e63ea76f41e4b55db0af3325f5404dd52c4b7abe4e"
   },
   {
    "path": "organization/analytics/apps/chat.md",
@@ -854,7 +854,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "840fa5ec2fb9c907ad28eef1abf30d349d8570990b1b2e72ea5b8d58afece900"
+   "sha256": "8df660abf8f0b0d1d89dcd5a8b2c130e324776c7d25919b31f7516abb8b9cf91"
   },
   {
    "path": "compliance/apps/code.md",
@@ -868,7 +868,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f50f730f4dfe430a800e1388dacfe444efbbb6764933d76ba2ec269c606348e2"
+   "sha256": "6d2aebad82860b92cb567b2160e0847f901d3b70768b64262f0cf4f51f8340b8"
   },
   {
    "path": "compliance/apps/projects/collaborators.md",
@@ -896,7 +896,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "a01503b8efc022acffbef3cda0abe7691abd0b7ce560904445bb57cf37ac4ecf"
+   "sha256": "d06842150d9daf9eb1e23c1206cf1ce6301e4fb12f02f545b33505fb2ecb8f66"
   },
   {
    "path": "organization/compliance_settings.md",
@@ -966,7 +966,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "df9cdb5bad9369b331cb16bf62c9779befd30e437151c5c2b278fdb4a6c3d00f"
+   "sha256": "0268dfb1ba38ef4c5bbea54812aa1f93bf79a4ad5a4492e88d3d3f1dabefafe6"
   },
   {
    "path": "beta/organization/cost_report.md",
@@ -980,7 +980,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c55ba6df71998aec2f8ecc4a3e06885aedee2571783a592b98f6a49d09179cfd"
+   "sha256": "afcd7c7a791dc1401240e2d10ebc048c8aae3718dde4b6598b39cc947e432e30"
   },
   {
    "path": "beta/organization/analytics/cost_report.md",
@@ -994,7 +994,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "db256dc80f5cd2ae65e21a471927cdd9279379598715cf494cdfa81ca940f028"
+   "sha256": "03b2c0e13cd3ac83e6d6e74373419ae1a7dc6133f2c5cd9f8c46a24e1755cc41"
   },
   {
    "path": "messages/count_tokens.md",
@@ -1008,7 +1008,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "537c4509bbdd2e5a4a04f7df793c41742d6e4bccaae324d41a5fa65cdbec207d"
+   "sha256": "71d2df8289541484219984e6a05e04473dace534f9e608787907cfb7c5a96169"
   },
   {
    "path": "beta/messages/count_tokens.md",
@@ -1022,7 +1022,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "8c8d1c6e11799633cafe04c32fe57d407c39c9d064d6ef6db28d9d7ba603684f"
+   "sha256": "27ca5c31366cee14cc8e2e9d51617ef45e383c3733a3506d13b44c80d5011c6e"
   },
   {
    "path": "beta/vaults/credentials/create.md",
@@ -1036,7 +1036,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "a46b3c2bfb304b7e1e48ec9ad61f6dc51a5ea7015c0448de4b1f374da87b9766"
+   "sha256": "9aef526f07f3aaa520162e8b9c96398e857d563bfdbb99d3d8c18b746427cd2d"
   },
   {
    "path": "beta/dreams/create.md",
@@ -1050,7 +1050,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7c8db058b11ea992e54cb71fb9e1d1e065bc91d91da63d188ee91dd703a58ba5"
+   "sha256": "c63b36048bed474d16c54312ea3f1e0bf4e9f21a793bf5b11dd53f6fb1ad797c"
   },
   {
    "path": "beta/memory_stores/memories/create.md",
@@ -1064,7 +1064,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "76f3e204d084c4ebe6f7323629d9ad77b280cf3876ee9f208ab2bd109b5727c0"
+   "sha256": "f0914355b8337840304309b3ce7dadce62595388b4e95b37e1f4749af4a0f427"
   },
   {
    "path": "beta/memory_stores/create.md",
@@ -1078,7 +1078,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f505f870ed434b3eb94c26403e52b03f7bbb462a63979fbb181b4247713315b6"
+   "sha256": "dfc6e692c3be92bff6963175d27ec7613891c16fb2e7a510883017ccde8cff56"
   },
   {
    "path": "messages/create.md",
@@ -1092,7 +1092,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c6b1813311d3c9e6fadf6f2d95d108d7087d1220b28d4a3a45f839f2aa92067f"
+   "sha256": "908a8c9020e49e272bbdde28abb775036e3023aff3288db171d180c4f9e5e47e"
   },
   {
    "path": "beta/messages/create.md",
@@ -1106,7 +1106,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "cd2026f6ef6aa0dde1b5a412ad2775c79911fa7411829ed25d29ff4d7e249020"
+   "sha256": "3e7ac55c9b24af522534086f619b47e73c6b4e7c9a2ef24369c0653f091d995f"
   },
   {
    "path": "messages/batches/create.md",
@@ -1120,7 +1120,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "6a608c7eca4814458ed7c40c09b17a10a63288cb9d3fadbf9ae755ca017b7024"
+   "sha256": "7fcb84bed56bbdf144f1643127b16b2948c9db452fbf7c2dfeaf62adec8cbeb6"
   },
   {
    "path": "beta/messages/batches/create.md",
@@ -1134,7 +1134,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "79a7e26447fa3824b92da3a94d38cdf736e2b49dc2e703f8065faa05a82f30c7"
+   "sha256": "fbc8bceb4bd10e40c2c2b133e5cf80763c176ac23787233b1b86c6ed862fac82"
   },
   {
    "path": "beta/organization/telemetry_destinations/create.md",
@@ -1148,7 +1148,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "af4a534b7157bd0a2d53ef9e4ffed6a85d7ec9045d96df83f9acaa46148437cb"
+   "sha256": "a4c40dc5117dede82fe91267dab5ffed8cb8eeaef4386657bc0a0934991ef5eb"
   },
   {
    "path": "beta/vaults/create.md",
@@ -1162,7 +1162,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "3e473c09335dabc39078d09e352ad0a55503c3d4184ba08b5ad527dc1886997f"
+   "sha256": "a0b188dcb691783127cbe2202e85b9e5072281e6391d514dec62e658163ec29d"
   },
   {
    "path": "user_profiles/action_urls/create.md",
@@ -1190,7 +1190,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "b2d77a9598e37ad348238b802cafa4b860e28c3ad5e3fa51d0a0f2c84e0912d7"
+   "sha256": "51ea06051d51b2d4bd997cf3c5b15b2fa42d5eceb3f087354278f785573c0101"
   },
   {
    "path": "beta/agents/create.md",
@@ -1204,7 +1204,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f909118f3f0ba9c511743682db58c09d3980a6837b8526f39c6dd258448ca59a"
+   "sha256": "c5906a5cba2ae53072c61fcb902c1c524edebb4b940f3d9f366681d6f5acf688"
   },
   {
    "path": "beta/deployments/create.md",
@@ -1218,7 +1218,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "6a92863cc8373fcb723e644f4f85c06b9a4c8a3bb7cb7f92045cb16e617ff016"
+   "sha256": "68f4fb20179c2b2923219f804be1f030d16961c63fc6fcbd36a6d281b98d4511"
   },
   {
    "path": "beta/user_profiles/create_enrollment_url.md",
@@ -1232,7 +1232,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "153cfe903bfe5120ab372dd95b4d63a30bbfdb2bf62fba8317533f2c4e9273cf"
+   "sha256": "ac31911fc8d025bba18e38e16d8c1fc8545415c760dc5fb8b060554363383573"
   },
   {
    "path": "beta/environments/create.md",
@@ -1246,7 +1246,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "74f4b307a528115c5cf0103deab9a4ddca53e317f142495afaf49b9c28acc561"
+   "sha256": "c2240605b47ec4180c276448373b7119659ce9b50dce9f258639c8a5ab81bbc5"
   },
   {
    "path": "organization/external_keys/create.md",
@@ -1260,7 +1260,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "60e7674500f1b73820aa68e0a6d64845af18285b18f5d81f66943489f1a9bc81"
+   "sha256": "bb006e1ca5f0c4891a66bf2be1b9e22db4fd4bbd647c96ce1ea4a1d27bf70afa"
   },
   {
    "path": "beta/organization/external_keys/create.md",
@@ -1274,7 +1274,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "473ac9fdd2d7ebcac904297c4ed298380c8426d7f804eb10390d9b8c5d9761a6"
+   "sha256": "5e945426cc1abc74b51699138ded0257ba8fc71e26661a53a26035db6cd13ed6"
   },
   {
    "path": "organization/federation/issuers/create.md",
@@ -1302,7 +1302,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "753a2edf154c076068e5e2a6f61e2d9dcf7acbcef548743493bb86c9ae8b5715"
+   "sha256": "dd775e7f1ec0f9d899f36fc408a06c39a2210543e276e243d967c500376b7ed3"
   },
   {
    "path": "organization/federation/rules/create.md",
@@ -1330,7 +1330,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "9f9aa6684489d60beb870ccb7dbd25691f6456971bca3eebe71ac512e6f1d0d8"
+   "sha256": "4a5277612e962dc27443b12aae2bc950bc08cd0c3e85f3aae8583762aae42e39"
   },
   {
    "path": "organization/invites/create.md",
@@ -1372,7 +1372,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ed98aa5d7db0ee9d11fb5485564b67117f5df3390fcd24f4b6e280d13696ddc5"
+   "sha256": "e05531e148aab6c05a1a6ecdec5493ad66b3ae8d1b1766fc61b2dfca714a6e66"
   },
   {
    "path": "beta/organization/plugins/create.md",
@@ -1386,7 +1386,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c05054e0acc867e1d8fa3e73355190e368d5f554e9429d799d09a6441b646a4a"
+   "sha256": "0d8563d914a782114eaf06853fbc207171e696eb1b46396e69b56b9b070c8ed6"
   },
   {
    "path": "beta/organization/plugins/versions/create.md",
@@ -1400,7 +1400,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c7d376a07c08027cf713de200bb3328311fd6e8a707fb61f34ccbf0847a91098"
+   "sha256": "8da103f6adf419188919ea81798f3c9eed0cc208e82c18431dd0d21ac5c9732c"
   },
   {
    "path": "organization/rbac_groups/create.md",
@@ -1456,7 +1456,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "fc6e10c595ccb10cc562ef26db9d8e3e7efcff2dd492d8b3e5626d0e6b6e406b"
+   "sha256": "70285b9386219a4bf20049fe783dc6652c2b06039d9c9f67566c44f2768c62dd"
   },
   {
    "path": "organization/workspaces/service_accounts/add.md",
@@ -1484,7 +1484,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "24f95d3e148ab2cf94ffa76aa4421fb8dafdd880f9a47bb8c723b1b0821a39ab"
+   "sha256": "4929f8210162079327d16b2737d3432c05463a94666cda257c8cc229cbd2e3fb"
   },
   {
    "path": "beta/sessions/create.md",
@@ -1498,7 +1498,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "445ca9195a7a330f34052f9d0d167f9929e7f45aaf22e87ab80266a45563ae5b"
+   "sha256": "b53810d34743593fe13b02cdb0da9bb5e035709a1498770e179eb0350f7a5cb3"
   },
   {
    "path": "skills/create.md",
@@ -1526,7 +1526,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ae8dd01e5dfc17163636d43acf5eacc25693865b555d4b182b2f272968032c14"
+   "sha256": "d63760b87a118db3ba84589429ec95d96a8cb07e58f7aa2e5f53f983df42117d"
   },
   {
    "path": "skills/versions/create.md",
@@ -1554,7 +1554,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "74f7bbaf5e25033bd8d179b1c3346c0d2fc1f4609b26ee242db420b0b9783a11"
+   "sha256": "5909a8645b98626cd8af21d5b3f3d067803b83df67d28119dfff1d5b453b9082"
   },
   {
    "path": "beta/tunnels/create.md",
@@ -1568,7 +1568,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "35db95a3f6289bf9e497a13284f529adcdfa7cb8e9409944f2fdf16e9ddb9ada"
+   "sha256": "4b602fc5f4226ff375958f9c6ef023977265897d2e04cea7c7b6b29417bbff53"
   },
   {
    "path": "beta/tunnels/certificates/create.md",
@@ -1582,7 +1582,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "188b94d0d0ba5478670aec94dc57d7c5bee69cce70153bd2e930920e6a992b87"
+   "sha256": "e9e244ffe53669b14dc2c807a5d43e1e86e216b1aeec586695b4f88dc52674c8"
   },
   {
    "path": "beta/organization/mcp_tunnels/tunnel_certificates/create.md",
@@ -1596,7 +1596,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c2423e4406ee036c71dfd552dcd0fc9e7acb68f1abf26c41d8925065d838688b"
+   "sha256": "8d861a48042d16139b0e4beb6fefeceab9f4ee69e959eef9850d406bc06f1662"
   },
   {
    "path": "user_profiles/create.md",
@@ -1624,7 +1624,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "dc0dfa9cc93c04684d09603bf0d0813db7082958304d766c79427ca30d99875b"
+   "sha256": "b8e98cdbc97f19999d1d95c5c6accdb8dffaafd6bb63fd3197fb3f684010d2ae"
   },
   {
    "path": "organization/workspaces/create.md",
@@ -1652,7 +1652,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "cd15e8978eca99b59082b4d27904eec26987de3cd4f04fa84383fd369552adb2"
+   "sha256": "03fa262227e9fdac964d29e4c8d85ffeac0a6ca5a592221496134193c048eb71"
   },
   {
    "path": "organization/workspaces/members/add.md",
@@ -1694,7 +1694,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f7ddbcdf6e16b9bc93153182fbd6cf203907d04cb79a59f7452c6fdd1835b856"
+   "sha256": "c8e7b2a48cfb1038926723a7914ca77f99369184528e254bb77d3b057c661d5e"
   },
   {
    "path": "beta/vaults/credentials/delete.md",
@@ -1708,7 +1708,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "31b506ba46c2c15abff08fb0d36f40469889b39d84b5ce2ee96924d6e9f4d752"
+   "sha256": "6ddeeb58f33150ef495445c4584cdafb1e60325ac2ad844da84fcd4e4c9ad2f8"
   },
   {
    "path": "beta/memory_stores/memories/delete.md",
@@ -1722,7 +1722,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "fbc949891e34f5ef9f7f3572b218f5d07cfa6a26400516d83cedcf13c4d84792"
+   "sha256": "59e22ab21fb4983cee8bcc4d17dc2b4719857dafdfd156177b69ea12e225cd69"
   },
   {
    "path": "beta/memory_stores/delete.md",
@@ -1736,7 +1736,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "eac8e013915cdfcce2aef080170f0fb9dfbc554b99be9a7ead56d307d15fe146"
+   "sha256": "c1f674a6794ea92623fd8c08e7ee3c162bfc818fdb4aa0c00307108588dde646"
   },
   {
    "path": "messages/batches/delete.md",
@@ -1764,7 +1764,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "2702afb9903b1e2d44c492c7b9523c37d32c9a4d0e9139ac8f40d0a8d096745c"
+   "sha256": "64b77b24381c1b1c770b90da712d10251fbfa516cf4440d82535457163bb074a"
   },
   {
    "path": "beta/organization/telemetry_destinations/delete.md",
@@ -1778,7 +1778,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "500bd5334acac96cf6734e7738785251caf057e6059878f181b5fac5a113262c"
+   "sha256": "b36fa71cefcaf4359622d255c436c0e88781901f980d6059ee3b8567683175e2"
   },
   {
    "path": "beta/vaults/delete.md",
@@ -1792,7 +1792,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "3cafdcfb8024531be2e001fb5f381c52be0959aeca51857e29d452c5ffa45fc2"
+   "sha256": "dd5823f74f393e255a6b258a9d1851d80aa15c34614092c2c2c21c751b1162bd"
   },
   {
    "path": "compliance/apps/chats/delete.md",
@@ -1834,7 +1834,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "bdf1c7f8260d2d8bbde5222ea0ca1484474d88230c8cb3abd86ba32defaee159"
+   "sha256": "59a9d83bc9c906f5e6bf7ee61f305f78c418e692fd1977f483e37ea608be3c5c"
   },
   {
    "path": "organization/external_keys/delete.md",
@@ -1904,7 +1904,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f9844eea4ca8a441ac3391bbf4cabe3c6589be306d2ff8e91d5548372351d6e5"
+   "sha256": "936dae514ecc731efe98dd222621e9eb4ff631de35576d1ad5ddebfd8ad0c13b"
   },
   {
    "path": "organization/invites/delete.md",
@@ -1946,7 +1946,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "6b391a950f2f9bbd65134644822f4ee2430e0d3578c35d049bd02dabd7f22987"
+   "sha256": "809fa2433a87ced2ed0b39e20e5aa32e10d295157f1b8168bae620b58186d227"
   },
   {
    "path": "beta/organization/plugins/delete.md",
@@ -1960,7 +1960,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "810852c55b99b6677d674ccae94916290de64c1b986c560c6b638fcad5fb040d"
+   "sha256": "675518907f8fc858523dbd5950a750e0d368147329be85eb9128c3ea288e54ec"
   },
   {
    "path": "compliance/apps/projects/delete.md",
@@ -2044,7 +2044,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d258e2d3ea7a58d4fabe4e5f9c57484cbbceeffa0a1459c3f82bb5fe31d03972"
+   "sha256": "2f9f11ea874b7fa8437a831044deb981c4b2a45809f77650503db4fcc87b7dff"
   },
   {
    "path": "beta/sessions/delete.md",
@@ -2058,7 +2058,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f116d061b34d521b9d321a73372593f2b34fc7ced7153b9bcd1e477728d088fe"
+   "sha256": "d5193bf2a999c8b02af0107f0f10f940c6d36ef8856edf48b97395b3623f20f0"
   },
   {
    "path": "beta/sessions/resources/delete.md",
@@ -2072,7 +2072,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "40b638890b77849a54d2f194f25276bc8ff94afd90764fe81b0fb05591c31561"
+   "sha256": "e67450981111fd6984447c23f1c055addfc4dfc2a40b4ac0128132cf1f7f8ffa"
   },
   {
    "path": "skills/delete.md",
@@ -2100,7 +2100,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "264c2f47d3794c753b1aa4d9d895f31b0d3fe77374b35a2cd7f8ea62971d00eb"
+   "sha256": "28f3998a3c7da7c2eb4be5cfc3992d0a8918d7a2bd7683aa8caea382f41ba52d"
   },
   {
    "path": "skills/versions/delete.md",
@@ -2128,7 +2128,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f9c48821b247712ddc1de92ffc4c080044b32a4ff30c81241aee30c1975c5931"
+   "sha256": "15ba041c1604678c31611af10c09f6553fae45097af9f3ca4570f3fc2b2d0e7c"
   },
   {
    "path": "beta/organization/spend_limits/delete.md",
@@ -2170,7 +2170,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "134e813f8f21591ca67eee1ce8e6123d203a4ef820fb42fbe531d0875947ae34"
+   "sha256": "89c5b0fb27867d7bb6a7327e3b7c8aec7579d3394e52b6e1c569d6c328d13cab"
   },
   {
    "path": "organization/workspaces/members/remove.md",
@@ -2240,7 +2240,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "38e3dc8ddde3c74f9013402acb2f6c89167679f49c5f807aa5f2af5ce8b32780"
+   "sha256": "c28e0a61e502e641259894f2c48a4534ca19f8a15a3b8465d01f709b8782ba8c"
   },
   {
    "path": "beta/deployments.md",
@@ -2254,7 +2254,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "06801c343adb31fbf5a527b6686803bd886d7bf83b47197d673c8d733413c407"
+   "sha256": "5e2eaf0e071901a5b555e75df6f4c383061081d81af5de05c4b154447c945a12"
   },
   {
    "path": "beta/organization/claude_tag/bundles/targets/delete.md",
@@ -2268,7 +2268,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f51f3f647ab1442dab4f7b35c076d8de7d3bbccc57bbe419d87c30b28ae31932"
+   "sha256": "c0915d9dccdab92f8b9e933ebd81134a1ed67729513bf1b4e2200442a78f4a3e"
   },
   {
    "path": "compliance/apps/projects/documents.md",
@@ -2366,7 +2366,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ca309f495adc424dac974d70cef9b170fe90c011150661e145fbefbeec67c11a"
+   "sha256": "b032741fd18da4dcaccbcaea570e5ce0d74e33b56ec9203ef2e251e84fc32472"
   },
   {
    "path": "compliance/apps/chats/files/download.md",
@@ -2394,7 +2394,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "24d8049be97d88b07155152327d2c390939afbd085a80239b2f8e94f7930e5e5"
+   "sha256": "703d3881d0d24fee0dd00131ffb176e7ccaa62446ad982aab35a02f80ee084c0"
   },
   {
    "path": "beta/skills/versions/download.md",
@@ -2408,7 +2408,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "33cad0b17dbf698c434c57cbc87bda92811eae207adae3ee605974c2abf039b4"
+   "sha256": "508a88bf3e0a4c9f9020d6bd2960e6a4fb119ed86ea09991322c3ffb32bd8b24"
   },
   {
    "path": "beta/dreams.md",
@@ -2422,7 +2422,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "e58f8a4bb039285cea2f634c11e2bb94d264b1c77a1fc4e1c2f78fd9aaab65f2"
+   "sha256": "16ea6183f8abd7f9b17b164a151b09cc59106339dc9de35c838c47363b887eb6"
   },
   {
    "path": "organization/spend_limits/effective.md",
@@ -2464,7 +2464,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c648635d339146ab77afac90a1b0440154816f67eb223a7434491bfaf224ee36"
+   "sha256": "15ac4b380c0606b76fa8c71fbd809db56596b143a3fe6c60d2175eb660c6a48e"
   },
   {
    "path": "beta/sessions/events.md",
@@ -2478,7 +2478,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f434a186262881b3bd3e9a57e67be330db7dd3ad5a2c415d501c5d4196833521"
+   "sha256": "e1d0108504113d6b64e992de43c3a2fb407e783be5a0c7255950452c995094a2"
   },
   {
    "path": "beta/sessions/threads/events.md",
@@ -2492,7 +2492,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c484ac3731f7ea82c66a957413fcdc72ed5b399a30ef1e1029cb8a577a1abec2"
+   "sha256": "ba53d7543a39667301bce460e94f03b7140662b1857820187b2d850c1d444b37"
   },
   {
    "path": "organization/external_keys.md",
@@ -2506,7 +2506,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "de9ad5516ebd87e4351e1f946334cfe2a09b16a576694973ddba3c9b787a7b43"
+   "sha256": "b4e6b9a8c819a72684c5c647b73676cb47a211a64ecb689ac6b9f30fc44e3dfe"
   },
   {
    "path": "beta/organization/external_keys.md",
@@ -2520,7 +2520,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d4312f5a5f416c2a0766c05600526dd78d48fe134d92a13deb85962ea9151065"
+   "sha256": "12fefb11061790b37edb98b76cbc0647e42966f7dcd6feac7781df0a7b5ec3ac"
   },
   {
    "path": "organization/federation.md",
@@ -2548,7 +2548,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "aaeadee1863927e197dcb31bb824e706e28c202037e612075a5940624cb7e38a"
+   "sha256": "8b85d04b64272f72c3b9ce5d28a03e511b4f37a5feddcf7711f461a751b99037"
   },
   {
    "path": "files.md",
@@ -2562,7 +2562,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "761040a551aec007e3494cc7299090068340bf11de3512c76fbce1a1d4eaeb56"
+   "sha256": "7ae2cafb67f817be554f0196da3f3c1f94dda8da5963f3b46904cc2ddf7d31cf"
   },
   {
    "path": "compliance/apps/chats/files.md",
@@ -2590,7 +2590,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c48cecd845615bce3783c959ec27c9b1b19934fe1b33c3e993d535463328a683"
+   "sha256": "a89c515da022ea4ed93d0eea16b6d4281daaa36493aea4225aa5e5968510d454"
   },
   {
    "path": "compliance/apps/chats/generated_files.md",
@@ -2618,7 +2618,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "1b67aa27facc21fe23a1fa36907dc923075c79fc46ba0d8086dabf4fcc5cb2ff"
+   "sha256": "5eadcd013b897780af0d57a84ea5ba5d96648b299b8ae3838ff8c248fab75a33"
   },
   {
    "path": "models/retrieve.md",
@@ -2646,7 +2646,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "0f1bf50e5d061bdba88a8ef5a5511a3bf80c6c92b61f108c7b67d43651669285"
+   "sha256": "84918aa99eb9faa6c3ce6469ac38d83cad17620507257779e4c78ee130020dcb"
   },
   {
    "path": "organization/analytics/summaries/list.md",
@@ -2688,7 +2688,21 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "26300ff97024ecc0d075ddcaa029488530e48e5ad61e5435d835a8fce65ad16f"
+   "sha256": "44ea5b3c40c352cc30f9e48edf22c41fe70a7d47c47359f3bf9388f6da8a6dd1"
+  },
+  {
+   "path": "compliance/organizations/security_posture/retrieve.md",
+   "url": "https://platform.claude.com/docs/en/api/python/compliance/organizations/security_posture/retrieve.md",
+   "title": "Get an organization's security posture",
+   "description": "",
+   "nav": [
+    "API Reference"
+   ],
+   "order": 192,
+   "in_index": false,
+   "in_sitemap": false,
+   "linked": false,
+   "sha256": "86c3300ecd2ec9e4b5f4cf0df089a24b0b21715bfd213ee83ccf1ce144d34858"
   },
   {
    "path": "organization/analytics/artifacts/list.md",
@@ -2698,7 +2712,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 192,
+   "order": 193,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -2712,7 +2726,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 193,
+   "order": 194,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -2726,7 +2740,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 194,
+   "order": 195,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -2740,11 +2754,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 195,
+   "order": 196,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "83077bbf5d4ef3e967c0a71894435b16ed0bc7119fc9b3a84dc343b96bfc8783"
+   "sha256": "4ff0cf12ebae3b2227256cb3971065c470ce779b7ccaea1530732633902bff14"
   },
   {
    "path": "beta/organization/claude_tag/bundles/targets/retrieve.md",
@@ -2754,11 +2768,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 196,
+   "order": 197,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "3d6d528bf89cfb13a7160fd6224a933cfffdd0edc86d53760bac41a77a964dd6"
+   "sha256": "0ea6a3a343a409328865d09a4d7f49a12a15456ce9f629dd35775c561f4d493a"
   },
   {
    "path": "compliance/apps/chats/messages/list.md",
@@ -2768,7 +2782,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 197,
+   "order": 198,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -2782,7 +2796,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 198,
+   "order": 199,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -2796,7 +2810,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 199,
+   "order": 200,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -2810,7 +2824,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 200,
+   "order": 201,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -2824,7 +2838,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 201,
+   "order": 202,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -2838,7 +2852,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 202,
+   "order": 203,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -2852,7 +2866,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 203,
+   "order": 204,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -2866,7 +2880,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 204,
+   "order": 205,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -2880,7 +2894,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 205,
+   "order": 206,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -2894,7 +2908,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 206,
+   "order": 207,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -2908,7 +2922,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 207,
+   "order": 208,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -2922,11 +2936,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 208,
+   "order": 209,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "0cf453325fbd2d8da24dd81a021db1bffae9e6716b68aa0206539b3b8257b3ad"
+   "sha256": "d513ba185077c485a0510c41bedf2ad16ea281e1f1d238e78df480e67e9209c0"
   },
   {
    "path": "beta/organization/analytics/cost_report/list.md",
@@ -2936,11 +2950,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 209,
+   "order": 210,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "31c2f885f22634ef246540e0bf61e5a86ef6abe35c440592b4da978c1a630d86"
+   "sha256": "928880727bb3f99fd3a6fb41ed9c3646d592ceb3ae1b3fe67f65a56431007cd5"
   },
   {
    "path": "beta/organization/cost_report/retrieve.md",
@@ -2950,11 +2964,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 210,
+   "order": 211,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "6859c5f759047cb609471f1326a2a11af37b4143829e6c74a2654387d2cada8e"
+   "sha256": "bfb81d3fdaa6409a9a08785de2f4c164f57e6662deb040cea8a278e318739059"
   },
   {
    "path": "organization/retrieve.md",
@@ -2964,7 +2978,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 211,
+   "order": 212,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -2978,7 +2992,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 212,
+   "order": 213,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -2992,11 +3006,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 213,
+   "order": 214,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "4220c69211682093ceaf28bae91c94562740b4ba48cb9f879334b3cba7ad32d7"
+   "sha256": "04e8e04cc22656db8f556f8d0c3a64570c7f12aa36e6e06cd64631f39ed39d4e"
   },
   {
    "path": "beta/deployment_runs/retrieve.md",
@@ -3006,11 +3020,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 214,
+   "order": 215,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "db53b793356e292658c241e15d3e46cc69052d0599926d3f91727fd330403f76"
+   "sha256": "1336519d8f92f79ecee90137e642b3d0cd12b3bb0a7aeca9ce2b2d3b7a58589c"
   },
   {
    "path": "compliance/organizations/settings/retrieve.md",
@@ -3020,11 +3034,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 215,
+   "order": 216,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "92ddbf48c124c09c16b7267690ccce52e2fb896246e894970c08f07f48324bbf"
+   "sha256": "970d3fb7524bf46c13043ae6f0b518de80d3fcd78d0bdaf986bacf35c07a091c"
   },
   {
    "path": "beta/environments/retrieve.md",
@@ -3034,11 +3048,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 216,
+   "order": 217,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "018550cdb505aaac1a1e19083f431c2c5763d21ed26c59f5d4686ab9b653f7aa"
+   "sha256": "39e0002915a261a65460e92032324b5a9b98051809e58e749fcfcabfb00f3e19"
   },
   {
    "path": "organization/external_keys/retrieve.md",
@@ -3048,7 +3062,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 217,
+   "order": 218,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3062,7 +3076,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 218,
+   "order": 219,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3076,7 +3090,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 219,
+   "order": 220,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3090,11 +3104,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 220,
+   "order": 221,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7468fc8fb2ef1f2080ebf5400195508a1229d997298f5763095a4a96dc10350d"
+   "sha256": "553d6fa641d51ab050fd33f9345bb2743aafd8886ef12f2254cb7e823137e5b7"
   },
   {
    "path": "organization/federation/rules/retrieve.md",
@@ -3104,7 +3118,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 221,
+   "order": 222,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3118,11 +3132,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 222,
+   "order": 223,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "2d5d809e91c64e74963027591c9bd9ecee62caec37f3258967a17bee473b0271"
+   "sha256": "6de99a8247d97399abae4b4b061e7e7c3dbb165ccfc077abdf1f26c512e423bc"
   },
   {
    "path": "compliance/apps/chats/files/retrieve.md",
@@ -3132,7 +3146,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 223,
+   "order": 224,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3146,7 +3160,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 224,
+   "order": 225,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3160,11 +3174,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 225,
+   "order": 226,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "443ec6f3eee29489edf76671136aa51e0ee5aea6b45ca6491b94e9891885e9a6"
+   "sha256": "bc732a0d9a39c0dc05fbdfb9639a8b4675256d9b015bf1f3f897a9ffa21917c6"
   },
   {
    "path": "organization/invites/retrieve.md",
@@ -3174,7 +3188,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 226,
+   "order": 227,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3188,7 +3202,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 227,
+   "order": 228,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3202,11 +3216,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 228,
+   "order": 229,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "df7bff3c1ccffcd73a82676859b35164ee324a51f05cf6c00ccc95c028d321ce"
+   "sha256": "d5c8c388e9eb33063c7a24e2135111de83e588d3dc2552e93d56dac70b26527c"
   },
   {
    "path": "beta/organization/webhooks/retrieve.md",
@@ -3216,11 +3230,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 229,
+   "order": 230,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "90acee1cd00337b35f5adf37fe056711d2a8bed1129000aac57e071490cf7f92"
+   "sha256": "ce18724cbf54c7bc6069f3ed7b890204b627e14061b521d19c2f442df56e505a"
   },
   {
    "path": "beta/organization/analytics/user_cost_report/list.md",
@@ -3230,11 +3244,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 230,
+   "order": 231,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d6a9207cfe9f39328463e024aea6d1bff124457a64c4786a759e6dc79efc64ac"
+   "sha256": "c182eefe440b5f8dd5431babaf6760542cff900ba3d6aaeadc2b35aea585cf97"
   },
   {
    "path": "beta/organization/analytics/user_usage_report/list.md",
@@ -3244,11 +3258,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 231,
+   "order": 232,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "5c2e1e84ee023b19b3d9a3770df34caeb67e37236088206b1daa3062ea36978f"
+   "sha256": "e677f0d63c92c1fd7511ee48dcc9982ae7010b4892b95f147d73a9e78764c4f9"
   },
   {
    "path": "beta/organization/plugins/retrieve.md",
@@ -3258,11 +3272,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 232,
+   "order": 233,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c6fd117dc762529633202fb59d30bfacee3d5398e81612b13741b5dc994d4856"
+   "sha256": "707b201faa34fd382569bb1edc335616ed1ed68431ad280f7e84e4a6d08a289c"
   },
   {
    "path": "beta/organization/plugin_marketplaces/retrieve.md",
@@ -3272,11 +3286,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 233,
+   "order": 234,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c03362e5061b42face36e4db389bc8ec806f0de5c7ce8e4441804822692200c1"
+   "sha256": "03725e32c740b1f2bf87f7682382ad219f35d160e335539d8f4d272e526c4c76"
   },
   {
    "path": "organization/analytics/plugins/list.md",
@@ -3286,7 +3300,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 234,
+   "order": 235,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3300,7 +3314,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 235,
+   "order": 236,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3314,11 +3328,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 236,
+   "order": 237,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "462875dffdcf17e3d02e2340ce46ed3aa0aa558ae8b669c04c7e3d46af85578a"
+   "sha256": "f49108611bef1bebecb9d3a9b5a01e5a2a45c60e3f8d5eab36324f9a0d81eb98"
   },
   {
    "path": "compliance/apps/projects/retrieve.md",
@@ -3328,7 +3342,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 237,
+   "order": 238,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3342,7 +3356,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 238,
+   "order": 239,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3356,7 +3370,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 239,
+   "order": 240,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3370,11 +3384,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 240,
+   "order": 241,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "cbb497545f671ce32b8e1ca1dd34d7dbc2c0300e797a269a09cbd381142316c8"
+   "sha256": "72e5b01be6681be31482724377688697dae352c67894a1239721a236311e3903"
   },
   {
    "path": "organization/rbac_groups/retrieve.md",
@@ -3384,7 +3398,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 241,
+   "order": 242,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3398,7 +3412,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 242,
+   "order": 243,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3412,11 +3426,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 243,
+   "order": 244,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "5fc9abd222cb4f15d37ba375d3e5e3340f95369bb3523ee47899e59cbb1e8e8f"
+   "sha256": "17273153a3b76dafc1f4819b9393b231d4f44b3caa2dec78c4f540f2c292f4f1"
   },
   {
    "path": "beta/organization/rbac_roles/retrieve.md",
@@ -3426,11 +3440,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 244,
+   "order": 245,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "99c82bbbe83ccb541decc2029acd9c8f79e919cc4db7e28d5717851070025020"
+   "sha256": "a9685a7d40467085a63b1b6bfea8a48245a3b8e84c964e118c044c032f96cd6d"
   },
   {
    "path": "organization/service_accounts/retrieve.md",
@@ -3440,7 +3454,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 245,
+   "order": 246,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3454,11 +3468,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 246,
+   "order": 247,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "12662c3b6869bcb4d6127db30c168b7791704caa80487f44c1c67f216e1e6b8d"
+   "sha256": "2498be81d91dcb3c2d190523f34574f8e3bef0044f4041a824335c7607fe8a6b"
   },
   {
    "path": "organization/workspaces/service_accounts/retrieve.md",
@@ -3468,7 +3482,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 247,
+   "order": 248,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3482,11 +3496,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 248,
+   "order": 249,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "05a9868ab187c3aa5db8f3dd8afdf4f917832a177e58c71a547d85c074543cda"
+   "sha256": "915eac75ab15259044c36a0fba685c3204fedb641df7e407df33b52e6d1a4289"
   },
   {
    "path": "beta/sessions/retrieve.md",
@@ -3496,11 +3510,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 249,
+   "order": 250,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "9f1e2c09c9403c7997a35e758d2d7db0dd9ad43236933ccbcfddec09c55c60f7"
+   "sha256": "853cca2fd97427cbaeadac8dec597ca47f9ccdd614475c727fd88b12e6d91a1f"
   },
   {
    "path": "beta/sessions/resources/retrieve.md",
@@ -3510,11 +3524,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 250,
+   "order": 251,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "019cfa0db12649627f6f1973c321c2f0f203376e9a24c05ed43fbd0f5f2eec33"
+   "sha256": "3a93e83c3beee7af73d3056da82a7f4c91c3e32241be633947e0481b67d90b71"
   },
   {
    "path": "beta/sessions/threads/retrieve.md",
@@ -3524,11 +3538,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 251,
+   "order": 252,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "43b8b355551ffbd790743ddfb49142cb7265171cc85a8f50f74dd7f8e7044801"
+   "sha256": "42439c223e98a1280efef90c5219b5b8e6da420ca0feba05e0136a43d8597632"
   },
   {
    "path": "skills/retrieve.md",
@@ -3538,7 +3552,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 252,
+   "order": 253,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3552,11 +3566,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 253,
+   "order": 254,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "efcc4d424b57240cd66e48ef005b6e538e3eedf9e618f5ca93ab1867bc18a50b"
+   "sha256": "3ef94a9516625051d06c4fba7d2deb56829b8d80cab70b90b3995517f04d0221"
   },
   {
    "path": "organization/analytics/skills/list.md",
@@ -3566,7 +3580,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 254,
+   "order": 255,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3580,7 +3594,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 255,
+   "order": 256,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3594,7 +3608,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 256,
+   "order": 257,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3608,11 +3622,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 257,
+   "order": 258,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7943fe0c0a0069a32ce2baccaf5cf58e11082113440b73a241c771df10c5c317"
+   "sha256": "e51c0e12f159433ce587c8122f18355e30a0bfc169bdd2559fe2767f09f54d8f"
   },
   {
    "path": "beta/organization/claude_tag/slack_channels/retrieve.md",
@@ -3622,11 +3636,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 258,
+   "order": 259,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "8c8c1248f0f1dcf2e50c2524018a608dfb93633a4291c69a40b459a75a23bdd2"
+   "sha256": "f931d3750cb7bf2fdaa29e1b6f943c0779190f0e7b9e1cc770a15ff7fadf7bfd"
   },
   {
    "path": "beta/organization/claude_tag/slack_workspaces/retrieve.md",
@@ -3636,11 +3650,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 259,
+   "order": 260,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "5ee654f4c803a65c30b01368b85f839337a879c36e81181861f88e30311d0471"
+   "sha256": "5c444cb008d69e3ced8f81789605952a427fede72b7f57d552ec236086080c8a"
   },
   {
    "path": "beta/organization/spend_limits/retrieve.md",
@@ -3650,7 +3664,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 260,
+   "order": 261,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3664,7 +3678,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 261,
+   "order": 262,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3678,7 +3692,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 262,
+   "order": 263,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3692,11 +3706,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 263,
+   "order": 264,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "9814129d3cd7a6624602359dadbf838096974125727b4910c20a57bac7852f97"
+   "sha256": "d3e5af14dfa5c125e26624ea8d8a35b9ef0938384f46d1ea9482e40477195d05"
   },
   {
    "path": "beta/organization/analytics/usage_report/list.md",
@@ -3706,11 +3720,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 264,
+   "order": 265,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "e4efe4616e35e2ad72decb748e589b6a96751509f9432d82402f340263bd11fa"
+   "sha256": "452fb1dd6053f877f119c7cbd1f86681e91ffc4c2ea384db90b4db1ba896ac43"
   },
   {
    "path": "beta/tunnels/retrieve.md",
@@ -3720,11 +3734,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 265,
+   "order": 266,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "8d2a432a04d7d03b0b09f9d93ec44cb0a7c379e35493696f8956f5a477075056"
+   "sha256": "a39726b663f1a07a7abd371c6b060fb40feecfa8df0a787b585a25c5573defc7"
   },
   {
    "path": "beta/organization/mcp_tunnels/retrieve.md",
@@ -3734,11 +3748,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 266,
+   "order": 267,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "55b0f11a77b46004380e70947913b68f972828ad05bc8f903f7d1eabd1217902"
+   "sha256": "9e77f0bc79dce69156ba92ea8a25a7c5e3933cfe43a332fe67e8bca3df51cf04"
   },
   {
    "path": "beta/tunnels/certificates/retrieve.md",
@@ -3748,11 +3762,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 267,
+   "order": 268,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d0f5378c66c9622f6ca39f6ce96d35f37c855cec5c31f14e4dcf3b032a7fec1d"
+   "sha256": "0c98cc8d18bfbf497cb9b29dd6a618b78317a1f7280b9af2aad51b29c6af09d1"
   },
   {
    "path": "beta/organization/mcp_tunnels/tunnel_certificates/retrieve.md",
@@ -3762,11 +3776,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 268,
+   "order": 269,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "06836773689565684a8da45e43d4d636ce4c9c033910d1d25cd2defecd092012"
+   "sha256": "71f877d7bbf005649c8fd65567ab3c1f70159d622452095e64bfed651971e640"
   },
   {
    "path": "organization/users/retrieve.md",
@@ -3776,7 +3790,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 269,
+   "order": 270,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3790,7 +3804,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 270,
+   "order": 271,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3804,7 +3818,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 271,
+   "order": 272,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3818,11 +3832,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 272,
+   "order": 273,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "74c03c66f87d8435b7590bdbb9cc7300676930e0411727459f554e03f161c54c"
+   "sha256": "1b207aa3f55226e2ac12ab0573fbf04fec2bb6f4cdf720d6246013359201432f"
   },
   {
    "path": "beta/environments/work/retrieve.md",
@@ -3832,11 +3846,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 273,
+   "order": 274,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "b3f0265c9d1dbe87b9406ee7c1bcd89c18871b8ed25ae84382522dedf6fbcc6a"
+   "sha256": "3c8a8ff2563d34c1012deb21a258aafd086915acbb1623d8c11d4d9f4bb72ac2"
   },
   {
    "path": "organization/workspaces/retrieve.md",
@@ -3846,7 +3860,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 274,
+   "order": 275,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3860,7 +3874,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 275,
+   "order": 276,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3874,7 +3888,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 276,
+   "order": 277,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3888,7 +3902,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 277,
+   "order": 278,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3902,7 +3916,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 278,
+   "order": 279,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3916,7 +3930,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 279,
+   "order": 280,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3930,7 +3944,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 280,
+   "order": 281,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3944,11 +3958,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 281,
+   "order": 282,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "e9f41fbad2e0708ae91ebe339ee2409c1808c6114faf57b01b5f0da13972d36a"
+   "sha256": "f97c8692d4cef85915a24d8792ed8db65bed4fa7e3b0b560ced94bcd084952c1"
   },
   {
    "path": "organization/invites.md",
@@ -3958,11 +3972,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 282,
+   "order": 283,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d96477f2b72a9bcb2b53d8df2cb64ac1fdf440133cd55eb371051970149e9acd"
+   "sha256": "23954cc42809453cbe454c5a0187723089b43e50037a852af52e080f5c364f2d"
   },
   {
    "path": "beta/organization/invites.md",
@@ -3972,7 +3986,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 283,
+   "order": 284,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -3986,7 +4000,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 284,
+   "order": 285,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4000,11 +4014,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 285,
+   "order": 286,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "9270254c10d94672294ef78eacd66bceefe1f4ef8931b8a90fe12004c01b75e4"
+   "sha256": "e2de5a07f11489de2f15b8a7c4668e1d1ee11966cfa146da94e7c674aa507760"
   },
   {
    "path": "beta/agents/versions/list.md",
@@ -4014,11 +4028,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 286,
+   "order": 287,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "33b6c5cdb9cdbc082f676060d1861f99f4f7f920eac7d1f8a981ffe542b46599"
+   "sha256": "63abc710aefbad41ce01f334c355a98c13dd0a01c5623faae98f7946c3425934"
   },
   {
    "path": "beta/agents/list.md",
@@ -4028,11 +4042,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 287,
+   "order": 288,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "3243b6c9fcc36eccff2d32a9cdebd30b06b6d8f5d3069b4b72c26ca19bb39eb3"
+   "sha256": "8a6c5af2bd349554d00811d7208b82aa412dfd226719ffbfc5b469377bd329ef"
   },
   {
    "path": "organization/api_keys/list.md",
@@ -4042,7 +4056,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 288,
+   "order": 289,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4056,7 +4070,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 289,
+   "order": 290,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4070,11 +4084,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 290,
+   "order": 291,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "a1761021c50920b5005f744decd057e49327bea9544533e9537d1957b7512513"
+   "sha256": "532b7144c1ee79bdeb077eaa45f9f6d6946adb78396b9c955fc4d97109f64976"
   },
   {
    "path": "beta/organization/claude_tag/bundles/list.md",
@@ -4084,11 +4098,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 291,
+   "order": 292,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ec63595247d7a09a2c53072289b90481b38be8214ca04b7fd9c3c406d84069cd"
+   "sha256": "74bf1f89d04e019841f385a96dd50e6e4e9cc75f1ce11c5b92668d7bfbdf3bb2"
   },
   {
    "path": "compliance/apps/chats/list.md",
@@ -4098,7 +4112,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 292,
+   "order": 293,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4112,11 +4126,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 293,
+   "order": 294,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "a02b76a5f1dd79308dfc3244d435d9a725fa0583ff5e714cde2ee2c2c763d42b"
+   "sha256": "4597336d9b1f6558a4fbb20de20603fae89a3ab57e12e5852857a614086ae3e6"
   },
   {
    "path": "compliance/groups/members/list.md",
@@ -4126,7 +4140,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 294,
+   "order": 295,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4140,7 +4154,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 295,
+   "order": 296,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4154,7 +4168,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 296,
+   "order": 297,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4168,7 +4182,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 297,
+   "order": 298,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4182,11 +4196,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 298,
+   "order": 299,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "e844baa7848c6608e847c24989551f873b56df5f3ad8aee88748454e6f05289b"
+   "sha256": "ff589c006c4793a1fe5560378ad5b543e948a86a8e760bb640e2be2d79b3edca"
   },
   {
    "path": "beta/deployment_runs/list.md",
@@ -4196,11 +4210,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 299,
+   "order": 300,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d6dfdddb34838b0cd6d9dd69902773b2cb85161ba715f825613cc294b19b427a"
+   "sha256": "25ca5550faeb3071ff2473d6793dc2e98f858dd645016d29ff33a295312ebf42"
   },
   {
    "path": "beta/deployments/list.md",
@@ -4210,11 +4224,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 300,
+   "order": 301,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "9bc49536ea0c1193956bf4a861c8066939cd28146e04b99a3a9cd629a87729bf"
+   "sha256": "71d481ef155e3fe143f7df494018b905fc05e4fa7cd86899943b7f6944d47394"
   },
   {
    "path": "beta/dreams/list.md",
@@ -4224,11 +4238,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 301,
+   "order": 302,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "df26f2f21431f94fe5cead10ab8960ba7d5fa48f053a5c120dfa87af0d975787"
+   "sha256": "5ffca2e26dda1886f27a405a142015feaa45149226c706aade45328f1c72ffc3"
   },
   {
    "path": "organization/spend_limits/effective/list.md",
@@ -4238,7 +4252,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 302,
+   "order": 303,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4252,7 +4266,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 303,
+   "order": 304,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4266,11 +4280,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 304,
+   "order": 305,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "e04c1aef0c3b2977baa729407665e2eb84a4506246fa19861648f9cc892eb2ba"
+   "sha256": "9eecc629d24de2e4b81ad1e3d66ea822df27600829cf7c20a7505765b253fc91"
   },
   {
    "path": "beta/sessions/events/list.md",
@@ -4280,11 +4294,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 305,
+   "order": 306,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "0f9d98240d4ed33627b1f8b042d9093a7cd87e18a01a718fd5a338f07a9e0dea"
+   "sha256": "60d2bffd6f5634d230025dffa29c4d0e445907a980b0330ffaa8e703a2faf009"
   },
   {
    "path": "organization/external_keys/list.md",
@@ -4294,7 +4308,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 306,
+   "order": 307,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4308,7 +4322,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 307,
+   "order": 308,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4322,7 +4336,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 308,
+   "order": 309,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4336,11 +4350,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 309,
+   "order": 310,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "e111ad85d2b99ab678f5f3b6ca1857f2985ffd14d677325e18c3dca55617f186"
+   "sha256": "4c0d7aec53cfa412df894b6a7445356dec3273a656356fe3b37e11ebc44d844b"
   },
   {
    "path": "organization/federation/rules/workspaces/list.md",
@@ -4350,7 +4364,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 310,
+   "order": 311,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4364,11 +4378,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 311,
+   "order": 312,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "57142b9f5f45b93dc9b24cc65ff6b92911dcc6a77e6e9fa0ed474272d4b33b1b"
+   "sha256": "153a215efb9d5cecc95a54902cf48df81639e34ef1057e2ce63023a8debb8ea1"
   },
   {
    "path": "organization/federation/rules/list.md",
@@ -4378,7 +4392,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 312,
+   "order": 313,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4392,11 +4406,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 313,
+   "order": 314,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "6df45a510a79d8bfb078149f647d9d0e6fcfa74ef8bd160efcf5ef44457d18a1"
+   "sha256": "d3d92894fab0571deaa852e851b636178f4001f376b28431967bf5d6c45327a1"
   },
   {
    "path": "files/list.md",
@@ -4406,7 +4420,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 314,
+   "order": 315,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4420,11 +4434,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 315,
+   "order": 316,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c16bb9eb7a80210293861c621a125c974489fff173cc2300c5ed444b855eb60f"
+   "sha256": "53bbce838b9fdf81427b8ea5d4f996fc35ee89abfbc175d6336b2b4fb1c36061"
   },
   {
    "path": "organization/invites/list.md",
@@ -4434,7 +4448,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 316,
+   "order": 317,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4448,7 +4462,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 317,
+   "order": 318,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4462,7 +4476,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 318,
+   "order": 319,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4476,11 +4490,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 319,
+   "order": 320,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7a5db59e06798c05b103d9b07091da20dd5c3065f8e5ca7c6aa8cbb38a593c0d"
+   "sha256": "ef98e6f80fd6af18d887984a7a9365a72a4bed01cd9b9d17b75c43975fc98f08"
   },
   {
    "path": "beta/memory_stores/list.md",
@@ -4490,11 +4504,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 320,
+   "order": 321,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "61e0f63708634916f34931f2fb36556b3b3a9c72a3e1c64aa0016e036070aa0e"
+   "sha256": "e8d424821d96072258c372190b0abeb62daa9fe132db1342e885b2a2f6bc8808"
   },
   {
    "path": "beta/memory_stores/memory_versions/list.md",
@@ -4504,11 +4518,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 321,
+   "order": 322,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "27ac0718ee6afaab0b02e8ba041e82b70098625ee05387b43c3c81a1c0c0a0ac"
+   "sha256": "c43c8f10ef1a370d85307582f13578b0e58ec71564573dd03feb7bc76b5c6ffa"
   },
   {
    "path": "messages/batches/list.md",
@@ -4518,7 +4532,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 322,
+   "order": 323,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4532,11 +4546,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 323,
+   "order": 324,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "9f4c0b60d3ebb8f218cd7503643b9d269c5ab087b8abb2fbdbbbe409f6effe81"
+   "sha256": "5e5dfceb2208695ff742bb5bf953e9665570328cb4cf36abd5227a2d3f3e8a21"
   },
   {
    "path": "models/list.md",
@@ -4546,7 +4560,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 324,
+   "order": 325,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4560,11 +4574,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 325,
+   "order": 326,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "03ea7742635735c00f127994538c871412bc0695db3a43e2d340fad2829f347b"
+   "sha256": "a49f587933252b930516380bafe6b99f025b206938fc3317d76082fcdf34eae3"
   },
   {
    "path": "compliance/organizations/user_preferences/list.md",
@@ -4574,7 +4588,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 326,
+   "order": 327,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4588,7 +4602,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 327,
+   "order": 328,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4602,7 +4616,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 328,
+   "order": 329,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4616,7 +4630,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 329,
+   "order": 330,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4630,11 +4644,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 330,
+   "order": 331,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ff28eb71034e07cdfebad38b8c963f666ec6f2db31124e464da4e983b3a65bda"
+   "sha256": "8442df542e96b00cfa2399adcd7a286f333d046bc8489ec52d8d3d3960728949"
   },
   {
    "path": "compliance/organizations/list.md",
@@ -4644,7 +4658,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 331,
+   "order": 332,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4658,11 +4672,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 332,
+   "order": 333,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d117ec4a50ebcb82dbba403d2ad0c76c1b2b7ee0e02a92784f022d4e36f012cd"
+   "sha256": "9cbe443d3b69138aa38c3279133ce6f67e31d0527c7712d35e4859dbe91ba181"
   },
   {
    "path": "beta/organization/plugin_marketplaces/list.md",
@@ -4672,11 +4686,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 333,
+   "order": 334,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7d73e10361bdb0b3f4df2bc7c9ac3007087b539338cff5070ee7c62eced90d01"
+   "sha256": "13b5f069dbede11d6fa440ede59b941719d2434704aa95c4106a14294f857296"
   },
   {
    "path": "beta/organization/plugins/shares/list.md",
@@ -4686,11 +4700,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 334,
+   "order": 335,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "564a7efdd0a5320edfae47be91d3daa8096e5c6619783e7d8975609bee458847"
+   "sha256": "403a7c9af1530ec39ed90371461e0b4fdecfdb82d631ebe13215dd3ca0f986e2"
   },
   {
    "path": "beta/organization/plugins/versions/list.md",
@@ -4700,11 +4714,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 335,
+   "order": 336,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "1fa86ba0093ad7aa0a679a54e04891dcbea43878fa4be3898b7a164255307530"
+   "sha256": "e977242e56cdf3e497cf00d5a7969542d312bce62b95740bbb7a4d9f71036d71"
   },
   {
    "path": "beta/organization/plugins/list.md",
@@ -4714,11 +4728,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 336,
+   "order": 337,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "61d7fb418f53e9bc51c172c05f0ea2108ea1c5b82e69a8a4536816b6c8b13884"
+   "sha256": "11798cfe0593531adc45f8027f5fa192fc3f9fa96ccca32ddcdb14b9c58c6dcc"
   },
   {
    "path": "compliance/apps/projects/attachments/list.md",
@@ -4728,7 +4742,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 337,
+   "order": 338,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4742,7 +4756,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 338,
+   "order": 339,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4756,7 +4770,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 339,
+   "order": 340,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4770,7 +4784,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 340,
+   "order": 341,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4784,7 +4798,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 341,
+   "order": 342,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4798,7 +4812,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 342,
+   "order": 343,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4812,7 +4826,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 343,
+   "order": 344,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4826,11 +4840,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 344,
+   "order": 345,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "051b552d834eaf9a7935b84071a5bad45e1919e6320e76b680407cbdc359bbf6"
+   "sha256": "c512c0309048c81db0d603bfac94d39b2dc2905f9b113bf41191540b36a3d7a5"
   },
   {
    "path": "beta/organization/rbac_roles/permissions/list.md",
@@ -4840,11 +4854,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 345,
+   "order": 346,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "2e2fa90db1535b967bbc09f86ae9a50153fc9f09c5bb9faf85a41c2d8f05a3c3"
+   "sha256": "b7cc475f125a490f5d91817cabacfa5fbbbacc275ea9be39bfd97f5d31f0e931"
   },
   {
    "path": "organization/rbac_roles/list.md",
@@ -4854,11 +4868,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 346,
+   "order": 347,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "0fceb0e0fb05fc0cca03d84bcb000f337feebe29dbfc217b1573f2fe64c7e1e9"
+   "sha256": "e12ba631a82263a67f9a29c2239ab1c08bface115ad343cc5e7e0ec3cc3814dc"
   },
   {
    "path": "beta/organization/rbac_roles/list.md",
@@ -4868,11 +4882,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 347,
+   "order": 348,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "4e4f9e23a73d8df8b980c8c374f940ce79a5675d82a45d7fc039855c9c9e1922"
+   "sha256": "e10a44cc9b8212c4d07b0405094d7710744b9da024323c2ff59c065ed5cbe6e0"
   },
   {
    "path": "compliance/apps/sessions/remote/list.md",
@@ -4882,11 +4896,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 348,
+   "order": 349,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d4e29dff0c69d39f33f02be5817f9944c42924e1e89fbceff29a5ef4874de420"
+   "sha256": "083848fa79259cb1d082e580dcc81250fafc59f792fabddede7b3d412df43ee8"
   },
   {
    "path": "organization/workspaces/service_accounts/list.md",
@@ -4896,7 +4910,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 349,
+   "order": 350,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4910,11 +4924,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 350,
+   "order": 351,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c1e0ad1b463e320eb165e9f731e3b32d1c7c63cc979d8f955307a670d67eb24d"
+   "sha256": "43ab23e34c1392bc4dec37421a61d6a845d1f798e81bb2585b3c6cd76716621b"
   },
   {
    "path": "organization/service_accounts/list.md",
@@ -4924,7 +4938,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 351,
+   "order": 352,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -4938,11 +4952,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 352,
+   "order": 353,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "1d50c935fde26dc6e28cde3fc27444a351cd7f3fa79392bfa555cbfa71ac9d6a"
+   "sha256": "72fbada12ecc05ec71d46112820bf7401b27cd6064673a0633253db315a61991"
   },
   {
    "path": "beta/sessions/resources/list.md",
@@ -4952,11 +4966,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 353,
+   "order": 354,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7693b47651ed097d1e3207790ab1d8b35dac7c8e52e5cb10c46033f2674c8f63"
+   "sha256": "d8dd6c3093686279e4709c965ebd6f0d5b2880278a5d851fc076b6a6424d4f9c"
   },
   {
    "path": "beta/sessions/threads/events/list.md",
@@ -4966,11 +4980,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 354,
+   "order": 355,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "867ea4c74fdc20cff81ba465bd8a3cd03d08d4ced0d212d09215842dce140229"
+   "sha256": "ea4b0859e52934b85ca45946ffb49293773b2a68768dba63c36daab37a050dbc"
   },
   {
    "path": "beta/sessions/threads/list.md",
@@ -4980,11 +4994,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 355,
+   "order": 356,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "47b9b505cc0ad345bf442f9ce4a2fc3f7b4940bbe0d8d18da1d36c8256f7969f"
+   "sha256": "2cf6b9faf3fe9f0a030ae2f9dae53840e323d6e5359e5005d648d2cd6cc46920"
   },
   {
    "path": "beta/sessions/list.md",
@@ -4994,11 +5008,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 356,
+   "order": 357,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f53af916bfafff87b4a3564c6963e80e6f05bc2bb7bf7afc9390e79ca9cfdf05"
+   "sha256": "ea9ff4cc7db71cae4a69de4c3c91ff85a7baacc268d879a7fd12ad7544dd2f81"
   },
   {
    "path": "skills/versions/list.md",
@@ -5008,7 +5022,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 357,
+   "order": 358,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5022,11 +5036,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 358,
+   "order": 359,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7de5b58d5b238c6e791c61dbe5b227964f73281a425fee93a2b1af2ad779fd7d"
+   "sha256": "ded4232d5fdc7a43c94331cd8b89f6f9b55a1e2af04eb3e4485c692d20c7367c"
   },
   {
    "path": "skills/list.md",
@@ -5036,7 +5050,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 359,
+   "order": 360,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5050,11 +5064,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 360,
+   "order": 361,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ab310f8a1ccfac33b366643b7ab691c5565d1db9caeff8a5ce3c3abfbd1a1f59"
+   "sha256": "721bd3758214dd5d15a32294b00d401a24420d90745c764c316868a671733c62"
   },
   {
    "path": "beta/organization/claude_tag/slack_channels/list.md",
@@ -5064,11 +5078,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 361,
+   "order": 362,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "4c6e8efeec5f31f40f8ed04e26c7ce18c6a00335370f70b070eb712caa44838e"
+   "sha256": "dc6089d5510e28e758107f9374bb46d72996cb509a92e6da6f0c554a9eafc124"
   },
   {
    "path": "beta/organization/claude_tag/slack_workspaces/list.md",
@@ -5078,11 +5092,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 362,
+   "order": 363,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "e65b759e4d13abf24e4dcf868c4b0e88e8767448f2aa28dfea1374f5a7559312"
+   "sha256": "d21e5ca5b81a409515981a98773d727636d861e7ac8e7ba4323b4fceec094685"
   },
   {
    "path": "organization/spend_limits/increase_requests/list.md",
@@ -5092,7 +5106,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 363,
+   "order": 364,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5106,7 +5120,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 364,
+   "order": 365,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5120,11 +5134,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 365,
+   "order": 366,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "2f19d3475993a49c8a9e9aeea9127403f1911df6dde94fb975f3b75d3d7259dd"
+   "sha256": "0ee8e511448a6888a11c07f54ed3523add713b53a44cca5cb57c1ea9760a0e51"
   },
   {
    "path": "beta/organization/telemetry_destinations/workspaces/list.md",
@@ -5134,11 +5148,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 366,
+   "order": 367,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "bbae099b5d2875b2163cafd9a76c9d53f3c1e89fe4f473adcd4d1e7ae0a8a653"
+   "sha256": "861a4b3e80e72ddc58e739797bb8b9f55a71b7000b656b593cd17c425c59cda6"
   },
   {
    "path": "beta/organization/telemetry_destinations/list.md",
@@ -5148,11 +5162,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 367,
+   "order": 368,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f536347354ce99a69730b366e3df56148c1d4d08b033ac5d46af26b7b0ed73a1"
+   "sha256": "f1b09e2c18e7cc8e38283d8fa96ae33fb4183f657d02dd263e1a6dc7b478b84d"
   },
   {
    "path": "beta/tunnels/certificates/list.md",
@@ -5162,11 +5176,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 368,
+   "order": 369,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f5c5a7fadeec448d470464aa226f218bb901be3eeb774605c3fbd91027fb5111"
+   "sha256": "bb7561d6f3b9f50364907f4ec00199ed776dd3c88646b63cbe799519d5477055"
   },
   {
    "path": "beta/organization/mcp_tunnels/tunnel_certificates/list.md",
@@ -5176,11 +5190,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 369,
+   "order": 370,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ffd5043dd12e17be3217f54bfca38400205cf166008faea60ad8d2722a8d8cd8"
+   "sha256": "b20d9ec5d28357e10600edfb19c285277013300bb601c814045581a587859ecd"
   },
   {
    "path": "beta/tunnels/list.md",
@@ -5190,11 +5204,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 370,
+   "order": 371,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c25b65b7c9436c7329f8f0227a48e121612699144da65109fdcb71e39fbed397"
+   "sha256": "1da403dbdf0337604843d0e0b8720de4f6e109ede2ccd8cf9b7163d76a3c2dbd"
   },
   {
    "path": "beta/organization/mcp_tunnels/list.md",
@@ -5204,11 +5218,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 371,
+   "order": 372,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "14e67857c93e2b84f41a2745d7da6dc327addd3986007b0f0d4b3c8161e4f885"
+   "sha256": "8ebd805c235f222aaceca40fb428ff7f36775d2065e976393b860acb561f8baa"
   },
   {
    "path": "organization/analytics/users/list.md",
@@ -5218,7 +5232,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 372,
+   "order": 373,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5232,7 +5246,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 373,
+   "order": 374,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5246,7 +5260,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 374,
+   "order": 375,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5260,11 +5274,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 375,
+   "order": 376,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "a59644ef27ec96fbe3f3991d3cd9b0df530e614ad08c0d314f9336970ebfa620"
+   "sha256": "64459d724e13009ce612d2e3945540f9c8ded8fcaf8ced2cfddfcf4ac64485c5"
   },
   {
    "path": "organization/users/list.md",
@@ -5274,7 +5288,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 376,
+   "order": 377,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5288,7 +5302,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 377,
+   "order": 378,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5302,11 +5316,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 378,
+   "order": 379,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "0d4e9f748a9aff5368ecc26e48688365262ab3bd73ac82b2ea3b0c4e97d770c2"
+   "sha256": "91b03f4ce523f5f7461bcc51649c988c517c213b9d112db8b09b080ff0ff3c25"
   },
   {
    "path": "beta/environments/work/list.md",
@@ -5316,11 +5330,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 379,
+   "order": 380,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "98cafed4071a47826d4bcf052aa9d3de56c347677a59703d1e610f50bb4f6e0d"
+   "sha256": "48c1be20a110c818b3953ba74388a187d07c90cd73798d84d0651fbd3150c099"
   },
   {
    "path": "organization/workspaces/members/list.md",
@@ -5330,7 +5344,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 380,
+   "order": 381,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5344,7 +5358,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 381,
+   "order": 382,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5358,7 +5372,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 382,
+   "order": 383,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5372,7 +5386,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 383,
+   "order": 384,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5386,11 +5400,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 384,
+   "order": 385,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "0956084bb29be29c0452fabfbdc77daa18614fd2a9f10df06086d1cb352713bd"
+   "sha256": "198b32ba5ca6430fa9a8b3174dde0e751b3997b6b68c55b2a210192a476a80e6"
   },
   {
    "path": "beta/organization/workspaces/list.md",
@@ -5400,11 +5414,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 385,
+   "order": 386,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "8a0914602d19c1cc2817eefe6505a3c4aa9cdf530ab620aabb44f2ff93cd5102"
+   "sha256": "d2d7c46dc0ff52264297cc72e56b176d07d0496f1afd38d003843952dcb61773"
   },
   {
    "path": "organization/service_accounts/workspaces/list.md",
@@ -5414,7 +5428,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 386,
+   "order": 387,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5428,11 +5442,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 387,
+   "order": 388,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c075af272f40455e7bd006a5ddd42b527075d6200cd41184a52856a50d520c7a"
+   "sha256": "6754a4c3f57901df3aa44a54ba733d55c40986b6455a3da65a951b23ef40d503"
   },
   {
    "path": "compliance/apps/sessions/local.md",
@@ -5442,7 +5456,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 388,
+   "order": 389,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5456,11 +5470,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 389,
+   "order": 390,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "02da226354ade34484cde65010b39c936f576972dde494def0394b0e89e8d7b1"
+   "sha256": "c75310b3f3049f2148d220b3b9d83f1414f773a7e602f8ef41edf0e4751378ca"
   },
   {
    "path": "organization/workspaces/members.md",
@@ -5470,7 +5484,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 390,
+   "order": 391,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5484,7 +5498,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 391,
+   "order": 392,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5498,7 +5512,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 392,
+   "order": 393,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5512,7 +5526,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 393,
+   "order": 394,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5526,7 +5540,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 394,
+   "order": 395,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5540,11 +5554,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 395,
+   "order": 396,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d19de0eae7038e4dc50fd1cc87bca5912dd15b39d6e08ddf17d3702d2e0965db"
+   "sha256": "1c49a13f9a9104705ed84c18f35efefcdaa50749d7df4e39be5c37a736832dc5"
   },
   {
    "path": "beta/memory_stores.md",
@@ -5554,11 +5568,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 396,
+   "order": 397,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "3926d2c378ad72160a742e8ca60595df5574b22d60679a01d015e46b895fc11a"
+   "sha256": "066365065b787546b04edff9910c7b1c7ad0b6b62c0c03b532c7aa300d2bc357"
   },
   {
    "path": "beta/memory_stores/memory_versions.md",
@@ -5568,11 +5582,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 397,
+   "order": 398,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "10e28e0d07d75b146c0403b50d3f1207e6b64fcbbe1bfd38e474b4a8f5c5705a"
+   "sha256": "5f2668b419e2e6bc5c38779fd764d007eab8d520841157e1ca64ec9563babb8a"
   },
   {
    "path": "messages.md",
@@ -5582,11 +5596,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 398,
+   "order": 399,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "b61b847f57fb5b9291353dfa1f475ddb09bded7cfa42084681b4ec9e2cc0f40e"
+   "sha256": "413f687ab7b6c4f71f6913e824cddd756ee57ff3917416c1c0bec47450abb8bf"
   },
   {
    "path": "compliance/apps/chats/messages.md",
@@ -5596,7 +5610,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 399,
+   "order": 400,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5610,7 +5624,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 400,
+   "order": 401,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5624,11 +5638,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 401,
+   "order": 402,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "3101189f592310f73d7ca6940f0488785bcb758aac098b814e2600a1977d6fde"
+   "sha256": "11a791ee3289352086de4fbce5c4f12403dea9f7ab33a1c7ce1f0f294a9e6e17"
   },
   {
    "path": "beta/messages.md",
@@ -5638,11 +5652,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 402,
+   "order": 403,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d252184525dee7d651c99ce16e1196fb980fdd0790a6bda1d51ceae8ff3cf12d"
+   "sha256": "362f4aa5edc03896287b55ebb3a5c8b10b83be4a7bbaf2d35520585f6fff7460"
   },
   {
    "path": "models.md",
@@ -5652,7 +5666,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 403,
+   "order": 404,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5666,11 +5680,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 404,
+   "order": 405,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "b94859623cfcdaa29a83397a56bca4a422d755445b8ac485675cfa1ff69ed373"
+   "sha256": "2e59a9c632d361604ed047f3853c4873e907169d2e5c35b22dc882afb4143bb4"
   },
   {
    "path": "organization.md",
@@ -5680,11 +5694,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 405,
+   "order": 406,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f42aedeb62dc240ed529acafa59794988f1a711d49865f52de3abdcafe743b40"
+   "sha256": "08789b544e77edd529c8eda63996421ba80f94a1467e83319d709648dcb30ad5"
   },
   {
    "path": "beta/organization.md",
@@ -5694,11 +5708,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 406,
+   "order": 407,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "59cdc4a5fb7f5c13715dd9bee9010910fc77ad859ba351327590314e6005f4bb"
+   "sha256": "919304a5323e01f97a8db67ed391fcee92c566298fa2bb36e1ed5780f897fcf8"
   },
   {
    "path": "compliance/organizations.md",
@@ -5708,11 +5722,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 407,
+   "order": 408,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7abeaecab660b48637ddca60de5249c51fb01fbce3f34b226fc4e4d4b5d03b83"
+   "sha256": "4b7eb2eb5ad9f41511ee6218f7c42ab50d153175ae83e31f27efd71f9b273a3a"
   },
   {
    "path": "beta/deployments/pause.md",
@@ -5722,11 +5736,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 408,
+   "order": 409,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "fc9fe6b129d10cf0bd7aa4816032dc122e618382ea524d3284197c15a742c1dd"
+   "sha256": "09f02811546af781d880374297b33ce6af0ee82f77a4d3f8a3b4306e57b390c0"
   },
   {
    "path": "organization/rbac_roles/permissions.md",
@@ -5736,11 +5750,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 409,
+   "order": 410,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ef5e28c846acbce8541da483ecb26f99a4537cc34199a85113ff4c5233545d8c"
+   "sha256": "93e3c116c4cbd99d7637f41739154a304bdcbcafcaac86bafb2f39e2d0d1c9b2"
   },
   {
    "path": "compliance/organizations/roles/permissions.md",
@@ -5750,7 +5764,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 410,
+   "order": 411,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5764,11 +5778,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 411,
+   "order": 412,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d3a4ae6d257fec96436a2fafb85777dec33a04169db551e861485e7e5318377d"
+   "sha256": "768a4e3ec1a853aa2fbe30e0458ea1df091a0289f1047d05d3b76981f5a6a367"
   },
   {
    "path": "beta/organization/plugin_marketplaces.md",
@@ -5778,11 +5792,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 412,
+   "order": 413,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "10139d8bbb020240956b67c81e45065afeb900280c447d9d9d684cdad41965d7"
+   "sha256": "f7c6f18f2dab3edbf1ca2509662b912c8e51abdd775eff0a056611c5e07e77ab"
   },
   {
    "path": "organization/analytics/plugins.md",
@@ -5792,7 +5806,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 413,
+   "order": 414,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5806,7 +5820,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 414,
+   "order": 415,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5820,11 +5834,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 415,
+   "order": 416,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "b8ad5f234b82bfd555b70878d54fcb67b02390737358e337867539b264792060"
+   "sha256": "6b77e30d214be4cce25b8d2c53ea9559fb3433df544c3b071e0879c943a14070"
   },
   {
    "path": "beta/environments/work/poll.md",
@@ -5834,11 +5848,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 416,
+   "order": 417,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7eb9ff5e8c52fa2f20c4b6d29f13c5cce30c3570c8e02f09ff95abd632d83e79"
+   "sha256": "3ce56f68b37059d935f7db2dc1114dea20ad959ee6f8a0a6695b4c06c77a2950"
   },
   {
    "path": "organization/analytics/apps/chat/projects.md",
@@ -5848,7 +5862,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 417,
+   "order": 418,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5862,7 +5876,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 418,
+   "order": 419,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5876,7 +5890,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 419,
+   "order": 420,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5890,11 +5904,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 420,
+   "order": 421,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "dc193bf5288e00a461720bc8dc6741fe760c1f4ecc9a46389bcf054291e2a5b7"
+   "sha256": "9f917de3cafd029bd4a3bfeb08fd04e404bbba468d496ad6eb924724a13864d2"
   },
   {
    "path": "organization/workspaces/rate_limits.md",
@@ -5904,7 +5918,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 421,
+   "order": 422,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5918,7 +5932,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 422,
+   "order": 423,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5932,7 +5946,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 423,
+   "order": 424,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5946,7 +5960,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 424,
+   "order": 425,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5960,11 +5974,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 425,
+   "order": 426,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "49e5dd550d3f5f38c879bab6256ae419d3cc8d1a80e40c481f5dca4d3c8eb0fc"
+   "sha256": "7e42c228b562b5ce57b86f37e6ff88d447d7a21a750b27ea77638e4580e8ae10"
   },
   {
    "path": "beta/organization/rbac_groups.md",
@@ -5974,7 +5988,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 426,
+   "order": 427,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -5988,11 +6002,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 427,
+   "order": 428,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c8ec37e34231db41cd230434bb67d5311c40c4a77e4a02fd711f7d86805942f4"
+   "sha256": "17213e873ace218d4b6b2af5b24464d55ee4eecc70668d3e9fa7ad3262cde700"
   },
   {
    "path": "beta/organization/rbac_roles.md",
@@ -6002,11 +6016,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 428,
+   "order": 429,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "b4479cb5c1b15b113741285d61d413aac5805bd765ed69c8231da4045215402d"
+   "sha256": "d7b6d414e96d2eb987c840a489cfcae9e66b6e25d9324af1c4e3172243a1df90"
   },
   {
    "path": "beta/environments/work/heartbeat.md",
@@ -6016,11 +6030,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 429,
+   "order": 430,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "15d18707377af638dcd8ddba10048193c71a4416665048a3f5c41cef7b4d19c8"
+   "sha256": "69e027d0cc09f125b906bbed9e4fdcd7bed871c25f310da01d7135acb55e0282"
   },
   {
    "path": "beta/memory_stores/memory_versions/redact.md",
@@ -6030,11 +6044,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 430,
+   "order": 431,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "502d800b4d2d4907f22225de7c147cc3e3274db3bf39f772be502d037a997bdb"
+   "sha256": "3997e07010c0c3d1ce7b883b8ed3622202a27555848b658920b155090b0e7e33"
   },
   {
    "path": "beta/organization/webhooks/regenerate_signing_secret.md",
@@ -6044,11 +6058,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 431,
+   "order": 432,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7427e2db9ba50f6801ee535b2156e7709452f18069f4a8c345ce043e9b1b28c5"
+   "sha256": "d09dff4fe37c2d469c355e4715c791c2756c1939c2bac9c36b5990d27c977c27"
   },
   {
    "path": "compliance/apps/sessions/remote.md",
@@ -6058,11 +6072,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 432,
+   "order": 433,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f5e754ba807873bbf80a004205696317f99d3a36c1168610f03d71f7cb13f7c6"
+   "sha256": "e0ca806195ec55623d8791f210626168ee96094f59cc1fb5965c9e4242561e57"
   },
   {
    "path": "beta/organization/telemetry_destinations/workspaces/remove.md",
@@ -6072,11 +6086,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 433,
+   "order": 434,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "368e2524c4a7ac540daa79ba94668bbf602cb029a5fbabdb5d5fbf69363beed0"
+   "sha256": "717d6aa06327f81df518249700a181ec9b56bf37573805fc80dd260d05f29546"
   },
   {
    "path": "organization/federation/rules/workspaces/remove.md",
@@ -6086,7 +6100,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 434,
+   "order": 435,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6100,11 +6114,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 435,
+   "order": 436,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "03734ace417e40eecb8bb291159321ae40023c3adf0a342226479322ccbde926"
+   "sha256": "a95433b016afa348f151da0e72ba10014ea4cacae77835e43da53a84e57c20b5"
   },
   {
    "path": "beta/organization/plugins/installation_settings/remove.md",
@@ -6114,11 +6128,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 436,
+   "order": 437,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "cbc27565c5235c773911f6527d561c49d5d2856c056475826f129e544f67f9c9"
+   "sha256": "fcaeab0c1c6fa7c13654f10c00f372abb30115789ce875dcda05c4869ec3410e"
   },
   {
    "path": "organization/rbac_groups/members/remove.md",
@@ -6128,7 +6142,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 437,
+   "order": 438,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6142,7 +6156,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 438,
+   "order": 439,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6156,11 +6170,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 439,
+   "order": 440,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "207bbee69ac5baec5ce4453aeadde2b37e281e547f2b3b1112dba637b494907f"
+   "sha256": "318998f46dd07e8ebedc79c356a05d37f2b639b3fece8a55cf3cc04dd9cc83a3"
   },
   {
    "path": "organization/users/remove.md",
@@ -6170,7 +6184,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 440,
+   "order": 441,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6184,7 +6198,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 441,
+   "order": 442,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6198,7 +6212,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 442,
+   "order": 443,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6212,11 +6226,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 443,
+   "order": 444,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c833e1443b43bd46182946a2010df0693c0080b60b583783847379a25e6f8eff"
+   "sha256": "aad43d5141b50cbf763c9735a5ec54f6d3ca2dd671a6a25718796c862e45fa09"
   },
   {
    "path": "beta/sessions/resources.md",
@@ -6226,11 +6240,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 444,
+   "order": 445,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "1abd1c08efebee3a82dc8d6c4e452b426835b2f0dc7af6a76b7bc9114a4cf83a"
+   "sha256": "dec9cc126429ad4c06603d319cbcf0dcb0b8377c3e6a151c9aaafe3b649a079c"
   },
   {
    "path": "beta/vaults/credentials/retrieve.md",
@@ -6240,11 +6254,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 445,
+   "order": 446,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d4dd690a2028a819694ee2e7817705f9e7506a8da5e597e3955278848b5acae8"
+   "sha256": "8dff834419ebb4a3a8e6d917dc860d759011c96e90467fc95140c2321ae5af4e"
   },
   {
    "path": "compliance/apps/sessions/local/retrieve.md",
@@ -6254,7 +6268,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 446,
+   "order": 447,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6268,11 +6282,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 447,
+   "order": 448,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "bbc9ec3de0ab9a62be7dd0189ac44d8a672c43233cf613417fe168a14d3c804e"
+   "sha256": "5472882a8c3877cb557776635547df8d0e6d1b7fa1cdc6d0f1f1844acf234fa6"
   },
   {
    "path": "beta/memory_stores/retrieve.md",
@@ -6282,11 +6296,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 448,
+   "order": 449,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "fb7eae12434da3d2fbd335d3091c40e6fd17331920af9f1cf09b80e483831a69"
+   "sha256": "0c7c4c45ed7a3c74e4c6bf755191b1af59836fd5f554a359224ab4c17e5d6fff"
   },
   {
    "path": "beta/memory_stores/memory_versions/retrieve.md",
@@ -6296,11 +6310,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 449,
+   "order": 450,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "9f4cf2415bd93ff079ceaee7459a3f8391216d7b94ed8feefa1db60631cc8b1e"
+   "sha256": "1cef4b7259d24f08fb961047f46427d6b556f0b12de37f7ef190927edd728180"
   },
   {
    "path": "messages/batches/retrieve.md",
@@ -6310,7 +6324,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 450,
+   "order": 451,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6324,11 +6338,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 451,
+   "order": 452,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "0401f9db7f111f8eba059c38aae2c970660726c699dde20ede66c80830fe4150"
+   "sha256": "47b5d93149bb1e7052cf38f984c266dfa4b211ab81bd61879447d69266af1b9e"
   },
   {
    "path": "beta/organization/telemetry_destinations/retrieve.md",
@@ -6338,11 +6352,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 452,
+   "order": 453,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "3b4f44a05b1ec20a89cee2203383d4465749a9d13b35b14c57c6c25403c3a173"
+   "sha256": "320ca40b3b2d1f601401098dd4d78d4bc5325ecbe149c74340f85f2ad3d32aff"
   },
   {
    "path": "beta/vaults/retrieve.md",
@@ -6352,11 +6366,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 453,
+   "order": 454,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "8a3352a367a767a25a91efa88a803b0c4c6f994af7b9611bf3c31adca7511c0f"
+   "sha256": "b51a199ebf0b8d864dff2fd0d731a8430ca153e31c6f5825e6182ec11128ac8c"
   },
   {
    "path": "organization/api_keys/retrieve.md",
@@ -6366,7 +6380,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 454,
+   "order": 455,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6380,7 +6394,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 455,
+   "order": 456,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6394,7 +6408,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 456,
+   "order": 457,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6408,11 +6422,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 457,
+   "order": 458,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "3349134fa77a30489bc9454540f58fcb91a177d41795ee20e7bf336794f27fb2"
+   "sha256": "c8df52d883a35472aa1b8dc3d1e4d7bba1e55debca141b949ba2f76f187646df"
   },
   {
    "path": "beta/messages/batches/results.md",
@@ -6422,11 +6436,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 458,
+   "order": 459,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7e59ebf696a396fbea936b8d3bbbd4a77969695fc26447b9795e35c53151a29c"
+   "sha256": "a087d6954c2212db19dc8244229689df36c127c5304b55d636851af7a7a6a9fe"
   },
   {
    "path": "compliance/apps/sessions/remote/messages/list.md",
@@ -6436,11 +6450,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 459,
+   "order": 460,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c5ea32e38d0baf12a1c9dbd2c7084198a86d303709d7609d0988afc5b9013156"
+   "sha256": "bceb5be67241ce7e0f47fa6f42f8d8070887fb14df2fea772395f49be178ec86"
   },
   {
    "path": "beta/tunnels/reveal_token.md",
@@ -6450,11 +6464,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 460,
+   "order": 461,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "8c3ccc3824ea7cfdb4c17a77003961aa308a71c7693e878dc4585f16d54b3b0b"
+   "sha256": "57db2d36beec3eb54ee7b919e4e8c8c8684c24b03f584c4531e50bbe871b57ef"
   },
   {
    "path": "beta/organization/mcp_tunnels/reveal_token.md",
@@ -6464,11 +6478,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 461,
+   "order": 462,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "86d3ca25fd17fbbd4e63934202f589dca8d9479ef3eedc181480c766f5b2b779"
+   "sha256": "13f629000b34bbc16f71276a27238416390f835c05b2e09e5c217cc503d5056f"
   },
   {
    "path": "compliance/organizations/roles.md",
@@ -6478,7 +6492,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 462,
+   "order": 463,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6492,11 +6506,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 463,
+   "order": 464,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "9919174a2cbbf4e8f773708b301ca01baee1355b966fade79d35172cb5bcde2a"
+   "sha256": "de8bd82731ac5a7f1d60418238099d7c6f857f393212ebed814a79708253cf8a"
   },
   {
    "path": "beta/organization/mcp_tunnels/rotate_token.md",
@@ -6506,11 +6520,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 464,
+   "order": 465,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "299f163b945a9b2901a0668365a98d03e30940f419236af75cb6d628cd2cb494"
+   "sha256": "d78ee7d7cfac0200987b8a6f2e0d649071337599e10e91fba75538bc7e85d41a"
   },
   {
    "path": "organization/federation/rules.md",
@@ -6520,7 +6534,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 465,
+   "order": 466,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6534,11 +6548,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 466,
+   "order": 467,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "5779c781b46864cc55e467588dac5706c536708ab0b0bdfa115e1c62b07c3cd6"
+   "sha256": "924c0e1c534cdaff1fae4f8a5fba02c3bbe33abb0d0d20577abfb2998ab54d48"
   },
   {
    "path": "beta/deployments/run.md",
@@ -6548,11 +6562,25 @@
    "nav": [
     "API Reference"
    ],
-   "order": 467,
+   "order": 468,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "afecd8141ce14fca04224c80e8484e2a2cd308912134e7324e455aaac6f51c5e"
+   "sha256": "1465e11cc0912341a9568f7e4885d53e3715ecb7ef00f8cb6b11b1c956635546"
+  },
+  {
+   "path": "compliance/organizations/security_posture.md",
+   "url": "https://platform.claude.com/docs/en/api/python/compliance/organizations/security_posture.md",
+   "title": "Security Posture",
+   "description": "",
+   "nav": [
+    "API Reference"
+   ],
+   "order": 469,
+   "in_index": false,
+   "in_sitemap": false,
+   "linked": false,
+   "sha256": "34be67a610e687a9fe558b9ddc2c1907a3612b092b0c87165dd67bf53f46168b"
   },
   {
    "path": "beta/sessions/events/send.md",
@@ -6562,11 +6590,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 468,
+   "order": 470,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f0e95a8e828dbd4b58f7e00c98140e4e764fdc05952db54a743e16701f5a95e5"
+   "sha256": "a35f696b5fdfbc67039e192675a07f33cd04734c4b25013a7d9433da41e5fc56"
   },
   {
    "path": "organization/service_accounts.md",
@@ -6576,7 +6604,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 469,
+   "order": 471,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6590,7 +6618,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 470,
+   "order": 472,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6604,11 +6632,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 471,
+   "order": 473,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "5f080b2cae8c2b781c64b9403c04f8badbb7abdb8d5778a1b55ffa6424974f3f"
+   "sha256": "579876ed6f8c4b60449d34893f5333c4f03e60a7577cbfa9564e4744de7ac271"
   },
   {
    "path": "beta/organization/workspaces/service_accounts.md",
@@ -6618,11 +6646,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 472,
+   "order": 474,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "8d96ef711c88e93fa208ccc40502a9c1e5b834cbeca9df098622e3a3ea503a03"
+   "sha256": "43471fd0145a86d629091abb36a2dad4518c92e13c683d89a014c81fb57747eb"
   },
   {
    "path": "compliance/apps/sessions.md",
@@ -6632,11 +6660,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 473,
+   "order": 475,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "a18aeba9c55948b54ac3f39f5ba59af1f3f63403b6fc0378851a13d4f1552895"
+   "sha256": "a3e45743bb17f3bb557525ce818e50823ebf96020d375c25f0f4dd72caefbed3"
   },
   {
    "path": "beta/sessions.md",
@@ -6646,11 +6674,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 474,
+   "order": 476,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "67f6e3bb43a12ddecbb36f1ccefb4a8d6ac90e8c5f21c1379609ae5600f3416a"
+   "sha256": "f0e47e48f8d133a2642e8b1c11ef0fec3daa7876eb45cdc369bc5a3d507e254f"
   },
   {
    "path": "beta/organization/plugins/installation_settings/set.md",
@@ -6660,11 +6688,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 475,
+   "order": 477,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "48752b77dac0ab5d42154b370f2b9c035c533e0e105dadd0bc05629d51a4932e"
+   "sha256": "0344373e79b19283d9ac1701964bf8ae7fc9b4cde7862ecc9716610b1382d254"
   },
   {
    "path": "beta/organization/spend_limits/set.md",
@@ -6674,11 +6702,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 476,
+   "order": 478,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "8fd9229d72bbc222056fbf18865b6baf49b074bac841174013dee4580a2b36ae"
+   "sha256": "36fc01939b155b2197c2a357649adf1103c08586da1d43da6eae17183bd04f76"
   },
   {
    "path": "beta/organization/claude_tag/slack_channels/create.md",
@@ -6688,11 +6716,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 477,
+   "order": 479,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d310b0813439f90a0241ac5e230ce730256f589438e47ae6440074993e4059d3"
+   "sha256": "2988954786d70366c8b547c6ec0925e830c90477cddfc42c29df42201da6a868"
   },
   {
    "path": "organization/workspaces/rate_limits/update.md",
@@ -6702,7 +6730,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 478,
+   "order": 480,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6716,7 +6744,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 479,
+   "order": 481,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6730,11 +6758,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 480,
+   "order": 482,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c2d926e8e96d5852625d1737a224207a1f1bf603173771b17a341d8822b1837b"
+   "sha256": "c4637cc966567ea276ebd5bdb46c5a5c1d6e21cdfa35466517edb1e6bdd9e63e"
   },
   {
    "path": "beta/organization/plugins/shares.md",
@@ -6744,11 +6772,25 @@
    "nav": [
     "API Reference"
    ],
-   "order": 481,
+   "order": 483,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "883e0b9c4b83073fa90172cda349b7eed58b4a6eba6079b00a50576123fa62e8"
+   "sha256": "68e4f32d50488dc0416d43f4977d5fd2e14457f21014dab68ac75d02a6d25dfd"
+  },
+  {
+   "path": "beta/organization/users/sign_out.md",
+   "url": "https://platform.claude.com/docs/en/api/python/beta/organization/users/sign_out.md",
+   "title": "Sign Out User (Beta)",
+   "description": "",
+   "nav": [
+    "API Reference"
+   ],
+   "order": 484,
+   "in_index": false,
+   "in_sitemap": false,
+   "linked": false,
+   "sha256": "e7412bfce3998162c2e07685401e6435fc1b30fc099946e37a5bb37d4270486b"
   },
   {
    "path": "skills.md",
@@ -6758,11 +6800,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 482,
+   "order": 485,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "61dad24faae06170a0b82df2ead0199af6a50f6ea90c89ce4400657430637e1e"
+   "sha256": "a9c770d1c419f7a716124d0aeaa883c3af7c049dfc982407eff7d34ab769f4f4"
   },
   {
    "path": "organization/analytics/skills.md",
@@ -6772,7 +6814,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 483,
+   "order": 486,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6786,11 +6828,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 484,
+   "order": 487,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "8210008dfca8f1b7985d281b308f1eba66af60d7730916df9104f7187f238988"
+   "sha256": "dfb5b09a2e1929b4a32c629a3491918b6ed98ae659a55e58b384864238523cf2"
   },
   {
    "path": "beta/organization/analytics/skills.md",
@@ -6800,7 +6842,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 485,
+   "order": 488,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6814,11 +6856,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 486,
+   "order": 489,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "43a7140093f54db99be2c8f12234656b4086a2f40e5b90846636e5f28bd9919f"
+   "sha256": "7486abf3ef289d981eddac75fa3aeffd8b38dc8b3436e7b67f35f2e621c33f44"
   },
   {
    "path": "beta/organization/claude_tag/slack_workspaces.md",
@@ -6828,11 +6870,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 487,
+   "order": 490,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "a65d0cbb5498eb8af58e0d3adaef43923cb14575f2113800e881161c2a5ac4f7"
+   "sha256": "cab34eade9078f1f3b768192ab11425b1e5b015862d7f478705df2f46f4ae971"
   },
   {
    "path": "organization/spend_limits.md",
@@ -6842,7 +6884,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 488,
+   "order": 491,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6856,11 +6898,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 489,
+   "order": 492,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "01fccb639aed86fb6ece83dac723095b7f4662c252cf6cc0f97dbe323cb200e8"
+   "sha256": "c4fdb082d2666df331dbfbfb3cfb1e8be2c207481bf2724d5cb8de8cecc6ce1e"
   },
   {
    "path": "beta/environments/work/stop.md",
@@ -6870,11 +6912,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 490,
+   "order": 493,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f43a2d705459d4a4f6e37318cfc9805212c4b51c26a7a0846ced8993acc3709f"
+   "sha256": "527b2cb2d7d9d4e43db5193f70ac2e2d6c7f4fcf3937f0c23956e02fac7b2b2f"
   },
   {
    "path": "beta/sessions/events/stream.md",
@@ -6884,11 +6926,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 491,
+   "order": 494,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "9ff7c4d8d5918ae23ad3dedef6ec9d35d44c33dace1011b2bfcf4ab77597dc9a"
+   "sha256": "cc67e9e95338bfb1513807fbe094e407df0383f0897cb1e14bf99474610e1d58"
   },
   {
    "path": "beta/sessions/threads/events/stream.md",
@@ -6898,11 +6940,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 492,
+   "order": 495,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "0e3c78f00dec7324745981ba22e35e77ba09bbba8d7815487535837e6301d2a2"
+   "sha256": "7d08aa94a8a565325c8fc732cebc318df1839ecf420dd2cb65b96ca5fa18f754"
   },
   {
    "path": "organization/analytics/summaries.md",
@@ -6912,7 +6954,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 493,
+   "order": 496,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6926,7 +6968,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 494,
+   "order": 497,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -6940,11 +6982,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 495,
+   "order": 498,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ba39882f54de6dcd949ee42e2c2ad17b218117ea175de5f59956703dfc0fa6c4"
+   "sha256": "dfb2fe1a6d788fb7ce453485c7ae449cb253db54f1420650b83c36e87750cafa"
   },
   {
    "path": "beta/organization/telemetry_destinations.md",
@@ -6954,11 +6996,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 496,
+   "order": 499,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "1edfe2b73e551142792da0f90f85b23cf1b9c154f9e59842a14d92ccac09348b"
+   "sha256": "59073ced546643e4f71cac1d36a409f054a006955e870dc063caa03d59db53b8"
   },
   {
    "path": "beta/organization/telemetry_destinations/test.md",
@@ -6968,11 +7010,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 497,
+   "order": 500,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "516fc175c9ed0b7d7c2a77f148d0d4c2c2de6fb7a1e86ca16312d4ba85242b89"
+   "sha256": "64f50fb2d7772b17b8a0c3d046f0505c79ac4055ae354d5ec5a1e5db250e5faa"
   },
   {
    "path": "beta/sessions/threads.md",
@@ -6982,11 +7024,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 498,
+   "order": 501,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "2beca8f00e4f48aa1a4c4caa33346c188820319e38051236f8ca72fa16988422"
+   "sha256": "f4548cf7a257df7561750bade74449a5ebce0b93fbfbc2b77f48b82c30fb96f1"
   },
   {
    "path": "beta/organization/mcp_tunnels/tunnel_certificates.md",
@@ -6996,11 +7038,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 499,
+   "order": 502,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "eb4322660f1bdfcfb70ca84648d56d9434faa2e2e3019d7b0fe9e14cfd9e7153"
+   "sha256": "ec266111956298db470781d08853a5e10d221175d4b0567e4272cf8c02461fc4"
   },
   {
    "path": "beta/tunnels.md",
@@ -7010,11 +7052,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 500,
+   "order": 503,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ab213583e9df5e6a6440b9b38ce41b22c2d327021be01bb129cbb1dd11afe5fe"
+   "sha256": "4d996dc143af01489ec89ac576cc45b7f2855c0265a1e6775cc37eb2a5be1198"
   },
   {
    "path": "beta/deployments/unpause.md",
@@ -7024,11 +7066,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 501,
+   "order": 504,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "41bb1540dbcacd037fcedd7648e3c6cd058627bea8846deb38162334eb4bf6e6"
+   "sha256": "584d00be26670e194bd2cd839995fdba15b045dcb345358eb42b1ac18372592e"
   },
   {
    "path": "beta/vaults/credentials/update.md",
@@ -7038,11 +7080,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 502,
+   "order": 505,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c3117fb862682a66f211d5fd6df515d52a5bf798a8382dc2a07fa4c8dbbf52a6"
+   "sha256": "93458b16fef59cc5d167a9e7f2a833fedbb80922760efaf79384812239377305"
   },
   {
    "path": "beta/memory_stores/memories/update.md",
@@ -7052,11 +7094,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 503,
+   "order": 506,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "30cbb33d92c5fc6eff718a530ec4fc732492fb0a4f168fadf4e59a44ecf0714f"
+   "sha256": "b6481f4e574532a8c024d52fd16bfdd9436009e993bae4b0c1bf68ec3b622ed1"
   },
   {
    "path": "beta/memory_stores/update.md",
@@ -7066,11 +7108,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 504,
+   "order": 507,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "51c5f2c65b200c9d731e99655d1a192a3155dd44743fe172e1e903660acce790"
+   "sha256": "30b3b32cb31938136486d15605f99f90b0dc0ebedeb84a6f2ec44e9304ed89ea"
   },
   {
    "path": "beta/organization/telemetry_destinations/update.md",
@@ -7080,11 +7122,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 505,
+   "order": 508,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "02a7f29c2f3915632f8ea6aed9f0dcfac8c7c22305860eb7b6e353aeffae6122"
+   "sha256": "6c513bf0aaa685b91c50cd046ccbf9abb13fce750552c24a55a06fd53dd8ae69"
   },
   {
    "path": "beta/vaults/update.md",
@@ -7094,11 +7136,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 506,
+   "order": 509,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "9893ad415c809c546e6960caebce5e5ee172504abfe068d7e8ba7e7aa2205d8f"
+   "sha256": "752d4c4cfefcbc7c41946cf24e02bee5a7bfb6fab68595e449576834ffb10281"
   },
   {
    "path": "beta/agents/update.md",
@@ -7108,11 +7150,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 507,
+   "order": 510,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "14cb1278753f84c3295f6a771b704de9b08d413d4d02c4108a7f1dfd0645067b"
+   "sha256": "fe78f2d284c6a0e8b2977b104250d58d9c46f4ba56daf9dc2ee2b1d4e00eeb69"
   },
   {
    "path": "organization/api_keys/update.md",
@@ -7122,7 +7164,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 508,
+   "order": 511,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7136,7 +7178,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 509,
+   "order": 512,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7150,7 +7192,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 510,
+   "order": 513,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7164,7 +7206,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 511,
+   "order": 514,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7178,11 +7220,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 512,
+   "order": 515,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "216da1c1f8c31a50b4b6500eb0faedb3c26b161baf046c06850522323e4d2770"
+   "sha256": "cdb2e6b7310d46712113019d9c8cd97bd626198d63863b13c8ccfcb5c6413bd6"
   },
   {
    "path": "beta/environments/update.md",
@@ -7192,11 +7234,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 513,
+   "order": 516,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "e55d1e161a0f6625288accdb052b6a8529c0a94e0415286e313c48ba8ba311ab"
+   "sha256": "75d9d6fc67cea27b9453546c7528a5b83f96d0e26601591e7e0cde78b4dd0aef"
   },
   {
    "path": "organization/external_keys/update.md",
@@ -7206,7 +7248,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 514,
+   "order": 517,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7220,7 +7262,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 515,
+   "order": 518,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7234,7 +7276,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 516,
+   "order": 519,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7248,11 +7290,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 517,
+   "order": 520,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "2e20eab33edd6b0c5f92780a38489c18d7a478dfa69bbc6cb3174e1bac2a3296"
+   "sha256": "c4912e10f2326912bcc6722e9e6e4973a6dff840ef1d7f4181db7aebf3ed0b91"
   },
   {
    "path": "organization/federation/rules/update.md",
@@ -7262,7 +7304,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 518,
+   "order": 521,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7276,11 +7318,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 519,
+   "order": 522,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d92eb778c3b123da2fed594db489911c57d646f6f0d961e8f40d6084202517cf"
+   "sha256": "681441c823a147d858763d347ac47c0295a998e2209c62a35b84f323c9ace6bb"
   },
   {
    "path": "beta/organization/webhooks/update.md",
@@ -7290,11 +7332,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 520,
+   "order": 523,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "eb464d788e3d43c1424767c0f061287357e6a45777f81dab17ebfc77e9688967"
+   "sha256": "12d1eeb831d97f391e8b5003c8a3a3bee81f910a2b9d2d97ef152c397796b4c4"
   },
   {
    "path": "beta/organization/plugins/update.md",
@@ -7304,11 +7346,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 521,
+   "order": 524,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f9a5434f738817f57e009fc231a7786c002047a1ff3ef752ecd48c6d53427150"
+   "sha256": "40052777c78f7cba23ef8361db382e717b6e6f4b85a6f96b879b79047592606f"
   },
   {
    "path": "beta/organization/plugin_marketplaces/update.md",
@@ -7318,11 +7360,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 522,
+   "order": 525,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "eb69381826e586aa92162597569f0b5d8acc15153bfd0e3f89d3197c0417ba11"
+   "sha256": "1cb65dcb95b157f4568923c9dc40ed167e149c08e2d2c6033dbe842fc899b651"
   },
   {
    "path": "organization/rbac_groups/update.md",
@@ -7332,7 +7374,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 523,
+   "order": 526,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7346,7 +7388,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 524,
+   "order": 527,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7360,7 +7402,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 525,
+   "order": 528,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7374,11 +7416,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 526,
+   "order": 529,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ad413ed0af6a409af0955cd450a232ae1e1f2c0f73256ad5573c4ef60ec6d7ec"
+   "sha256": "9a162a6521529a0e41ba24a24417869d56d6b6b57b05634c445b8cc3258535f6"
   },
   {
    "path": "organization/workspaces/service_accounts/update.md",
@@ -7388,7 +7430,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 527,
+   "order": 530,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7402,11 +7444,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 528,
+   "order": 531,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "bce61d87bc9d8ea6926ec4d87958b70f4b9ac42e4d5e37bab7de02d806f50c2d"
+   "sha256": "2137d97b51aaaea82f518769036ea993c4be1ae1e02e7a714f9558fd50e7657b"
   },
   {
    "path": "beta/sessions/update.md",
@@ -7416,11 +7458,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 529,
+   "order": 532,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "48b4844ed0bd3617b5e99736b6f5201b1288a0ab0cf7e96af67cb49c67a22392"
+   "sha256": "490f395a20baa6370250893ea5c780b55cb61911c49628c067f74e13aaa83038"
   },
   {
    "path": "beta/sessions/resources/update.md",
@@ -7430,11 +7472,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 530,
+   "order": 533,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "88883c53ba193b9209fabdec618e289037e03bd95123b07afe67d1c4abf27276"
+   "sha256": "e1a4fdda74e00779c569c3734f50216efede55fef90a00621b2bc73e04855129"
   },
   {
    "path": "beta/organization/claude_tag/slack_channels/update.md",
@@ -7444,11 +7486,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 531,
+   "order": 534,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "dd1b43fb4f2a19040be614b188f3fc36dcf06a0b22ff55fcf4270614172a79ec"
+   "sha256": "8f5a0c49bce0e671c8b3b7aa20a9cd0d46b765f625b83c172a9bc8e7bbb06088"
   },
   {
    "path": "beta/organization/claude_tag/slack_workspaces/update.md",
@@ -7458,11 +7500,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 532,
+   "order": 535,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "1147357e5cc53b8491a3812af4723132c7122fb9a9b67247c6124e3a78b43ced"
+   "sha256": "538990068b748a78b22ff0789c6c1a9f48f05be455c7b125e2d88f6e63be0d96"
   },
   {
    "path": "organization/users/update.md",
@@ -7472,7 +7514,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 533,
+   "order": 536,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7486,7 +7528,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 534,
+   "order": 537,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7500,7 +7542,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 535,
+   "order": 538,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7514,11 +7556,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 536,
+   "order": 539,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "4414dd7702f820f099948965222b8e7687142a33c276a89e8a6ef8c2d8806d63"
+   "sha256": "7011e67730b84f6bdb60a878a596006a858f1a304f29f75dd386008bff431a62"
   },
   {
    "path": "beta/environments/work/update.md",
@@ -7528,11 +7570,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 537,
+   "order": 540,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "6e84cf1219e26099a9e42e8db46cd010eb273c25d0f07028f613892195f83775"
+   "sha256": "fd09016215e3bb045d8b28f86b8e589d3989aa5088250f9ac60b5efdbcff1359"
   },
   {
    "path": "organization/workspaces/update.md",
@@ -7542,7 +7584,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 538,
+   "order": 541,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7556,7 +7598,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 539,
+   "order": 542,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7570,7 +7612,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 540,
+   "order": 543,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7584,7 +7626,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 541,
+   "order": 544,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7598,7 +7640,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 542,
+   "order": 545,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7612,11 +7654,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 543,
+   "order": 546,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "97b74c44a0179d401e081b1cda3557efeb775521220f330d182adb3270f5e7e2"
+   "sha256": "414147539daf108f5699b02b6343207c606adeb7af72697e6f706d7ea6ae597b"
   },
   {
    "path": "beta/organization/analytics/usage.md",
@@ -7626,11 +7668,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 544,
+   "order": 547,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "cfe06b7a70b3045fbf9eba869aa4462ed6bf4b2879fae22b02a22d6baa492095"
+   "sha256": "5e799ebbc7ca7b61b93870ccd867e2c203e6866cefb15beffb7b102b03a8bd28"
   },
   {
    "path": "beta/organization/usage_report.md",
@@ -7640,11 +7682,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 545,
+   "order": 548,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "b8613d5026263a37fe314384dbaf3727b52315a96a4be40eeefb21a22727f165"
+   "sha256": "0458c0bbe35fd80f2c5fa3788b94c7a41fe23eadfb662343074730c66844717c"
   },
   {
    "path": "beta/organization/analytics/usage_report.md",
@@ -7654,11 +7696,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 546,
+   "order": 549,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "4d00fbc3449ab1c126137a5a6a8c36e209b8e9a8c02ed917ddfce58f2d40fed2"
+   "sha256": "921d31b2a16e092bfcdd78a1c3d8a0f9feea75513d94501d1b9b918feac3e058"
   },
   {
    "path": "beta/organization/analytics/user_cost_report.md",
@@ -7668,11 +7710,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 547,
+   "order": 550,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c12753e1b3312ef0e87328906c38478fadf0086d168053d7cf7cfb4a77109e3d"
+   "sha256": "42b29bb3d7be7bf45778e6825b7bce7e03bdf27ccd72e13b64a2bb324af3acec"
   },
   {
    "path": "compliance/organizations/user_preferences.md",
@@ -7682,7 +7724,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 548,
+   "order": 551,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7696,11 +7738,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 549,
+   "order": 552,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "508349b23a0b34d2325129e9f68c5577a65384f72f9a17c9b820cbd32cc1088f"
+   "sha256": "973cd5c8711ffe5ce314160de8a6ef17e9f79827ea1ee1e2ad401649415e163b"
   },
   {
    "path": "beta/user_profiles.md",
@@ -7710,11 +7752,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 550,
+   "order": 553,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "6ec43b6c2002786425dce209a485667f7b2362460dc5f9ae03bdf8ffaf1d1313"
+   "sha256": "dff1d53da9c815ec405174c7dedb1e1d9a2df11a8554ccee90cb32ac540fd863"
   },
   {
    "path": "beta/organization/analytics/user_usage_report.md",
@@ -7724,11 +7766,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 551,
+   "order": 554,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "74c90d34ec50fd6af125c1d0c273e1b941eb3f89284d304b8eed1b607f19613e"
+   "sha256": "90679322af90b98b920d2e727c3facfc504af2f9dcf8a74cbd182196bf564b8f"
   },
   {
    "path": "organization/users.md",
@@ -7738,11 +7780,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 552,
+   "order": 555,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "4ccaf13fdaf0282ea73bba4f64258d694e15544130fa903aec98b8f75641b4f9"
+   "sha256": "ee8ce5efbec81d971761af98f54edb36abced93c7c53cb177c5f7848d80edf6f"
   },
   {
    "path": "organization/analytics/users.md",
@@ -7752,7 +7794,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 553,
+   "order": 556,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7766,7 +7808,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 554,
+   "order": 557,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7780,11 +7822,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 555,
+   "order": 558,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ee3e7caf72246f3e2045c84328ae691f22ceffd5595aaa02372a88716dfc9430"
+   "sha256": "00372f6122316876742431929d2a1afc2e2ebc0ac12ea5acd10cfa25f72f57c3"
   },
   {
    "path": "beta/organization/analytics/users.md",
@@ -7794,7 +7836,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 556,
+   "order": 559,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7808,11 +7850,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 557,
+   "order": 560,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "0684574c7bfbf7cff236b9a9384df556da7fbb2ee0674eac408f4e4d14ccea2f"
+   "sha256": "2210ac12f479de1696aea2b50f00830857bc7de4dc7bacc82be7a3568311d745"
   },
   {
    "path": "organization/external_keys/validate.md",
@@ -7822,7 +7864,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 558,
+   "order": 561,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7836,7 +7878,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 559,
+   "order": 562,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7850,11 +7892,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 560,
+   "order": 563,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "30692cb955121eebf11194b298da2db5f82c0fd337df6131e0e16a337d129492"
+   "sha256": "b0b42edb5ae2db8b647c1ad2a1077476304fc6d361f1e96b3b53241945893aa0"
   },
   {
    "path": "beta/organization/plugin_marketplaces/validate_repository.md",
@@ -7864,11 +7906,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 561,
+   "order": 564,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d7c1fc6f84b5b4dfd9dc17eddbb88410c99ef474dac5652c893dc052f4fd5fb6"
+   "sha256": "8b53823ea54ddeb6fcb8ab2b97d0640b966bee3f5b108d4c74992754aa2840e8"
   },
   {
    "path": "beta/vaults.md",
@@ -7878,11 +7920,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 562,
+   "order": 565,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "cc89cf61b04bfad27710065a03fb8fcb8c64c2f23a8dbca793167343d11db54a"
+   "sha256": "7388a8c74ef4e4c66cacedbaa11903033558617c566870a2df190357425e99f3"
   },
   {
    "path": "skills/versions.md",
@@ -7892,7 +7934,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 563,
+   "order": 566,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -7906,11 +7948,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 564,
+   "order": 567,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "2b936b4962eab3bcbd0aefc14eddc5376b7a357b9dff724cc2856a0d0c2c7311"
+   "sha256": "def78a3175eeebec1a935a500bdb8a816cfa67999f96cf77461dcc9ae4055ce1"
   },
   {
    "path": "beta/skills/versions.md",
@@ -7920,11 +7962,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 565,
+   "order": 568,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ea138a9b3197f7d075a6718d8d5c5787f3f41f93cc502077d5ca09b014f94dd1"
+   "sha256": "463f3c6e44d571eca08eee3d355888fb6f6dd97bd3f54a1328e1d65f9c501e1d"
   },
   {
    "path": "beta/organization/plugins/versions.md",
@@ -7934,11 +7976,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 566,
+   "order": 569,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f3240ce5e6df903d1a8e380c5685008aa24c0ff9afd0001a603acda9979a0c18"
+   "sha256": "7abaa1cf4a738905a77179bf080d64f25ddfd5cf6e9a430550ce148286fb8768"
   },
   {
    "path": "beta/organization/webhooks.md",
@@ -7948,11 +7990,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 567,
+   "order": 570,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "1566b40fde6493c273504e96829c6ebc42bf0c4d1b837c65d3e2cab70ba0e9ab"
+   "sha256": "e6cc252e81704606421e2384a66bd8c7b3b188f3b5e6fcccd16402a020d5cc1c"
   },
   {
    "path": "beta/webhooks.md",
@@ -7962,11 +8004,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 568,
+   "order": 571,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "a48704f86ce630523407f8b8f405a31dd6db78a99e970b0f670c7c16ce0d8d54"
+   "sha256": "4af10fb6bb3468fe6a001a0582ddedc24d94973d62bca690c342a1b2b88c794a"
   },
   {
    "path": "beta/environments/work.md",
@@ -7976,11 +8018,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 569,
+   "order": 572,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "08d190fbddbea56168894c34fa3f4381fc783e0ac428fa08d6b37159c7abc734"
+   "sha256": "d390fdbb40219b643806e4f1ee284837d31f0b587cc0245ec3d2463bcd16d1e4"
   },
   {
    "path": "organization/federation/rules/workspaces.md",
@@ -7990,7 +8032,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 570,
+   "order": 573,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -8004,7 +8046,7 @@
    "nav": [
     "API Reference"
    ],
-   "order": 571,
+   "order": 574,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
@@ -8018,11 +8060,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 572,
+   "order": 575,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d3d50d896d9fef5aec9abddee4b9e5e5d1024899104fba3a7381d55eb17adefc"
+   "sha256": "84ac69021266f342eacd857cee518e6eadf212691e0e069be609ecf5db687c18"
   },
   {
    "path": "beta/organization/federation/rules/workspaces.md",
@@ -8032,11 +8074,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 573,
+   "order": 576,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "0914462c248a9dbdd3e3d04873e60394d4ee5d8c5fa45f43581d2319c40671f5"
+   "sha256": "922e4200ac291b0dea497659a7d6acf3edc6ba2ffb9349cca1c956ac5e8d50a1"
   },
   {
    "path": "beta/organization/service_accounts/workspaces.md",
@@ -8046,11 +8088,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 574,
+   "order": 577,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "5abb5565a62ee51a0ecee9cfd669822c2c5614189e119d793339afa68e1e57da"
+   "sha256": "eb3a7d12a686fec71d8b25c14e80ee88f23780bfb2ee9f57850a44d9f7732d7e"
   },
   {
    "path": "beta/organization/workspaces.md",
@@ -8060,11 +8102,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 575,
+   "order": 578,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "9557c142e04c4789348a45e9db3cde11a3c146a7ddfce6d50ec0159797aa0f03"
+   "sha256": "e299c66691c4a9320aff179e5e46e03d200957fab826812d72ff289ea2de599a"
   },
   {
    "path": "beta/organization/telemetry_destinations/workspaces.md",
@@ -8074,11 +8116,11 @@
    "nav": [
     "API Reference"
    ],
-   "order": 576,
+   "order": 579,
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "afe0b08148e864860e3cfab5fe72673b3e000659deae1f3ea631625d45c82ef1"
+   "sha256": "33ac8f782d30715ca3183a1233f04f5103404390ea2d307301cc0d805db10902"
   }
  ]
 }

@@ -315,6 +315,7 @@ https://platform.claude.com/docs/en/api/beta/organization/users
 https://platform.claude.com/docs/en/api/beta/organization/users/list
 https://platform.claude.com/docs/en/api/beta/organization/users/remove
 https://platform.claude.com/docs/en/api/beta/organization/users/retrieve
+https://platform.claude.com/docs/en/api/beta/organization/users/sign_out
 https://platform.claude.com/docs/en/api/beta/organization/users/update
 https://platform.claude.com/docs/en/api/beta/organization/webhooks
 https://platform.claude.com/docs/en/api/beta/organization/webhooks/create
@@ -478,6 +479,8 @@ https://platform.claude.com/docs/en/api/compliance/organizations/roles/list
 https://platform.claude.com/docs/en/api/compliance/organizations/roles/permissions
 https://platform.claude.com/docs/en/api/compliance/organizations/roles/permissions/list
 https://platform.claude.com/docs/en/api/compliance/organizations/roles/retrieve
+https://platform.claude.com/docs/en/api/compliance/organizations/security_posture
+https://platform.claude.com/docs/en/api/compliance/organizations/security_posture/retrieve
 https://platform.claude.com/docs/en/api/compliance/organizations/settings
 https://platform.claude.com/docs/en/api/compliance/organizations/settings/retrieve
 https://platform.claude.com/docs/en/api/compliance/organizations/user_preferences
@@ -683,6 +686,7 @@ https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-
 https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
 https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5
 https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-1
+https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-fable-5-2
 https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-haiku-5-5
 https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-4-8
 https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/prompting-claude-opus-5
@@ -830,12 +834,16 @@ https://platform.claude.com/docs/en/managed-agents/workflow-runs
 https://platform.claude.com/docs/en/models/fable-5-1/migration-guide
 https://platform.claude.com/docs/en/models/fable-5-1/overview
 https://platform.claude.com/docs/en/models/fable-5-1/whats-new-fable-5-1
+https://platform.claude.com/docs/en/models/fable-5-2/migration-guide
+https://platform.claude.com/docs/en/models/fable-5-2/overview
+https://platform.claude.com/docs/en/models/fable-5-2/whats-new-fable-5-2
 https://platform.claude.com/docs/en/models/fable-5/overview
 https://platform.claude.com/docs/en/models/haiku-4-5/overview
 https://platform.claude.com/docs/en/models/haiku-5-5/migration-guide
 https://platform.claude.com/docs/en/models/haiku-5-5/overview
 https://platform.claude.com/docs/en/models/haiku-5-5/whats-new-haiku-5-5
 https://platform.claude.com/docs/en/models/mythos-5-1/overview
+https://platform.claude.com/docs/en/models/mythos-5-2/overview
 https://platform.claude.com/docs/en/models/mythos-5/overview
 https://platform.claude.com/docs/en/models/opus-4-5/overview
 https://platform.claude.com/docs/en/models/opus-4-6/overview
@@ -855,6 +863,7 @@ https://platform.claude.com/docs/en/models/sonnet-5/overview
 https://platform.claude.com/docs/en/release-notes/overview
 https://platform.claude.com/docs/en/release-notes/system-prompts/claude-fable-5
 https://platform.claude.com/docs/en/release-notes/system-prompts/claude-fable-5-1
+https://platform.claude.com/docs/en/release-notes/system-prompts/claude-fable-5-2
 https://platform.claude.com/docs/en/release-notes/system-prompts/claude-haiku-3
 https://platform.claude.com/docs/en/release-notes/system-prompts/claude-haiku-3-5
 https://platform.claude.com/docs/en/release-notes/system-prompts/claude-haiku-4-5

@@ -229,6 +229,8 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -249,7 +251,7 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   By default the dream writes its result to a new memory store and doesn't change the input memory store. With `output_behavior` set to `update_existing`, it writes its result into the input memory store instead.
 
-  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to generally-available endpoints.
+  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to stable endpoints.
 
   See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams?sdk_languages=python#how-it-works) for what a dream reads and produces.
 
@@ -716,6 +718,8 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -736,7 +740,7 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   By default the dream writes its result to a new memory store and doesn't change the input memory store. With `output_behavior` set to `update_existing`, it writes its result into the input memory store instead.
 
-  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to generally-available endpoints.
+  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to stable endpoints.
 
   See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams?sdk_languages=python#how-it-works) for what a dream reads and produces.
 
@@ -1143,6 +1147,8 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -1163,7 +1169,7 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   By default the dream writes its result to a new memory store and doesn't change the input memory store. With `output_behavior` set to `update_existing`, it writes its result into the input memory store instead.
 
-  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to generally-available endpoints.
+  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to stable endpoints.
 
   See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams?sdk_languages=python#how-it-works) for what a dream reads and produces.
 
@@ -1566,6 +1572,8 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -1586,7 +1594,7 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   By default the dream writes its result to a new memory store and doesn't change the input memory store. With `output_behavior` set to `update_existing`, it writes its result into the input memory store instead.
 
-  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to generally-available endpoints.
+  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to stable endpoints.
 
   See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams?sdk_languages=python#how-it-works) for what a dream reads and produces.
 
@@ -1989,6 +1997,8 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -2009,7 +2019,7 @@ See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams
 
   By default the dream writes its result to a new memory store and doesn't change the input memory store. With `output_behavior` set to `update_existing`, it writes its result into the input memory store instead.
 
-  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to generally-available endpoints.
+  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to stable endpoints.
 
   See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams?sdk_languages=python#how-it-works) for what a dream reads and produces.
 
@@ -2294,7 +2304,7 @@ print(beta_dream.id)
 
   By default the dream writes its result to a new memory store and doesn't change the input memory store. With `output_behavior` set to `update_existing`, it writes its result into the input memory store instead.
 
-  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to generally-available endpoints.
+  The Dreams API is in research preview: the request and response shapes are volatile and may change without the deprecation period that applies to stable endpoints.
 
   See the [Dreams guide](https://platform.claude.com/docs/en/managed-agents/dreams?sdk_languages=python#how-it-works) for what a dream reads and produces.
 
@@ -2746,9 +2756,13 @@ print(beta_dream.id)
 
     - `type: Literal["invalid_request_error"]`
 
+      The broad category of the error.
+
       default: invalid_request_error
 
     - `message: str`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
       default: Invalid request
 
@@ -2756,9 +2770,13 @@ print(beta_dream.id)
 
     - `type: Literal["authentication_error"]`
 
+      The broad category of the error.
+
       default: authentication_error
 
     - `message: str`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
       default: Authentication error
 
@@ -2766,9 +2784,13 @@ print(beta_dream.id)
 
     - `type: Literal["billing_error"]`
 
+      The broad category of the error.
+
       default: billing_error
 
     - `message: str`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
       default: Billing error
 
@@ -2776,9 +2798,13 @@ print(beta_dream.id)
 
     - `type: Literal["permission_error"]`
 
+      The broad category of the error.
+
       default: permission_error
 
     - `message: str`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
       default: Permission denied
 
@@ -2786,9 +2812,13 @@ print(beta_dream.id)
 
     - `type: Literal["not_found_error"]`
 
+      The broad category of the error.
+
       default: not_found_error
 
     - `message: str`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
       default: Not found
 
@@ -2796,9 +2826,13 @@ print(beta_dream.id)
 
     - `type: Literal["rate_limit_error"]`
 
+      The broad category of the error.
+
       default: rate_limit_error
 
     - `message: str`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
       default: Rate limited
 
@@ -2806,9 +2840,13 @@ print(beta_dream.id)
 
     - `type: Literal["timeout_error"]`
 
+      The broad category of the error.
+
       default: timeout_error
 
     - `message: str`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
       default: Request timeout
 
@@ -2816,9 +2854,13 @@ print(beta_dream.id)
 
     - `type: Literal["api_error"]`
 
+      The broad category of the error.
+
       default: api_error
 
     - `message: str`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
       default: Internal server error
 
@@ -2826,9 +2868,13 @@ print(beta_dream.id)
 
     - `type: Literal["overloaded_error"]`
 
+      The broad category of the error.
+
       default: overloaded_error
 
     - `message: str`
+
+      A human-readable explanation of the error. Its wording can change, so don't match on it.
 
       default: Overloaded
 
@@ -2841,8 +2887,6 @@ print(beta_dream.id)
     - `type: Literal["conflict_error"]`
 
     - `message: Optional[str]`
-
-      A human-readable explanation of why the memory store can't be used yet, with the ID of the dream that is using it when the server can identify it.
 
 ### Beta Output Behavior
 
@@ -2909,5 +2953,3 @@ print(beta_dream.id)
   - `type: Literal["conflict_error"]`
 
   - `message: Optional[str]`
-
-    A human-readable explanation of why the memory store can't be used yet, with the ID of the dream that is using it when the server can identify it.

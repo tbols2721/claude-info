@@ -77,6 +77,34 @@ Set a Slack channel up for Claude Tag and return it with its identifier. If the 
 
     minLength: 1, maxLength: 128
 
+  - `reply_mode: Optional[BetaClaudeTagReplyModeParam]`
+
+    How Claude takes part in the channel: `automatic`, `mention_only`, `always_awake` or `thread`. Only a channel takes one: an update of a workspace that sends a value is refused, and one that sends null changes nothing. Null never clears it: sent to a channel that stores none it changes nothing, and sent to a channel that stores one it is refused, because a stored reply mode can be changed but never cleared; a caller that wants Claude's default behavior sends `automatic`.
+
+    - `class BetaClaudeTagReplyModeAutomatic`
+
+      Claude reads along and joins in when it can help, and pauses on its own in quiet or busy channels.
+
+      - `type: Literal["automatic"]`
+
+    - `class BetaClaudeTagReplyModeMentionOnly`
+
+      Claude replies only when it is @-mentioned.
+
+      - `type: Literal["mention_only"]`
+
+    - `class BetaClaudeTagReplyModeAlwaysAwake`
+
+      Like `automatic`, but Claude never pauses on its own. Available where it is enabled for the channel.
+
+      - `type: Literal["always_awake"]`
+
+    - `class BetaClaudeTagReplyModeThread`
+
+      Every new top-level message in the channel gets its own reply from Claude, in a thread under it. Available where it is enabled for the channel, and only once Claude has been used in the channel.
+
+      - `type: Literal["thread"]`
+
 - `betas: Optional[List[AnthropicBetaParam]]` (header parameter)
 
   This endpoint is in beta: requests must send `experimental-claude-tag-2026-10-21` in this header.
@@ -187,6 +215,8 @@ Set a Slack channel up for Claude Tag and return it with its identifier. If the 
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -252,6 +282,34 @@ Set a Slack channel up for Claude Tag and return it with its identifier. If the 
     - `model: Optional[str]`
 
       The model Claude uses: a model identifier or the name of a model line. The nearest settings level that sets it decides. When none does, Claude uses the product's default model.
+
+    - `reply_mode: Optional[BetaClaudeTagReplyMode]`
+
+      How Claude takes part in the channel. Only a channel stores one, and no settings level passes one on, so it is always null on a workspace. Null on a channel means the channel stores none yet: Claude then follows the reply mode chosen in Slack, if one was, else `automatic`. A stored reply mode can be changed but never cleared.
+
+      - `class BetaClaudeTagReplyModeAutomatic`
+
+        Claude reads along and joins in when it can help, and pauses on its own in quiet or busy channels.
+
+        - `type: Literal["automatic"]`
+
+      - `class BetaClaudeTagReplyModeMentionOnly`
+
+        Claude replies only when it is @-mentioned.
+
+        - `type: Literal["mention_only"]`
+
+      - `class BetaClaudeTagReplyModeAlwaysAwake`
+
+        Like `automatic`, but Claude never pauses on its own. Available where it is enabled for the channel.
+
+        - `type: Literal["always_awake"]`
+
+      - `class BetaClaudeTagReplyModeThread`
+
+        Every new top-level message in the channel gets its own reply from Claude, in a thread under it. Available where it is enabled for the channel, and only once Claude has been used in the channel.
+
+        - `type: Literal["thread"]`
 
   - `slack: BetaClaudeTagSlackChannelIdentifiers`
 
@@ -369,6 +427,10 @@ Set a Slack channel up for Claude Tag and return it with its identifier. If the 
 
       The settings level `model` comes from.
 
+    - `reply_mode: Optional[BetaClaudeTagSettingSource]`
+
+      The settings level `reply_mode` comes from: the channel when it stores one. With `include_inherited=true` and no stored mode it is `default`.
+
   - `updated_at: datetime`
 
     Time Claude Tag's record of the channel last changed. It moves on every change to a setting, and can also move when something no response holds changes, so a later value says to read the channel again, not that a setting changed. Attaching or detaching a Bundle does not by itself move it.
@@ -410,7 +472,10 @@ print(beta_claude_tag_slack_channel.id)
       "type": "allow"
     },
     "instructions": "instructions",
-    "model": "model"
+    "model": "model",
+    "reply_mode": {
+      "type": "automatic"
+    }
   },
   "slack": {
     "channel_id": "xx",
@@ -436,6 +501,10 @@ print(beta_claude_tag_slack_channel.id)
       }
     ],
     "model": {
+      "slack_channel_id": "slack_channel_id",
+      "type": "slack_channel"
+    },
+    "reply_mode": {
       "slack_channel_id": "slack_channel_id",
       "type": "slack_channel"
     }
@@ -587,6 +656,8 @@ List the set-up Slack channels of one Slack workspace, newest first by `created_
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -652,6 +723,34 @@ List the set-up Slack channels of one Slack workspace, newest first by `created_
     - `model: Optional[str]`
 
       The model Claude uses: a model identifier or the name of a model line. The nearest settings level that sets it decides. When none does, Claude uses the product's default model.
+
+    - `reply_mode: Optional[BetaClaudeTagReplyMode]`
+
+      How Claude takes part in the channel. Only a channel stores one, and no settings level passes one on, so it is always null on a workspace. Null on a channel means the channel stores none yet: Claude then follows the reply mode chosen in Slack, if one was, else `automatic`. A stored reply mode can be changed but never cleared.
+
+      - `class BetaClaudeTagReplyModeAutomatic`
+
+        Claude reads along and joins in when it can help, and pauses on its own in quiet or busy channels.
+
+        - `type: Literal["automatic"]`
+
+      - `class BetaClaudeTagReplyModeMentionOnly`
+
+        Claude replies only when it is @-mentioned.
+
+        - `type: Literal["mention_only"]`
+
+      - `class BetaClaudeTagReplyModeAlwaysAwake`
+
+        Like `automatic`, but Claude never pauses on its own. Available where it is enabled for the channel.
+
+        - `type: Literal["always_awake"]`
+
+      - `class BetaClaudeTagReplyModeThread`
+
+        Every new top-level message in the channel gets its own reply from Claude, in a thread under it. Available where it is enabled for the channel, and only once Claude has been used in the channel.
+
+        - `type: Literal["thread"]`
 
   - `slack: BetaClaudeTagSlackChannelIdentifiers`
 
@@ -769,6 +868,10 @@ List the set-up Slack channels of one Slack workspace, newest first by `created_
 
       The settings level `model` comes from.
 
+    - `reply_mode: Optional[BetaClaudeTagSettingSource]`
+
+      The settings level `reply_mode` comes from: the channel when it stores one. With `include_inherited=true` and no stored mode it is `default`.
+
   - `updated_at: datetime`
 
     Time Claude Tag's record of the channel last changed. It moves on every change to a setting, and can also move when something no response holds changes, so a later value says to read the channel again, not that a setting changed. Attaching or detaching a Bundle does not by itself move it.
@@ -808,7 +911,10 @@ print(page.id)
           "type": "allow"
         },
         "instructions": "instructions",
-        "model": "model"
+        "model": "model",
+        "reply_mode": {
+          "type": "automatic"
+        }
       },
       "slack": {
         "channel_id": "xx",
@@ -834,6 +940,10 @@ print(page.id)
           }
         ],
         "model": {
+          "slack_channel_id": "slack_channel_id",
+          "type": "slack_channel"
+        },
+        "reply_mode": {
           "slack_channel_id": "slack_channel_id",
           "type": "slack_channel"
         }
@@ -974,6 +1084,8 @@ Get one Slack channel and its settings. By default `settings` holds what the cha
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -1039,6 +1151,34 @@ Get one Slack channel and its settings. By default `settings` holds what the cha
     - `model: Optional[str]`
 
       The model Claude uses: a model identifier or the name of a model line. The nearest settings level that sets it decides. When none does, Claude uses the product's default model.
+
+    - `reply_mode: Optional[BetaClaudeTagReplyMode]`
+
+      How Claude takes part in the channel. Only a channel stores one, and no settings level passes one on, so it is always null on a workspace. Null on a channel means the channel stores none yet: Claude then follows the reply mode chosen in Slack, if one was, else `automatic`. A stored reply mode can be changed but never cleared.
+
+      - `class BetaClaudeTagReplyModeAutomatic`
+
+        Claude reads along and joins in when it can help, and pauses on its own in quiet or busy channels.
+
+        - `type: Literal["automatic"]`
+
+      - `class BetaClaudeTagReplyModeMentionOnly`
+
+        Claude replies only when it is @-mentioned.
+
+        - `type: Literal["mention_only"]`
+
+      - `class BetaClaudeTagReplyModeAlwaysAwake`
+
+        Like `automatic`, but Claude never pauses on its own. Available where it is enabled for the channel.
+
+        - `type: Literal["always_awake"]`
+
+      - `class BetaClaudeTagReplyModeThread`
+
+        Every new top-level message in the channel gets its own reply from Claude, in a thread under it. Available where it is enabled for the channel, and only once Claude has been used in the channel.
+
+        - `type: Literal["thread"]`
 
   - `slack: BetaClaudeTagSlackChannelIdentifiers`
 
@@ -1156,6 +1296,10 @@ Get one Slack channel and its settings. By default `settings` holds what the cha
 
       The settings level `model` comes from.
 
+    - `reply_mode: Optional[BetaClaudeTagSettingSource]`
+
+      The settings level `reply_mode` comes from: the channel when it stores one. With `include_inherited=true` and no stored mode it is `default`.
+
   - `updated_at: datetime`
 
     Time Claude Tag's record of the channel last changed. It moves on every change to a setting, and can also move when something no response holds changes, so a later value says to read the channel again, not that a setting changed. Attaching or detaching a Bundle does not by itself move it.
@@ -1194,7 +1338,10 @@ print(beta_claude_tag_slack_channel.id)
       "type": "allow"
     },
     "instructions": "instructions",
-    "model": "model"
+    "model": "model",
+    "reply_mode": {
+      "type": "automatic"
+    }
   },
   "slack": {
     "channel_id": "xx",
@@ -1220,6 +1367,10 @@ print(beta_claude_tag_slack_channel.id)
       }
     ],
     "model": {
+      "slack_channel_id": "slack_channel_id",
+      "type": "slack_channel"
+    },
+    "reply_mode": {
       "slack_channel_id": "slack_channel_id",
       "type": "slack_channel"
     }
@@ -1288,6 +1439,34 @@ Change the settings a Slack channel stores. The update is partial: a setting lef
     The model Claude uses: the identifier of a model, or the name of a model line, that the organization is entitled to for Claude Tag. Null clears it.
 
     minLength: 1, maxLength: 128
+
+  - `reply_mode: Optional[BetaClaudeTagReplyModeParam]`
+
+    How Claude takes part in the channel: `automatic`, `mention_only`, `always_awake` or `thread`. Only a channel takes one: an update of a workspace that sends a value is refused, and one that sends null changes nothing. Null never clears it: sent to a channel that stores none it changes nothing, and sent to a channel that stores one it is refused, because a stored reply mode can be changed but never cleared; a caller that wants Claude's default behavior sends `automatic`.
+
+    - `class BetaClaudeTagReplyModeAutomatic`
+
+      Claude reads along and joins in when it can help, and pauses on its own in quiet or busy channels.
+
+      - `type: Literal["automatic"]`
+
+    - `class BetaClaudeTagReplyModeMentionOnly`
+
+      Claude replies only when it is @-mentioned.
+
+      - `type: Literal["mention_only"]`
+
+    - `class BetaClaudeTagReplyModeAlwaysAwake`
+
+      Like `automatic`, but Claude never pauses on its own. Available where it is enabled for the channel.
+
+      - `type: Literal["always_awake"]`
+
+    - `class BetaClaudeTagReplyModeThread`
+
+      Every new top-level message in the channel gets its own reply from Claude, in a thread under it. Available where it is enabled for the channel, and only once Claude has been used in the channel.
+
+      - `type: Literal["thread"]`
 
 - `betas: Optional[List[AnthropicBetaParam]]` (header parameter)
 
@@ -1399,6 +1578,8 @@ Change the settings a Slack channel stores. The update is partial: a setting lef
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -1464,6 +1645,34 @@ Change the settings a Slack channel stores. The update is partial: a setting lef
     - `model: Optional[str]`
 
       The model Claude uses: a model identifier or the name of a model line. The nearest settings level that sets it decides. When none does, Claude uses the product's default model.
+
+    - `reply_mode: Optional[BetaClaudeTagReplyMode]`
+
+      How Claude takes part in the channel. Only a channel stores one, and no settings level passes one on, so it is always null on a workspace. Null on a channel means the channel stores none yet: Claude then follows the reply mode chosen in Slack, if one was, else `automatic`. A stored reply mode can be changed but never cleared.
+
+      - `class BetaClaudeTagReplyModeAutomatic`
+
+        Claude reads along and joins in when it can help, and pauses on its own in quiet or busy channels.
+
+        - `type: Literal["automatic"]`
+
+      - `class BetaClaudeTagReplyModeMentionOnly`
+
+        Claude replies only when it is @-mentioned.
+
+        - `type: Literal["mention_only"]`
+
+      - `class BetaClaudeTagReplyModeAlwaysAwake`
+
+        Like `automatic`, but Claude never pauses on its own. Available where it is enabled for the channel.
+
+        - `type: Literal["always_awake"]`
+
+      - `class BetaClaudeTagReplyModeThread`
+
+        Every new top-level message in the channel gets its own reply from Claude, in a thread under it. Available where it is enabled for the channel, and only once Claude has been used in the channel.
+
+        - `type: Literal["thread"]`
 
   - `slack: BetaClaudeTagSlackChannelIdentifiers`
 
@@ -1581,6 +1790,10 @@ Change the settings a Slack channel stores. The update is partial: a setting lef
 
       The settings level `model` comes from.
 
+    - `reply_mode: Optional[BetaClaudeTagSettingSource]`
+
+      The settings level `reply_mode` comes from: the channel when it stores one. With `include_inherited=true` and no stored mode it is `default`.
+
   - `updated_at: datetime`
 
     Time Claude Tag's record of the channel last changed. It moves on every change to a setting, and can also move when something no response holds changes, so a later value says to read the channel again, not that a setting changed. Attaching or detaching a Bundle does not by itself move it.
@@ -1620,7 +1833,10 @@ print(beta_claude_tag_slack_channel.id)
       "type": "allow"
     },
     "instructions": "instructions",
-    "model": "model"
+    "model": "model",
+    "reply_mode": {
+      "type": "automatic"
+    }
   },
   "slack": {
     "channel_id": "xx",
@@ -1646,6 +1862,10 @@ print(beta_claude_tag_slack_channel.id)
       }
     ],
     "model": {
+      "slack_channel_id": "slack_channel_id",
+      "type": "slack_channel"
+    },
+    "reply_mode": {
       "slack_channel_id": "slack_channel_id",
       "type": "slack_channel"
     }
@@ -1779,6 +1999,8 @@ Remove a Slack channel from Claude Tag. This deletes the channel's stored settin
 
   - `"webhooks-2026-10-07"`
 
+  - `"admin-user-sign-out-2026-10-08"`
+
   - `"message-threads-2026-08-12"`
 
   - `"analytics-usage-cost-2026-08-24"`
@@ -1899,6 +2121,34 @@ print(beta_claude_tag_deleted_slack_channel.id)
 
       The model Claude uses: a model identifier or the name of a model line. The nearest settings level that sets it decides. When none does, Claude uses the product's default model.
 
+    - `reply_mode: Optional[BetaClaudeTagReplyMode]`
+
+      How Claude takes part in the channel. Only a channel stores one, and no settings level passes one on, so it is always null on a workspace. Null on a channel means the channel stores none yet: Claude then follows the reply mode chosen in Slack, if one was, else `automatic`. A stored reply mode can be changed but never cleared.
+
+      - `class BetaClaudeTagReplyModeAutomatic`
+
+        Claude reads along and joins in when it can help, and pauses on its own in quiet or busy channels.
+
+        - `type: Literal["automatic"]`
+
+      - `class BetaClaudeTagReplyModeMentionOnly`
+
+        Claude replies only when it is @-mentioned.
+
+        - `type: Literal["mention_only"]`
+
+      - `class BetaClaudeTagReplyModeAlwaysAwake`
+
+        Like `automatic`, but Claude never pauses on its own. Available where it is enabled for the channel.
+
+        - `type: Literal["always_awake"]`
+
+      - `class BetaClaudeTagReplyModeThread`
+
+        Every new top-level message in the channel gets its own reply from Claude, in a thread under it. Available where it is enabled for the channel, and only once Claude has been used in the channel.
+
+        - `type: Literal["thread"]`
+
   - `slack: BetaClaudeTagSlackChannelIdentifiers`
 
     Slack's own identifiers for the channel.
@@ -2014,6 +2264,10 @@ print(beta_claude_tag_deleted_slack_channel.id)
     - `model: Optional[BetaClaudeTagSettingSource]`
 
       The settings level `model` comes from.
+
+    - `reply_mode: Optional[BetaClaudeTagSettingSource]`
+
+      The settings level `reply_mode` comes from: the channel when it stores one. With `include_inherited=true` and no stored mode it is `default`.
 
   - `updated_at: datetime`
 

@@ -464,6 +464,22 @@ ant organization:rbac-groups delete \
 
     format: date-time
 
+### RBAC Group Grants Owner Access Error Details
+
+- `rbac_group_grants_owner_access_error_details: object`
+
+  A role attached to an RBAC Group in the request grants owner access, so this API does not add members to that group (directly or through an invite), remove its members, or delete it. Make the change in the organization's admin settings in Claude.
+
+  - `error_code: "rbac_group_grants_owner_access"`
+
+### RBAC Group Owner Access Unconfirmed Error Details
+
+- `rbac_group_owner_access_unconfirmed_error_details: object`
+
+  The API could not finish checking whether an RBAC Group in the request grants owner access, so it made no change. Retrying the same request will not help. Make the change in the organization's admin settings in Claude.
+
+  - `error_code: "rbac_group_owner_access_unconfirmed"`
+
 ## RBAC Groups › Members
 
 ### List RBAC Group Members
