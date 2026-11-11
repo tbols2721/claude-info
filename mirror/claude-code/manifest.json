@@ -32,7 +32,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "0fd6919f5b7c4b5b3b5b12fda4296179ec970764b21c24cbfd51921d57f37791"
+   "sha256": "680a31f7e0c0c0d6b726633a81aad82517b2e2461cb318bb21cbdc3f630c43b9"
   },
   {
    "path": "changelog.md",
@@ -96,7 +96,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "9880e3f6486d03d0ded58c3eb6f82655cc5eee554f029f59169d182df0af8d04"
+   "sha256": "1b83742fc3e01b6a1006b0a585015af83460a621971c0ce421f1089f5807632f"
   },
   {
    "path": "context-window.md",
@@ -128,7 +128,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "f48bf98df587409a4a055989e6f0ce7d7dd990f554faae6468ca06c3af812cb5"
+   "sha256": "7f65bec76e9e5f959adf367031f455f9f15220562c51e3a76e104406d4a0344b"
   },
   {
    "path": "memory.md",
@@ -144,7 +144,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "275fe39e8501741ad308ab8ecd4552327cf34e53654841d7a121de80fbe6b595"
+   "sha256": "524cff77043d4b230e427dfcebce29a5284fcd2e3f4678abb2ef9b6e856c5ff8"
   },
   {
    "path": "sessions.md",
@@ -240,7 +240,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "2b14eb20cd7013d302bd4522f9fbf521082c6aefec231a3894d1f37b745ef968"
+   "sha256": "8d2609776ba3177344decf3591008f8adddbffae23e66999195a1cac36703bd7"
   },
   {
    "path": "claude-projects.md",
@@ -256,7 +256,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "f47976d41fd913eb7d369943b10b80fd7aee0d5344759162b074ac19b452af55"
+   "sha256": "cac466b5c34b02fbaa2c87ff3b23a7f8d627b585812a6a06eb5e4bd24606cb91"
   },
   {
    "path": "mobile.md",
@@ -385,7 +385,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "6b6b9b8d60680ca281a80b9e9ce4e47921a7a9a09aec641903b91cca5d5e275c"
+   "sha256": "2832c2352743d3dc7a552f07a662d3a0f98bd5389c749ab7c66034a478efa3d0"
   },
   {
    "path": "claude-code-on-the-web.md",
@@ -402,7 +402,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "12cd4648e0223278250d01d1d1446e7f59916975b2e840715fffb4165b767d97"
+   "sha256": "d8b49efe413a089e5988f6edb681b4070a2223ab526e10a832b10337bfefc365"
   },
   {
    "path": "routines.md",
@@ -419,7 +419,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "1b5a5e81ee7d7264371b7f7151508fcfb45282b8f16109652cd84c81c502bff6"
+   "sha256": "771d695d4bb11166b6d6905f4f8148d31d0806a17e6194e3efffc402559f631f"
   },
   {
    "path": "desktop-quickstart.md",
@@ -453,7 +453,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "fcfc2b755f9eced0c9da93ab2cb77f3590dccaa2349715834b56afc25fac54b3"
+   "sha256": "cfc3131bd25c1fb47b122908921c47551ccf67339ec81cc357b1f66e9f4b3250"
   },
   {
    "path": "desktop-linux.md",
@@ -521,7 +521,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "f556588fbcc2a74980960a7ffbd0afff550f2ebd9b6de2ae4c42d9514d296cfb"
+   "sha256": "d6ad3a98ba0e173276623b4039cf1ea17543ea06b08fa17138de66d77cc121ba"
   },
   {
    "path": "code-review-local.md",
@@ -705,7 +705,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "8a63d66298f430b4044b4ec6af7c31d4664970435fc7aae2c176f835e8450800"
+   "sha256": "066e0c992efe84f483e98caecd1b0d9166cffbb694fd8ad1d02bf49031aa4fc3"
   },
   {
    "path": "github-actions.md",
@@ -804,7 +804,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "056e95804b7c0742e2e6c4cd75fcebcb346ffebd686570d72cd248b2be865400"
+   "sha256": "9b25fce624c484b9d78bd3bd6ad8e7825087d976b8b0ba1f405ed88f4cc202bd"
   },
   {
    "path": "agent-teams.md",
@@ -852,7 +852,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "b940968734f59d5e7f3b58c9513d1b90c69c9a429436eadf6b9d1d95873bf4c5"
+   "sha256": "5b262faf3ba1bb40315a27d560371bed5b4969b7ad6855bbcecf284487a49b54"
   },
   {
    "path": "worktrees.md",
@@ -932,7 +932,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "5d8196cf9ed60bf55aff278e44d8a5eeb542f7ca8b243dca65b16476eb7fd198"
+   "sha256": "db8982b3dbe2c533da9ee02554780f46526f16b4e97b36a97016847faa4bd536"
   },
   {
    "path": "hooks-guide.md",
@@ -980,7 +980,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "f44fdf60df04074d869d0792b1b7c012d5c9b00307763e4d7434340c4e0da903"
+   "sha256": "19aa98405d02326e5b7eb7a79185f6bada9cec3a9bbac633bd3fd18fdd087b93"
   },
   {
    "path": "goal.md",
@@ -996,7 +996,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "341528f1a7ed0ded50441ee82ed2fa8577b0a0963643ac3f4b585420c52b6112"
+   "sha256": "9f76fc8fc67771b934c70401dbb423ee25f2e52c8aa762871f9c7b0a81bd8739"
   },
   {
    "path": "headless.md",
@@ -1060,7 +1060,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "840e7ce8a78b54dd9ab9330f9043ab6d332e98e17954888ff33eb8a37b2778ca"
+   "sha256": "49dba5d764eb6c57e40a8496268a43ace6bd452939f13925cae0edc0603736b1"
   },
   {
    "path": "troubleshooting.md",
@@ -1108,7 +1108,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "eb86027b6c29f84713c86d4eaea816f71edb8c59be950a339845a19cb43afe19"
+   "sha256": "db64e6437cad814ff582a8585915c1ca7fbc40f7f7b01a1bb494ac20ce7d2fae"
   },
   {
    "path": "plugins/overview.md",
@@ -1204,7 +1204,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "fbddf82076d0132e8a118d71e52b987ffa3f9a93ebaf08e494045dc0f0c00038"
+   "sha256": "4a8524269c7ac3d7baf0223d9bd081b04d76399e2848b82f70248c0f26e19977"
   },
   {
    "path": "plugins/components.md",
@@ -1348,7 +1348,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "aa8412edc09fd39e3c52c0e8abd3c2cb407c158aefaaa2c5d23b33802f50b96f"
+   "sha256": "bc7505fb08059f096e464ce7ca01e73401cc27d1fa65f1cfcfba5c3a5d76ce3b"
   },
   {
    "path": "plugins/mods/interface.md",
@@ -1514,7 +1514,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "ed45e79d6f9f850f9f4a906dc8944c5152e5e620673996a6c160903f803127d6"
+   "sha256": "447f35e4a60e1cb0f1b80b0bf8c5bd747c1bd357420f94d3a63175e9bc1ddd85"
   },
   {
    "path": "plugins/mods/admin.md",
@@ -1546,7 +1546,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "b4c686286311e5677f00a9efe95d76ff28e739e8915e1c3ed13119bbd3ee61c3"
+   "sha256": "f57c03ad31251843a898add4847f3e954e17725383f712d6f2d169206d5098b8"
   },
   {
    "path": "plugins/loading.md",
@@ -1562,7 +1562,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "2c7624d68946aff426039f591093960f84193483b23b96850d437c9e49764ff7"
+   "sha256": "4739c47a58a0dc53702d10ee748795c114a3c1e30e4ecaf475e2c95c65b42d41"
   },
   {
    "path": "plugins/manifest-reference.md",
@@ -1578,7 +1578,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "e5b1637e31d580160fce53125e56900800e55a5b6f089a34c4407648cef48443"
+   "sha256": "d78c502c30849c7405c61dce1080243d0ce2f0682310634d06d5babbf5bcfd27"
   },
   {
    "path": "plugins/marketplace-reference.md",
@@ -1610,7 +1610,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "2714471fe96cb9b4679604f024a05543449eed702953c8891527e0de21b21323"
+   "sha256": "8a7060722e6ad0c6b6bd3a00ad2f56c52a76f9b0d40936e1e7f4869715bb26fe"
   },
   {
    "path": "admin-setup.md",
@@ -1626,7 +1626,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "29bdc92733fa012b9b7242e77e7d84955f9785d992c368fd7ce88b4e4a3fb321"
+   "sha256": "9503ec30afb3be70475249a917841fc3a2c5145967e0f72c4688dc26c9ebaabf"
   },
   {
    "path": "setup.md",
@@ -1674,7 +1674,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "a4c62e6cf3186beaa0101a9ba97bee3b9eaf90b46806377fd931f7663fabc5c3"
+   "sha256": "6af88d80019c0c090925e623526afc942c28cc9b084a676498a4f1006f14b8f3"
   },
   {
    "path": "server-managed-settings.md",
@@ -1690,7 +1690,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "973d95146fcdb268ea93213cbb6ec4077e62861a1b5798e8b0e037b233772680"
+   "sha256": "54f741e00b88a1e6c51b0876c7b64252078975839468d6e31983129c94712e82"
   },
   {
    "path": "managed-mcp.md",
@@ -1706,7 +1706,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "7fa96a6bd2f495fea0596d5a0cb8d7a404558acee97b34f231a4ce639cc79859"
+   "sha256": "4db15c7d5b7a4114352570f8fc61c89b03869155c287eadea59e6d558e11ae55"
   },
   {
    "path": "auto-mode-config.md",
@@ -1722,7 +1722,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "ed00ec1d87312e76b74e3bbc66e70d05c01017577163f70a724f2d3786d77a1c"
+   "sha256": "aa8961e609f1fd6a3f6c07dd6fd5e17589a185266e04bb1febfa0e2052a80b0d"
   },
   {
    "path": "third-party-integrations.md",
@@ -1754,7 +1754,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "d6ebc9de43eb67369aca63df43d797f38ce2b9bb97ad8a171ed13b85f97455b5"
+   "sha256": "fe0d526b98c1c0b3ccd0d1a29b6cbb632757d19947ad254ba890a58eb7a64803"
   },
   {
    "path": "amazon-bedrock.md",
@@ -1786,7 +1786,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "a6b5246758fa7e9c503d949c75bc54ecf22699625fe0d29d3f7bedd757382172"
+   "sha256": "69a072a212cf41756ca453651124dc9858559b5b71ddef67e441f6376866862f"
   },
   {
    "path": "google-vertex-ai.md",
@@ -1882,7 +1882,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "6ebbe127f656bc8233cd913299c49f6a6f17019bb9a70ed9f58b1ee5437ea94e"
+   "sha256": "58e6836caa2cffc150bb3ef63fbd304565059b6a0efe60fb72b0f746db5d4c14"
   },
   {
    "path": "claude-apps-gateway.md",
@@ -1899,7 +1899,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "dfc038d1138c48685019c5c9d8a33cfd234a61ccad0245ca38e834dd33bf84cf"
+   "sha256": "326baf688f57a790ee4fd7aeadce4ca175d274db40169c6d5560cf0a73c7a10f"
   },
   {
    "path": "claude-apps-gateway-config.md",
@@ -1916,7 +1916,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "6ac7d5b69ea300b892f1371fd30b6b3c58f90926c572260565446ab73817de30"
+   "sha256": "b25dfd8c089e7a2209edd011262b9fe2887dbbe1b56c3e2c4f51a4462a4cdb1c"
   },
   {
    "path": "claude-apps-gateway-spend-limits.md",
@@ -1933,7 +1933,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "04e60191f24641da0e0a9bcccb1fe51834c9bee22a2664e6e6b2eb62e99de5f4"
+   "sha256": "0cd60cadc3fda9d8f2882dbeb78616eb5e17597f4a26a75d0e184044a1eeb165"
   },
   {
    "path": "claude-apps-gateway-deploy.md",
@@ -1950,7 +1950,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "b98edf038b85f8fc25262bf6b9c37848cb68d1408ed41887db4902a115b5c3b8"
+   "sha256": "1356247750e1998228b1aba2a9393fc8802a0ffd7f63470876222c2dba443eff"
   },
   {
    "path": "claude-apps-gateway-on-aws.md",
@@ -2001,7 +2001,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "8dd7626286a658e2fa69903555f1e542f1719fc7506b4f892f0600a2b4fbd9c1"
+   "sha256": "0e859ef81b786b71bfa8c31cdadae66cf5ae9d006e1519058b05ff127f81426f"
   },
   {
    "path": "llm-gateway-connect.md",
@@ -2018,7 +2018,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "f010cb8ab81da39cd1d71574f3973d38725d7a96ab8beeefd9e0b7bd45cb3231"
+   "sha256": "db042ee2e20a79089a604bf428403da0429a5894f62ccdc355241d91c8ffe9a0"
   },
   {
    "path": "llm-gateway-rollout.md",
@@ -2035,7 +2035,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "877b078ee9a9cb2442ddf0836292f0a77cd19af9797e06eee1c19d66a29e4863"
+   "sha256": "09aa7ed64e3d268191e17ee1407b9a278c0da4f1a5613f76f4eebbec2c13c375"
   },
   {
    "path": "llm-gateway-protocol.md",
@@ -2052,7 +2052,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "baccdee78cce0809fb97308985d3a5f5083cbf2892459c271e6a8712ee3e0f56"
+   "sha256": "85373bf3f6b6a9a0c8b38a5abd3820e27bd89ef6e755146957eea9f7a2a1807e"
   },
   {
    "path": "monitoring-usage.md",
@@ -2068,7 +2068,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "0d7b22c64e04be2aae3ffcf96a080a0d073e3a837d3672e7df284e4a2c00e097"
+   "sha256": "f4e05bb2e9411b62d9dc638d574556325532d81aa999d8f28e184c89aa0b95a4"
   },
   {
    "path": "costs.md",
@@ -2084,7 +2084,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "d40c485900dd43867a8099f16335580191a4354146becc6362d8e8333116a155"
+   "sha256": "859c2c4bd0462e9fc904475095cf498cb3817ff12477d0122fb651b5e08a0218"
   },
   {
    "path": "analytics.md",
@@ -2148,7 +2148,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "3e201f9929d89530fed35f717403614a3d7bf8346838d50b14f0cb9cebd3d6ea"
+   "sha256": "76ce1148782ed8400e1b1db3aefd8fb3e6c25964b2a9df1f46628c6c3ccecd18"
   },
   {
    "path": "hipaa-setup.md",
@@ -2212,7 +2212,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "a990a481f11d432305626bd0c50f64d6ed61a6d8967307d1b7e35701edc6d261"
+   "sha256": "e180e905de3bbf69dd932eb37a2ea9af8d7e937ade9cc98fdcd493df85ca18cc"
   },
   {
    "path": "settings-reference.md",
@@ -2228,7 +2228,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "d4b85c13504f0ef24d39e0ba9a5f32c969929a86670a686ec55de7d8ee37bdfd"
+   "sha256": "304541915e9965992f707a032e64ce1c070c1084fe0c59d63ff3bae9fd500786"
   },
   {
    "path": "settings-example.md",
@@ -2244,7 +2244,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "7bc695e5d7b8676b608fcad569ca6cc79c2cf05d47ed2dcca3e00e206e6acf0c"
+   "sha256": "1a47ec2d37d6c36cfed03ca9c7c7760faef657ed88954fa9978f1ed4ed23ab7e"
   },
   {
    "path": "permissions.md",
@@ -2276,7 +2276,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "edb867988c953da995b7b997a626e012c30d4a18693519c1d7f1102df00c75fb"
+   "sha256": "8aad3147d5e5f7a8cb9f6417566fdea63ef24183f136b9103a2ab1178c96f402"
   },
   {
    "path": "auto-mode-classifier-billing.md",
@@ -2292,7 +2292,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "8c45c7cfac5da17547f6d935c924030b837cb672ad8e3cecc06483a93e921f73"
+   "sha256": "f6524e8b6fde0ed2236e0dd3c931bddcae88e9df2c5de155df7544b521d0e940"
   },
   {
    "path": "sandboxing.md",
@@ -2308,7 +2308,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "5820694e70a4f8abff451ddca7b29c61eea102673ebf96b8ca1c6e652f636a63"
+   "sha256": "f679b137a6c4d0dbe672150820af58197c058e769b6b25fb17383dbf14ab8d04"
   },
   {
    "path": "sandbox-environments.md",
@@ -2324,7 +2324,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "70fb753d0932ab0d746d21066ad1fcdf77f722e9486fde498e71a5d8cff2e2ca"
+   "sha256": "7b8c4af4ccc5e55f32db3b0c5adb9c64e236a534e99715bc6f04406045e4235e"
   },
   {
    "path": "cloud-environments.md",
@@ -2340,7 +2340,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "7478d63921a59ca8cf9b9f107ccb9a6594adf41c71b570b943d1650a0dbcff98"
+   "sha256": "cca41467ed3797697820b11281dd792196091e04d55cfa5d9621a76a431addbe"
   },
   {
    "path": "self-hosted-environments.md",
@@ -2391,7 +2391,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "469d20b809f8fda8160152f57acf10dd10fd137b6531ce0f7495c7c470abda3c"
+   "sha256": "d73815a20256cea9a3dee53d5fe5626f6905ce03cd7639a63e1f8fff11a4c472"
   },
   {
    "path": "self-hosted-environments-configuration.md",
@@ -2408,7 +2408,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "844a124d2ad2f8a0ce9cf19df62dca49e7731adf2f6452de62bff5b25c97ff45"
+   "sha256": "16bfb51cbd17037127fd00856674c91266a5680da23207d714621ef9530c1c37"
   },
   {
    "path": "self-hosted-environments-testing.md",
@@ -2425,7 +2425,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "e20fc4e36f1875e4b67417f57b3094ea51dbd02a9b44cbec2e291cc2945586b4"
+   "sha256": "1897bc9da0ba9a8b3b7646c293bfa1f51892f14559a7cef749b665740579be01"
   },
   {
    "path": "self-hosted-environments-reference.md",
@@ -2442,7 +2442,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "c40022ec55bf32c175ff7e0bd433d90779106a77b3cff66e6653cc3da197b473"
+   "sha256": "c124a718b0ef7b4d23eb232ccb0a83d202cdc2ab0171545f5153b8437bc79299"
   },
   {
    "path": "self-hosted-environments-identity.md",
@@ -2475,7 +2475,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "0c49809e7da1b631779de7bff66abd7695372a92913d8cb6f486dacba34d4013"
+   "sha256": "0e325cb75431cdc7eb73758ee6f8f1b80e2c90e762913c24eb5bebe79b5a831d"
   },
   {
    "path": "fast-mode.md",
@@ -2491,7 +2491,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "e4d457ee5d104a7e437f2d34de782e05aeb1b0fd36237e8c1d7c683b807541ae"
+   "sha256": "e4f4815cb44d68d8bf7c95c0374f250c5432a44ac892869f26ad1f829494c337"
   },
   {
    "path": "advisor.md",
@@ -2507,7 +2507,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "52446c1c3149aaee160b7bfbebe32b0648edac9a869077162dc757ec2f239e67"
+   "sha256": "e5f52f657f5dc5bd53c94c2659e3945b5e41219e04ed6aa5c333ee7ed6d6e051"
   },
   {
    "path": "output-styles.md",
@@ -2619,7 +2619,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "7619c12e48223c41e5a0175043dfda4c91669ed1e1251b0589f79217394c7a78"
+   "sha256": "e446761f481da5f6ff7550415264e8c85edf6509e793c5fcde4d0832022d6adc"
   },
   {
    "path": "cli-reference.md",
@@ -2667,7 +2667,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "06cea24f65052743560152a519974daf6ffefbd428b70c69efe7d40cf60f16b6"
+   "sha256": "553f80bb197e99aa75f0910c8066661c184683853e9155c53d6c6f43d338eaaa"
   },
   {
    "path": "tools-reference.md",
@@ -2699,7 +2699,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "a65ae049ed86648acb993fcf1810b7c71f15e1c20f3187200c17e104735689f4"
+   "sha256": "e6c0fc8874099bb1f3d590fb7813a91d0f57409207b714f47a62d3866a7412c9"
   },
   {
    "path": "checkpointing.md",
@@ -2731,7 +2731,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "4dba5422e112b5196b372e6206de4314f2ec83d4335dc88df1e72858978d8c21"
+   "sha256": "ef70648e671286f35e1551fe6dc77f6b9716eeffb5e7c38baffce76c9f2d0c7f"
   },
   {
    "path": "channels-reference.md",
@@ -2827,7 +2827,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "75c8372f86eaaa636f2d40336e526caaaf07bb668e9cab7eb4ecbdc779bbef12"
+   "sha256": "f4e3f4205ba2e68bb9a1c21be910ea95ce02a1ef41da21d9153e4f70c3942c01"
   },
   {
    "path": "agent-sdk/configuration.md",
@@ -2987,7 +2987,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "9622d26f94623274a5e6b5e1c495092203c25c21c4398132a048cd18ea7ae109"
+   "sha256": "e9e1254217642a03b1b5dc046b43102443b7c7cfcfc3c0590efb9468f8b5ae75"
   },
   {
    "path": "agent-sdk/custom-tools.md",
@@ -3179,7 +3179,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "25f4d3da6a3a46c19b9a31c52505bf61b741f3b47c96d5b241156aecc15301db"
+   "sha256": "01e682cd9021a18dc9d162abc2354c4eda3478f2879c1666cd438ff23100515d"
   },
   {
    "path": "agent-sdk/todo-tracking.md",
@@ -3243,7 +3243,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "246583155e108f982f079635735533453ada1632b8979f6b4f5bde980e05c81c"
+   "sha256": "bd7cea08ed2118c182a46236b71f38d9873520acfc0eec2a3978b08f75911f68"
   },
   {
    "path": "agent-sdk/typescript-v2-preview.md",
@@ -3275,382 +3275,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "569c99cee9a3b178ee109a38e90841ac42fa462d886bfac2230235588bda1c13"
-  },
-  {
-   "path": "whats-new/index.md",
-   "url": "https://code.claude.com/docs/en/whats-new/index.md",
-   "title": "What's new",
-   "description": "A weekly digest of notable Claude Code features, with code snippets, demos, and context on why they matter.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 202,
-   "in_index": true,
-   "in_sitemap": false,
-   "linked": false,
-   "sha256": "783a0b3d58dd48edf222a77dc5dcd52557ec18e6b738474f4ed47934b96966a5"
-  },
-  {
-   "path": "whats-new/2026-w37.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w37.md",
-   "title": "Week 37 · September 7–11, 2026",
-   "description": "Test your plugins with claude plugin eval and pop Claude Code Desktop panes out into their own windows.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 203,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "db96f4caa10308fa675e5e0af61d50dae7ad656ac4cb1c178495670fe5cb149f"
-  },
-  {
-   "path": "whats-new/2026-w36.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w36.md",
-   "title": "Week 36 · August 31 – September 4, 2026",
-   "description": "Switch to Claude Fable 5.1, let computer use run in the background on Desktop, and watch Claude's edits in a live /diff panel.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 204,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "8cd44cde6016294cd4d8c4b4eecab2e6f8efedb6b5560f298964742d270b2078"
-  },
-  {
-   "path": "whats-new/2026-w35.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w35.md",
-   "title": "Week 35 · August 24–28, 2026",
-   "description": "Resume terminal sessions in the Claude Code Desktop app, review feedback reports that Claude drafts for you, and start a session in restricted mode.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 205,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "d8ff37f32c5da0e18f11d88e702de6a0ddff563e41de4664864c1d0f71ab4683"
-  },
-  {
-   "path": "whats-new/2026-w34.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w34.md",
-   "title": "Week 34 · August 17–21, 2026",
-   "description": "Draft editable UI artboards with the /design skill, set the Concise output style, and start a Claude Code session on your machine from your phone.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 206,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "738e0ed5bd823822b6c9b2721cd1c7eb6cdebab180274f85eb67f5336ca4f337"
-  },
-  {
-   "path": "whats-new/2026-w33.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w33.md",
-   "title": "Week 33 · August 10–14, 2026",
-   "description": "Claude Code Desktop auto-continues after a usage limit resets, fork mode turns on by default, and GitLab merge requests and marketplaces join GitHub.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 207,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "c244b04265b9b9f34e9536ef3778ffbada49e0865fbd1280b4d4d141d3042470"
-  },
-  {
-   "path": "whats-new/2026-w32.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w32.md",
-   "title": "Week 32 · August 3–7, 2026",
-   "description": "Claude Code sessions message each other, self-hosted environments run cloud sessions on your infrastructure, and auto mode becomes the default permission mode.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 208,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "79ab9188dbb824d71dd66d19e019ee15bea6e325847de7dc072320fe87ead935"
-  },
-  {
-   "path": "whats-new/2026-w30.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w30.md",
-   "title": "Week 30 · July 20–24, 2026",
-   "description": "Opus 5 becomes the default Opus model, Claude Code Desktop adds an iOS Simulator pane, and the Claude Security plugin scans your code for vulnerabilities.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 209,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "e045a0ada6dfe54fd8ad2cfb50c42399dffcf64c0c9f72ad16b4938629dcd466"
-  },
-  {
-   "path": "whats-new/2026-w29.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w29.md",
-   "title": "Week 29 · July 13–17, 2026",
-   "description": "Pull live data into published artifacts through MCP connectors, and use Claude Code with a screen reader in the new screen reader mode.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 210,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "7e4c7e7afa05cae71f9c003b498d937c79ec9233c0cdac2e62d81afb118985f7"
-  },
-  {
-   "path": "whats-new/2026-w28.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w28.md",
-   "title": "Week 28 · July 6–10, 2026",
-   "description": "Browse external sites from the Desktop app's built-in browser, run a full setup checkup with /doctor, and pick up auto mode transcript protections and agent view upgrades.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 211,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "68a42a8dcd04f494bfea73ce7bc095ccef6fb0dd6edaf671d69da327d17064bf"
-  },
-  {
-   "path": "whats-new/2026-w27.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w27.md",
-   "title": "Week 27 · June 29 – July 3, 2026",
-   "description": "Claude Sonnet 5 becomes the default model, Claude in Chrome reaches general availability, subagents run in the background by default, Claude Desktop arrives on Linux in beta, and /radio tunes into Claude FM.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 212,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "deb070b5a5d43dd05acecf875c77d963b536c878aa47ca07f417af8df9282278"
-  },
-  {
-   "path": "whats-new/2026-w26.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w26.md",
-   "title": "Week 26 · June 22–26, 2026",
-   "description": "Authenticate MCP servers from your shell with claude mcp login, get a response to shell mode command output with the ! prefix, and resume a conversation from before /clear with /rewind.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 213,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "a590f78a3d8a12f2340ab39e43022af61eb9c90104ebd75c7f56bccc9e969885"
-  },
-  {
-   "path": "whats-new/2026-w25.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w25.md",
-   "title": "Week 25 · June 15–19, 2026",
-   "description": "Publish a live, shareable page from your session with Artifacts, match tool parameters in deny and ask rules, and set any setting from the prompt with /config.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 214,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "0d764a626db8e2855e632e37fa1b8abbdef4b1f63f9c1bc103d4d203c9bcc0f0"
-  },
-  {
-   "path": "whats-new/2026-w24.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w24.md",
-   "title": "Week 24 · June 8–12, 2026",
-   "description": "Move a session to a new directory with /cd, let subagents spawn their own subagents, and troubleshoot a broken configuration with safe mode.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 215,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "d10c924c0c80f70d2c7fed570293d62726d6113501de53886fa42b2371db4e95"
-  },
-  {
-   "path": "whats-new/2026-w23.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w23.md",
-   "title": "Week 23 · June 1–5, 2026",
-   "description": "Run auto mode on Amazon Bedrock, Google Cloud's Agent Platform, and Microsoft Foundry, prompt before writing files that can run code in acceptEdits mode, list installed plugins with /plugin list, and require an approved version range for managed deployments.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 216,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "f011ca8d44110be6e10ceb79cf4c9b3b28cd5ce889d33fad9d0ffb9a623eed56"
-  },
-  {
-   "path": "whats-new/2026-w22.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w22.md",
-   "title": "Week 22 · May 25–29, 2026",
-   "description": "Run Claude Code on Claude Opus 4.8, orchestrate large tasks with dynamic workflows, catch security issues with the security-guidance plugin, and use fast mode on Opus 4.8 at a lower price.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 217,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "ab1ac269d68e79ad437bc38973adb2fe693fd5e21a93ae4637215d841dbb58de"
-  },
-  {
-   "path": "whats-new/2026-w21.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w21.md",
-   "title": "Week 21 · May 18–22, 2026",
-   "description": "Use auto mode on the Pro plan and with Sonnet 4.6, see which skills, subagents, and MCP servers drive your plan limits in /usage, and review diffs with the new /code-review command.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 218,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "6e5826cf338fa5f68a97d73afea04a8c8d456e6f75ed6734f6e2180639f1269f"
-  },
-  {
-   "path": "whats-new/2026-w20.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w20.md",
-   "title": "Week 20 · May 11–15, 2026",
-   "description": "Manage every Claude Code session from one screen with agent view, keep Claude working toward a goal until a condition holds, and run fast mode on Opus 4.7 by default.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 219,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "77fc81e1ebd952d913527ce298cb60a6afb0b0bebfa0f90595f5f9690019c845"
-  },
-  {
-   "path": "whats-new/2026-w19.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w19.md",
-   "title": "Week 19 · May 4–8, 2026",
-   "description": "Load plugins from .zip archives and URLs, search command history across every project with Ctrl+R, branch new worktrees from local HEAD or the remote default, and block actions unconditionally with auto mode hard deny rules.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 220,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "83887648f971a02707094897959aaecc8cec68f456f11859f3fb09e96cdd6e5c"
-  },
-  {
-   "path": "whats-new/2026-w18.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w18.md",
-   "title": "Week 18 · April 27 – May 1, 2026",
-   "description": "Claude Code on Windows runs without Git Bash, claude auth login accepts a pasted OAuth code when the browser callback can't reach localhost, claude project purge cleans up local state per project, and pasting a PR URL into /resume finds the session that created it.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 221,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "d85f8611ddf7f2b08140356eab5b90d58e235b1b710f013309f808e7fb1dccfa"
-  },
-  {
-   "path": "whats-new/2026-w17.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w17.md",
-   "title": "Week 17 · April 20–24, 2026",
-   "description": "/ultrareview opens as a research preview, automatic session recaps when you return to a terminal, custom color themes you can build and ship in plugins, and a redesigned Claude Code on the web.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 222,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "b4b3bca9f13cc9ac1c627b07d820fb37054fd6e650b512ad197b0a0d1865d8ef"
-  },
-  {
-   "path": "whats-new/2026-w16.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w16.md",
-   "title": "Week 16 · April 13–17, 2026",
-   "description": "Claude Opus 4.7 with the new xhigh effort level, Routines on Claude Code on the web, mobile push notifications that ping your phone when Claude needs you, a /usage breakdown that shows what's driving your limits, and native binaries replacing the bundled JavaScript.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 223,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "9aa831f6babb9b37636ca50036f69bd63597175ee88644b8cca0c90db7879dc1"
-  },
-  {
-   "path": "whats-new/2026-w15.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w15.md",
-   "title": "Week 15 · April 6–10, 2026",
-   "description": "Ultraplan cloud planning, the Monitor tool with self-pacing /loop, /team-onboarding for packaging your setup, and /autofix-pr from your terminal.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 224,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "fe046e667e970468aa05b990d44d63ec44a731ee6ce272438f25baf38e49b92e"
-  },
-  {
-   "path": "whats-new/2026-w14.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w14.md",
-   "title": "Week 14 · March 30 – April 3, 2026",
-   "description": "Computer use in the CLI, interactive in-product lessons, flicker-free rendering, per-tool MCP result-size overrides, and plugin executables on PATH.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 225,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "3164c9dcbde6fd84e58dcb801ce96a1b7fc73872337eeea491f5ae9fe36b95fe"
-  },
-  {
-   "path": "whats-new/2026-w13.md",
-   "url": "https://code.claude.com/docs/en/whats-new/2026-w13.md",
-   "title": "Week 13 · March 23–27, 2026",
-   "description": "Auto mode for hands-off permissions, computer use built in, PR auto-fix in the cloud, transcript search, and a PowerShell tool for Windows.",
-   "nav": [
-    "What's New",
-    "What's New"
-   ],
-   "order": 226,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "cee080e16e3009aa260022aa49d79d115a537299898c4628148d60a6b3e0b9a5"
+   "sha256": "05bcb04a4586de2587ba0f61a717236b803191c79181cb16b86402976175bb26"
   },
   {
    "path": "legal-and-compliance.md",
@@ -3661,25 +3286,11 @@
     "Resources",
     "Resources"
    ],
-   "order": 227,
+   "order": 202,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
    "sha256": "1a7c59468a71304f19e6ce74c8d23b7d71382b81daa5d1c7afe524cc644d6e16"
-  },
-  {
-   "path": "whats-new.md",
-   "url": "https://code.claude.com/docs/en/whats-new.md",
-   "title": "",
-   "description": "",
-   "nav": [
-    "Other pages"
-   ],
-   "order": 228,
-   "in_index": false,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "783a0b3d58dd48edf222a77dc5dcd52557ec18e6b738474f4ed47934b96966a5"
   },
   {
    "path": "azure-ai-foundry.md",
@@ -3689,7 +3300,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 229,
+   "order": 203,
    "in_index": false,
    "in_sitemap": false,
    "linked": true,
@@ -3703,7 +3314,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 230,
+   "order": 204,
    "in_index": false,
    "in_sitemap": false,
    "linked": true,
@@ -3717,7 +3328,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 231,
+   "order": 205,
    "in_index": false,
    "in_sitemap": false,
    "linked": true,
@@ -3731,7 +3342,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 232,
+   "order": 206,
    "in_index": false,
    "in_sitemap": false,
    "linked": true,
@@ -3745,7 +3356,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 233,
+   "order": 207,
    "in_index": false,
    "in_sitemap": false,
    "linked": true,
@@ -3759,7 +3370,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 234,
+   "order": 208,
    "in_index": false,
    "in_sitemap": false,
    "linked": true,

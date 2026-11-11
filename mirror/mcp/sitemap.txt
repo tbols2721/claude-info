@@ -9,7 +9,6 @@ https://modelcontextprotocol.io/community/governance
 https://modelcontextprotocol.io/community/interest-groups/agents
 https://modelcontextprotocol.io/community/interest-groups/auth
 https://modelcontextprotocol.io/community/interest-groups/enterprise
-https://modelcontextprotocol.io/community/interest-groups/enterprise-managed-authorization
 https://modelcontextprotocol.io/community/interest-groups/financial-services
 https://modelcontextprotocol.io/community/interest-groups/scientific-computing
 https://modelcontextprotocol.io/community/interest-groups/security

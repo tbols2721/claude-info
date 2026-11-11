@@ -3912,7 +3912,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "130dc6f21a15a1105f2e30be02affb98b343671e9eace92ba5d43c21605e0690"
+   "sha256": "611cc821e86a9c064c7b237113674130f103bcc9f80631b6354dc0bd72bf088a"
   },
   {
    "path": "community/sep-guidelines.md",
@@ -3972,7 +3972,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "75a3071cb744fe631e5a4caae76733b67240237c762dc254b0efc1b23cccd486"
+   "sha256": "9f09e81843b52d2065f071c53b7f29c186a30ca9bca696e72a75dfed56455f3a"
   },
   {
    "path": "community/working-interest-groups.md",
@@ -3984,7 +3984,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "e591ac324e7a2d4b6252aa7576892f74b1bc20ddf33b56440d3d20d7f0f0108f"
+   "sha256": "292f776089860edf1e24dd1d540afa25b85e45f75808841f7f5e1b7a0061b465"
   },
   {
    "path": "community/charter-template.md",
@@ -4020,7 +4020,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "da2655ff3a7163bec66c4d16d79556ae709fbeeee7abf921a0466e37f296350a"
+   "sha256": "247b5ec0bf80f1eb8bd9d168121db80530f4ae10b63c54fa0e1c25c9c701e942"
   },
   {
    "path": "community/working-groups/filesystems.md",
@@ -4068,7 +4068,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "971b1a823b5caf88cd5fb007e34bc24c8fa6345ed615ebe00dd9da3da93352db"
+   "sha256": "ff59bda196cc8458dca4ef98228d2a2b0e29a14aaec54ee45190859a13fb201a"
   },
   {
    "path": "community/working-groups/interceptors.md",
@@ -4128,7 +4128,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "b0ee4d568e82af70a90d5e98508675d1a02b6990f3c7ce4c4bb6e1135b89e6e6"
+   "sha256": "cb3b09b9e31c866a917d2baf9f57425ac06badb01aed92ce67d1fb4393b549c4"
   },
   {
    "path": "community/working-groups/skills-over-mcp.md",
@@ -4188,7 +4188,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "98255c7472d24ad904d41f0e3550a7ebf0752c82db76836e1caf4536650710e3"
+   "sha256": "d630bb19a9950bae1928a06c78ac14972c43c11908bc7790361726912dfd3fce"
   },
   {
    "path": "community/interest-groups/enterprise.md",
@@ -4200,19 +4200,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "a7319fac0265b842949bec7e9d0420e59fb7b950158aa02971cdd35757ac34ee"
-  },
-  {
-   "path": "community/interest-groups/enterprise-managed-authorization.md",
-   "url": "https://modelcontextprotocol.io/community/interest-groups/enterprise-managed-authorization.md",
-   "title": "Enterprise-Managed Authorization Charter",
-   "description": "Charter for the MCP Enterprise-Managed Authorization Interest Group.",
-   "nav": [],
-   "order": 350,
-   "in_index": true,
-   "in_sitemap": true,
-   "linked": false,
-   "sha256": "f261b7a2335b6b9b802ba79245c93e3b743fab9382bea2b390d7127013a1cac3"
+   "sha256": "7cef8b19d1d7176b5e9d8ab7fb0e95d02a21155da6ec98e08bdc5bd0d7e4015b"
   },
   {
    "path": "community/interest-groups/financial-services.md",
@@ -4220,7 +4208,7 @@
    "title": "Financial Services Charter",
    "description": "Charter for the MCP Financial Services Interest Group.",
    "nav": [],
-   "order": 351,
+   "order": 350,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4232,11 +4220,11 @@
    "title": "Scientific Computing Charter",
    "description": "Charter for the MCP Scientific Computing Interest Group.",
    "nav": [],
-   "order": 352,
+   "order": 351,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "d0172d6b9dd4aa5ae580062a227666f8428f6c6ec05c907188beaa3ebf189d17"
+   "sha256": "0a301c60d0889fef52cee5f93e4920388181e8980f7c6d1a8ec2060a4bc4aadc"
   },
   {
    "path": "community/interest-groups/security.md",
@@ -4244,7 +4232,7 @@
    "title": "Security Charter",
    "description": "Charter for the MCP Security Interest Group.",
    "nav": [],
-   "order": 353,
+   "order": 352,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4256,7 +4244,7 @@
    "title": "Tool Annotations Charter",
    "description": "Charter for the MCP Tool Annotations Interest Group.",
    "nav": [],
-   "order": 354,
+   "order": 353,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4268,7 +4256,7 @@
    "title": "Project Policies",
    "description": "The standing policies that apply to everyone who takes part in the MCP project, and where each one is defined.",
    "nav": [],
-   "order": 355,
+   "order": 354,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4280,7 +4268,7 @@
    "title": "Communication",
    "description": "The MCP project's communication channels, when a channel may be private, and where decisions are recorded.",
    "nav": [],
-   "order": 356,
+   "order": 355,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4292,7 +4280,7 @@
    "title": "Feature Lifecycle and Deprecation",
    "description": "How individual MCP specification features move through Active, Deprecated, and Removed states, and the timeline implementers can plan against.",
    "nav": [],
-   "order": 357,
+   "order": 356,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4304,7 +4292,7 @@
    "title": "SDK Tiers",
    "description": "What each SDK tier requires, how conformance is measured, how an SDK moves between tiers, and the issue labels SDK repositories must use.",
    "nav": [],
-   "order": 358,
+   "order": 357,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4316,7 +4304,7 @@
    "title": "Antitrust Policy",
    "description": "MCP Project Antitrust Policy for participants and contributors",
    "nav": [],
-   "order": 359,
+   "order": 358,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4330,7 +4318,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 360,
+   "order": 359,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4344,7 +4332,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 361,
+   "order": 360,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4358,7 +4346,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 362,
+   "order": 361,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4372,7 +4360,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 363,
+   "order": 362,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4386,7 +4374,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 364,
+   "order": 363,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4400,7 +4388,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 365,
+   "order": 364,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4414,7 +4402,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 366,
+   "order": 365,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4428,7 +4416,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 367,
+   "order": 366,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4442,7 +4430,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 368,
+   "order": 367,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4456,7 +4444,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 369,
+   "order": 368,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4470,7 +4458,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 370,
+   "order": 369,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4484,7 +4472,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 371,
+   "order": 370,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4498,7 +4486,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 372,
+   "order": 371,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4512,7 +4500,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 373,
+   "order": 372,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4526,7 +4514,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 374,
+   "order": 373,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4540,7 +4528,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 375,
+   "order": 374,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4554,7 +4542,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 376,
+   "order": 375,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4568,7 +4556,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 377,
+   "order": 376,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4582,7 +4570,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 378,
+   "order": 377,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4596,7 +4584,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 379,
+   "order": 378,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4610,7 +4598,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 380,
+   "order": 379,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4624,7 +4612,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 381,
+   "order": 380,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4638,7 +4626,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 382,
+   "order": 381,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4652,7 +4640,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 383,
+   "order": 382,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4666,7 +4654,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 384,
+   "order": 383,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4680,7 +4668,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 385,
+   "order": 384,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4694,7 +4682,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 386,
+   "order": 385,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4708,7 +4696,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 387,
+   "order": 386,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4722,7 +4710,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 388,
+   "order": 387,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4736,7 +4724,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 389,
+   "order": 388,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4750,11 +4738,25 @@
    "nav": [
     "Other pages"
    ],
-   "order": 390,
+   "order": 389,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
    "sha256": "08e22b49b103a646869c07052a9bbe2cba09bc05b4709fe2dec7736239bb12a7"
+  },
+  {
+   "path": "community/interest-groups/enterprise-managed-authorization.md",
+   "url": "https://modelcontextprotocol.io/community/interest-groups/enterprise-managed-authorization.md",
+   "title": "",
+   "description": "",
+   "nav": [
+    "Other pages"
+   ],
+   "order": 390,
+   "in_index": false,
+   "in_sitemap": false,
+   "linked": true,
+   "sha256": "f261b7a2335b6b9b802ba79245c93e3b743fab9382bea2b390d7127013a1cac3"
   }
  ]
 }

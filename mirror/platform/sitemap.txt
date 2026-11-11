@@ -761,6 +761,13 @@ https://platform.claude.com/docs/en/manage-claude/compliance-errors
 https://platform.claude.com/docs/en/manage-claude/compliance-faq
 https://platform.claude.com/docs/en/manage-claude/compliance-integration-patterns
 https://platform.claude.com/docs/en/manage-claude/compliance-org-data
+https://platform.claude.com/docs/en/manage-claude/compliance-security-posture/check-events-against-results
+https://platform.claude.com/docs/en/manage-claude/compliance-security-posture/detect-changes
+https://platform.claude.com/docs/en/manage-claude/compliance-security-posture/events-reference
+https://platform.claude.com/docs/en/manage-claude/compliance-security-posture/ocsf-mapping
+https://platform.claude.com/docs/en/manage-claude/compliance-security-posture/overview
+https://platform.claude.com/docs/en/manage-claude/compliance-security-posture/results-reference
+https://platform.claude.com/docs/en/manage-claude/compliance-security-posture/send-events
 https://platform.claude.com/docs/en/manage-claude/compliance-sessions
 https://platform.claude.com/docs/en/manage-claude/data-residency
 https://platform.claude.com/docs/en/manage-claude/inference-hooks
