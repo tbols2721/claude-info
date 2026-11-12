@@ -3240,7 +3240,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "4e2d797bfdce6f2d6e74dd1ba2852733b5c3ba4292caf29aceed502581709102"
+   "sha256": "b26965c6451029b9710f6bd4ac4b0142a3caab290b4974345a1963e5034420fe"
   },
   {
    "path": "registry/faq.md",
@@ -3252,7 +3252,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "04b0fea472562f364946e49e0059428bfcb5ba2286c5fa79dd93bb07a8e2c29e"
+   "sha256": "446e968d26b7dfb16eeffde8b84496ae8cbcda9457854ef942c3c56f4d6a812c"
   },
   {
    "path": "registry/package-types.md",
@@ -3264,7 +3264,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "8f24e8852b09d9e82464f08d9d7d1b168fccf7877013971bc749c38e1f19909b"
+   "sha256": "03806f966f596f70a7df31f587c7e4326cd716d04517ca890950c27d09c4cfb3"
   },
   {
    "path": "registry/remote-servers.md",
@@ -3276,7 +3276,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "3b5c2b6fe79592ab07f89ab1543d940e0b69e9006e771a665e0cad9c50353c3a"
+   "sha256": "352d53da064432ec9f402857e3089bc20c9d5f5c0de5ccf04e61fd062eef3486"
   },
   {
    "path": "registry/authentication.md",
@@ -3288,7 +3288,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "3ff6badd2137df363cdcc2035c97d6192a9767236fb11cfe65f7a12aad488bab"
+   "sha256": "b05d60863a78f74892ed7341592a981d601fda4173c704fe6c43dd353293bcb6"
   },
   {
    "path": "registry/versioning.md",
@@ -3312,7 +3312,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "aeb8739cd20b51ba27479582560300eacc5cba0f15976dc210d89aeca696b388"
+   "sha256": "b8bc555f55fcc72030d2cedf7cad62ac58e18675fe1860bfb3f71c09a790d830"
   },
   {
    "path": "registry/moderation-policy.md",
@@ -3336,7 +3336,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "4a74d2aa954504c77bae449829a7fd304db26ffa2f302aae436d187a30b4e9bf"
+   "sha256": "8e4cc89e3b3480984820bc6c1e123461fdb39a782f0f89eac54b875dcb475d86"
   },
   {
    "path": "registry/terms-of-service.md",
@@ -3564,7 +3564,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "d2ff49954b65be4aa18fb1b9178cc46e6e92cb3a0f0b58166e581873b1de5a7b"
+   "sha256": "f35548ea3852e45ebe98878c11fbd415d34ff1f6ca99114634368c0b2b4041b1"
   },
   {
    "path": "seps/1613-establish-json-schema-2020-12-as-default-dialect-f.md",
@@ -3684,7 +3684,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "78e8fb2de40faf2280be8dc5bf3bff6f1b8e85bb6c30a3389c4bfa5755706704"
+   "sha256": "f77a56560f19872ae780428867afb78213ab14e023bd05d93f5a9d188e1dc0ac"
   },
   {
    "path": "seps/2148-contributor-ladder.md",
@@ -3828,7 +3828,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "c6e08bc3b74d723253553c04eccea55f1a177952aae88f310cd8fa9ac24560fc"
+   "sha256": "62a444e1c6cb8f449adb46a766e6c0ee88cbbf71061cc44d7d08fec6687c7b59"
   },
   {
    "path": "seps/2577-deprecate-roots-sampling-and-logging.md",
@@ -3864,7 +3864,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "72e16488444b887e90db1fc0530d882991ec4951cb1724fa59c7090c188ab14a"
+   "sha256": "54aa2b918a9d326c8f1d066ff39b28ecf6b5d4ee9d8fc36b92eee6737928e252"
   },
   {
    "path": "seps/2663-tasks-extension.md",
@@ -3888,7 +3888,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "56ba165a21f02ae3212e9c8e8dc22936af6b18f3eb39d2f938e146524092b112"
+   "sha256": "a8a5c68f321ed56017f4f6ee584c710c36bce65307b326ed41ab5e3810a9b4c8"
   },
   {
    "path": "seps/3398-release-cycle-updates.md",
@@ -3900,7 +3900,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "f6abd1712f8e9aa395bcdfb2d37125ed1e554ac72e337862c8a9aaf8d750375f"
+   "sha256": "3ee842450dfbf51d170fb5c32a5a46c0dabe003a709f62dd9d058ebb679192b7"
   },
   {
    "path": "community/contributing.md",
@@ -3912,7 +3912,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "611cc821e86a9c064c7b237113674130f103bcc9f80631b6354dc0bd72bf088a"
+   "sha256": "a385bcae034aacfe24b1f17e7b4897bb1657118ca08bfeb83263ed74b7964c62"
   },
   {
    "path": "community/sep-guidelines.md",
@@ -3924,7 +3924,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "e2296b7f36cf6fcbcb6151131b5334b347148a072b4f30b480d74e06664995b0"
+   "sha256": "16b5f4b988b6473a538fe18cc42cf5a34cd458cc3657da77eeca46f500dbd3dd"
   },
   {
    "path": "community/design-principles.md",
@@ -3984,7 +3984,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "292f776089860edf1e24dd1d540afa25b85e45f75808841f7f5e1b7a0061b465"
+   "sha256": "d58c8626018202671e5314db4c5c0841e91a35c657ce2b338eb473d23517bb3c"
   },
   {
    "path": "community/charter-template.md",
@@ -4008,7 +4008,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "9e2f6ab1dd3710e2c1c89d75e24c84a2ddc5f20e4daf7aee33913db13f543626"
+   "sha256": "286d0e4d4776ca1cc2e23647ca5172c5ce7c9c375a88a4b20a4400c8a061bcf4"
   },
   {
    "path": "community/working-groups/apps.md",

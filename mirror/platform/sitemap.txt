@@ -682,6 +682,9 @@ https://platform.claude.com/docs/en/build-with-claude/multilingual-support
 https://platform.claude.com/docs/en/build-with-claude/overview
 https://platform.claude.com/docs/en/build-with-claude/pdf-support
 https://platform.claude.com/docs/en/build-with-claude/preserved-thinking
+https://platform.claude.com/docs/en/build-with-claude/preserved-thinking/change-tools-or-instructions
+https://platform.claude.com/docs/en/build-with-claude/preserved-thinking/fix-bound-to-a-different-conversation
+https://platform.claude.com/docs/en/build-with-claude/preserved-thinking/prefix-checks
 https://platform.claude.com/docs/en/build-with-claude/prompt-caching
 https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/claude-prompting-best-practices
 https://platform.claude.com/docs/en/build-with-claude/prompt-engineering/overview
@@ -822,6 +825,8 @@ https://platform.claude.com/docs/en/managed-agents/scheduled-deployments
 https://platform.claude.com/docs/en/managed-agents/secure-deployment
 https://platform.claude.com/docs/en/managed-agents/secure-deployment-monitoring
 https://platform.claude.com/docs/en/managed-agents/secure-deployment-risks
+https://platform.claude.com/docs/en/managed-agents/self-hosted
+https://platform.claude.com/docs/en/managed-agents/self-hosted-data-and-access
 https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes
 https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes-custom-tools
 https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes-memory
@@ -829,6 +834,16 @@ https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes-operati
 https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes-reference
 https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes-security
 https://platform.claude.com/docs/en/managed-agents/self-hosted-sandboxes-workers
+https://platform.claude.com/docs/en/managed-agents/self-hosted/agent-identity
+https://platform.claude.com/docs/en/managed-agents/self-hosted/call-the-api
+https://platform.claude.com/docs/en/managed-agents/self-hosted/configuration-reference
+https://platform.claude.com/docs/en/managed-agents/self-hosted/configure
+https://platform.claude.com/docs/en/managed-agents/self-hosted/console
+https://platform.claude.com/docs/en/managed-agents/self-hosted/differences
+https://platform.claude.com/docs/en/managed-agents/self-hosted/inference-provider
+https://platform.claude.com/docs/en/managed-agents/self-hosted/kubernetes
+https://platform.claude.com/docs/en/managed-agents/self-hosted/quickstart
+https://platform.claude.com/docs/en/managed-agents/self-hosted/upgrade
 https://platform.claude.com/docs/en/managed-agents/session-observability
 https://platform.claude.com/docs/en/managed-agents/session-operations
 https://platform.claude.com/docs/en/managed-agents/session-threads

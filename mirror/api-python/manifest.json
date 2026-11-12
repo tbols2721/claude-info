@@ -56,7 +56,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "89608061fac6670b726a21357594f642bfec993ac0454467b922a1d9fd246ba5"
+   "sha256": "d6d15f89b75f2101a9d934764482c9e34f71a1346c6954d2d28ba8bb23c7a6b7"
   },
   {
    "path": "beta/organization/telemetry_destinations/workspaces/add.md",
@@ -182,7 +182,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "747eef10f2278d3628808dd07f9049f5deb6cd3100306ad87445a7112bcfb7d4"
+   "sha256": "d5bb66d31cc3384c6e4c2be1a55b3b2f81bb545e35bc1a71b5f9f5b70f305183"
   },
   {
    "path": "organization/analytics.md",
@@ -196,7 +196,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "2d6fc9d477bfc41c7bad5bd82c518f4a3dc6e753e8563fbb65189c000cfbd270"
+   "sha256": "c196101d6d6431059addfb8106d9260edac53da619d20b676009888cc6ba9133"
   },
   {
    "path": "beta/organization/analytics.md",
@@ -210,7 +210,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "4ffe6193d9762693ceb6c57b3ec532d6910f401afd3f13e589cdf7b8856df20d"
+   "sha256": "90a6cdc4f7c7e70933846eb889240191dbc3df63fb07dd3bd180115ae6592bde"
   },
   {
    "path": "organization/api_keys.md",
@@ -294,7 +294,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "a1db40a1b995d9ff30354a9b2614a7092835b52c43b8e07e5f3aa357cee7674b"
+   "sha256": "3065510c47f7996430e0a4d73dcb87aad765257258236aba514fd2cca2d7c2f8"
   },
   {
    "path": "beta/organization/analytics/apps.md",
@@ -378,7 +378,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d2debe2c80f04e2aaf9ab0674163089e76add0b4d74bc93ca3d6262b8fa320c0"
+   "sha256": "9fbec975e1765765350e8928884ca499066dff877c28a5a6534bb0f5a3805c95"
   },
   {
    "path": "beta/deployments/archive.md",
@@ -504,7 +504,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "5fe18a382106e5d777bc7b9f8d97cee6446c72f93a0b12ac57035b85f02d8449"
+   "sha256": "9bf757fec0cd27658f0d14e067936e5274bdb4b096fe8336e0fa3ddaac331a8c"
   },
   {
    "path": "beta/sessions/threads/archive.md",
@@ -518,7 +518,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "36528011585ebd3cdd996602407fd43ad272794ab1c4c915995094eba162aa02"
+   "sha256": "030e34e86fa41cf5ca13fe966d48e4fbc530cd0af0c8330592a154f43046fd9c"
   },
   {
    "path": "beta/tunnels/archive.md",
@@ -630,7 +630,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "81e070cb793ee76bebd3169682595cc85402a3094fbba45d88fb5ed925743779"
+   "sha256": "3fe9c2084400328b14875479098094d2230172b7deb23e10b52a269eef7d7c38"
   },
   {
    "path": "compliance/apps/code/artifacts.md",
@@ -644,7 +644,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "02c485cce78ccbba3eaa470d86f39fdd9aae0d01112695025dc81640abe5ba29"
+   "sha256": "29c43af5fb0d6df659312c169789c260b1432538d187d55de7525e72bd091b79"
   },
   {
    "path": "beta/organization/analytics/artifacts.md",
@@ -686,7 +686,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "93e2383b313a5d6af6612afe0c96d72a11fea090554773044d690a4899bddf5f"
+   "sha256": "e0a802b2ffe4eb15df1b095a5f144ab28f57c1bec97435547b94051f18fa3035"
   },
   {
    "path": "messages/batches.md",
@@ -728,7 +728,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "34da50d7e8d25aeb9263bbc208e28a7f5afac2b9f5dfb848bfa955417312583e"
+   "sha256": "0f30e14204eea3a4423b652e79f0d094408dfa6fcb8086bf97c0e8ee224454b5"
   },
   {
    "path": "beta/organization/claude_tag/bundles.md",
@@ -840,7 +840,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "78f8d3aa089c762e6ccfeb0a6006b27ac9c9eb72136eb09e6b865beff2d53c1c"
+   "sha256": "862c1f17c2bbdb759ef04831d6e31a8c2a04d89505cbd9061e79b86a8ca6760d"
   },
   {
    "path": "beta/organization/claude_tag.md",
@@ -854,7 +854,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "8df660abf8f0b0d1d89dcd5a8b2c130e324776c7d25919b31f7516abb8b9cf91"
+   "sha256": "2e09b6854b704c3eaad5fc0f410ccca08768de4029096c2cef7d787700f3b56e"
   },
   {
    "path": "compliance/apps/code.md",
@@ -868,7 +868,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "6d2aebad82860b92cb567b2160e0847f901d3b70768b64262f0cf4f51f8340b8"
+   "sha256": "43353c96c0e50312496b9379f901a615639a0d4b7eaaac59254137a03477b075"
   },
   {
    "path": "compliance/apps/projects/collaborators.md",
@@ -882,7 +882,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "8035208a13a4a1ba264199d65ba712d6e715a79bbb24b86f76294d896ebd98e0"
+   "sha256": "83383346f963107d8ad2f89a3287f8a28c3147ed5e31db64038b2afa7a01702b"
   },
   {
    "path": "compliance.md",
@@ -896,7 +896,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d06842150d9daf9eb1e23c1206cf1ce6301e4fb12f02f545b33505fb2ecb8f66"
+   "sha256": "7fe7d2838ade761bf0516b3d45191dd1a96f9a0b3069ffab875ce2989755eb49"
   },
   {
    "path": "organization/compliance_settings.md",
@@ -1204,7 +1204,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c5906a5cba2ae53072c61fcb902c1c524edebb4b940f3d9f366681d6f5acf688"
+   "sha256": "6d17ed3edb5c7e95eed0b83bbd5bdae93a1beb6937d785354901ea98912470c8"
   },
   {
    "path": "beta/deployments/create.md",
@@ -1498,7 +1498,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "b53810d34743593fe13b02cdb0da9bb5e035709a1498770e179eb0350f7a5cb3"
+   "sha256": "4609dfcb0243dfad6812c2145d680d1da6e84dcd9d6337d8aebfccabb4e745f2"
   },
   {
    "path": "skills/create.md",
@@ -1806,7 +1806,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "0d28ffffd6a706e3838383a50390f8703f3ca4991d1e7c0e7361c61bc2449c78"
+   "sha256": "f855f85671f5cfdde3600817a32e60ef74a29b394b009f0e16ed43e5d68d894c"
   },
   {
    "path": "compliance/apps/code/artifacts/delete.md",
@@ -1820,7 +1820,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "1a796313d04afdf2e6307a87528672baf3a55b8a4ac41b1fbc929afc6d8bcb66"
+   "sha256": "ee2712452ce409ec440f270f5f04927e469e2b0c932e0c17233923d8703d6842"
   },
   {
    "path": "beta/environments/delete.md",
@@ -1876,7 +1876,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "5ef8adaa0c5f6a0cafb002974bb9349d5a0cc068367a9f1fdf6699dc2574443d"
+   "sha256": "ac270d8b047c9284f29616bc97d32065d41f7f9a44bb32bd423012823c220cfb"
   },
   {
    "path": "files/delete.md",
@@ -1974,7 +1974,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "5c685b555721ad3f0837aee4bd7ec01f87f6f313b4746d2fd3d165973170203b"
+   "sha256": "49dbfc376e40207bfb61ca88c7dc462455c9cebb10321dd75cd20864fd3e9098"
   },
   {
    "path": "compliance/apps/projects/documents/delete.md",
@@ -1988,7 +1988,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "8f5529c31502a2beb73ab29b7f626bdf9dfb30e08c2ef575e845f232b2e46f96"
+   "sha256": "6783daa10a37b2c50b0c6cfaef5d0da5927d61917b6986f4a99b5db51e9cc7ff"
   },
   {
    "path": "organization/rbac_groups/delete.md",
@@ -2282,7 +2282,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f97050824767eaf7eaabd039d53e411d3745eef5d974a339a49c625d63832f5e"
+   "sha256": "83dc4d0cec1804dd536a5a0ab47e3d965a1b402af575d52047e3b80c45ca7326"
   },
   {
    "path": "compliance/apps/chats/generated_files/download.md",
@@ -2296,7 +2296,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f371c649fb114002031fd41e78779cf8bd6bcd7a3ec2286ec3f0592fff0142db"
+   "sha256": "9545209d3a37b205764c7009c0194a0b501bb97fdcf9a48f7655fbaf5b592485"
   },
   {
    "path": "compliance/apps/artifacts/download.md",
@@ -2310,7 +2310,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "fc2196f46317941e25157a53c725915be97da344837782e6a30a8837d573c2bd"
+   "sha256": "6a71e00f514512aef386db194c6111fc970af4b428e50a5039f0c2edb91cf4e0"
   },
   {
    "path": "compliance/apps/code/artifacts/download.md",
@@ -2324,7 +2324,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "92889e6317f5b39542753d5a01581bf9785015fee99a14683b01d2e64754ebce"
+   "sha256": "220886e17a72f268a63fda9e2f6c1db59aae3bdb3120e644ed30932ae6435e68"
   },
   {
    "path": "compliance/apps/code/artifacts/retrieve_version.md",
@@ -2338,7 +2338,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "e7db20c19c7fd61f6ea229b0ed0e6ac27d61983c643f8e67c866e69d244e2119"
+   "sha256": "47670570caa469a57833ca6a6d0c564e68daced3755fbaaf4eb6e117aa546fb2"
   },
   {
    "path": "files/download.md",
@@ -2380,7 +2380,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "689753de1122ba2e7f69f46eaababcf4c113ff323f9096250b5ca1f4baa3c44f"
+   "sha256": "307af20c62aff4363a643fa2ada357e498a38a057b615139ea0b3b4b17d022d1"
   },
   {
    "path": "beta/organization/plugins/versions/download.md",
@@ -2394,7 +2394,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "703d3881d0d24fee0dd00131ffb176e7ccaa62446ad982aab35a02f80ee084c0"
+   "sha256": "68b1621d8132e3f5e869f326c8cd615fab189d5cdb043bd87ce665df2094e891"
   },
   {
    "path": "beta/skills/versions/download.md",
@@ -2478,7 +2478,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "e1d0108504113d6b64e992de43c3a2fb407e783be5a0c7255950452c995094a2"
+   "sha256": "2b342bbf4da9a6a19cc1b131f36090b6372d5698ea91e269085a5f607ef1f84c"
   },
   {
    "path": "beta/sessions/threads/events.md",
@@ -2492,7 +2492,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ba53d7543a39667301bce460e94f03b7140662b1857820187b2d850c1d444b37"
+   "sha256": "4d62a88c53ac6dde27ed6f7a245d3499c61e694365cac745ba7356cffbf137d8"
   },
   {
    "path": "organization/external_keys.md",
@@ -2576,7 +2576,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "4eb4ac9045f189bf402f319714eae86820dc6ab4a7d061e7cda9c6072f0c962d"
+   "sha256": "045ae05fb02839ddcc5569a6e8d179ce463e526635b14bdb750baf21c5bbff64"
   },
   {
    "path": "beta/files.md",
@@ -2604,7 +2604,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "940680cee050bcc75fe6a5f329bd58f6fa16bc028d1bcd65ead29cc08ecd0a39"
+   "sha256": "4b1abe7c72488e85435dfdcef173098f834a761170f724f68ea100bd3b43a984"
   },
   {
    "path": "beta/dreams/retrieve.md",
@@ -2660,7 +2660,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "6ad3c7f0436e00e491e30642c131b58f778e486b9a8090cdf06b24ee04e7241c"
+   "sha256": "88eebb3bb1c23a0c7faba458c2433386c7db4d5a776b3de9ce6f9642f791326a"
   },
   {
    "path": "beta/organization/analytics/summaries/list.md",
@@ -2674,7 +2674,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "db47fd84ce6986f3e66c3fa85c28cd603e994b194da60f07f82f7bcafa0abb3c"
+   "sha256": "e1c4c345007f00ea6eb7790d2fafe73a8c7a36c7103b5d88cd4eaf34455144e9"
   },
   {
    "path": "beta/agents/retrieve.md",
@@ -2688,7 +2688,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "44ea5b3c40c352cc30f9e48edf22c41fe70a7d47c47359f3bf9388f6da8a6dd1"
+   "sha256": "cfdc5e20a058f25eac3cea5734802ea3f92c6a5d5cda1147d5495dfd5931660c"
   },
   {
    "path": "compliance/organizations/security_posture/retrieve.md",
@@ -2702,7 +2702,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "86c3300ecd2ec9e4b5f4cf0df089a24b0b21715bfd213ee83ccf1ce144d34858"
+   "sha256": "c6b5f25ae47786e60e992b7de5228ddee927fc5c3d91f5fb1234071617b6810e"
   },
   {
    "path": "organization/analytics/artifacts/list.md",
@@ -2744,7 +2744,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "bd6673831963c43ea01ff0a773e57feef3783f66d5360f243770fa7f67b93fe1"
+   "sha256": "3d975cd2797766ab2c4568564088214addea2672305393c31f2f8b406bdc2885"
   },
   {
    "path": "beta/organization/claude_tag/bundles/retrieve.md",
@@ -2786,7 +2786,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "eb3bc86e55138839c8b5098f2a61c7512e8bdbca0d674aed8e8ab94adc208be3"
+   "sha256": "eda9f3f438fbc5fe49fa2b185ac8bbe8e0819ff45e3c213c9f3f87d954d1ed36"
   },
   {
    "path": "organization/analytics/apps/chat/projects/list.md",
@@ -2842,7 +2842,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f6ff55bdac29f971e7dfd9f260b11579b721e49d07d661be9ce9ebfca6622fa4"
+   "sha256": "a0a722e388111c3c8826c73301c2b27684fe280b20b48db4cde6507dcba5e4e2"
   },
   {
    "path": "compliance/groups/retrieve.md",
@@ -2856,7 +2856,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "4e6c06ac815df6c506cf1c00af6c49c262d7b3f2e73fbf164a2e7788f9f0c970"
+   "sha256": "61b79527c1bb22e4d63222b7cf0e15f68f26dd8b953395123dfb7d01dbf906c0"
   },
   {
    "path": "compliance/organizations/roles/retrieve.md",
@@ -2870,7 +2870,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "1de5657d852ae1d60f7f414329cf6a4465c8864995fce6b05e94e46a8289db2a"
+   "sha256": "0615ac6f7e4de0733581a93cf279bcc235e5f78f208733cac01c12014db13f01"
   },
   {
    "path": "organization/compliance_settings/retrieve.md",
@@ -3038,7 +3038,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "970d3fb7524bf46c13043ae6f0b518de80d3fcd78d0bdaf986bacf35c07a091c"
+   "sha256": "d2950a6378e7ba9ca11aee1770fc0ef620b0942e81d74e940e61b7b5557a3149"
   },
   {
    "path": "beta/environments/retrieve.md",
@@ -3150,7 +3150,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f5d885ddd750418e0832ca45d703c8792234fbfcfaa35d1b662c1bfa19565fef"
+   "sha256": "5f27af4f54d3347ed4f18e857471314333ee04710ddebb60a0ee32010eba2f52"
   },
   {
    "path": "files/retrieve_metadata.md",
@@ -3220,7 +3220,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d5c8c388e9eb33063c7a24e2135111de83e588d3dc2552e93d56dac70b26527c"
+   "sha256": "de5ea538418ed31f5399d7e01a2c748a9f9d488094accdc4d341192ff1a2c751"
   },
   {
    "path": "beta/organization/webhooks/retrieve.md",
@@ -3276,7 +3276,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "707b201faa34fd382569bb1edc335616ed1ed68431ad280f7e84e4a6d08a289c"
+   "sha256": "8030261a3a0d3ad8e6ef04650fe8f99ede2db54d03afc1a7fbd9a748cf5c43b0"
   },
   {
    "path": "beta/organization/plugin_marketplaces/retrieve.md",
@@ -3290,7 +3290,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "03725e32c740b1f2bf87f7682382ad219f35d160e335539d8f4d272e526c4c76"
+   "sha256": "0ec816722e1aa97aa156fc0b6f24ae5e5c9778f5e8deecbc8cb4eb8b9e55abb8"
   },
   {
    "path": "organization/analytics/plugins/list.md",
@@ -3332,7 +3332,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f49108611bef1bebecb9d3a9b5a01e5a2a45c60e3f8d5eab36324f9a0d81eb98"
+   "sha256": "5fdc1f20992cbc7e8488f6a41ae1e95c92a37508a42eed7dd410ecb8189c579c"
   },
   {
    "path": "compliance/apps/projects/retrieve.md",
@@ -3346,7 +3346,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "b62b50860d54fbe727f0f8795d28882e73e867c01466f8efa47a17a774eef378"
+   "sha256": "3fd9ae17da33e636a6ea11b8819ee3d9728ff1a664320fce4afc5c83685d6051"
   },
   {
    "path": "compliance/apps/projects/documents/retrieve.md",
@@ -3360,7 +3360,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "501964f73ee6f9c445d3f8f1ca1ade6094ca53fcf4c2e59a45a1be752fa8ea18"
+   "sha256": "aabc512848a870b1be6fe67fe9a960e7822655a6dc3cf9ba911493008be962a6"
   },
   {
    "path": "compliance/apps/projects/documents/metadata.md",
@@ -3374,7 +3374,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "a64b43c52ddd9768879e48f57552a7ff7ec207cab8c8a159d3fbbb109c9e15a3"
+   "sha256": "3347a1e7941ea40eb6f5154ba47eafc72b3b48bf096ba02ff916b84ac17b0021"
   },
   {
    "path": "beta/environments/work/stats.md",
@@ -3514,7 +3514,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "853cca2fd97427cbaeadac8dec597ca47f9ccdd614475c727fd88b12e6d91a1f"
+   "sha256": "a9abd0b5bd6f90021665a24bc07c49bf14c9892bdd2eed735ec4e21f6b5358eb"
   },
   {
    "path": "beta/sessions/resources/retrieve.md",
@@ -3542,7 +3542,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "42439c223e98a1280efef90c5219b5b8e6da420ca0feba05e0136a43d8597632"
+   "sha256": "5aa02cccc488046763ce31420421a157d259676e5ee1e99b8b465805f089c63e"
   },
   {
    "path": "skills/retrieve.md",
@@ -3920,7 +3920,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7c1e62b3fce84ce19970eefbeff3801c9d1efd68b0621b633dddbf402e65f0d1"
+   "sha256": "6b9b36c66b217865cad3b669c2746b3352a33950613efd2ee29e4e9730931c15"
   },
   {
    "path": "organization/spend_limits/increase_requests.md",
@@ -3962,7 +3962,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f97c8692d4cef85915a24d8792ed8db65bed4fa7e3b0b560ced94bcd084952c1"
+   "sha256": "a52542a566227f8939180ede04f22268bbb44325916062c73cd0fd2cfa262682"
   },
   {
    "path": "organization/invites.md",
@@ -4032,7 +4032,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "63abc710aefbad41ce01f334c355a98c13dd0a01c5623faae98f7946c3425934"
+   "sha256": "597369162c430cc8272f11d4f3c41dfb002212836d1d570d012dc8a48a14973f"
   },
   {
    "path": "beta/agents/list.md",
@@ -4046,7 +4046,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "8a6c5af2bd349554d00811d7208b82aa412dfd226719ffbfc5b469377bd329ef"
+   "sha256": "cd5c35a3843423d41c670cfa8ba89e4e3ccd6f8f253cecfc0a935268d9a4e88d"
   },
   {
    "path": "organization/api_keys/list.md",
@@ -4116,7 +4116,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "fa95eebf2c2c9228054a57ebc551485bf8d49ba2e0da89e64850cd6b06ae38c0"
+   "sha256": "401cb30073a692431725bc32e093ed7f14bccd7c05dcc19801ef386919626489"
   },
   {
    "path": "compliance/apps/code/artifacts/list.md",
@@ -4130,7 +4130,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "4597336d9b1f6558a4fbb20de20603fae89a3ab57e12e5852857a614086ae3e6"
+   "sha256": "7fe6447545deaf9a1b9217fcccc219964d8db562ccef4d510f6f8ba92fead84e"
   },
   {
    "path": "compliance/groups/members/list.md",
@@ -4144,7 +4144,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "b4ac6fba0d96b6936e1da105befceb91621f630a75bd6809e7489332222489d3"
+   "sha256": "846b90c45a25657114e3dfae2510f812074cfea551c90dd9b2403d5353490565"
   },
   {
    "path": "compliance/groups/list.md",
@@ -4158,7 +4158,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "fbd338569124e1bd830d9a54654db36b0a652ac11665b81422f2690e87c6004e"
+   "sha256": "419497d04c63f757a28872e8fc9e84c73e20214763e2dc0fefaa2c3a40154b45"
   },
   {
    "path": "compliance/organizations/roles/permissions/list.md",
@@ -4172,7 +4172,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "4c4de97b5d4fcce555eea6e1f3e4f7f10b23e784e8918de51383eb4bd626f5dc"
+   "sha256": "07856870d3ca794bb0f385049d73327319f22ff23fe3d62089b048e59dc3456c"
   },
   {
    "path": "compliance/organizations/roles/list.md",
@@ -4186,7 +4186,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d3f9c000dd07242ae71c83bb65e8f35bf29d28b92f6c6557c9911371cbec90a2"
+   "sha256": "d02dac8f6927f9929e708f8ea67cb22dd512b87c6f20ade38263cf5127177548"
   },
   {
    "path": "beta/vaults/credentials/list.md",
@@ -4298,7 +4298,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "60d2bffd6f5634d230025dffa29c4d0e445907a980b0330ffaa8e703a2faf009"
+   "sha256": "dd69da2ab9199c951c22f9452374297cf44fa25e693ddde871fc83182ad86929"
   },
   {
    "path": "organization/external_keys/list.md",
@@ -4480,7 +4480,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d22192074f50e94b68b8ed1c48eea284a2b847e309ed9bd7d10cffc67ea82355"
+   "sha256": "7bbae8672c31336f483944604d6c61f9aab0f344c59f84c512bfd85dea788329"
   },
   {
    "path": "beta/memory_stores/memories/list.md",
@@ -4592,7 +4592,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "5e7eb997e8e14e846bcc670db09b5f30ae38936e18eef3a74f0d453b96ef2e70"
+   "sha256": "a8126be8af98d76fd24c515a9ac308d51d089a059f43a325ff9e72032526cde5"
   },
   {
    "path": "organization/rate_limits/list.md",
@@ -4634,7 +4634,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "6cf92154b4223fb83a444e3859bd0de9812157cb95fc04fd295c66f5a145317e"
+   "sha256": "f046c72bfded5760f8683160e4710b3c10d05360860af8839583126b12ddcc23"
   },
   {
    "path": "beta/organization/webhooks/list.md",
@@ -4662,7 +4662,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "e1ca2e8f3381ef19a00b107ce2b66c30a89bd567911c533328317e4f8aee4653"
+   "sha256": "734ef95a6cbf34e1e14f8007baa2ba02419ace966d8801c9780785e675a8d79d"
   },
   {
    "path": "beta/organization/plugins/installation_settings/list.md",
@@ -4676,7 +4676,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "9cbe443d3b69138aa38c3279133ce6f67e31d0527c7712d35e4859dbe91ba181"
+   "sha256": "7cbeae95ea8d0b2f2897014b901d541d1b3fb71bdfc739002faf5abbe3224df9"
   },
   {
    "path": "beta/organization/plugin_marketplaces/list.md",
@@ -4690,7 +4690,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "13b5f069dbede11d6fa440ede59b941719d2434704aa95c4106a14294f857296"
+   "sha256": "2660ade80e9591dffde4db40a509822ab08e61c5a36c81ad9a162591c246cb6f"
   },
   {
    "path": "beta/organization/plugins/shares/list.md",
@@ -4704,7 +4704,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "403a7c9af1530ec39ed90371461e0b4fdecfdb82d631ebe13215dd3ca0f986e2"
+   "sha256": "5c8dff38301cdd9fa5dac520be1814af5f51f90d58f37e79ceb20e72c777fb2c"
   },
   {
    "path": "beta/organization/plugins/versions/list.md",
@@ -4718,7 +4718,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "e977242e56cdf3e497cf00d5a7969542d312bce62b95740bbb7a4d9f71036d71"
+   "sha256": "6a8ff1151a3a1c95943eead76a5742e74a7aa64f19a83d45f2a7097aff519b2c"
   },
   {
    "path": "beta/organization/plugins/list.md",
@@ -4732,7 +4732,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "11798cfe0593531adc45f8027f5fa192fc3f9fa96ccca32ddcdb14b9c58c6dcc"
+   "sha256": "4a4c9a05a49c967950e841d939213f6bc5294b5e5efc0d218df8f1a05fd7dd2b"
   },
   {
    "path": "compliance/apps/projects/attachments/list.md",
@@ -4746,7 +4746,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "e374f1c63542a9fe1e0bac5ed2f2dd7e0f1de6eaf8c5c6c32ba72e41055cf141"
+   "sha256": "afca7ef79e4aea6c3d55fafe579611687201806545ba23a4893587449fbc2080"
   },
   {
    "path": "compliance/apps/projects/collaborators/list.md",
@@ -4760,7 +4760,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "b306ba614a0aa1e21020f84e2cbc8ede21e12fad70a23e92dfef024b0e9d88e8"
+   "sha256": "bc080ec5d3a3639d3c27102dfe81ac47266c37d3f7cc628e509a842181aa09c7"
   },
   {
    "path": "compliance/apps/projects/list.md",
@@ -4774,7 +4774,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "43ed3e48ac33f5489eaf2233c7ea00fa96657336ecbb7d817a95432f52708b80"
+   "sha256": "aa2b5199d8c6fbff182275337e4a01c39ce270005fda0199886bcc760df7f5e8"
   },
   {
    "path": "organization/rbac_groups/members/list.md",
@@ -4900,7 +4900,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "083848fa79259cb1d082e580dcc81250fafc59f792fabddede7b3d412df43ee8"
+   "sha256": "7a12ce021f18b4fa7bb20fb510f7b7bf27e7a9f4b53e0031fca3223a9600a16e"
   },
   {
    "path": "organization/workspaces/service_accounts/list.md",
@@ -4984,7 +4984,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ea4b0859e52934b85ca45946ffb49293773b2a68768dba63c36daab37a050dbc"
+   "sha256": "e764c244ac9b1a3f49201b970e1d925f51fbd5b075a48009ebba6a37cea03879"
   },
   {
    "path": "beta/sessions/threads/list.md",
@@ -4998,7 +4998,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "2cf6b9faf3fe9f0a030ae2f9dae53840e323d6e5359e5005d648d2cd6cc46920"
+   "sha256": "4ac82925ed8b4850e702e5bfcc67f6db5f5787fe9be3a36dc142d4f421132e52"
   },
   {
    "path": "beta/sessions/list.md",
@@ -5012,7 +5012,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ea9ff4cc7db71cae4a69de4c3c91ff85a7baacc268d879a7fd12ad7544dd2f81"
+   "sha256": "b364bbc8d397b64b8f2d47fd6fa645f760f67de7281a8f1860abb872945dc203"
   },
   {
    "path": "skills/versions/list.md",
@@ -5236,7 +5236,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "22de85ed3df3b6419dbc35bdb0b976415ebfd45f6256fc37608018135fbc7e91"
+   "sha256": "18c4e51b0ff5ce62bfc71162f0b9b8dad6c33f6004fcafc0c65bba04cec8152c"
   },
   {
    "path": "beta/organization/analytics/users/list.md",
@@ -5250,7 +5250,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "549618537fe60fb84a2924f0486e93cde8a3d9f2940e47375e4ba32edb5127f8"
+   "sha256": "7a2c5b337f1d089c205df783aa362805404f13898007c742adced0e38ebdab5b"
   },
   {
    "path": "user_profiles/list.md",
@@ -5460,7 +5460,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "a08217b5143204ca7b52e12008bbdc0f71413de8ffa29dbca261b0a4a04f6a53"
+   "sha256": "e5720190bf10dc0905226a6b0b63d735891c1b7c806bd6f22d11c56943990dfd"
   },
   {
    "path": "beta/organization/mcp_tunnels.md",
@@ -5516,7 +5516,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "1bb37101fb6aba34d9be35d91419a57821c8b1bdd2fccf128604428512b6ba7d"
+   "sha256": "b14edf91bafb8b07f6fe0f4ee09b19747fdbab127511d8ca26ff78ae100d87b9"
   },
   {
    "path": "beta/organization/workspaces/members.md",
@@ -5614,7 +5614,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "27d893d4f271b6a102adf140890cee925fa9caa313d0a2ee752f60b32988bc67"
+   "sha256": "c6df5b8b80017b93c0c7b6a26920bf63b585faf3d52d34df65721c89381ad3de"
   },
   {
    "path": "compliance/apps/sessions/local/messages.md",
@@ -5628,7 +5628,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "0ad775aa12a5f3aa8e73f7eebeb77cc97dff8b291ed6ab82254fb0b4157f1c10"
+   "sha256": "c0596b06d736d6210f2ddba1590a492858b341820c8abbda719ab1ae00eba027"
   },
   {
    "path": "compliance/apps/sessions/remote/messages.md",
@@ -5642,7 +5642,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "11a791ee3289352086de4fbce5c4f12403dea9f7ab33a1c7ce1f0f294a9e6e17"
+   "sha256": "11ead7d97f4311586a8814c5c653c8ffcdc3aac44bc4949ad49e7e8b582b0246"
   },
   {
    "path": "beta/messages.md",
@@ -5698,7 +5698,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "08789b544e77edd529c8eda63996421ba80f94a1467e83319d709648dcb30ad5"
+   "sha256": "039ef8cc73d6c4151f2ee39c59aee02501ed479cd86afab2b2e415a8bb77e67c"
   },
   {
    "path": "beta/organization.md",
@@ -5712,7 +5712,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "919304a5323e01f97a8db67ed391fcee92c566298fa2bb36e1ed5780f897fcf8"
+   "sha256": "e7d767ebfa9e961fa3a0601647072b039d0776069f223a353b42719d558a4d10"
   },
   {
    "path": "compliance/organizations.md",
@@ -5726,7 +5726,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "4b7eb2eb5ad9f41511ee6218f7c42ab50d153175ae83e31f27efd71f9b273a3a"
+   "sha256": "b25324ca4e41ef560fa85116cac3a8f6c6ebe6ccfbe2836b6463e9e6271937d2"
   },
   {
    "path": "beta/deployments/pause.md",
@@ -5768,7 +5768,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "e8f2aed34a93ab031344a4b18018568995762fe7dace72c07b026c062f341eb1"
+   "sha256": "f22d9c524e30f819052c9a44d2495eaa877decbbae4717dfe48119d77121f93a"
   },
   {
    "path": "beta/organization/rbac_roles/permissions.md",
@@ -5796,7 +5796,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f7c6f18f2dab3edbf1ca2509662b912c8e51abdd775eff0a056611c5e07e77ab"
+   "sha256": "f8c25bdd9b651542c66760f592b8d522a3523d8ffb74aabe280812c37b9f5c06"
   },
   {
    "path": "organization/analytics/plugins.md",
@@ -5838,7 +5838,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "6b77e30d214be4cce25b8d2c53ea9559fb3433df544c3b071e0879c943a14070"
+   "sha256": "12b5dfe6e59a1a1405ed126419aa9a411a14ae945184f012f466970488f41547"
   },
   {
    "path": "beta/environments/work/poll.md",
@@ -5880,7 +5880,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "cb8f11cea7393f3344c0e6fdb61174ad794c0adaa205efc82ac7c80518f175ad"
+   "sha256": "f7410275fa026281c81ae77aefbccef2efbd2f85b1eeb55e9730bbf39a050b86"
   },
   {
    "path": "beta/organization/analytics/apps/chat/projects.md",
@@ -5908,7 +5908,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "9f917de3cafd029bd4a3bfeb08fd04e404bbba468d496ad6eb924724a13864d2"
+   "sha256": "d10ce04024e1d73ef594078536b08ddfea7cac7e3c96c3a7085a3047e8d2307f"
   },
   {
    "path": "organization/workspaces/rate_limits.md",
@@ -6076,7 +6076,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "e0ca806195ec55623d8791f210626168ee96094f59cc1fb5965c9e4242561e57"
+   "sha256": "db8938036834b2e63bcd7a26a0f8489335f233cc4c2e1870e369a47efd7d1312"
   },
   {
    "path": "beta/organization/telemetry_destinations/workspaces/remove.md",
@@ -6272,7 +6272,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "eea1bea826f6655bbf300c1bf4b3f1388c3908100e724b73ede40c3af465d26a"
+   "sha256": "71a930af29e41f0c77b6b0c624b7d317045d62eaa5c8e164b58ff31d238e55d5"
   },
   {
    "path": "beta/memory_stores/memories/retrieve.md",
@@ -6412,7 +6412,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ba9cb371401f91f315fe950bcd0712f4257b014e16a47ab23269480deb995834"
+   "sha256": "27696e78c4db67a4b11047f2ec37fb2c611fa69874dd8bef904b1b8eddc486b5"
   },
   {
    "path": "messages/batches/results.md",
@@ -6454,7 +6454,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "bceb5be67241ce7e0f47fa6f42f8d8070887fb14df2fea772395f49be178ec86"
+   "sha256": "d7052628da1904d502da6215ad81853dfd77d408b7963e2bb0a9b1c70bc33f5f"
   },
   {
    "path": "beta/tunnels/reveal_token.md",
@@ -6496,7 +6496,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f13d5e62da0da5a65d95693a63028e443b3a55925f6d91450ae7ae92ffc71e86"
+   "sha256": "1fbbf8cb45e6bf3f808daf3b285599efc0b36c9b4c02ef14ab5432e844dee9c2"
   },
   {
    "path": "beta/tunnels/rotate_token.md",
@@ -6580,7 +6580,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "34be67a610e687a9fe558b9ddc2c1907a3612b092b0c87165dd67bf53f46168b"
+   "sha256": "896981d94838f4478ca61ff75b45541d8e47e692ea187f5f8b2461b14dc40a73"
   },
   {
    "path": "beta/sessions/events/send.md",
@@ -6664,7 +6664,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "a3e45743bb17f3bb557525ce818e50823ebf96020d375c25f0f4dd72caefbed3"
+   "sha256": "49db5f26048b836f5b18233b0d24b1f4a4a8c677152c9cabb69fbad6bd3646f4"
   },
   {
    "path": "beta/sessions.md",
@@ -6678,7 +6678,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f0e47e48f8d133a2642e8b1c11ef0fec3daa7876eb45cdc369bc5a3d507e254f"
+   "sha256": "c2a7fced5f808c089659c7bac0ce1261de8034cbb7a2d70cbc18d2e583512251"
   },
   {
    "path": "beta/organization/plugins/installation_settings/set.md",
@@ -6720,7 +6720,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "2988954786d70366c8b547c6ec0925e830c90477cddfc42c29df42201da6a868"
+   "sha256": "b1e647860855fbce6101ddc7a109ac39b4e218845857b5e3da54f26533d40554"
   },
   {
    "path": "organization/workspaces/rate_limits/update.md",
@@ -6762,7 +6762,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "c4637cc966567ea276ebd5bdb46c5a5c1d6e21cdfa35466517edb1e6bdd9e63e"
+   "sha256": "0fc92d65d129f4d4540367edabb7f032f8334b233838bc532ae436859dfcac4b"
   },
   {
    "path": "beta/organization/plugins/shares.md",
@@ -6776,7 +6776,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "68e4f32d50488dc0416d43f4977d5fd2e14457f21014dab68ac75d02a6d25dfd"
+   "sha256": "d927404ec065ab6aaf295d871547adea1dbdb93214f19eeb68a2e33cc1b58177"
   },
   {
    "path": "beta/organization/users/sign_out.md",
@@ -6860,7 +6860,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7486abf3ef289d981eddac75fa3aeffd8b38dc8b3436e7b67f35f2e621c33f44"
+   "sha256": "ed1a7d0a784ebcec81ff7a611d730e278867d4349cf9c1884778e6930d129006"
   },
   {
    "path": "beta/organization/claude_tag/slack_workspaces.md",
@@ -6874,7 +6874,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "cab34eade9078f1f3b768192ab11425b1e5b015862d7f478705df2f46f4ae971"
+   "sha256": "88ad1fee199f3805d69cbab18fcf6ea9f4312f6b5fa4602f5e1dfdbdcbfdc60f"
   },
   {
    "path": "organization/spend_limits.md",
@@ -6930,7 +6930,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "cc67e9e95338bfb1513807fbe094e407df0383f0897cb1e14bf99474610e1d58"
+   "sha256": "385450ae2f9255ecf6da05f473ab649fc824de63530a3e2539ce09d5077c30f6"
   },
   {
    "path": "beta/sessions/threads/events/stream.md",
@@ -6944,7 +6944,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7d08aa94a8a565325c8fc732cebc318df1839ecf420dd2cb65b96ca5fa18f754"
+   "sha256": "9df97d72bf093d75e07ba6345e9b740c3af8a9c6a12951545b0e8ab7c768e1f2"
   },
   {
    "path": "organization/analytics/summaries.md",
@@ -6958,7 +6958,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d4fad057d93300cbb24e6f346aded0023b81b32a2b05d31937e2f219937c6a0c"
+   "sha256": "8a2c204b45705645c3ce580af78ef77376a6a6a345b4777ddddaabbaf5596a71"
   },
   {
    "path": "beta/organization/analytics/summaries.md",
@@ -6972,7 +6972,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "d4bee051a0c4507046c19a64c8e9f14f2b8802808efbc801a92781e578e2c913"
+   "sha256": "6dc786f9642a8a8badbc2636691bd66b18622fa8b03c3a8ea3c028de108b5125"
   },
   {
    "path": "beta/organization/claude_tag/bundles/targets.md",
@@ -7028,7 +7028,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "f4548cf7a257df7561750bade74449a5ebce0b93fbfbc2b77f48b82c30fb96f1"
+   "sha256": "48d094fc4502c94770989719b7ef834bc20da7df5d7ced829af311b9f76a1d2c"
   },
   {
    "path": "beta/organization/mcp_tunnels/tunnel_certificates.md",
@@ -7154,7 +7154,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "fe78f2d284c6a0e8b2977b104250d58d9c46f4ba56daf9dc2ee2b1d4e00eeb69"
+   "sha256": "efec284f67df2050ec2d4efc893acada248d4176384273caeb02a91241ebbf4f"
   },
   {
    "path": "organization/api_keys/update.md",
@@ -7462,7 +7462,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "490f395a20baa6370250893ea5c780b55cb61911c49628c067f74e13aaa83038"
+   "sha256": "91fbe3d922571afca3bf5bd62ca79146278742b2d5c512ab10955a230460a0d6"
   },
   {
    "path": "beta/sessions/resources/update.md",
@@ -7490,7 +7490,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "8f5a0c49bce0e671c8b3b7aa20a9cd0d46b765f625b83c172a9bc8e7bbb06088"
+   "sha256": "fbe41f4fc432ac9a20068212ea59c7725c8f0b7aedabf54018aa0d645daa4a79"
   },
   {
    "path": "beta/organization/claude_tag/slack_workspaces/update.md",
@@ -7504,7 +7504,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "538990068b748a78b22ff0789c6c1a9f48f05be455c7b125e2d88f6e63be0d96"
+   "sha256": "62b17e9fb9ddc14af71f4b11d447a61af6b0f9a6eeac3ec4aff5e5f158e49de2"
   },
   {
    "path": "organization/users/update.md",
@@ -7686,7 +7686,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "0458c0bbe35fd80f2c5fa3788b94c7a41fe23eadfb662343074730c66844717c"
+   "sha256": "1b63e5c0981eed7bce8653af51aed631732ff4d23e171c4109c21ba0b6dfd3e4"
   },
   {
    "path": "beta/organization/analytics/usage_report.md",
@@ -7728,7 +7728,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "1c05d322fb9564567a048f202bca83ac512dd321f73982290fdf5fc539947ff9"
+   "sha256": "1f703548baaeb3c0a1deab67326809934139452a2ddf00fc90757cad8dfa7db2"
   },
   {
    "path": "user_profiles.md",
@@ -7798,7 +7798,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "246e10ff2f2eba5d989f26b783cc75f03017f1c1f8ef90fc658e8bd8fd4727af"
+   "sha256": "9cffca883ceb98a6b99f46f4a3b0c3bce9746cdfee6d2dd9e6ce3d05a9b92d4f"
   },
   {
    "path": "compliance/organizations/users.md",
@@ -7812,7 +7812,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "ad213f45e572d0898463eca25136398709f8d4425ea44b7f61a8be046172571b"
+   "sha256": "17b08f70a8f2b6b7e3c6731bc79e212bee9153debf075f3f3db59696876de0e9"
   },
   {
    "path": "beta/organization/users.md",
@@ -7840,7 +7840,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "29288ca6d68d8230eb69b7cf7e7915e303100f4a20826f46c2f10dc946d891cf"
+   "sha256": "e07ffc7b7506d997823388368720fb5d4aca72234fb988ee5ed433c57fd818a5"
   },
   {
    "path": "beta/vaults/credentials/mcp_oauth_validate.md",
@@ -7952,7 +7952,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "def78a3175eeebec1a935a500bdb8a816cfa67999f96cf77461dcc9ae4055ce1"
+   "sha256": "91d63b735660dabec12010e997fec068091eb756856a3d596078a41767f917fd"
   },
   {
    "path": "beta/skills/versions.md",
@@ -7980,7 +7980,7 @@
    "in_index": false,
    "in_sitemap": false,
    "linked": false,
-   "sha256": "7abaa1cf4a738905a77179bf080d64f25ddfd5cf6e9a430550ce148286fb8768"
+   "sha256": "3a3af7828eeb500a73724a0bf6af70b17c592d295a8ecb80e63e54e2334b404e"
   },
   {
    "path": "beta/organization/webhooks.md",
