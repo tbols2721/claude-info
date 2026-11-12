@@ -23,6 +23,7 @@ https://modelcontextprotocol.io/community/working-groups/governance
 https://modelcontextprotocol.io/community/working-groups/infrastructure
 https://modelcontextprotocol.io/community/working-groups/inspector-v2
 https://modelcontextprotocol.io/community/working-groups/interceptors
+https://modelcontextprotocol.io/community/working-groups/overview
 https://modelcontextprotocol.io/community/working-groups/progressive-disclosure
 https://modelcontextprotocol.io/community/working-groups/registry
 https://modelcontextprotocol.io/community/working-groups/sdk

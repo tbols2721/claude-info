@@ -321,6 +321,7 @@
  "https://platform.claude.com/settings/privacy": "https://platform.claude.com/settings/privacy",
  "https://platform.claude.com/settings/security": "https://platform.claude.com/settings/security",
  "https://platform.claude.com/settings/service-accounts": "https://platform.claude.com/settings/service-accounts",
+ "https://platform.claude.com/settings/spend-limits": "https://platform.claude.com/settings/spend-limits",
  "https://platform.claude.com/settings/telemetry-destinations": "https://platform.claude.com/settings/telemetry-destinations",
  "https://platform.claude.com/settings/workload-identity-federation": "https://platform.claude.com/settings/workload-identity-federation",
  "https://platform.claude.com/settings/workspaces": "https://platform.claude.com/settings/workspaces",

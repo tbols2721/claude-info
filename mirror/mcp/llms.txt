@@ -338,6 +338,7 @@
 - [Contributor Ladder](https://modelcontextprotocol.io/community/contributor-ladder.md): The contributor roles in the MCP project, what each requires and grants, and how people move between them.
 - [Working Groups and Interest Groups](https://modelcontextprotocol.io/community/working-interest-groups.md): The MCP project's working groups and interest groups, how to join or start one, and the operating rules every group follows.
 - [Group Charter Template](https://modelcontextprotocol.io/community/charter-template.md): The charter template for MCP working groups and interest groups, and how to submit a charter.
+- [Working Groups Overview](https://modelcontextprotocol.io/community/working-groups/overview.md): Current MCP working groups, their leads, channels, and focus.
 - [MCP Apps Working Group Charter](https://modelcontextprotocol.io/community/working-groups/apps.md): Charter for the MCP Apps Working Group.
 - [File Uploads Charter](https://modelcontextprotocol.io/community/working-groups/file-uploads.md): Charter for the MCP File Uploads Working Group.
 - [Filesystems Charter](https://modelcontextprotocol.io/community/working-groups/filesystems.md): Charter for the MCP Filesystems Working Group.

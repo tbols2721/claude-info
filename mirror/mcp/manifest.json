@@ -3132,7 +3132,7 @@
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "b274123c72c8a0db543fa96b121d417bd9d1098593ba104b0066f65380884389"
+   "sha256": "aa353826584767fd6e808404f94ddfc4c1aa956a1723bfd5c2a55587af38fe45"
   },
   {
    "path": "extensions/apps/overview.md",
@@ -3999,12 +3999,24 @@
    "sha256": "22b2ba67eaccb66177cb1fd2b0a4605527c7eb925bef5fcd3bedc042af5022f2"
   },
   {
+   "path": "community/working-groups/overview.md",
+   "url": "https://modelcontextprotocol.io/community/working-groups/overview.md",
+   "title": "Working Groups Overview",
+   "description": "Current MCP working groups, their leads, channels, and focus.",
+   "nav": [],
+   "order": 333,
+   "in_index": true,
+   "in_sitemap": true,
+   "linked": false,
+   "sha256": "9e2f6ab1dd3710e2c1c89d75e24c84a2ddc5f20e4daf7aee33913db13f543626"
+  },
+  {
    "path": "community/working-groups/apps.md",
    "url": "https://modelcontextprotocol.io/community/working-groups/apps.md",
    "title": "MCP Apps Working Group Charter",
    "description": "Charter for the MCP Apps Working Group.",
    "nav": [],
-   "order": 333,
+   "order": 334,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4016,7 +4028,7 @@
    "title": "File Uploads Charter",
    "description": "Charter for the MCP File Uploads Working Group.",
    "nav": [],
-   "order": 334,
+   "order": 335,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4028,7 +4040,7 @@
    "title": "Filesystems Charter",
    "description": "Charter for the MCP Filesystems Working Group.",
    "nav": [],
-   "order": 335,
+   "order": 336,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4040,11 +4052,11 @@
    "title": "Governance Working Group Charter",
    "description": "Charter for the MCP Governance Working Group.",
    "nav": [],
-   "order": 336,
+   "order": 337,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "fb261e3d7ad7841d64fba719d3ccd1a0b0fc7887c511f5a2852935439a200040"
+   "sha256": "7f0373c376a5616c58ffdde94d60807e190c780d0d58bd8a320e31d443baafb6"
   },
   {
    "path": "community/working-groups/infrastructure.md",
@@ -4052,7 +4064,7 @@
    "title": "Infrastructure Charter",
    "description": "Charter for the MCP Infrastructure Working Group.",
    "nav": [],
-   "order": 337,
+   "order": 338,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4064,7 +4076,7 @@
    "title": "Inspector V2 Working Group Charter",
    "description": "Charter for the Inspector V2 Working Group, a Working Group of the Model Context Protocol community.",
    "nav": [],
-   "order": 338,
+   "order": 339,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4076,7 +4088,7 @@
    "title": "Interceptors Charter",
    "description": "Charter for the MCP Interceptors Working Group.",
    "nav": [],
-   "order": 339,
+   "order": 340,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4088,7 +4100,7 @@
    "title": "Progressive Disclosure Charter",
    "description": "Charter for the MCP Progressive Disclosure Working Group.",
    "nav": [],
-   "order": 340,
+   "order": 341,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4100,7 +4112,7 @@
    "title": "Registry Charter",
    "description": "Charter for the MCP Registry Working Group.",
    "nav": [],
-   "order": 341,
+   "order": 342,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4112,7 +4124,7 @@
    "title": "SDK Working Group Charter",
    "description": "Charter for the MCP SDK Working Group.",
    "nav": [],
-   "order": 342,
+   "order": 343,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4124,7 +4136,7 @@
    "title": "Server Card Charter",
    "description": "Charter for the MCP Server Card Working Group.",
    "nav": [],
-   "order": 343,
+   "order": 344,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4136,7 +4148,7 @@
    "title": "Skills Over MCP Charter",
    "description": "Charter for the MCP Skills Over MCP Working Group.",
    "nav": [],
-   "order": 344,
+   "order": 345,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4148,7 +4160,7 @@
    "title": "Tasks and Events Charter",
    "description": "Charter for the MCP Tasks and Events Working Group.",
    "nav": [],
-   "order": 345,
+   "order": 346,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4160,11 +4172,11 @@
    "title": "Transports Charter",
    "description": "Charter for the MCP Transports Working Group.",
    "nav": [],
-   "order": 346,
+   "order": 347,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "b54bd7e1e1e49f2a6b48f2c6921a1b91a0adeba015c818a444dfe417c26a7c98"
+   "sha256": "05cc961b5bd9860903f5dfd192588eeb002841f0dc1d7594df27d279f3d94ce2"
   },
   {
    "path": "community/interest-groups/agents.md",
@@ -4172,7 +4184,7 @@
    "title": "Agents Charter",
    "description": "Charter for the MCP Agents Interest Group.",
    "nav": [],
-   "order": 347,
+   "order": 348,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4184,7 +4196,7 @@
    "title": "Authorization Charter",
    "description": "Charter for the MCP Authorization Interest Group.",
    "nav": [],
-   "order": 348,
+   "order": 349,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4196,7 +4208,7 @@
    "title": "Enterprise Interest Group Charter",
    "description": "Charter for the MCP Enterprise Interest Group.",
    "nav": [],
-   "order": 349,
+   "order": 350,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4208,7 +4220,7 @@
    "title": "Financial Services Charter",
    "description": "Charter for the MCP Financial Services Interest Group.",
    "nav": [],
-   "order": 350,
+   "order": 351,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4220,7 +4232,7 @@
    "title": "Scientific Computing Charter",
    "description": "Charter for the MCP Scientific Computing Interest Group.",
    "nav": [],
-   "order": 351,
+   "order": 352,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4232,11 +4244,11 @@
    "title": "Security Charter",
    "description": "Charter for the MCP Security Interest Group.",
    "nav": [],
-   "order": 352,
+   "order": 353,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
-   "sha256": "98eab19737b294aac650f3cc1cad97b73da0a4692c0518b52f073936991602ab"
+   "sha256": "cb0973084e6c62f434f5c047466b915c7faae175a14999a73de9af080573cedf"
   },
   {
    "path": "community/interest-groups/tool-annotations.md",
@@ -4244,7 +4256,7 @@
    "title": "Tool Annotations Charter",
    "description": "Charter for the MCP Tool Annotations Interest Group.",
    "nav": [],
-   "order": 353,
+   "order": 354,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4256,7 +4268,7 @@
    "title": "Project Policies",
    "description": "The standing policies that apply to everyone who takes part in the MCP project, and where each one is defined.",
    "nav": [],
-   "order": 354,
+   "order": 355,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4268,7 +4280,7 @@
    "title": "Communication",
    "description": "The MCP project's communication channels, when a channel may be private, and where decisions are recorded.",
    "nav": [],
-   "order": 355,
+   "order": 356,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4280,7 +4292,7 @@
    "title": "Feature Lifecycle and Deprecation",
    "description": "How individual MCP specification features move through Active, Deprecated, and Removed states, and the timeline implementers can plan against.",
    "nav": [],
-   "order": 356,
+   "order": 357,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4292,7 +4304,7 @@
    "title": "SDK Tiers",
    "description": "What each SDK tier requires, how conformance is measured, how an SDK moves between tiers, and the issue labels SDK repositories must use.",
    "nav": [],
-   "order": 357,
+   "order": 358,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4304,7 +4316,7 @@
    "title": "Antitrust Policy",
    "description": "MCP Project Antitrust Policy for participants and contributors",
    "nav": [],
-   "order": 358,
+   "order": 359,
    "in_index": true,
    "in_sitemap": true,
    "linked": false,
@@ -4318,7 +4330,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 359,
+   "order": 360,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4332,7 +4344,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 360,
+   "order": 361,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4346,7 +4358,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 361,
+   "order": 362,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4360,7 +4372,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 362,
+   "order": 363,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4374,7 +4386,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 363,
+   "order": 364,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4388,7 +4400,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 364,
+   "order": 365,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4402,7 +4414,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 365,
+   "order": 366,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4416,7 +4428,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 366,
+   "order": 367,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4430,7 +4442,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 367,
+   "order": 368,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4444,7 +4456,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 368,
+   "order": 369,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4458,7 +4470,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 369,
+   "order": 370,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4472,7 +4484,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 370,
+   "order": 371,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4486,7 +4498,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 371,
+   "order": 372,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4500,7 +4512,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 372,
+   "order": 373,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4514,7 +4526,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 373,
+   "order": 374,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4528,7 +4540,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 374,
+   "order": 375,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4542,7 +4554,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 375,
+   "order": 376,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4556,7 +4568,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 376,
+   "order": 377,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4570,7 +4582,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 377,
+   "order": 378,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4584,7 +4596,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 378,
+   "order": 379,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4598,7 +4610,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 379,
+   "order": 380,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4612,7 +4624,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 380,
+   "order": 381,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4626,7 +4638,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 381,
+   "order": 382,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4640,7 +4652,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 382,
+   "order": 383,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4654,7 +4666,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 383,
+   "order": 384,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4668,7 +4680,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 384,
+   "order": 385,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4682,7 +4694,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 385,
+   "order": 386,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4696,7 +4708,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 386,
+   "order": 387,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4710,7 +4722,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 387,
+   "order": 388,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4724,7 +4736,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 388,
+   "order": 389,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4738,7 +4750,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 389,
+   "order": 390,
    "in_index": false,
    "in_sitemap": true,
    "linked": false,
@@ -4752,7 +4764,7 @@
    "nav": [
     "Other pages"
    ],
-   "order": 390,
+   "order": 391,
    "in_index": false,
    "in_sitemap": false,
    "linked": true,

@@ -668,6 +668,7 @@ https://platform.claude.com/docs/en/build-with-claude/compaction-threshold
 https://platform.claude.com/docs/en/build-with-claude/context-editing
 https://platform.claude.com/docs/en/build-with-claude/context-windows
 https://platform.claude.com/docs/en/build-with-claude/effort
+https://platform.claude.com/docs/en/build-with-claude/effort-per-message
 https://platform.claude.com/docs/en/build-with-claude/embeddings
 https://platform.claude.com/docs/en/build-with-claude/extended-thinking
 https://platform.claude.com/docs/en/build-with-claude/fallback-credit
@@ -838,9 +839,7 @@ https://platform.claude.com/docs/en/managed-agents/tools-web-restrictions
 https://platform.claude.com/docs/en/managed-agents/vaults
 https://platform.claude.com/docs/en/managed-agents/webhooks
 https://platform.claude.com/docs/en/managed-agents/workflow-runs
-https://platform.claude.com/docs/en/models/fable-5-1/migration-guide
 https://platform.claude.com/docs/en/models/fable-5-1/overview
-https://platform.claude.com/docs/en/models/fable-5-1/whats-new-fable-5-1
 https://platform.claude.com/docs/en/models/fable-5-2/migration-guide
 https://platform.claude.com/docs/en/models/fable-5-2/overview
 https://platform.claude.com/docs/en/models/fable-5-2/whats-new-fable-5-2
