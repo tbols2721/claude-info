@@ -14,4 +14,4 @@ __pycache__/
 *.bundle
 *.pcap
 *.pcapng
-local/
+/local/
